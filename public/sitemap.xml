@@ -108,11 +108,11 @@
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>/shiny/</loc>
   </url>
   
   <url>
-    <loc>/faq/</loc>
+    <loc>/contact/</loc>
   </url>
   
   <url>
@@ -125,6 +125,10 @@
   
   <url>
     <loc>/blog/1/01/01/migrate-from-jekyll/</loc>
+  </url>
+  
+  <url>
+    <loc>/app/</loc>
   </url>
   
 </urlset>
