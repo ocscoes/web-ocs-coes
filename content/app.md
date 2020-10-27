@@ -8,7 +8,7 @@ keywords:
 title: Visualizador
 ---
 
-<iframe scrolling="yes" frameborder="no" src="https://jbkunst.shinyapps.io/movid19-shiny/" class="l-screen-inset shaded" style="
+<iframe scrolling="yes" frameborder="no" src="https://juitsa.shinyapps.io/ocs-coes/" class="l-screen-inset shaded" style="
     width: 1200px;
     height: 1000px;
 "></iframe>
