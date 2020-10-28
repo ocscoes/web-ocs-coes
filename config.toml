@@ -105,7 +105,7 @@ paginate = 10
     contact_form_ajax = false
 
     about_us = "<p>Observatorio de Cohesión Social, COES</p>"
-    copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
+    copyright = "Copyright (c) 2015 - 2016, Observatorio de Cohesión Social; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -152,7 +152,7 @@ paginate = 10
     # For more informtion take a look at the README.
 
 [params.testimonials]
-    enable = true
+    enable = false
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
@@ -161,7 +161,7 @@ paginate = 10
 
 [params.see_more]
     enable = true
-    icon = "fa fa-bar-chart"
+    icon = "fas fa-chart-line"
     title = "Indicadores Comparativos de Cohesión Social para América Latina"
     subtitle = ""
     link_url = "/app/"
@@ -177,5 +177,5 @@ paginate = 10
 
 [params.recent_posts]
     enable = true
-    title = "De nuestro blog"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    title = "Documentación"
+    subtitle = "En el siguiente apartado se pueden ver los documentos e informes que hemos elaborado desde el Observatorio de Cohesión Social"
