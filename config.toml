@@ -102,7 +102,7 @@ paginate = 10
     #
     # Enable the contact form by entering your Formspree.io email
     email = "ocs.coes@gmail.com"
-    contact_form_ajax = false
+    contact_form_ajax = true
 
     about_us = "<p>Observatorio de Cohesión Social, COES</p>"
     copyright = "Copyright (c) 2015 - 2016, Observatorio de Cohesión Social; all rights reserved."
