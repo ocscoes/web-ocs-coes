@@ -9,7 +9,7 @@ tags:
 - programming
 - theme
 - hugo
-title: Linked post
+title: Documentación 1
 ---
 
 I'm a linked post in the menu. You can add other posts by adding the following line to the frontmatter:

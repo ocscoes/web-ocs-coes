@@ -13,17 +13,17 @@
   </url>
   
   <url>
+    <loc>/blog/2015/10/02/linked-post/</loc>
+    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/golang/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/hugo/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/2015/10/02/linked-post/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
   </url>
   
@@ -70,31 +70,6 @@
   <url>
     <loc>/categories/pseudo/</loc>
     <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/2015/07/23/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
