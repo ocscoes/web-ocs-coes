@@ -63,7 +63,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 4
     name = "Email"
-    url = "mailto:your@email.com"
+    url = "mailto:ocs.coes@gmail.com"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
@@ -101,7 +101,7 @@ paginate = 10
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "your@email.com"
+    email = "ocs.coes@gmail.com"
     contact_form_ajax = false
 
     about_us = "<p>Observatorio de Cohesión Social, COES</p>"
@@ -127,7 +127,7 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contáctenos en comunicaciones@coes.cl</p>
+    text = """<p class="hidden-sm hidden-xs">Contáctenos en ocs.coes@gmail.com</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
