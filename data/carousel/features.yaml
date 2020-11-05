@@ -1,10 +1,8 @@
 weight: 2
-title: "Proyectos"
+title: "Visualizador"
 description: >
   <ul class="list-style-none">
-     <li>Proyecto 1</li>
-     <li>Proyecto 2</li>
-     <li>Proyecto 3</li>
-     <li>Proyecto 4</li>
+     <li>con datos sobre cohesión social</li>
+     <li>para Latinoamérica en base a LAPOP</li>
    </ul>
-image: "img/carousel/image2.png"
+image: "img/carousel/img2-mini.png"
