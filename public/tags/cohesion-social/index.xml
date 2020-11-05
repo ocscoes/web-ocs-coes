@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cohesion social on Observatorio de Cohesión Social</title>
+    <link>/tags/cohesion-social/</link>
+    <description>Recent content in cohesion social on Observatorio de Cohesión Social</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Nov 2020 13:50:46 +0200</lastBuildDate><atom:link href="/tags/cohesion-social/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Importancia del Observatorio de Cohesión Social en el contexto actual</title>
+      <link>/blog/2020/11/11/02notice/</link>
+      <pubDate>Wed, 11 Nov 2020 13:50:46 +0200</pubDate>
+      
+      <guid>/blog/2020/11/11/02notice/</guid>
+      <description>Palabras de Juan Carlos Castillo El pasado jueves 11 de noviembre se lanzó Observatorio de Cohesión Social (añadir bajada)</description>
+    </item>
+    
+    <item>
+      <title>Lanzamiento Observatorio Cohesión Social</title>
+      <link>/blog/2020/11/11/01notice/</link>
+      <pubDate>Wed, 11 Nov 2020 13:50:46 +0200</pubDate>
+      
+      <guid>/blog/2020/11/11/01notice/</guid>
+      <description>Lanzamiento
+menu = &amp;quot;main&amp;quot; Aquí la bajada</description>
+    </item>
+    
+  </channel>
+</rss>

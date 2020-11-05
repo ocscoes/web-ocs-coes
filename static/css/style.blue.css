@@ -1794,6 +1794,16 @@ fieldset[disabled] .btn-template-primary.active {
 .bar.color-white p {
   color: #fff;
 }
+.bar.color-coes h1,
+.bar.color-coes h2,
+.bar.color-coes h3,
+.bar.color-coes h4,
+.bar.color-coes h5,
+.bar.color-coes h6,
+.bar.color-coes p {
+  color: #2c2c3c;
+}
+
 .bar.padding-big {
   padding: 50px 0;
 }

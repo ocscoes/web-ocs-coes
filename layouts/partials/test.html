@@ -1,0 +1,26 @@
+{{ if isset .Site.Params "test" }}
+{{ if .Site.Params.test.enable }}
+<section class="bar background-white color-coes text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="icon icon-lg"><i class="{{ .Site.Params.test.icon }}"></i>
+                </div>
+                <h3 class="text-uppercase">{{ .Site.Params.test.title | markdownify }}</h3>
+                <p class="lead">{{ .Site.Params.test.subtitle | markdownify }}</p>
+                <p class="text-center">
+                    {{ with .Site.Params.test.link_url }}
+                    <a href="{{ . }}" class="btn btn-template-transparent-black btn-lg">
+                    {{ end }}
+                        {{ with .Site.Params.test.link_text }}
+                        {{ . | markdownify }}
+                        {{ end }}
+                    {{ with .Site.Params.test.link_url }}
+                    </a>
+                    {{ end }}
+                </p>
+            </div>
+        </div>
+</section>
+{{ end }}
+{{ end }}
