@@ -23,29 +23,35 @@ paginate = 10
     weight = 1
 
 [[menu.main]]
-    identifier="blog"
-    name = "Documentación"
-    url  = "/blog/"
-    weight = 2
-
-[[menu.main]]
     identifier = "app"
     name = "Visualizador"
     url  = "/app/"
+    weight = 2
+
+[[menu.main]]
+    identifier="blog"
+    name = "Noticias"
+    url  = "/blog/"
     weight = 3
+
+[[menu.main]]
+    identifier = "doc"
+    name = "Documentación"
+    url  = "/doc/"
+    weight = 4
 
 [[menu.main]]
     identifier = "contact"
     name = "Contacto"
     url  = "/contact/"
-    weight = 4
+    weight = 5
 
 # Top bar social links menu
 
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/valentinaandrade/lisa"
+    url = "https://github.com/valentinaandrade/ocs-coes"
     pre = "<i class='fab fa-2x fa-github'></i>"
 
 [[menu.topbar]]
@@ -68,8 +74,8 @@ paginate = 10
 
 [params]
     viewMorePostLink = "/blog/"
-    author = "DevCows"
-    defaultKeywords = ["devows", "hugo", "go"]
+    author = "OCS"
+    defaultKeywords = ["cohesion", "visualizador", "LAPOP"]
     mainSections = ["blog"]
     defaultDescription = "Site template made by devcows using hugo"
 
@@ -105,7 +111,7 @@ paginate = 10
     contact_form_ajax = true
 
     about_us = "<p>Observatorio de Cohesión Social, COES</p>"
-    copyright = "Copyright (c) 2015 - 2016, Observatorio de Cohesión Social; all rights reserved."
+    copyright = "Copyright (c) 2015 - 2020, Observatorio de Cohesión Social; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -145,6 +151,15 @@ paginate = 10
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
 
+[params.test]
+    enable = true
+    icon = ""
+    title = "Observatorio de Cohesión Social"
+    subtitle = "El Observatorio de Cohesión Social es un portal para realizar análisis comparativos de distintos indicadores asociados a cohesión social en América Latina, como confianza interpersonal, valoración de la democracia, participación en protestas, entre otros. Para ello se utiliza la base de la encuesta LAPOP (Latin American Public Opinion Project), olas 2004, 2006, 2008, 2010, 2012 y 2014."
+    link_url = "/app/"
+    link_text = ""
+
+
 [params.features]
     enable = true
     # All features are defined in their own files. You can find example items
@@ -177,5 +192,5 @@ paginate = 10
 
 [params.recent_posts]
     enable = true
-    title = "Documentación"
-    subtitle = "En el siguiente apartado se pueden ver los documentos e informes que hemos elaborado desde el Observatorio de Cohesión Social"
+    title = "Noticias"
+    subtitle = "En el siguiente apartado se pueden ver las noticias que han aparecido sobre el Observatorio de Cohesión Social"
