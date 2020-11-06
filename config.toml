@@ -1,13 +1,13 @@
 baseurl = "https://example.org"
 title = "Observatorio de Cohesión Social"
 theme = "hugo-universal-theme"
-languageCode = "en-us"
+languageCode = "es-cl"
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "es"
 # Enable comments by entering your Disqus shortname
 disqusShortname = "devcows"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "G-5NZ26DZ60M"
 
 # Define the number of posts per page
 paginate = 10
