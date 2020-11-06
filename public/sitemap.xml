@@ -57,11 +57,11 @@
   </url>
   
   <url>
-    <loc>/app/</loc>
+    <loc>/doc/</loc>
   </url>
   
   <url>
-    <loc>/doc/</loc>
+    <loc>/app/</loc>
   </url>
   
 </urlset>

@@ -37,21 +37,21 @@ En el siguiente formulario puedes contactarte con nosotros, intentaremos contest
     </item>
     
     <item>
-      <title>Visualizador</title>
-      <link>/app/</link>
+      <title>Documentación</title>
+      <link>/doc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/app/</guid>
-      <description>  En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos
+      <guid>/doc/</guid>
+      <description>Título 1 Subtítulo 1 Subtítulo 2 Título   Aquí escribiremos la documentación
  </description>
     </item>
     
     <item>
       <title>Visualizador</title>
-      <link>/doc/</link>
+      <link>/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/doc/</guid>
+      <guid>/app/</guid>
       <description>  En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos
  </description>
     </item>
