@@ -29,15 +29,15 @@ paginate = 10
     weight = 2
 
 [[menu.main]]
-    identifier="blog"
-    name = "Noticias"
-    url  = "/blog/"
-    weight = 3
-
-[[menu.main]]
     identifier = "doc"
     name = "Documentación"
     url  = "/doc/"
+    weight = 3
+
+[[menu.main]]
+    identifier="blog"
+    name = "Noticias"
+    url  = "/blog/"
     weight = 4
 
 [[menu.main]]
@@ -155,8 +155,6 @@ paginate = 10
     enable = true
     title = "Observatorio de Cohesión Social"
     subtitle = "El Observatorio de Cohesión Social es un portal para realizar análisis comparativos de distintos indicadores asociados a cohesión social en América Latina, como confianza interpersonal, valoración de la democracia, participación en protestas, entre otros. Para ello se utiliza la base de la encuesta LAPOP (Latin American Public Opinion Project), olas 2004, 2006, 2008, 2010, 2012 y 2014."
-    link_url = "/app/"
-    link_text = ""
 
 
 [params.features]
