@@ -4,19 +4,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-uppercase">{{ .Site.Params.test.title | markdownify }}</h3>
+                <div class="heading text-center">
+                <h2>{{ .Site.Params.test.title | markdownify }}</h2>
+                </div>
                 <p class="lead">{{ .Site.Params.test.subtitle | markdownify }}</p>
-                <p class="text-center">
-                    {{ with .Site.Params.test.link_url }}
-                    <a href="{{ . }}" class="btn btn-template-transparent-black btn-lg">
-                    {{ end }}
-                        {{ with .Site.Params.test.link_text }}
-                        {{ . | markdownify }}
-                        {{ end }}
-                    {{ with .Site.Params.test.link_url }}
-                    </a>
-                    {{ end }}
-                </p>
             </div>
         </div>
 </section>
