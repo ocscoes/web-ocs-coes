@@ -1,4 +1,5 @@
 ---
+author: Observatorio de Cohesión Social
 banner: img/banners/banner-1.jpg
 categories:
 - prensa
