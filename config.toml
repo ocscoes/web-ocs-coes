@@ -1,4 +1,4 @@
-baseurl = "https://example.org"
+baseurl = "https://ocs-coes.netlify.app/"
 title = "Observatorio de Cohesión Social"
 theme = "hugo-universal-theme"
 languageCode = "es-cl"
