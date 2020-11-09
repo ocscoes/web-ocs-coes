@@ -31,7 +31,7 @@ paginate = 10
 [[menu.main]]
     identifier = "doc"
     name = "Documentación"
-    url  = "/doc/"
+    url  = "/doc2/"
     weight = 3
 
 [[menu.main]]
@@ -169,7 +169,7 @@ paginate = 10
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
     title = "Equipo"
-    subtitle = "del Observaorio de Cohesión Social"
+    subtitle = ""
 
 [params.see_more]
     enable = true

@@ -58,5 +58,14 @@ En el siguiente formulario puedes contactarte con nosotros, intentaremos contest
  </description>
     </item>
     
+    <item>
+      <title>Documentación: fuentes y procesamiento de datos</title>
+      <link>/doc2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/doc2/</guid>
+      <description>DatosEl Observatorio de Cohesión Social utiliza los datos abiertos disponibles de la encuesta Barómetro de las Américas, del LAPOP (Latin American Public Opinion Project), disponible en https://www.vanderbilt.edu/lapop/. En general esta encuesta es conocida como “Encuesta LAPOP”, y se define como “the only survey of democratic public opinion and behavior that covers the Americas (North, Central, South and the Caribbean). It is an effort by LAPOP to measure democratic values and behaviors in the Americas using national probability samples of voting-age adults”.</description>
+    </item>
+    
   </channel>
 </rss>

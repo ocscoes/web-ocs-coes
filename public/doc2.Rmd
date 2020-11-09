@@ -1,0 +1,224 @@
+---
+description: Documentación de Visualizador de Indicadores Comparativos de Cohesión Social para América Latina
+keywords:
+- shiny
+- indicadores
+- lapop
+- latinoamerica
+- visualizador
+title: "Documentación: fuentes y procesamiento de datos"
+bibliography: "input/Documentation_lapop_database.bib"
+cls: "input/apa6.cls"
+css: "input/custom.css"
+linkcolor: blue
+link-citations: yes
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = FALSE,
+                      echo = F)
+library(dplyr)
+library(kableExtra)
+options(scipen=999)
+rm(list=ls())
+options(knitr.kable.NA = '')
+options(knitr.graphics.error = FALSE)
+Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
+
+```
+
+
+## Datos
+
+El Observatorio de Cohesión Social utiliza los datos abiertos disponibles de la encuesta Barómetro de las Américas, del LAPOP (Latin American Public Opinion Project), disponible en https://www.vanderbilt.edu/lapop/. En general esta encuesta es conocida como “Encuesta LAPOP”, y se define como “the only survey of democratic public opinion and behavior that covers the Americas (North, Central, South and the Caribbean). It is an effort by LAPOP to measure democratic values and behaviors in the Americas using national probability samples of voting-age adults”. Esta encuesta es bianual, comenzando el año 2004 con 11 países y en su ola 2018 abarca 29 países.
+
+Además de la encuesta LAPOP se incorporan algunos indicadores económicos de países para el análisis obtenidos desde el Banco Mundial (Bank 2020) y la base de datos SWIID (Solt 2020).
+
+El número de casos según país y ola se presenta en la siguiente tabla.
+
+```{r}
+load(file="input/data/proc/Lapop_2004_2008_indAgr.RData")
+tablepaiswave<-table(Lapop_2004_2008_indAgr$isocode,Lapop_2004_2008_indAgr$wave.x)
+
+kableExtra::kable(tablepaiswave, full_width = T, linesep = "", caption = c("Número de encuestados por ola y país")) %>% kable_styling(
+    full_width = T,
+    position = "center",
+    font_size = 14,
+    bootstrap_options=c("striped", "bordered")) %>%
+  column_spec(column = 1, width = "1.5cm", )
+```
+
+## Repositorio
+
+El código de generación de este sitio y del visualizador se encuentra abierto en el repositorio [https://github.com/ocscoes/OCS-COES](https://github.com/ocscoes/OCS-COES). El repositorio esta ordenado en modo general en 3 carpetas,
+
+- aplicación Shiny que permite la visualización de los datos (app),
+- datos utilizados (input). Cabe destacar, que siguiendo las políticas de resguardo de la información de LAPOP no se subirá la base de datos original sino solamente los códigos de procesamiento.
+- códigos de procesamiento de los datos (production).
+
+La estructura del repositorio sigue la propuesta del protocolo [IPO](https://juancarloscastillo.github.io/ipo/index_es.html).
+
+## Variables
+
+La selección de variables de la encuesta LAPOP se realizó a partir de una perspectiva de cohesión social que considera dos dimensiones:
+
+vertical, referida a la relación con el sistema político en temas como confianza en instituciones, satisfacción con la democracia.
+
+horizontal, que considera fundamentalmente las relaciones con los demás.
+
+En el procesamiento de los datos se calculó el promedio por país y por ola de la encuesta para cada uno de los indicadores seleccionados. Adicionalmente, se generaron promedios de las variables por año para tener como referente de comparación en los análisis nacionales. Junto a ello se incorporaron a la base de datos dos variables macroeconómicas, el Producto Interno Bruto y el índice de desigualdad GINI que aparecen como posibles opciones de selección en la pestaña de análisis bivariado.
+
+El listado de variables se resume en la siguiente tabla:
+
+
+```{r}
+load(file="input/data/proc/Lapop_2004_2008_indAgr.RData")
+
+library(sjlabelled)
+
+
+Lapop_2004_2008_indAgr2 <- Lapop_2004_2008_indAgr %>% select(it1=it1.x, prot3=prot3.x, aoj12=aoj12.x, b2=b2.x, b3=b3.x, b4=b4.x,
+                              b10a=b10a.x, b12=b12.x, b20=b20.x, b20a=b20a.x, b21=b21.x, b21a=b21a.x,
+                              n9=n9.x, n11=n11.x, n15=n15.x, ros4=ros4.x, ing4=ing4.x,
+                              eff1=eff1.x, pn4=pn4.x, exc7=exc7.x, pol1=pol1.x, vb2=vb2.x, pr4=pr4.x)
+
+Lapop_2004_2008_indAgr2$vb2 <- factor(x = Lapop_2004_2008_indAgr2$vb2,
+                         levels = c(1:2),
+                         labels = c("Si","No"))
+
+
+Lapop_2004_2008_indAgr2$it1 <- factor(x = Lapop_2004_2008_indAgr2$it1,
+                         levels = c(1:4),
+                         labels = c("Muy \n confiable", "Algo \n confiable", "Poco \n confiable", "Nada \n confiable"))
+
+
+Lapop_2004_2008_indAgr2$prot3 <- factor(x = Lapop_2004_2008_indAgr2$prot3,
+                         levels = c(1:2),
+                         labels = c(" Sí ha participado","No ha participado"))
+
+
+Lapop_2004_2008_indAgr2$aoj12 <- factor(x = Lapop_2004_2008_indAgr2$aoj12,
+                         levels = c(1:4),
+                         labels = c("Mucho","Algo","Poco","Nada"))
+
+levels1 = c(1,2,3,4,5,6,7)
+labels1 = c("Nada","2","3","4","5","6","Mucho")
+
+
+
+for (i in 4:15) {
+  Lapop_2004_2008_indAgr2[,i]<- factor(unlist(Lapop_2004_2008_indAgr2[,i]),
+                          levels = levels1,
+                          labels = labels1)
+}
+
+set_label(Lapop_2004_2008_indAgr2$b2  )<- "Respeto por las Instituciones \n  ¿Hasta qué punto tiene usted respeto por las instituciones políticas de su país?"
+set_label(Lapop_2004_2008_indAgr2$b3  )<- "Protección Derechos Básicos \n  ¿Hasta qué punto cree usted que los derechos básicos del ciudadano están bien
+protegidos por el sistema político de su país? "
+set_label(Lapop_2004_2008_indAgr2$b4  )<- "Orgullo con el Sistema Político \n ¿Hasta qué punto se siente usted orgulloso de vivir bajo el sistema político de su país?"
+set_label(Lapop_2004_2008_indAgr2$b10a)<- "Confianza en Sistema Judicial \n ¿Hasta qué punto tiene confianza en el sistema de justicia?"
+set_label(Lapop_2004_2008_indAgr2$b12 )<- "Confianza en Fuerzas Armadas \n  ¿Hasta qué punto tiene confianza usted en las Fuerzas Armadas?"
+set_label(Lapop_2004_2008_indAgr2$b20 )<- "Confianza en Iglesia Católica \n ¿Hasta qué punto tiene confianza usted en la Iglesia Católica?"
+set_label(Lapop_2004_2008_indAgr2$b20a)<- "Confianza en Iglesias Evangélicas  \n ¿Hasta qué punto tiene confianza usted en la Iglesia Evangélica?"
+set_label(Lapop_2004_2008_indAgr2$b21 )<- "Confianza en Partidos Políticos \n  ¿Hasta qué punto tiene confianza usted en los partidos políticos?"
+set_label(Lapop_2004_2008_indAgr2$b21a)<- "Confianza en Ejecutivo \n ¿Hasta qué punto tiene confianza usted en el presidente?"
+
+set_label(Lapop_2004_2008_indAgr2$n9  )<- "Evaluación del Desempeño del Gobierno Combatiendo Corrupción \n ¿Hasta qué punto diría que el gobierno actual combate la corrupción en el
+gobierno?"
+set_label(Lapop_2004_2008_indAgr2$n11 )<- "Evaluación del Desempeño del Gobierno en Seguridad Ciudadana \n ¿Hasta qué punto diría que el gobierno actual mejora la seguridad ciudadana?"
+set_label(Lapop_2004_2008_indAgr2$n15 )<- "Evaluación del Desempeño del Gobierno Manejando Economía \n  ¿Hasta qué punto diría que el gobierno actual está manejando bien la economía? "
+
+
+Lapop_2004_2008_indAgr2$pr4 <- factor(unlist(Lapop_2004_2008_indAgr2$pr4),
+                          levels = levels1,
+                          labels = labels1)
+
+levels2 = c(1,2,3,4,5,6,7)
+labels2 = c("Muy en \n Desacuerdo","2","3","4","5","6","Muy de \n acuerdo")
+
+
+for (i in 16:18) {
+  Lapop_2004_2008_indAgr2[,i]<- factor(unlist(Lapop_2004_2008_indAgr2[,i]),
+                          levels = levels2,
+                          labels = labels2)
+}
+
+
+
+
+Lapop_2004_2008_indAgr2$ros4 <- factor(unlist(Lapop_2004_2008_indAgr2$ros4),
+                          levels = levels2,
+                          labels = labels2)
+
+
+set_label(Lapop_2004_2008_indAgr2$ing4)<- "Democracia es Mejor que otras Formas de Gobierno \n puede que la democracia tenga problemas, pero es
+mejor que cualquier otra forma de gobierno. ¿Hasta qué punto está de acuerdo o en
+desacuerdo con esta frase?"
+
+set_label(Lapop_2004_2008_indAgr2$eff1)<- "Gobernantes están Interesados en lo que la Gente Piensa \n A los que gobiernan el país les interesa lo que piensa la gente como usted. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?"
+
+
+
+
+Lapop_2004_2008_indAgr2$pn4 <- factor(x = Lapop_2004_2008_indAgr2$pn4,
+                         levels = c(1:4),
+                         labels = c("Muy \n satisfecho","Satisfecho","Insatisfecho","Muy \n insatisfecho"))
+
+
+
+Lapop_2004_2008_indAgr2$exc7 <- factor(x = Lapop_2004_2008_indAgr2$exc7,
+                         levels = c(1:4),
+                         labels = c("Muy \n generalizada","Algo generalizada","Poco generalizada ","Nada \n generalizada"))
+
+
+
+
+Lapop_2004_2008_indAgr2$pol1 <- factor(x = Lapop_2004_2008_indAgr2$pol1,
+                         levels = c(1:4),
+                         labels = c("Mucho","Algo","Poco","Nada"))
+set_label(Lapop_2004_2008_indAgr2$pol1)<- "Interés en Política \n ¿Qué tanto interés tiene usted en la política: mucho, algo, poco o nada?"
+
+Lapop_2004_2008_indAgr2$vb2 <- factor(x = Lapop_2004_2008_indAgr2$vb2,
+                         levels = c(1:2),
+                         labels = c("Si","No"))
+
+set_label(Lapop_2004_2008_indAgr2$vb2 )<- "Voto en Últimas Elecciones Presidenciales \n  ¿Votó usted en las últimas elecciones presidenciales?"
+
+
+
+set_label(Lapop_2004_2008_indAgr2$aoj12)<-"Confianza en Eficacia Sistema Judicial  \n Si usted fuera víctima de un robo o asalto, ¿cuánto confiaría que el sistema judicial castigue al culpable? Confiaría"
+
+set_label(Lapop_2004_2008_indAgr2$prot3)<-"Participar en Protesta \n ¿En los últimos 12 meses ha participado en una manifestación o protesta pública?"
+
+set_label(Lapop_2004_2008_indAgr2$it1 )<- "Confianza Interpersonal  \n Ahora, hablando de la gente de por aquí, ¿diría que la gente de su comunidad es muy
+confiable, algo confiable, poco confiable o nada confiable?"
+
+set_label(Lapop_2004_2008_indAgr2$pn4 )<- "Satisfacción con la Democracia \n En general, ¿usted diría que está muy satisfecho(a), satisfecho(a), insatisfecho(a) o muy insatisfecho(a) con la forma en que la democracia funciona en su país?"
+
+
+set_label(Lapop_2004_2008_indAgr2$exc7)<- "Percepción de Corrupción Pública \n Teniendo en cuenta su experiencia o lo que ha oído mencionar, ¿la corrupción de los funcionarios públicos en el país está:"
+
+set_label(Lapop_2004_2008_indAgr2$pr4 )<- "Respeto por la Propiedad Privada \n ¿Hasta qué punto siente usted que el Estado de su país respeta la propiedad privada de
+sus ciudadanos?"
+
+set_label(Lapop_2004_2008_indAgr2$ros4)<- "Políticas redistributivas  \n  El Estado debe implementar políticas firmes para reducir la desigualdad de ingresos entre ricos y pobres. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase? "
+
+
+
+sjPlot::view_df(Lapop_2004_2008_indAgr2, show.values = F, show.string.values = T, show.labels = T, show.na = F, encoding = "Windows-1252")
+
+```
+
+---
+
+# Bibliografía
+
+> Bank, Word. 2020. “World Bank Open Data Free and Open Access to Global Development Data.” The World Bank. https://datos.bancomundial.org/.
+
+---
+
+> Solt, Frederick. 2020. “Measuring Income Inequality Across Countries and over Time: The Standardized World Income Inequality Database.” Social Science Quarterly 101 (3): 1183–99.
+
+---
