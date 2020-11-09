@@ -1,7 +1,7 @@
 {{ if isset .Site.Params "testimonials" }}
 {{ if .Site.Params.testimonials.enable }}
 {{ if gt (len .Site.Data.testimonials) 0 }}
-<section class="bar background-pentagon no-mb">
+<section class="bar background-coes no-mb text-center">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -23,7 +23,7 @@
                                 <p>{{ .text | markdownify }}</p>
                             </div>
                             <div class="bottom">
-                                <div class="icon"><i class="fas fa-quote-left"></i>
+                                <div class="icon"><i class=""></i>
                                 </div>
                                 <div class="name-picture">
                                     <img class="" alt="" src="{{ .avatar | absURL }}">
@@ -33,6 +33,7 @@
                             </div>
                         </div>
                     </li>
+                  
                     {{ end }}
                 </ul>
                 <!-- /.owl-carousel -->

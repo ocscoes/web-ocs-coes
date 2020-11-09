@@ -48,6 +48,10 @@
   </url>
   
   <url>
+    <loc>/app/</loc>
+  </url>
+  
+  <url>
     <loc>/test/</loc>
   </url>
   
@@ -57,10 +61,6 @@
   
   <url>
     <loc>/doc/</loc>
-  </url>
-  
-  <url>
-    <loc>/app/</loc>
   </url>
   
 </urlset>

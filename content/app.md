@@ -5,7 +5,7 @@ keywords:
 - indicadores
 - lapop
 - latinoamerica
-title: Visualizador
+title: 
 ---
 
 <iframe scrolling="yes" frameborder="no" src="https://juitsa.shinyapps.io/ocs-coes/" class="l-screen-inset shaded" style="

@@ -1322,14 +1322,14 @@ fieldset[disabled] .btn-template-primary.active {
   text-align: right;
 }
 .testimonials .item .testimonial .name-picture h5 {
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 .testimonials .item .testimonial .name-picture p {
   color: #999999;
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 .testimonials .item .testimonial .name-picture img {
   float: right;
@@ -1772,6 +1772,13 @@ fieldset[disabled] .btn-template-primary.active {
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }
+
+.bar.background-coes {
+  background: url('../img/background.png') center center repeat;
+  border-top: solid 1px #999999;
+  border-bottom: solid 1px #999999;
+}
+
 .bar.background-gray {
   background: #eeeeee;
 }
