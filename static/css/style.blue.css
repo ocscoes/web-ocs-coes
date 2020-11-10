@@ -1898,6 +1898,16 @@ fieldset[disabled] .btn-template-primary.active {
   border-radius: 25px;
   border: solid 1px #2c2c3c;
 }
+.showcase .item .icon2 {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #2c2c3c;
+  line-height: 50px;
+  border-radius: 25px;
+  border: solid 1px #2c2c3c;
+}
+
 .showcase .item h4 {
   color: #2c2c3c;
   text-transform: uppercase;
