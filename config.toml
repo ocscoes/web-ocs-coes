@@ -74,7 +74,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 4
     name = "Email"
-    url = "mailto:ocs.coes@gmail.com"
+    url = "mailto:ocs@coes.cl"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
@@ -138,7 +138,7 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contáctenos en ocs.coes@gmail.com</p>
+    text = """<p class="hidden-sm hidden-xs">Contáctenos en ocs@coes.cl</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
