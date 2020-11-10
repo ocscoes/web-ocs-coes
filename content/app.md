@@ -16,4 +16,4 @@ title:
 
 ---
 
-> En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en [contactarnos](#contact)
+> En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en [contactarnos](/contact/)
