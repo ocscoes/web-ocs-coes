@@ -9,6 +9,11 @@ disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "G-5NZ26DZ60M"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # Define the number of posts per page
 paginate = 10
 
