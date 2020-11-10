@@ -22,13 +22,17 @@
                             <div class="text">
                                 <p>{{ .text | markdownify }}</p>
                             </div>
+                            
                             <div class="bottom">
-                                <div class="icon"><i class="fas fa-globe"></i>
-                                </div>
+                              <a href = "{{.email}}" >
+                                <div class="icon"><i class="fas fa-envelope-open-text"></i>
+                                </div></a>
                                 <div class="name-picture">
                                     <img class="" alt="" src="{{ .avatar | absURL }}">
                                     <h5>{{ .name }}</h5>
+                                    <a href = "{{.url}}" >
                                     <p>{{ .position }}</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
