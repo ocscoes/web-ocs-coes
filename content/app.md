@@ -15,7 +15,9 @@ title:
 
 ---
 
-## Comente
+## ¿Quieres comentar o tienes alguna duda?
+
+Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes [contactarnos](/contact/)
 
 <div id="disqus_thread"></div>
 
