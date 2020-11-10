@@ -13,9 +13,11 @@
                             <h1>{{ .title }}</h1>
                             {{ .description | safeHTML }}
                         </div>
+                        <a href = "{{.url}}" >
                         <div class="col-sm-7">
                             <img class="img-responsive" src="{{ .image }}" alt="">
                         </div>
+                        </a>
                     </div>
                 </div>
                 {{ end }}
