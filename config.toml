@@ -5,7 +5,7 @@ languageCode = "es-cl"
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "es"
 # Enable comments by entering your Disqus shortname
-disqusShortname = "devcows"
+disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "G-5NZ26DZ60M"
 
@@ -51,7 +51,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/valentinaandrade/ocs-coes"
+    url = "https://github.com/ocscoes/"
     pre = "<i class='fab fa-2x fa-github'></i>"
 
 [[menu.topbar]]
@@ -77,7 +77,7 @@ paginate = 10
     author = "OCS"
     defaultKeywords = ["cohesion", "visualizador", "LAPOP"]
     mainSections = ["blog"]
-    defaultDescription = "Site template made by devcows using hugo"
+    defaultDescription = "Sitio desarrollado por valentinaandrade por template devcows usando hugo"
 
     # Social media
     facebook_site = "coes2020" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
@@ -111,7 +111,7 @@ paginate = 10
     contact_form_ajax = false
 
     about_us = "<p>Observatorio de Cohesión Social, COES</p>"
-    copyright = "Copyright (c) 2015 - 2020, Observatorio de Cohesión Social; all rights reserved."
+    copyright = "Copyright (c) 2015 - 2020, Observatorio de Cohesión Social; todos los derechos reservados."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
