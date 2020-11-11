@@ -7,7 +7,7 @@ defaultContentLanguage = "es"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = "2147965369"
+googleAnalytics = "G-5NZ26DZ60M"
 
 [markup]
   [markup.goldmark]
