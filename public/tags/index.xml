@@ -2,35 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Observatorio de Cohesión Social</title>
-    <link>https://ocs-coes.netlify.app/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Observatorio de Cohesión Social</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Tue, 10 Nov 2020 13:50:46 +0200</lastBuildDate><atom:link href="https://ocs-coes.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Nov 2020 13:50:46 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>cohesion social</title>
-      <link>https://ocs-coes.netlify.app/tags/cohesion-social/</link>
+      <link>/tags/cohesion-social/</link>
       <pubDate>Tue, 10 Nov 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://ocs-coes.netlify.app/tags/cohesion-social/</guid>
+      <guid>/tags/cohesion-social/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lanzamiento</title>
-      <link>https://ocs-coes.netlify.app/tags/lanzamiento/</link>
+      <link>/tags/lanzamiento/</link>
       <pubDate>Tue, 10 Nov 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://ocs-coes.netlify.app/tags/lanzamiento/</guid>
+      <guid>/tags/lanzamiento/</guid>
       <description></description>
     </item>
     
     <item>
       <title>visualizador</title>
-      <link>https://ocs-coes.netlify.app/tags/visualizador/</link>
+      <link>/tags/visualizador/</link>
       <pubDate>Tue, 10 Nov 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://ocs-coes.netlify.app/tags/visualizador/</guid>
+      <guid>/tags/visualizador/</guid>
       <description></description>
     </item>
     

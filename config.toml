@@ -27,29 +27,67 @@ paginate = 10
     url  = "/"
     weight = 1
 
-[[menu.main]]
-    identifier = "app"
-    name = "Visualizador"
-    url  = "/app/"
-    weight = 2
-
-[[menu.main]]
-    identifier = "doc"
-    name = "Documentación"
-    url  = "/doc2/"
-    weight = 3
-
-[[menu.main]]
+[[menu.main]] # Menu Noticia
     identifier="blog"
     name = "Noticias"
     url  = "/blog/"
+    weight = 2
+
+[[menu.main]] # Menu Recursos
+    name       = "Recursos"
+    identifier = "menu.resources"
+    url        = ""
+    weight     = 3
+    
+[[menu.main]] ## section publicaciones
+    name       = "Publicaciones"
+    identifier = "section.publicaciones"
+    url        = "/pubs/" 
+    weight     = 1
+    parent     = "menu.resources"    
+    post       = 1    
+    
+[[menu.main]] ### subsection  
+    name       = "2 Columns"
+    url        = ""
+    weight     = 1
+    parent     = "section.publicaciones"
+
+[[menu.main]] ## section enlaces
+    identifier = "section.links"
+    parent = "menu.resources"
+    name = "Enlaces"
+    url  = "/links/"
+    weight = 3
+    
+
+[[menu.main]] # Menu Visualizacion
+    identifier = "app"
+    name = "Visualización"
+    url  = ""
     weight = 4
+    
+[[menu.main]] # Submenu: shiny app
+    identifier = "app.shiny" 
+    parent     = "app"
+    name = "Aplicación"
+    url  = "/app/"
+    weight = 1    
+
+[[menu.main]] # Submenu: documentacion shiny
+    identifier = "app.docu"
+    parent     = "app"
+    name = "Documentación"
+    url  = "/doc2/"
+    weight = 1
 
 [[menu.main]]
     identifier = "contact"
     name = "Contacto"
     url  = "/contact/"
-    weight = 5
+    weight = 6  
+    
+    
 
 # Top bar social links menu
 
@@ -62,7 +100,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 2
     name = "Facebook"
-    url = "http://facebook.com/coes2020"
+    url = "https://www.facebook.com/CentroCOES"
     pre = "<i class='fab fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
@@ -159,8 +197,7 @@ paginate = 10
 [params.test]
     enable = true
     title = "Observatorio de Cohesión Social"
-    subtitle = "El Observatorio de Cohesión Social es un portal para realizar análisis comparativos de distintos indicadores asociados a cohesión social en América Latina, como confianza interpersonal, valoración de la democracia, participación en protestas, entre otros. Para ello se utiliza la base de la encuesta LAPOP (Latin American Public Opinion Project), olas 2004, 2006, 2008, 2010, 2012, 2014, 2016 y 2018"
-
+    subtitle = "El Observatorio de Cohesión Social es una inciativa del Centro de Estudios de Conflicto y Cohesión Social"
 
 [params.features]
     enable = true

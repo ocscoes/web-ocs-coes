@@ -1,0 +1,18 @@
+---
+description: Documentos de trabajo y Publicaciones 
+keywords:
+- shiny
+- indicadores
+- lapop
+title: Publicaciones
+---
+
+# Documentos de trabajo
+
+# Artículos
+
+
+
+---
+
+> Aquí van los enlaces

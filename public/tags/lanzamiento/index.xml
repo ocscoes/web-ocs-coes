@@ -2,18 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lanzamiento on Observatorio de Cohesión Social</title>
-    <link>https://ocs-coes.netlify.app/tags/lanzamiento/</link>
+    <link>/tags/lanzamiento/</link>
     <description>Recent content in lanzamiento on Observatorio de Cohesión Social</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Tue, 10 Nov 2020 13:50:46 +0200</lastBuildDate><atom:link href="https://ocs-coes.netlify.app/tags/lanzamiento/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Nov 2020 13:50:46 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/lanzamiento/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Lanzamiento Observatorio Cohesión Social</title>
-      <link>https://ocs-coes.netlify.app/blog/2020/11/10/01notice/</link>
+      <link>/blog/2020/11/10/01notice/</link>
       <pubDate>Tue, 10 Nov 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://ocs-coes.netlify.app/blog/2020/11/10/01notice/</guid>
-      <description>Lanzamiento Observatorio Cohesión Social En el 3° taller CEPAL-COES ¿Cómo se define la cohesión y cómo sepuede medir? realizada el miércoles 11 de noviembre a las 9:30 horas se presentó el Centro de Cohesión Social con su visualizador de datos nuevo y su sitio web.
+      <guid>/blog/2020/11/10/01notice/</guid>
+      <description>Lanzamiento Observatorio Cohesión Social (!) En el 3° taller CEPAL-COES ¿Cómo se define la cohesión y cómo sepuede medir? realizada el miércoles 11 de noviembre a las 9:30 horas se presentó el Centro de Cohesión Social con su visualizador de datos nuevo y su sitio web.
 La actividad consistió en la presentación de dos iniciativas
   Presentación &amp;ldquo;Hacia un nuevo concepto de cohesión social: revisión histórica y elementos centrales&amp;rdquo; por Carlos Maldonado y María Luisa Marnho, de CEPAL.</description>
     </item>
