@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('http://fonts.cdnfonts.com/css/gotham'); 
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
 
 .clearfix:before,
 .clearfix:after,
@@ -16,7 +17,13 @@
   clear: both;
 }
 
-.col-centered{ /*esto da el orden de las entradas del blog*/ 
+p {
+  margin: 0 0 10px;
+  font-size: normal;
+  font-family:  Catamaran; /*Cambia la fuente de los párrafos*/ 
+}
+
+.col-centered{            /*esto da el orden de las entradas del blog*/ 
     float:inline-end; 
     margin: 0 auto;
 }
@@ -114,7 +121,8 @@ div.section {
   padding-bottom: 10px;
   vertical-align: middle;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em; 
+  font-family: Catamaran;
 }
 .heading h1 i[class^="fa"],
 .heading h2 i[class^="fa"],
@@ -3392,7 +3400,7 @@ label {
     margin-right: auto;
   }
 }
-/* type */
+/* type = titulos dentro de .md y banners*/ 
 h1,
 h2,
 h3,

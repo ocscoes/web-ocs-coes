@@ -173,14 +173,15 @@ set_label(Lapop_2004_2008_indAgr2$ros4)<- "Políticas redistributivas :  El Esta
 
 
 
-sjPlot::view_df(Lapop_2004_2008_indAgr2,
+tab1<- sjPlot::view_df(Lapop_2004_2008_indAgr2,
                 show.prc = T,
                 show.values = F, 
                 show.string.values = T, 
                 show.labels = T, 
                 show.na = F, 
-                encoding = "Windows-1252", 
-                CSS = list("input/custom.css")) 
+                encoding = "Windows-1252")  
+
+tab1
 ```
 
 ---

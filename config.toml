@@ -21,13 +21,13 @@ paginate = 10
 
 # Main menu
 
-[[menu.main]]
+[[menu.main]] # Inicio
     identifier="home"
     name = "Inicio"
     url  = "/"
     weight = 1
 
-[[menu.main]] # Menu Noticia
+[[menu.main]] # Menu Sobre el OCS
     identifier="about"
     name      = "Sobre el OCS"
     url       = "/about/"
@@ -53,12 +53,6 @@ paginate = 10
     parent     = "menu.resources"    
     post       = 1    
     
-[[menu.main]] ### subsection  
-    name       = "2 Columns"
-    url        = ""
-    weight     = 1
-    parent     = "section.publicaciones"
-
 [[menu.main]] ## section enlaces
     identifier = "section.links"
     parent = "menu.resources"
@@ -93,8 +87,6 @@ paginate = 10
     url  = "/contact/"
     weight = 6  
     
-    
-
 # Top bar social links menu
 
 [[menu.topbar]]
@@ -192,7 +184,7 @@ paginate = 10
 [params.widgets]
     categories = true
     tags = true
-    search = false
+    search = true
 
 [params.carousel]
     enable = true
@@ -201,7 +193,7 @@ paginate = 10
     # For more informtion take a look at the README.
 
 [params.test]
-    enable = true
+    enable = false
     title = "Observatorio de Cohesión Social"
     subtitle = "El Observatorio de Cohesión Social es una inciativa del Centro de Estudios de Conflicto y Cohesión Social"
 
