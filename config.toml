@@ -28,16 +28,22 @@ paginate = 10
     weight = 1
 
 [[menu.main]] # Menu Noticia
+    identifier="about"
+    name      = "Sobre el OCS"
+    url       = "/about/"
+    weight    = 2  
+     
+[[menu.main]] # Menu Noticia
     identifier="blog"
-    name = "Noticias"
-    url  = "/blog/"
-    weight = 2
+    name      = "Noticias"
+    url       = "/blog/"
+    weight    = 3
 
 [[menu.main]] # Menu Recursos
     name       = "Recursos"
     identifier = "menu.resources"
     url        = ""
-    weight     = 3
+    weight     = 4
     
 [[menu.main]] ## section publicaciones
     name       = "Publicaciones"
@@ -65,7 +71,7 @@ paginate = 10
     identifier = "app"
     name = "Visualización"
     url  = ""
-    weight = 4
+    weight = 5
     
 [[menu.main]] # Submenu: shiny app
     identifier = "app.shiny" 
@@ -135,7 +141,7 @@ paginate = 10
     longitude = "-77.028333"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "blue"
+    style = "ocs"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -154,7 +160,7 @@ paginate = 10
     contact_form_ajax = false
 
     about_us = "<p>Observatorio de Cohesión Social, COES</p>"
-    copyright = "Copyright (c) 2015 - 2020, Observatorio de Cohesión Social; todos los derechos reservados."
+    copyright = "Copyright (c) 2015 - 2021, Observatorio de Cohesión Social; todos los derechos reservados."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -204,7 +210,7 @@ paginate = 10
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
-
+ 
 [params.testimonials]
     enable = true
     # All testimonials are defined in their own files. You can find example items

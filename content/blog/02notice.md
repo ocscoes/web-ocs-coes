@@ -1,18 +1,18 @@
 ---
 author: Observatorio de Cohesión Social
-banner: img/banners/banner-2.png
+banner: img/banners/banner-3.jpg
 categories:
 - prensa
-date: "2020-11-10T13:50:46+02:00"
+date: "2021-09-29T13:50:46+02:00"
 description: 
 tags:
 - lanzamiento
 - cohesion social
 - visualizador
-title: Lanzamiento Observatorio Cohesión Social
+title: Participación en Conferencia Internacional
 ---
 
-# Lanzamiento Observatorio Cohesión Social 
+# Conferencia Internacional Cohesive Societies
 
 En el 3° taller CEPAL-COES *¿Cómo se define la cohesión y cómo sepuede medir?* realizada el miércoles 11 de noviembre a las 9:30 horas se presentó el Centro de Cohesión Social con su visualizador de datos nuevo y su sitio web. 
 
