@@ -3,7 +3,7 @@ author: Observatorio de Cohesión Social
 banner: img/banners/banner-3.jpg
 categories:
 - prensa
-date: "2021-09-29T13:50:46+02:00"
+date: "2021-09-30T13:50:46+02:00"
 description: 
 tags:
 - lanzamiento
@@ -12,18 +12,19 @@ tags:
 title: Participación en Conferencia Internacional
 ---
 
-# Conferencia Internacional Cohesive Societies
+# Participación en Conferencia Internacional
 
-En el 3° taller CEPAL-COES *¿Cómo se define la cohesión y cómo sepuede medir?* realizada el miércoles 11 de noviembre a las 9:30 horas se presentó el Centro de Cohesión Social con su visualizador de datos nuevo y su sitio web. 
+El 30 de septiembre de 2021, en el contexto de la la tercera conferencia de la Academy of Sociology de Alemania, titulada "Cohesive Societies? Analytical-empirical Perspectives", [Juan Carlos Castillo (COES, UChile)](https://coes.cl/integrantes/juan-carlos-castillo/), investigador y coordinador del Observatorio de Cohesión Social, junto con Kevin Carrasco (UChile) e [Ignacio Cáceres (COES, PUC)](https://coes.cl/integrantes/ignacio-caceres/) presentaron su trabajo en torno a la revisión de casos a nivel internacional con el objetivo de sistematizar cómo ha sido conceptualizada y medida la cohesión social en estudios comparados internacionales. Los puntos tratados fueron los siguientes:
 
-La actividad consistió en la presentación de dos iniciativas
+1. Identificación de estudios
+2. Descripción de dimensiones
+3. Identificar puntos en común
+4. Una propuesta minimalista
 
-- Presentación "Hacia un nuevo concepto de cohesión social: revisión histórica y elementos centrales" por Carlos Maldonado y María Luisa Marnho, de CEPAL.
-
-- Presentación del "Observatorio de Cohesión Social" del Centro de Estudios de Conflicto y Cohesión Social (COES),  por el investigador principal [Juan Carlos Castillo](https://juancarloscastillo.github.io/jc-castillo/).
+Al respecto, el trabajo busca proponer una manera minimalista y precisa de medir cohesión social, lo cual a su ha sido uno de los recientes esfuerzos que se han desarrollado desde el Observatorio de Cohesión Social.
 
 
-Como señaló en académico, el **Observatorio de Cohesión Social** cuenta con un visualizador de indicadores de cohesión social para América Latina, a partir de Latin American Opinion Public (LAPOP).
+¿Deseas ver la presentación? Puedes verla aquí:
 
-¿Quiéres ver nuestro visualizador? Presiona [click aqui](/app/)
+> Castillo, JC., Carrasco, K. & Cáceres, I. (2021, septiembre). [_Concepts and measurement of social cohesion in international perspective._](https://ocscoes.github.io/presentaciones/presentation-cohesive-societies.html#1). Third Academy of Sociology Conference: Cohesive Societies? Analytical-empirical Perspectives, Germany.
 

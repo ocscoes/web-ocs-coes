@@ -9,7 +9,7 @@ tags:
 - lanzamiento
 - cohesion social
 - visualizador
-title: Lanzamiento Observatorio Cohesión Social
+title: "Lanzamiento Observatorio Cohesión Social"
 ---
 
 # Lanzamiento Observatorio Cohesión Social 

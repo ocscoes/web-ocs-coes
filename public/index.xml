@@ -6,20 +6,18 @@
     <description>Recent content on Observatorio de Cohesión Social</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Wed, 29 Sep 2021 13:50:46 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 30 Sep 2021 13:50:46 +0200</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Participación en Conferencia Internacional</title>
-      <link>/blog/2021/09/29/02notice/</link>
-      <pubDate>Wed, 29 Sep 2021 13:50:46 +0200</pubDate>
+      <link>/blog/2021/09/30/02notice/</link>
+      <pubDate>Thu, 30 Sep 2021 13:50:46 +0200</pubDate>
       
-      <guid>/blog/2021/09/29/02notice/</guid>
-      <description>Conferencia Internacional Cohesive Societies En el 3° taller CEPAL-COES ¿Cómo se define la cohesión y cómo sepuede medir? realizada el miércoles 11 de noviembre a las 9:30 horas se presentó el Centro de Cohesión Social con su visualizador de datos nuevo y su sitio web.
-La actividad consistió en la presentación de dos iniciativas
-  Presentación &amp;ldquo;Hacia un nuevo concepto de cohesión social: revisión histórica y elementos centrales&amp;rdquo; por Carlos Maldonado y María Luisa Marnho, de CEPAL.</description>
+      <guid>/blog/2021/09/30/02notice/</guid>
+      <description>Participación en Conferencia Internacional El 30 de septiembre de 2021, en el contexto de la la tercera conferencia de la Academy of Sociology de Alemania, titulada &amp;ldquo;Cohesive Societies? Analytical-empirical Perspectives&amp;rdquo;, Juan Carlos Castillo (COES, UChile), investigador y coordinador del Observatorio de Cohesión Social, junto con Kevin Carrasco (UChile) e Ignacio Cáceres (COES, PUC) presentaron su trabajo en torno a la revisión de casos a nivel internacional con el objetivo de sistematizar cómo ha sido conceptualizada y medida la cohesión social en estudios comparados internacionales.</description>
     </item>
     
     <item>
@@ -89,8 +87,12 @@ En el siguiente formulario puedes contactarte con nosotros, intentaremos contest
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/links/</guid>
-      <description>NacionalInternacionalRecursosvisualizaciónrepositorios de datosAquí van los enlaces
-</description>
+      <description>NacionalConsejo Asesor para la Cohesión Social, Ministerio de Desarrollo Social y Familia.
+Repositorio de Datos Abiertos, Centro de Estudios de Conflicto y Cohesión Social.
+InternacionalCEPAL, Cohesión social en América Latina y el Caribe : una revisión de conceptos, marcos de referencia e indicadores
+Social Cohesion Hub:
+Scanlon Foundation Research Institute:
+Mapping Social CohesionA quién seguir:Jan Germen Janmaat, UCL Institute of Education.</description>
     </item>
     
     <item>
@@ -99,8 +101,9 @@ En el siguiente formulario puedes contactarte con nosotros, intentaremos contest
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/pubs/</guid>
-      <description>Documentos de trabajoArtículosAquí van los enlaces
-</description>
+      <description>Documentos de trabajoCastillo, JC., Olivos, F. &amp;amp; Iturra, J. (2021). Conceptos y medición de cohesión social en proyectos internacionales. Serie Documentos de Trabajo COES, Documento de trabajo N°47, pp. 1-37.
+Castillo, J., Iturra, J. Carrasco, K. (2021). Hacia una propuesta de medición de Cohesión Social con ELSOC. Disponible en https://ocscoes.github.io/cohesion-elsoc/ (Versión preliminar)
+PresentacionesCastillo, JC., Carrasco, K. &amp;amp; Cáceres, I. (2021, septiembre).</description>
     </item>
     
     <item>
@@ -109,9 +112,8 @@ En el siguiente formulario puedes contactarte con nosotros, intentaremos contest
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>ObjetivosCohesión social en AL
-Medición…
-</description>
+      <description>En un primer momento, el Observatorio de Cohesión Social (OCS) estuvo centrado en el desarrollo de un portal de visualización para el análisis comparativo de distintos indicadores asociados a la cohesión social en América Latina. Para ello se han empleado datos cross-seccionales de la encuesta LAPOP (Latin American Public Opinion Project) para el periodo de 2004 a 2018.
+Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre cohesión social del centro a través de la revisión sistemática de la literatura en el tema.</description>
     </item>
     
   </channel>

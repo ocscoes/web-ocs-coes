@@ -9,16 +9,30 @@ title: Enlaces
 
 # Nacional
 
+* [Consejo Asesor para la Cohesión Social, Ministerio de Desarrollo Social y Familia.](http://www.desarrollosocialyfamilia.gob.cl/informacion-social/cohesion-social){target="_blank"}
+
+* [Repositorio de Datos Abiertos, Centro de Estudios de Conflicto y Cohesión Social.](https://dataverse.harvard.edu/dataverse/coes_data_repository){target="_blank"}
+
+ 
+
 # Internacional
 
-## Recursos 
 
-* visualización
-* repositorios de datos
+* [CEPAL, Cohesión social en América Latina y el Caribe : una revisión de conceptos, marcos de referencia e indicadores](https://www.cepal.org/es/publicaciones/2978-cohesion-social-america-latina-caribe-revision-conceptos-marcos-referencia)
+
+* [Social Cohesion Hub](https://www.socialcohesion.info){target="_blank"}:
+
+* [Scanlon Foundation Research Institute](https://scanloninstitute.org.au/){target="_blank"}:
+  * [Mapping Social Cohesion](https://scanloninstitute.org.au/report2020){target="_blank"}
+ 
+
+
+## A quién seguir: 
+
+* [Jan Germen Janmaat](https://germjanmaat.wordpress.com/), UCL Institute of Education.
+
+  * [Regimes of Social Cohesion: Societies and the Crisis of Globalisation (2011) ](https://www.researchgate.net/publication/263917454_Regimes_of_Social_Cohesion_Societies_and_the_Crisis_of_Globalisation){target="_blank"}
 
 
 
 
----
-
-> Aquí van los enlaces

@@ -193,8 +193,8 @@ paginate = 10
     # For more informtion take a look at the README.
 
 [params.test]
-    enable = false
-    title = "Observatorio de Cohesión Social"
+    enable = true
+    title = "" 
     subtitle = "El Observatorio de Cohesión Social es una inciativa del Centro de Estudios de Conflicto y Cohesión Social"
 
 [params.features]
