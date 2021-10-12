@@ -29,10 +29,8 @@ p {
 }
 
 
-* { /*estilo de vignetas (*) */ 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+ol ol, ol ul, ul ol, ul ul { /*estilo de vignetas (*) */ 
+    margin-bottom: 0;
     font-family: 'Catamaran';
 }
 
@@ -129,8 +127,7 @@ div.section {
   padding-bottom: 10px;
   vertical-align: middle;
   text-transform: uppercase;
-  letter-spacing: 0.03em; 
-  font-family: Catamaran;
+  letter-spacing: 0.03em;
 }
 .heading h1 i[class^="fa"],
 .heading h2 i[class^="fa"],
@@ -331,11 +328,11 @@ ul.list-style-none {
 .navbar {
   border: none;
 }
-.navbar ul.nav > li > a {
+.navbar ul.nav > li > a { /* titulos de menu */
   text-transform: uppercase;
   text-decoration: underline;
   font-weight: bold;
-  letter-spacing: 0.08em;
+  letter-spacing: 0em;
   border-top: solid 5px transparent;
 }
 .navbar ul.nav > li > a:hover {
