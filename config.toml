@@ -195,7 +195,7 @@ paginate = 10
 [params.test]
     enable = true
     title = "" 
-    subtitle = "El Observatorio de Cohesión Social es una inciativa del Centro de Estudios de Conflicto y Cohesión Social"
+    subtitle = "El **Observatorio de Cohesión Social (OCS)** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)**, desde donde se busca conceptualizar y analizar empíricamente la cohesión social en Chile, como también contribuir al estudio de la cohesión social en perspectiva comparada internacional."
 
 [params.features]
     enable = true
