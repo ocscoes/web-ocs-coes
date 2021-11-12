@@ -200,8 +200,8 @@ paginate = 10
 
 [params.test]
     enable = true
-    title = "" 
-    subtitle = "El **Observatorio de Cohesión Social (OCS)** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)**, desde donde se al estudio de la cohesión social en Chile, como también contribuir al estudio de la cohesión social en perspectiva comparada internacional. En este sentido los esfuerzos del observatorio han estado orientados en dos ámbitos de trabajo:  <br> <br> <b>1. Reportes</b> a través de los cuales se han revisado las experiencias internacionales en el estudio de la cohesión social, como también su conceptualización y métodos de medición <br><br> <b>2. Análisis</b> de datos sobre cohesión social, dentro de lo cual destaca una propuesta para la medición empírica en Chile y América Latina con perspectiva comparada internacional."
+    title = "Sobre el OCS" 
+    subtitle = "El **Observatorio de Cohesión Social (OCS)** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)**, desde donde se busca contribuir al estudio de la cohesión social en Chile, como también en perspectiva comparada internacional. En este sentido, los esfuerzos del observatorio han estado orientados en dos ámbitos de trabajo:  <br> <br> <b>1. Reportes</b> a través de los cuales se han revisado las experiencias internacionales en el estudio de la cohesión social, como también su conceptualización y métodos de medición <br><br> <b>2. Análisis</b> de datos sobre cohesión social, dentro de lo cual destaca una propuesta para la medición empírica en Chile y América Latina, con perspectiva comparada internacional."
     
     
 [params.features]
