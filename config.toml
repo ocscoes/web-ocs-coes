@@ -27,23 +27,23 @@ paginate = 10
     url  = "/"
     weight = 1
 
-[[menu.main]] # Menu Sobre el OCS
-    identifier="about"
-    name      = "Sobre el OCS"
-    url       = "/about/"
-    weight    = 2  
+#[[menu.main]] # Menu Sobre el OCS
+#    identifier="about"
+#    name      = "Sobre el OCS"
+#    url       = "/about/"
+#    weight    = 2  
      
-[[menu.main]] # Menu Noticia
-    identifier="blog"
-    name      = "Noticias"
-    url       = "/blog/"
-    weight    = 3
+#[[menu.main]] # Menu Noticia
+#    identifier="blog"
+#    name      = "Noticias"
+#    url       = "/blog/"
+#    weight    = 2
 
 [[menu.main]] # Menu Recursos
-    name       = "Recursos"
+    name       = "Reportes"
     identifier = "menu.resources"
     url        = ""
-    weight     = 4
+    weight     = 3
     
 [[menu.main]] ## section publicaciones
     name       = "Publicaciones"
@@ -53,35 +53,41 @@ paginate = 10
     parent     = "menu.resources"    
     post       = 1    
     
-[[menu.main]] ## section enlaces
-    identifier = "section.links"
-    parent = "menu.resources"
-    name = "Enlaces"
-    url  = "/links/"
-    weight = 3
-    
 
-[[menu.main]] # Menu Visualizacion
-    identifier = "app"
-    name = "Visualización"
+[[menu.main]] # Menu Analisis
+    identifier = "analisis"
+    name = "Analisis"
     url  = ""
-    weight = 5
+    weight = 4
     
-[[menu.main]] # Submenu: shiny app
-    identifier = "app.shiny" 
-    parent     = "app"
-    name = "Aplicación"
+[[menu.main]] # Submenu: shiny app - LAPOP
+    identifier = "app.lapop" 
+    parent     = "analisis"
+    name = "América Latina"
     url  = "/app/"
     weight = 1    
 
-[[menu.main]] # Submenu: documentacion shiny
-    identifier = "app.docu"
-    parent     = "app"
-    name = "Documentación"
-    url  = "/doc2/"
-    weight = 1
+#[[menu.main]] # Submenu: documentacion shiny
+#    identifier = "app.docu"
+#    parent     = "analisis"
+#    name = "Documentación"
+#    url  = "/doc2/"
+#    weight = 1
+  
+[[menu.main]] # Submenu: shiny app - LAPOP
+    identifier = "app.chile" 
+    parent     = "analisis"
+    name = "Chile"
+    url  = "/app-elsoc/"
+    weight = 1      
+    
+[[menu.main]] # Menu enlaces
+    identifier = "section.links"
+    name = "Enlaces"
+    url  = "/links/"
+    weight = 5    
 
-[[menu.main]]
+[[menu.main]] # Menu enlaces
     identifier = "contact"
     name = "Contacto"
     url  = "/contact/"
@@ -195,10 +201,12 @@ paginate = 10
 [params.test]
     enable = true
     title = "" 
-    subtitle = "El **Observatorio de Cohesión Social (OCS)** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)**, desde donde se busca conceptualizar y analizar empíricamente la cohesión social en Chile, como también contribuir al estudio de la cohesión social en perspectiva comparada internacional."
-
+    subtitle = "El **Observatorio de Cohesión Social (OCS)** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)**, desde donde se al estudio de la cohesión social en Chile, como también contribuir al estudio de la cohesión social en perspectiva comparada internacional. En este sentido los esfuerzos del observatorio han estado orientados en dos ámbitos de trabajo:  <br> <br> <b>1. Reportes</b> a través de los cuales se han revisado las experiencias internacionales en el estudio de la cohesión social, como también su conceptualización y métodos de medición <br><br> <b>2. Análisis</b> de datos sobre cohesión social, dentro de lo cual destaca una propuesta para la medición empírica en Chile y América Latina con perspectiva comparada internacional."
+    
+    
 [params.features]
     enable = true
+    cols= 2
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
@@ -212,7 +220,7 @@ paginate = 10
     subtitle = ""
 
 [params.see_more]
-    enable = true
+    enable = false
     icon = "fas fa-chart-line"
     title = "Indicadores Comparativos de Cohesión Social para América Latina"
     subtitle = ""
@@ -228,6 +236,6 @@ paginate = 10
     subtitle = ""
 
 [params.recent_posts]
-    enable = true
+    enable = false
     title = "Noticias"
     subtitle = "En el siguiente apartado se pueden ver las noticias que han aparecido sobre el Observatorio de Cohesión Social"

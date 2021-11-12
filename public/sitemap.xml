@@ -53,11 +53,15 @@
   </url>
   
   <url>
+    <loc>/test/</loc>
+  </url>
+  
+  <url>
     <loc>/app/</loc>
   </url>
   
   <url>
-    <loc>/test/</loc>
+    <loc>/app-elsoc/</loc>
   </url>
   
   <url>

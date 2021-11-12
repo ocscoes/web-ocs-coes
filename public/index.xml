@@ -33,23 +33,34 @@ La actividad consistió en la presentación de dos iniciativas
     
     <item>
       <title></title>
-      <link>/app/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/app/</guid>
-      <description> ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
-  En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos
- </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/test/</guid>
       <description> En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos
  </description>
+    </item>
+    
+    <item>
+      <title>Cohesión Social en América Latina</title>
+      <link>/app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/app/</guid>
+      <description>VisualizadorDocumentación📌 Si deseas revisar los datos y la documentación de la aplicación puedes hacer CLICK AQUI 
+
+¿Quieres comentar o tienes alguna duda?Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
+En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos</description>
+    </item>
+    
+    <item>
+      <title>Cohesión Social en Chile</title>
+      <link>/app-elsoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/app-elsoc/</guid>
+      <description>En desarrolloProximamente: Visualización del Análisis Longitudinal usando ELSOC
+</description>
     </item>
     
     <item>

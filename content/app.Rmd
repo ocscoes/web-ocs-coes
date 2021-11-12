@@ -1,0 +1,39 @@
+---
+description: Indicadores Comparativos de Cohesión Social para América Latina
+keywords:
+- shiny
+- indicadores
+- lapop
+- latinoamerica
+title: Cohesión Social en América Latina
+---
+
+<div class="heading">
+<h1>Visualizador</h1>
+</div>
+
+<iframe scrolling="yes" frameborder="yes" src="https://juitsa.shinyapps.io/ocs-coes/" class="l-screen-inset shaded" style="
+    width: 1200px;
+    height: 1000px;
+"></iframe>
+
+---
+
+<div class="heading">
+<h1>Documentación</h1>
+</div>
+
+📌 Si deseas revisar los **datos y la documentación** de la aplicación puedes hacer <a class = "btn btn-template-main" href="../doc2/index.html" target="_blank"> CLICK AQUI  </a>
+
+<br>
+
+### ¿Quieres comentar o tienes alguna duda?
+
+Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes [contactarnos](/contact/)
+
+<div id="disqus_thread"></div>
+
+---
+
+> En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en [contactarnos](/contact/)
+

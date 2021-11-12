@@ -19,7 +19,7 @@
 
 p {
   margin: 0 0 10px;
-  font-size: normal;
+  font-size: 20px;
   font-family:  Catamaran; /*Cambia la fuente de los párrafos*/ 
 }
 
@@ -29,9 +29,11 @@ p {
 }
 
 
-ol ol, ol ul, ul ol, ul ul { /*estilo de vignetas (*) */ 
+ol ol, ol ul, ul ol, ul ul, ul li  { /*estilo de vignetas (*) */ 
     margin-bottom: 0;
     font-family: 'Catamaran';
+    font-size: 20px;
+    text-align: left;
 }
 
 .center-block {
@@ -97,10 +99,12 @@ button i[class^="fa"] {
 @media (max-width: 991px) {
   .text-center-sm {
     text-align: center;
+    
   }
 }
 p.lead {
   margin-bottom: 40px;
+  text-align: left;
 }
 section,
 div.section {
@@ -1804,6 +1808,15 @@ fieldset[disabled] .btn-template-primary.active {
 .bar.background-white {
   background: #fff;
 }
+
+.bar.background-ocs {
+  background: #fff;
+}
+
+.bar.background-white {
+  background: #fff;
+}
+
 .bar.background-image-fixed-1 {
   background: url('../img/fixed-background-1.jpg') center top no-repeat;
   background-attachment: fixed;
@@ -3005,6 +3018,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
+  font-size: 18px; /*modificado */ 
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu > li > a,
@@ -3610,4 +3624,42 @@ a.list-group-item.active > .badge,
 .yamm .dropdown.yamm-fw .dropdown-menu {
   left: 15px;
   right: 15px;
+}
+
+
+/* imagenes circulares
+<div class="image-cropper">
+  <img src="/avatar.jpg" alt="avatar" class="profile-pic">
+</div>
+*/
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-right: inherit; 
+  height: 100%;
+  width: auto;
+}
+
+/* img hoover from bw to color */
+.color img{
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-webkit-transition: all 1s ease;
+}
+
+.color img:hover{
+filter: grayscale(0%);
+filter: gray;
+-webkit-filter: grayscale(0%);
+filter: none;
+transition: 1s ease;
 }

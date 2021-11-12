@@ -1,5 +1,5 @@
 weight: 1
-name: "Publicaciones"
+name: "Reportes"
 icon: "fas fa-book"
 url: "/pubs/"
 description: "Documentos de trabajo y otras publicaciones del observatorio"
