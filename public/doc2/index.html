@@ -18,7 +18,7 @@
   
   <meta name="description" content="Documentación de Visualizador de Indicadores Comparativos de Cohesión Social para América Latina">
 
-  <meta name="generator" content="Hugo 0.79.1" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -32,7 +32,7 @@
 
   
   
-    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+    <link href="/css/style.ocs.css" rel="stylesheet" id="theme-stylesheet">
   
 
   
@@ -55,7 +55,7 @@
   <link href="/css/owl.theme.css" rel="stylesheet">
 
   
-  <link rel="alternate" href="https://ocs-coes.netlify.app/index.xml" type="application/rss+xml" title="Observatorio de Cohesión Social">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Observatorio de Cohesión Social">
 
   
   
@@ -68,9 +68,9 @@
   <meta property="og:site_name" content="Observatorio de Cohesión Social">
   <meta property="og:title" content="Documentación: fuentes y procesamiento de datos">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ocs-coes.netlify.app/doc2/" />
+  <meta property="og:url" content="/doc2/" />
   <meta property="og:description" content="Documentación de Visualizador de Indicadores Comparativos de Cohesión Social para América Latina">
-  <meta property="og:image" content="https://ocs-coes.netlify.app/img/sharing-default.png">
+  <meta property="og:image" content="/img/sharing-default.png">
   <meta property="og:image:type" content="image/png">
   
   
@@ -87,7 +87,7 @@
   <meta name="twitter:site" content="@CentroCOES">
   <meta name="twitter:title" content="Documentación: fuentes y procesamiento de datos">
   
-  <meta name="twitter:image" content="https://ocs-coes.netlify.app/img/sharing-default.png">
+  <meta name="twitter:image" content="/img/sharing-default.png">
   
   <meta name="twitter:description" content="Documentación de Visualizador de Indicadores Comparativos de Cohesión Social para América Latina">
   
@@ -115,7 +115,7 @@
             
             <a href="https://github.com/ocscoes/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-github'></i></a>
             
-            <a href="http://facebook.com/coes2020" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
+            <a href="https://www.facebook.com/CentroCOES" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
             
             <a href="https://twitter.com/CentroCOES" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
             
@@ -162,21 +162,33 @@
                   
                   <li class="dropdown">
                     
-                    <a href="/app/">Visualizador</a>
-                    
-                  </li>
-                  
-                  
-                  <li class="dropdown active">
-                    
-                    <a href="/doc2/">Documentación</a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="/pubs/">Publicaciones</a></li>
+                      
+                    </ul>
                     
                   </li>
                   
                   
                   <li class="dropdown">
                     
-                    <a href="/blog/">Noticias</a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analisis <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="/app/">América Latina</a></li>
+                      
+                        <li><a href="/app-elsoc/">Chile</a></li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/links/">Enlaces</a>
                     
                   </li>
                   
@@ -240,7 +252,7 @@
 
 <div id="datos" class="section level2">
 <h2>Datos</h2>
-<p>El Observatorio de Cohesión Social utiliza los datos abiertos disponibles de la encuesta Barómetro de las Américas, del LAPOP (Latin American Public Opinion Project), disponible en <a href="https://www.vanderbilt.edu/lapop/" class="uri">https://www.vanderbilt.edu/lapop/</a>. En general esta encuesta es conocida como “Encuesta LAPOP”, y se define como “the only survey of democratic public opinion and behavior that covers the Americas (North, Central, South and the Caribbean). It is an effort by LAPOP to measure democratic values and behaviors in the Americas using national probability samples of voting-age adults”. Esta encuesta es bianual, comenzando el año 2004 con 11 países y en su ola 2018 abarca 29 países.</p>
+<p>El Observatorio de Cohesión Social utiliza los datos abiertos disponibles de la encuesta Barómetro de las Américas, del LAPOP (Latin American Public Opinion Project), disponible en <a href="https://www.vanderbilt.edu/lapop/" class="uri">https://www.vanderbilt.edu/lapop/</a>. En general esta encuesta es conocida como “Encuesta LAPOP,” y se define como “the only survey of democratic public opinion and behavior that covers the Americas (North, Central, South and the Caribbean). It is an effort by LAPOP to measure democratic values and behaviors in the Americas using national probability samples of voting-age adults.” Esta encuesta es bianual, comenzando el año 2004 con 11 países y en su ola 2018 abarca 29 países.</p>
 <p>Además de la encuesta LAPOP se incorporan algunos indicadores económicos de países para el análisis obtenidos desde el Banco Mundial (World Bank, 2020) y la base de datos SWIID (Solt, 2020).</p>
 <p>El número de casos según país y ola se presenta en la siguiente tabla.</p>
 <table class="table table-striped table-bordered" style="font-size: 14px; margin-left: auto; margin-right: auto;">
@@ -279,7 +291,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Mexico
 </td>
 <td style="text-align:right;">
@@ -308,7 +320,7 @@ Mexico
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Guatemala
 </td>
 <td style="text-align:right;">
@@ -337,7 +349,7 @@ Guatemala
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 El Salvador
 </td>
 <td style="text-align:right;">
@@ -366,7 +378,7 @@ El Salvador
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Honduras
 </td>
 <td style="text-align:right;">
@@ -395,7 +407,7 @@ Honduras
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Nicaragua
 </td>
 <td style="text-align:right;">
@@ -424,7 +436,7 @@ Nicaragua
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Costa Rica
 </td>
 <td style="text-align:right;">
@@ -453,7 +465,7 @@ Costa Rica
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Panama
 </td>
 <td style="text-align:right;">
@@ -482,7 +494,7 @@ Panama
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Colombia
 </td>
 <td style="text-align:right;">
@@ -511,7 +523,7 @@ Colombia
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Ecuador
 </td>
 <td style="text-align:right;">
@@ -540,7 +552,7 @@ Ecuador
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Bolivia
 </td>
 <td style="text-align:right;">
@@ -569,7 +581,7 @@ Bolivia
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Peru
 </td>
 <td style="text-align:right;">
@@ -598,7 +610,7 @@ Peru
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Paraguay
 </td>
 <td style="text-align:right;">
@@ -627,7 +639,7 @@ Paraguay
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Chile
 </td>
 <td style="text-align:right;">
@@ -656,7 +668,7 @@ Chile
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Uruguay
 </td>
 <td style="text-align:right;">
@@ -685,7 +697,7 @@ Uruguay
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Brasil
 </td>
 <td style="text-align:right;">
@@ -714,7 +726,7 @@ Brasil
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Venezuela
 </td>
 <td style="text-align:right;">
@@ -743,7 +755,7 @@ Venezuela
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Argentina
 </td>
 <td style="text-align:right;">
@@ -772,7 +784,7 @@ Argentina
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Republica Dominicana
 </td>
 <td style="text-align:right;">
@@ -801,7 +813,7 @@ Republica Dominicana
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Haiti
 </td>
 <td style="text-align:right;">
@@ -830,7 +842,7 @@ Haiti
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Jamaica
 </td>
 <td style="text-align:right;">
@@ -859,7 +871,7 @@ Jamaica
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Guyana
 </td>
 <td style="text-align:right;">
@@ -888,7 +900,7 @@ Guyana
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Trinidad y Tobago
 </td>
 <td style="text-align:right;">
@@ -917,7 +929,7 @@ Trinidad y Tobago
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Belice
 </td>
 <td style="text-align:right;">
@@ -946,7 +958,7 @@ Belice
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Estados Unidos
 </td>
 <td style="text-align:right;">
@@ -975,7 +987,7 @@ Estados Unidos
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.5cm; ">
+<td style="text-align:left;width: 5cm; ">
 Canada
 </td>
 <td style="text-align:right;">
@@ -1010,17 +1022,19 @@ Canada
 <h2>Repositorio</h2>
 <p>El código de generación de este sitio y del visualizador se encuentra abierto en el repositorio <a href="https://github.com/ocscoes/OCS-COES">https://github.com/ocscoes/OCS-COES</a>. El repositorio esta ordenado en modo general en 3 carpetas,</p>
 <ul>
-<li>aplicación Shiny que permite la visualización de los datos (app),</li>
-<li>datos utilizados (input). Cabe destacar, que siguiendo las políticas de resguardo de la información de LAPOP no se subirá la base de datos original sino solamente los códigos de procesamiento.</li>
-<li>códigos de procesamiento de los datos (production).</li>
+<li>Aplicación Shiny que permite la visualización de los datos (app),</li>
+<li>Datos utilizados (input). Cabe destacar, que siguiendo las políticas de resguardo de la información de LAPOP no se subirá la base de datos original sino solamente los códigos de procesamiento.</li>
+<li>Códigos de procesamiento de los datos (production).</li>
 </ul>
 <p>La estructura del repositorio sigue la propuesta del protocolo <a href="https://juancarloscastillo.github.io/ipo/index_es.html">IPO</a>.</p>
 </div>
 <div id="variables" class="section level2">
 <h2>Variables</h2>
 <p>La selección de variables de la encuesta LAPOP se realizó a partir de una perspectiva de cohesión social que considera dos dimensiones:</p>
-<p>vertical, referida a la relación con el sistema político en temas como confianza en instituciones, satisfacción con la democracia.</p>
-<p>horizontal, que considera fundamentalmente las relaciones con los demás.</p>
+<ul>
+<li><p><strong>Vertical</strong>, referida a la relación con el sistema político en temas como confianza en instituciones, satisfacción con la democracia.</p></li>
+<li><p><strong>Horizontal</strong>, que considera fundamentalmente las relaciones con los demás.</p></li>
+</ul>
 <p>En el procesamiento de los datos se calculó el promedio por país y por ola de la encuesta para cada uno de los indicadores seleccionados. Adicionalmente, se generaron promedios de las variables por año para tener como referente de comparación en los análisis nacionales. Junto a ello se incorporaron a la base de datos dos variables macroeconómicas, el Producto Interno Bruto y el índice de desigualdad GINI que aparecen como posibles opciones de selección en la pestaña de análisis bivariado.</p>
 <p>El listado de variables se resume en la siguiente tabla:</p>
 <table style="border-collapse:collapse; border:none;">
@@ -1039,6 +1053,9 @@ Label
 </th>
 <th style="border-bottom:double; font-style:italic; font-weight:normal; padding:0.2cm; text-align:left; vertical-align:top;">
 Value Labels
+</th>
+<th style="border-bottom:double; font-style:italic; font-weight:normal; padding:0.2cm; text-align:left; vertical-align:top;">
+%
 </th>
 </tr>
 <tr>
@@ -1059,6 +1076,9 @@ confiable<br>Algo
 confiable<br>Muy
 confiable
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+9.75<br>26.30<br>41.35<br>22.60
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
@@ -1072,6 +1092,9 @@ Participar en Protesta: ¿En los últimos 12 meses<br>ha participado en una mani
 </td>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
 Sí<br>No
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+8.52<br>91.48
 </td>
 </tr>
 <tr>
@@ -1087,6 +1110,9 @@ Confianza en Eficacia Sistema Judicial : Si usted<br>fuera víctima de un robo o
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
 Nada<br>Poco<br>Algo<br>Mucho
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+28.33<br>31.76<br>24.82<br>15.09
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
@@ -1100,6 +1126,9 @@ Respeto por las Instituciones: ¿Hasta qué punto<br>tiene usted respeto por las
 </td>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+0.00<br>10.63<br>17.59<br>24.88<br>26.74<br>20.17<br>0.00
 </td>
 </tr>
 <tr>
@@ -1116,6 +1145,9 @@ Protección Derechos Básicos
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+0.00<br>14.92<br>22.82<br>27.30<br>23.16<br>11.79<br>0.00
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
@@ -1129,6 +1161,9 @@ Orgullo con el Sistema Político: ¿Hasta qué punto<br>se siente usted orgullos
 </td>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+0.00<br>13.44<br>19.54<br>25.67<br>24.68<br>16.66<br>0.00
 </td>
 </tr>
 <tr>
@@ -1144,6 +1179,9 @@ Confianza en Sistema Judicial: ¿Hasta qué punto<br>tiene confianza en el siste
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+0.00<br>15.14<br>22.40<br>26.38<br>23.30<br>12.79<br>0.00
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
@@ -1157,6 +1195,9 @@ Confianza en Fuerzas Armadas: ¿Hasta qué punto<br>tiene confianza usted en las
 </td>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+0.00<br>9.36<br>15.08<br>22.71<br>27.94<br>24.91<br>0.00
 </td>
 </tr>
 <tr>
@@ -1172,6 +1213,9 @@ Confianza en Iglesia Católica: ¿Hasta qué punto<br>tiene confianza usted en l
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+0.00<br>10.67<br>14.24<br>20.44<br>26.34<br>28.32<br>0.00
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
@@ -1185,6 +1229,9 @@ Confianza en Iglesias Evangélicas : ¿Hasta qué<br>punto tiene confianza usted
 </td>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+0.00<br>15.93<br>18.82<br>22.73<br>23.99<br>18.54<br>0.00
 </td>
 </tr>
 <tr>
@@ -1200,6 +1247,9 @@ Confianza en Partidos Políticos: ¿Hasta qué punto<br>tiene confianza usted en
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+0.00<br>21.90<br>25.83<br>26.29<br>18.25<br>7.73<br>0.00
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
@@ -1213,6 +1263,9 @@ Confianza en Ejecutivo: ¿Hasta qué punto tiene<br>confianza usted en el presid
 </td>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+0.00<br>13.85<br>17.83<br>24.16<br>24.82<br>19.34<br>0.00
 </td>
 </tr>
 <tr>
@@ -1229,6 +1282,9 @@ gobierno?
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+0.00<br>17.38<br>22.81<br>24.93<br>21.65<br>13.23<br>0.00
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
@@ -1243,6 +1299,9 @@ Evaluación del Desempeño del Gobierno en Seguridad<br>Ciudadana: ¿Hasta qué 
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+0.00<br>15.53<br>22.72<br>26.40<br>22.55<br>12.81<br>0.00
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
@@ -1256,6 +1315,9 @@ Evaluación del Desempeño del Gobierno Manejando<br>Economía: ¿Hasta qué pun
 </td>
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+0.00<br>14.95<br>22.34<br>25.96<br>23.07<br>13.68<br>0.00
 </td>
 </tr>
 <tr>
@@ -1272,6 +1334,9 @@ Políticas redistributivas : El Estado debe<br>implementar políticas firmes par
 Muy en
 Desacuerdo<br>2<br>3<br>4<br>5<br>6<br>Muy de
 acuerdo
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+0.00<br>6.10<br>11.31<br>21.50<br>28.82<br>32.26<br>0.00
 </td>
 </tr>
 <tr>
@@ -1290,6 +1355,9 @@ Muy en
 Desacuerdo<br>2<br>3<br>4<br>5<br>6<br>Muy de
 acuerdo
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+0.00<br>6.14<br>13.21<br>24.80<br>28.92<br>26.93<br>0.00
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
@@ -1306,6 +1374,9 @@ Muy en
 Desacuerdo<br>2<br>3<br>4<br>5<br>6<br>Muy de
 acuerdo
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+0.00<br>19.59<br>22.28<br>24.92<br>21.08<br>12.13<br>0.00
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
@@ -1321,6 +1392,9 @@ Satisfacción con la Democracia: En general, ¿usted<br>diría que está muy sat
 Muy
 insatisfecho<br>Insatisfecho<br>Satisfecho<br>Muy
 satisfecho
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+9.67<br>39.74<br>44.55<br>6.03
 </td>
 </tr>
 <tr>
@@ -1340,6 +1414,9 @@ generalizada<br>Algo
 generalizada<br>Muy
 generalizada
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+4.66<br>16.18<br>36.00<br>43.16
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
@@ -1353,6 +1430,9 @@ Interés en Política: ¿Qué tanto interés tiene<br>usted en la política: muc
 </td>
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
 Nada<br>Poco<br>Algo<br>Mucho
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+33.29<br>33.42<br>21.90<br>11.38
 </td>
 </tr>
 <tr>
@@ -1368,6 +1448,9 @@ Voto en Últimas Elecciones Presidenciales: ¿Votó<br>usted en las últimas ele
 <td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
 Sí votó<br>No votó
 </td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top; background-color:#eeeeee">
+74.67<br>25.33
+</td>
 </tr>
 <tr>
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
@@ -1382,6 +1465,9 @@ sus ciudadanos?
 </td>
 <td style="padding:0.2cm; text-align:left; vertical-align:top;">
 Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
+</td>
+<td style="padding:0.2cm; text-align:left; vertical-align:top;">
+0.00<br>11.11<br>19.72<br>27.89<br>25.94<br>15.33<br>0.00
 </td>
 </tr>
 </table>
@@ -1430,28 +1516,7 @@ Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
 
         <div class="col-md-4 col-sm-6">
 
-             
-            <h4>Posts recientes</h4>
-
-            <div class="blog-entries">
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="https://ocs-coes.netlify.app/blog/2020/11/10/01notice/">
-                          
-                            <img src="/img/banners/banner-2.png" class="img-responsive" alt="Lanzamiento Observatorio Cohesión Social">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="https://ocs-coes.netlify.app/blog/2020/11/10/01notice/">Lanzamiento Observatorio Cohesión Social</a></h5>
-                    </div>
-                </div>
-                
-            </div>
-
-            <hr class="hidden-md hidden-lg">
-             
+              
 
         </div>
         
@@ -1492,7 +1557,7 @@ Nada<br>2<br>3<br>4<br>5<br>6<br>Mucho
     <div class="container">
         <div class="col-md-12">
             
-            <p class="pull-left">Copyright (c) 2015 - 2020, Observatorio de Cohesión Social; todos los derechos reservados.</p>
+            <p class="pull-left">Copyright (c) 2015 - 2021, Observatorio de Cohesión Social; todos los derechos reservados.</p>
             
             <p class="pull-right">
               Plantilla creada por <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.

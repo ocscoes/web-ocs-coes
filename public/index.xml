@@ -2,17 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Observatorio de Cohesión Social</title>
-    <link>https://ocs-coes.netlify.app/</link>
+    <link>/</link>
     <description>Recent content on Observatorio de Cohesión Social</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Tue, 10 Nov 2020 13:50:46 +0200</lastBuildDate><atom:link href="https://ocs-coes.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Sep 2021 13:50:46 +0200</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Participación en Conferencia Internacional</title>
+      <link>/blog/2021/09/30/02notice/</link>
+      <pubDate>Thu, 30 Sep 2021 13:50:46 +0200</pubDate>
+      
+      <guid>/blog/2021/09/30/02notice/</guid>
+      <description>Participación en Conferencia Internacional El 30 de septiembre de 2021, en el contexto de la tercera conferencia de la Academy of Sociology de Alemania, titulada &amp;ldquo;Cohesive Societies? Analytical-empirical Perspectives&amp;rdquo;, Juan Carlos Castillo (COES, UChile), investigador y coordinador del Observatorio de Cohesión Social, junto con Kevin Carrasco (UChile) e Ignacio Cáceres (COES, PUC) presentaron su trabajo en torno a la revisión de casos a nivel internacional con el objetivo de sistematizar cómo ha sido conceptualizada y medida la cohesión social en estudios comparados internacionales.</description>
+    </item>
+    
     <item>
       <title>Lanzamiento Observatorio Cohesión Social</title>
-      <link>https://ocs-coes.netlify.app/blog/2020/11/10/01notice/</link>
+      <link>/blog/2020/11/10/01notice/</link>
       <pubDate>Tue, 10 Nov 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://ocs-coes.netlify.app/blog/2020/11/10/01notice/</guid>
+      <guid>/blog/2020/11/10/01notice/</guid>
       <description>Lanzamiento Observatorio Cohesión Social En el 3° taller CEPAL-COES ¿Cómo se define la cohesión y cómo sepuede medir? realizada el miércoles 11 de noviembre a las 9:30 horas se presentó el Centro de Cohesión Social con su visualizador de datos nuevo y su sitio web.
 La actividad consistió en la presentación de dos iniciativas
   Presentación &amp;ldquo;Hacia un nuevo concepto de cohesión social: revisión histórica y elementos centrales&amp;rdquo; por Carlos Maldonado y María Luisa Marnho, de CEPAL.</description>
@@ -20,52 +33,95 @@ La actividad consistió en la presentación de dos iniciativas
     
     <item>
       <title></title>
-      <link>https://ocs-coes.netlify.app/app/</link>
+      <link>/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ocs-coes.netlify.app/app/</guid>
-      <description> ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
-  En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos
- </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ocs-coes.netlify.app/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ocs-coes.netlify.app/test/</guid>
+      <guid>/test/</guid>
       <description> En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos
  </description>
     </item>
     
     <item>
-      <title>Contacto</title>
-      <link>https://ocs-coes.netlify.app/contact/</link>
+      <title>Cohesión Social en América Latina</title>
+      <link>/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ocs-coes.netlify.app/contact/</guid>
+      <guid>/app/</guid>
+      <description>VisualizadorDocumentación📌 Si deseas revisar los datos y la documentación de la aplicación puedes hacer CLICK AQUI 
+
+¿Quieres comentar o tienes alguna duda?Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
+En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos</description>
+    </item>
+    
+    <item>
+      <title>Cohesión Social en Chile</title>
+      <link>/app-elsoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/app-elsoc/</guid>
+      <description>En desarrolloProximamente: Visualización del Análisis Longitudinal usando ELSOC
+</description>
+    </item>
+    
+    <item>
+      <title>Contacto</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
       <description>Estamos aquí para ayudarte ¿Quieres saber más sobre el Observatorio de Cohesión Social? ¿Tienes dudas sobre cómo producimos nuestra investigación y datos?
 En el siguiente formulario puedes contactarte con nosotros, intentaremos contestarte lo antes posible</description>
     </item>
     
     <item>
       <title>Documentación</title>
-      <link>https://ocs-coes.netlify.app/doc/</link>
+      <link>/doc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ocs-coes.netlify.app/doc/</guid>
+      <guid>/doc/</guid>
       <description>Título 1 Subtítulo 1 Subtítulo 2 Título   Aquí escribiremos la documentación
  </description>
     </item>
     
     <item>
       <title>Documentación: fuentes y procesamiento de datos</title>
-      <link>https://ocs-coes.netlify.app/doc2/</link>
+      <link>/doc2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ocs-coes.netlify.app/doc2/</guid>
-      <description>DatosEl Observatorio de Cohesión Social utiliza los datos abiertos disponibles de la encuesta Barómetro de las Américas, del LAPOP (Latin American Public Opinion Project), disponible en https://www.vanderbilt.edu/lapop/. En general esta encuesta es conocida como “Encuesta LAPOP”, y se define como “the only survey of democratic public opinion and behavior that covers the Americas (North, Central, South and the Caribbean). It is an effort by LAPOP to measure democratic values and behaviors in the Americas using national probability samples of voting-age adults”.</description>
+      <guid>/doc2/</guid>
+      <description>DatosEl Observatorio de Cohesión Social utiliza los datos abiertos disponibles de la encuesta Barómetro de las Américas, del LAPOP (Latin American Public Opinion Project), disponible en https://www.vanderbilt.edu/lapop/. En general esta encuesta es conocida como “Encuesta LAPOP,” y se define como “the only survey of democratic public opinion and behavior that covers the Americas (North, Central, South and the Caribbean). It is an effort by LAPOP to measure democratic values and behaviors in the Americas using national probability samples of voting-age adults.</description>
+    </item>
+    
+    <item>
+      <title>Enlaces</title>
+      <link>/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/links/</guid>
+      <description>NacionalConsejo Asesor para la Cohesión Social, Ministerio de Desarrollo Social y Familia.
+Repositorio de Datos Abiertos, Centro de Estudios de Conflicto y Cohesión Social: Se incluyen datos del Estudio Social Longitudinal de Chile (ELSOC), Observatorio de Conflictos (OC), Observatorio de Huelgas Laborales (OHL-UAH) y Centro del Inteligencia Territorial (CIT-UAI)
+InternacionalCEPAL, Cohesión social en América Latina y el Caribe : una revisión de conceptos, marcos de referencia e indicadores</description>
+    </item>
+    
+    <item>
+      <title>Publicaciones</title>
+      <link>/pubs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pubs/</guid>
+      <description>Documentos de trabajoCastillo, JC., Olivos, F. &amp;amp; Iturra, J. (2021). Conceptos y medición de cohesión social en proyectos internacionales. Serie Documentos de Trabajo COES, Documento de trabajo N°47, pp. 1-37.
+Castillo, J., Iturra, J. Carrasco, K. (2021). Hacia una propuesta de medición de Cohesión Social con ELSOC. Disponible en https://ocscoes.github.io/cohesion-elsoc/ (Versión preliminar)
+PresentacionesCastillo, JC., Carrasco, K. &amp;amp; Cáceres, I. (2021, septiembre).</description>
+    </item>
+    
+    <item>
+      <title>¿Qué es el OCS?</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>En un primer momento, el Observatorio de Cohesión Social (OCS) estuvo centrado en el desarrollo de un portal de visualización para el análisis comparativo de distintos indicadores asociados a la cohesión social en América Latina. Para ello se han empleado datos cross-seccionales de la encuesta LAPOP (Latin American Public Opinion Project) para el periodo de 2004 a 2018.
+Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre cohesión social del centro a través de la revisión sistemática de la literatura en el tema.</description>
     </item>
     
   </channel>

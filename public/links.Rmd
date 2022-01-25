@@ -1,0 +1,38 @@
+---
+description: Enlaces de interés sobre Cohesión Social
+keywords:
+- shiny
+- indicadores
+- lapop
+title: Enlaces
+---
+
+# Nacional
+
+* [Consejo Asesor para la Cohesión Social, Ministerio de Desarrollo Social y Familia.](http://www.desarrollosocialyfamilia.gob.cl/informacion-social/cohesion-social){target="_blank"}
+
+* [Repositorio de Datos Abiertos, Centro de Estudios de Conflicto y Cohesión Social](https://dataverse.harvard.edu/dataverse/coes_data_repository){target="_blank"}: Se incluyen datos del Estudio Social Longitudinal de Chile (ELSOC), Observatorio de Conflictos (OC), Observatorio de Huelgas Laborales (OHL-UAH) y Centro del Inteligencia Territorial (CIT-UAI)
+
+ 
+
+# Internacional
+
+
+* [CEPAL, Cohesión social en América Latina y el Caribe : una revisión de conceptos, marcos de referencia e indicadores](https://www.cepal.org/es/publicaciones/2978-cohesion-social-america-latina-caribe-revision-conceptos-marcos-referencia){target="_blank"}
+
+* [Social Cohesion Hub](https://www.socialcohesion.info){target="_blank"}: Plataforma de colaboración que reúne conocimientos y experiencias sobre la cohesión social, incluyendo diferentes conceptos, datos, publicaciones y proyectos.
+
+* [Scanlon Foundation Research Institute](https://scanloninstitute.org.au/){target="_blank"}:
+  * [Mapping Social Cohesion](https://scanloninstitute.org.au/report2020){target="_blank"}: Seguimiento de 13 años del mayor y más largo estudio nacional de Australia sobre cohesión social, inmigración y cuestiones de población.
+ 
+
+
+## A quién seguir: 
+
+* [Jan Germen Janmaat](https://germjanmaat.wordpress.com/){target="_blank"}, UCL Institute of Education.
+
+  * [Regimes of Social Cohesion: Societies and the Crisis of Globalisation (2011) ](https://www.researchgate.net/publication/263917454_Regimes_of_Social_Cohesion_Societies_and_the_Crisis_of_Globalisation){target="_blank"}
+
+
+
+

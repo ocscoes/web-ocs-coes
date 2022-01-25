@@ -21,36 +21,69 @@ paginate = 10
 
 # Main menu
 
-[[menu.main]]
+[[menu.main]] # Inicio
     identifier="home"
     name = "Inicio"
     url  = "/"
     weight = 1
 
-[[menu.main]]
-    identifier = "app"
-    name = "Visualizador"
-    url  = "/app/"
-    weight = 2
+#[[menu.main]] # Menu Sobre el OCS
+#    identifier="about"
+#    name      = "Sobre el OCS"
+#    url       = "/about/"
+#    weight    = 2  
+     
+#[[menu.main]] # Menu Noticia
+#    identifier="blog"
+#    name      = "Noticias"
+#    url       = "/blog/"
+#    weight    = 2
 
-[[menu.main]]
-    identifier = "doc"
-    name = "Documentación"
-    url  = "/doc2/"
-    weight = 3
-
-[[menu.main]]
-    identifier="blog"
-    name = "Noticias"
-    url  = "/blog/"
+[[menu.main]] # Menu Recursos
+    name       = "Reportes"
+    identifier = "section.publicaciones"
+    url        = "/pubs/" 
+    weight     = 3
+ 
+[[menu.main]] # Menu Analisis
+    identifier = "analisis"
+    name = "Analisis"
+    url  = ""
     weight = 4
+    
+[[menu.main]] # Submenu: shiny app - LAPOP
+    identifier = "app.lapop" 
+    parent     = "analisis"
+    name = "América Latina"
+    url  = "/app/"
+    weight = 1    
 
-[[menu.main]]
-    identifier = "contact"
-    name = "Contacto"
-    url  = "/contact/"
-    weight = 5
+#[[menu.main]] # Submenu: documentacion shiny
+#    identifier = "app.docu"
+#    parent     = "analisis"
+#    name = "Documentación"
+#    url  = "/doc2/"
+#    weight = 1
+  
+[[menu.main]] # Submenu: shiny app - LAPOP
+    identifier = "app.chile" 
+    parent     = "analisis"
+    name = "Chile"
+    url  = "/app-elsoc/"
+    weight = 1      
+    
+[[menu.main]] # Menu enlaces
+    identifier = "section.links"
+    name = "Enlaces"
+    url  = "/links/"
+    weight = 5    
 
+#[[menu.main]] # Menu enlaces
+#    identifier = "contact"
+#    name = "Contacto"
+#    url  = "/contact/"
+#    weight = 6  
+    
 # Top bar social links menu
 
 [[menu.topbar]]
@@ -62,7 +95,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 2
     name = "Facebook"
-    url = "http://facebook.com/coes2020"
+    url = "https://www.facebook.com/CentroCOES"
     pre = "<i class='fab fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
@@ -97,7 +130,7 @@ paginate = 10
     longitude = "-77.028333"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "blue"
+    style = "ocs"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -116,7 +149,7 @@ paginate = 10
     contact_form_ajax = false
 
     about_us = "<p>Observatorio de Cohesión Social, COES</p>"
-    copyright = "Copyright (c) 2015 - 2020, Observatorio de Cohesión Social; todos los derechos reservados."
+    copyright = "Copyright (c) 2015 - 2021, Observatorio de Cohesión Social; todos los derechos reservados."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -148,7 +181,7 @@ paginate = 10
 [params.widgets]
     categories = true
     tags = true
-    search = false
+    search = true
 
 [params.carousel]
     enable = true
@@ -158,16 +191,18 @@ paginate = 10
 
 [params.test]
     enable = true
-    title = "Observatorio de Cohesión Social"
-    subtitle = "El Observatorio de Cohesión Social es un portal para realizar análisis comparativos de distintos indicadores asociados a cohesión social en América Latina, como confianza interpersonal, valoración de la democracia, participación en protestas, entre otros. Para ello se utiliza la base de la encuesta LAPOP (Latin American Public Opinion Project), olas 2004, 2006, 2008, 2010, 2012, 2014, 2016 y 2018"
+    title = "Sobre el OCS" 
+    subtitle = "El **Observatorio de Cohesión Social (OCS)** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)** que propone contribuir a la conceptualización y análisis empírico de la cohesión social en Chile, como también a su estudio en perspectiva comparada internacional. Los esfuerzos del observatorio han estado orientados en dos ámbitos de trabajo:  <br> <br> <b>1. Reportes</b> a través de los cuales se han revisado las experiencias internacionales en el estudio de la cohesión social, como también su conceptualización y métodos de medición <br><br> <b>2. Análisis</b> de datos sobre cohesión social, dentro de lo cual destaca una propuesta para la medición empírica en Chile y América Latina"
 
-
+    
+    
 [params.features]
     enable = true
+    cols= 2
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
-
+ 
 [params.testimonials]
     enable = true
     # All testimonials are defined in their own files. You can find example items
@@ -177,7 +212,7 @@ paginate = 10
     subtitle = ""
 
 [params.see_more]
-    enable = true
+    enable = false
     icon = "fas fa-chart-line"
     title = "Indicadores Comparativos de Cohesión Social para América Latina"
     subtitle = ""
@@ -193,6 +228,6 @@ paginate = 10
     subtitle = ""
 
 [params.recent_posts]
-    enable = true
+    enable = false
     title = "Noticias"
     subtitle = "En el siguiente apartado se pueden ver las noticias que han aparecido sobre el Observatorio de Cohesión Social"

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham'); 
+
 .clearfix:before,
 .clearfix:after,
 .navbar:before,
@@ -7,14 +10,14 @@
   content: " ";
   display: table;
 }
-.clearfix:after,
+.clearfix:after, 
 .navbar:after,
-.navbar-header:after {
+.navbar-header:after { 
   clear: both;
 }
 
-.col-centered{
-    float: none;
+.col-centered{ /*esto da el orden de las entradas del blog*/ 
+    float:inline-end; 
     margin: 0 auto;
 }
 

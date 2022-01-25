@@ -9,10 +9,10 @@ tags:
 - lanzamiento
 - cohesion social
 - visualizador
-title: Lanzamiento Observatorio Cohesión Social
+title: "Lanzamiento Observatorio Cohesión Social"
 ---
 
-# Lanzamiento Observatorio Cohesión Social
+# Lanzamiento Observatorio Cohesión Social 
 
 En el 3° taller CEPAL-COES *¿Cómo se define la cohesión y cómo sepuede medir?* realizada el miércoles 11 de noviembre a las 9:30 horas se presentó el Centro de Cohesión Social con su visualizador de datos nuevo y su sitio web. 
 

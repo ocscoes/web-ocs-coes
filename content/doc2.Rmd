@@ -44,21 +44,22 @@ load(url('https://github.com/ocscoes/OCS-COES/raw/master/input/data/proc/lapop_i
   
 tablepaiswave<-table(as_label(lapop_ind_2004to2018$pais),lapop_ind_2004to2018$wave)
 
-kableExtra::kable(tablepaiswave, full_width = T, linesep = "", caption = c("Número de encuestados por ola y país")) %>% kable_styling(
+kableExtra::kable(tablepaiswave, full_width = T, linesep = "", 
+                  caption = c("Número de encuestados por ola y país")) %>% kable_styling(
     full_width = T,
     position = "center",
     font_size = 14,
     bootstrap_options=c("striped", "bordered")) %>%
-  column_spec(column = 1, width = "1.5cm", )
+  column_spec(column = 1, width = "5cm")
 ```
 
 ## Repositorio
 
 El código de generación de este sitio y del visualizador se encuentra abierto en el repositorio [https://github.com/ocscoes/OCS-COES](https://github.com/ocscoes/OCS-COES). El repositorio esta ordenado en modo general en 3 carpetas,
 
-- aplicación Shiny que permite la visualización de los datos (app),
-- datos utilizados (input). Cabe destacar, que siguiendo las políticas de resguardo de la información de LAPOP no se subirá la base de datos original sino solamente los códigos de procesamiento.
-- códigos de procesamiento de los datos (production).
+- Aplicación Shiny que permite la visualización de los datos (app),
+- Datos utilizados (input). Cabe destacar, que siguiendo las políticas de resguardo de la información de LAPOP no se subirá la base de datos original sino solamente los códigos de procesamiento.
+- Códigos de procesamiento de los datos (production).
 
 La estructura del repositorio sigue la propuesta del protocolo [IPO](https://juancarloscastillo.github.io/ipo/index_es.html).
 
@@ -66,9 +67,9 @@ La estructura del repositorio sigue la propuesta del protocolo [IPO](https://jua
 
 La selección de variables de la encuesta LAPOP se realizó a partir de una perspectiva de cohesión social que considera dos dimensiones:
 
-vertical, referida a la relación con el sistema político en temas como confianza en instituciones, satisfacción con la democracia.
+* **Vertical**, referida a la relación con el sistema político en temas como confianza en instituciones, satisfacción con la democracia.
 
-horizontal, que considera fundamentalmente las relaciones con los demás.
+* **Horizontal**, que considera fundamentalmente las relaciones con los demás.
 
 En el procesamiento de los datos se calculó el promedio por país y por ola de la encuesta para cada uno de los indicadores seleccionados. Adicionalmente, se generaron promedios de las variables por año para tener como referente de comparación en los análisis nacionales. Junto a ello se incorporaron a la base de datos dos variables macroeconómicas, el Producto Interno Bruto y el índice de desigualdad GINI que aparecen como posibles opciones de selección en la pestaña de análisis bivariado.
 
@@ -172,10 +173,14 @@ set_label(Lapop_2004_2008_indAgr2$ros4)<- "Políticas redistributivas :  El Esta
 
 
 
-sjPlot::view_df(Lapop_2004_2008_indAgr2, show.values = F, show.string.values = T, show.labels = T, show.na = F, encoding = "Windows-1252", CSS = list("input/custom.css")) 
-
-
-
+tab1<- sjPlot::view_df(Lapop_2004_2008_indAgr2,
+                show.prc = T,
+                show.values = F, 
+                show.string.values = T, 
+                show.labels = T, 
+                show.na = F, 
+                encoding = "Windows-1252")
+tab1
 ```
 
 ---

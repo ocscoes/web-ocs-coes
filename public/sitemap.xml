@@ -3,68 +3,89 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ocs-coes.netlify.app/blog/</loc>
+    <loc>/blog/</loc>
+    <lastmod>2021-09-30T13:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-09-30T13:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cohesion-social/</loc>
+    <lastmod>2021-09-30T13:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/lanzamiento/</loc>
+    <lastmod>2021-09-30T13:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-09-30T13:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2021/09/30/02notice/</loc>
+    <lastmod>2021-09-30T13:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/prensa/</loc>
+    <lastmod>2021-09-30T13:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-09-30T13:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/visualizador/</loc>
+    <lastmod>2021-09-30T13:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2020/11/10/01notice/</loc>
     <lastmod>2020-11-10T13:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ocs-coes.netlify.app/categories/</loc>
-    <lastmod>2020-11-10T13:50:46+02:00</lastmod>
+    <loc>/test/</loc>
   </url>
   
   <url>
-    <loc>https://ocs-coes.netlify.app/tags/cohesion-social/</loc>
-    <lastmod>2020-11-10T13:50:46+02:00</lastmod>
+    <loc>/app/</loc>
   </url>
   
   <url>
-    <loc>https://ocs-coes.netlify.app/tags/lanzamiento/</loc>
-    <lastmod>2020-11-10T13:50:46+02:00</lastmod>
+    <loc>/app-elsoc/</loc>
   </url>
   
   <url>
-    <loc>https://ocs-coes.netlify.app/blog/2020/11/10/01notice/</loc>
-    <lastmod>2020-11-10T13:50:46+02:00</lastmod>
+    <loc>/contact/</loc>
   </url>
   
   <url>
-    <loc>https://ocs-coes.netlify.app/</loc>
-    <lastmod>2020-11-10T13:50:46+02:00</lastmod>
+    <loc>/doc/</loc>
   </url>
   
   <url>
-    <loc>https://ocs-coes.netlify.app/categories/prensa/</loc>
-    <lastmod>2020-11-10T13:50:46+02:00</lastmod>
+    <loc>/doc2/</loc>
   </url>
   
   <url>
-    <loc>https://ocs-coes.netlify.app/tags/</loc>
-    <lastmod>2020-11-10T13:50:46+02:00</lastmod>
+    <loc>/links/</loc>
   </url>
   
   <url>
-    <loc>https://ocs-coes.netlify.app/tags/visualizador/</loc>
-    <lastmod>2020-11-10T13:50:46+02:00</lastmod>
+    <loc>/pubs/</loc>
   </url>
   
   <url>
-    <loc>https://ocs-coes.netlify.app/app/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ocs-coes.netlify.app/test/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ocs-coes.netlify.app/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ocs-coes.netlify.app/doc/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ocs-coes.netlify.app/doc2/</loc>
+    <loc>/about/</loc>
   </url>
   
 </urlset>

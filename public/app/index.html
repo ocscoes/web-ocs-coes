@@ -7,7 +7,7 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title></title>
+  <title>Cohesión Social en América Latina</title>
   <meta name="author" content="OCS" />
   
   
@@ -18,7 +18,7 @@
   
   <meta name="description" content="Indicadores Comparativos de Cohesión Social para América Latina">
 
-  <meta name="generator" content="Hugo 0.79.1" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -32,7 +32,7 @@
 
   
   
-    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+    <link href="/css/style.ocs.css" rel="stylesheet" id="theme-stylesheet">
   
 
   
@@ -55,7 +55,7 @@
   <link href="/css/owl.theme.css" rel="stylesheet">
 
   
-  <link rel="alternate" href="https://ocs-coes.netlify.app/index.xml" type="application/rss+xml" title="Observatorio de Cohesión Social">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Observatorio de Cohesión Social">
 
   
   
@@ -66,11 +66,11 @@
   
   <meta property="og:locale" content="es_cl">
   <meta property="og:site_name" content="Observatorio de Cohesión Social">
-  <meta property="og:title" content="">
+  <meta property="og:title" content="Cohesión Social en América Latina">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ocs-coes.netlify.app/app/" />
+  <meta property="og:url" content="/app/" />
   <meta property="og:description" content="Indicadores Comparativos de Cohesión Social para América Latina">
-  <meta property="og:image" content="https://ocs-coes.netlify.app/img/sharing-default.png">
+  <meta property="og:image" content="/img/sharing-default.png">
   <meta property="og:image:type" content="image/png">
   
   
@@ -85,9 +85,9 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@CentroCOES">
-  <meta name="twitter:title" content="">
+  <meta name="twitter:title" content="Cohesión Social en América Latina">
   
-  <meta name="twitter:image" content="https://ocs-coes.netlify.app/img/sharing-default.png">
+  <meta name="twitter:image" content="/img/sharing-default.png">
   
   <meta name="twitter:description" content="Indicadores Comparativos de Cohesión Social para América Latina">
   
@@ -115,7 +115,7 @@
             
             <a href="https://github.com/ocscoes/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-github'></i></a>
             
-            <a href="http://facebook.com/coes2020" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
+            <a href="https://www.facebook.com/CentroCOES" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
             
             <a href="https://twitter.com/CentroCOES" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
             
@@ -135,9 +135,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt=" logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt=" logo" class="visible-xs visible-sm">
-                    <span class="sr-only"> - ir a inicio</span>
+                    <img src="/img/logo.png" alt="Cohesión Social en América Latina logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="Cohesión Social en América Latina logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Cohesión Social en América Latina - ir a inicio</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -160,23 +160,35 @@
                   </li>
                   
                   
-                  <li class="dropdown active">
+                  <li class="dropdown">
                     
-                    <a href="/app/">Visualizador</a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="/pubs/">Publicaciones</a></li>
+                      
+                    </ul>
                     
                   </li>
                   
                   
                   <li class="dropdown">
                     
-                    <a href="/doc2/">Documentación</a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analisis <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="/app/">América Latina</a></li>
+                      
+                        <li><a href="/app-elsoc/">Chile</a></li>
+                      
+                    </ul>
                     
                   </li>
                   
                   
                   <li class="dropdown">
                     
-                    <a href="/blog/">Noticias</a>
+                    <a href="/links/">Enlaces</a>
                     
                   </li>
                   
@@ -210,6 +222,16 @@
 
 
         
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Cohesión Social en América Latina</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
 
         <div id="content">
             
@@ -221,18 +243,39 @@
                     <div class="col-md-12">
 
                         <div>
-                          <iframe scrolling="yes" frameborder="no" src="https://juitsa.shinyapps.io/ocs-coes/" class="l-screen-inset shaded" style="
+                          
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div class="heading">
+<h1>
+Visualizador
+</h1>
+</div>
+<iframe scrolling="yes" frameborder="yes" src="https://juitsa.shinyapps.io/ocs-coes/" class="l-screen-inset shaded" style="
     width: 1200px;
     height: 1000px;
-"></iframe>
-<hr>
-<h2 id="quieres-comentar-o-tienes-alguna-duda">¿Quieres comentar o tienes alguna duda?</h2>
+">
+</iframe>
+<hr />
+<div class="heading">
+<h1>
+Documentación
+</h1>
+</div>
+<p>📌 Si deseas revisar los <strong>datos y la documentación</strong> de la aplicación puedes hacer <a class = "btn btn-template-main" href="../doc2/index.html" target="_blank"> CLICK AQUI </a></p>
+<p><br></p>
+<div id="quieres-comentar-o-tienes-alguna-duda" class="section level3">
+<h3>¿Quieres comentar o tienes alguna duda?</h3>
 <p>Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes <a href="/contact/">contactarnos</a></p>
-<div id="disqus_thread"></div>
-<hr>
+<div id="disqus_thread">
+
+</div>
+<hr />
 <blockquote>
 <p>En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en <a href="/contact/">contactarnos</a></p>
 </blockquote>
+</div>
 
                         </div>
 
@@ -265,28 +308,7 @@
 
         <div class="col-md-4 col-sm-6">
 
-             
-            <h4>Posts recientes</h4>
-
-            <div class="blog-entries">
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="https://ocs-coes.netlify.app/blog/2020/11/10/01notice/">
-                          
-                            <img src="/img/banners/banner-2.png" class="img-responsive" alt="Lanzamiento Observatorio Cohesión Social">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="https://ocs-coes.netlify.app/blog/2020/11/10/01notice/">Lanzamiento Observatorio Cohesión Social</a></h5>
-                    </div>
-                </div>
-                
-            </div>
-
-            <hr class="hidden-md hidden-lg">
-             
+              
 
         </div>
         
@@ -327,7 +349,7 @@
     <div class="container">
         <div class="col-md-12">
             
-            <p class="pull-left">Copyright (c) 2015 - 2020, Observatorio de Cohesión Social; todos los derechos reservados.</p>
+            <p class="pull-left">Copyright (c) 2015 - 2021, Observatorio de Cohesión Social; todos los derechos reservados.</p>
             
             <p class="pull-right">
               Plantilla creada por <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.

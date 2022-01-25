@@ -1,9 +1,9 @@
 weight: 2
-title: "Visualizador"
+title: "Análisis"
 description: >
   <ul class="list-style-none">
-     <li>con datos sobre cohesión social</li>
-     <li>para Latinoamérica en base a LAPOP</li>
+     <li>Usando datos sobre cohesión social</li>
+     <li>para América Latina en base a LAPOP</li>
    </ul>
 image: "img/carousel/img2-mini.png"
 url: "/app/"
