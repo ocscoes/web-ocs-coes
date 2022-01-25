@@ -9,12 +9,29 @@ title: Publicaciones
 
 # Documentos de trabajo
 
-> Castillo, JC., Olivos, F. & Iturra, J. (2021). [Conceptos y medición de cohesión social en proyectos internacionales.](https://drive.google.com/file/d/1fvEKWLtPq3AlQbb6tC1G6rr-DoRcZmqr/view){target="_blank"} Serie Documentos de Trabajo COES, Documento de trabajo N°47, pp. 1-37. 
+```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+# BibOptions(old.opts)
+# pacman::p_load(RefManageR, dplyr)
+# df_ocs<- ReadZotero(group = "4546645",
+#            .params = list(key="95QhMYDyBKvlBcdKcWBsY5Or"))
+# 
+# RefManageR::ReadZotero(group = "2635555",
+#                        .params = list(key="95QhMYDyBKvlBcdKcWBsY5Or",
+#                                       limit =200)) 
+```
+
+> Barozet, E., Contreras, D., Espinoza, V. & Méndez, M.L. (2021). [Conceptos y medición de cohesión social en proyectos internacionales.](https://repositorio.cepal.org/bitstream/handle/11362/47184/1/S2100412_es.pdf){target="_blank"} Documentos de Proyectos (LC/TS.2021/101), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)
+
+
+> Castillo, JC., Olivos, F. & Iturra, J. (2021). [Conceptos y medición de cohesión social en proyectos internacionales.](https://drive.google.com/file/d/1fvEKWLtPq3AlQbb6tC1G6rr-DoRcZmqr/view){target="_blank"} Serie Documentos de Trabajo COES, Documento de trabajo N°47, pp. 1-37.
 
 > Castillo, J., Iturra, J. Carrasco, K. (2021). Hacia una propuesta de medición de Cohesión Social con ELSOC. Disponible en [https://ocscoes.github.io/cohesion-elsoc/](https://ocscoes.github.io/cohesion-elsoc/){target="_blank"} (Versión preliminar)
 
 
 # Presentaciones
+
+> Castillo, JC. & Bargsted, M. (2022, enero). [_Measurement and Analysis of Social Cohesion: Perspectives from the Center of Social Conflict and Cohesion Studies._](https://ocscoes.github.io/presentaciones/RISC-bremen-january2022.html#1){target="_blank"}. Third Academy of Sociology Conference: Cohesive Societies? Analytical-empirical Perspectives, Germany.
+
 
 > Castillo, JC., Carrasco, K. & Cáceres, I. (2021, septiembre). [_Concepts and measurement of social cohesion in international perspective._](https://ocscoes.github.io/presentaciones/presentation-cohesive-societies.html#1){target="_blank"}. Third Academy of Sociology Conference: Cohesive Societies? Analytical-empirical Perspectives, Germany.
 

@@ -41,19 +41,10 @@ paginate = 10
 
 [[menu.main]] # Menu Recursos
     name       = "Reportes"
-    identifier = "menu.resources"
-    url        = ""
-    weight     = 3
-    
-[[menu.main]] ## section publicaciones
-    name       = "Publicaciones"
     identifier = "section.publicaciones"
     url        = "/pubs/" 
-    weight     = 1
-    parent     = "menu.resources"    
-    post       = 1    
-    
-
+    weight     = 3
+ 
 [[menu.main]] # Menu Analisis
     identifier = "analisis"
     name = "Analisis"
@@ -87,11 +78,11 @@ paginate = 10
     url  = "/links/"
     weight = 5    
 
-[[menu.main]] # Menu enlaces
-    identifier = "contact"
-    name = "Contacto"
-    url  = "/contact/"
-    weight = 6  
+#[[menu.main]] # Menu enlaces
+#    identifier = "contact"
+#    name = "Contacto"
+#    url  = "/contact/"
+#    weight = 6  
     
 # Top bar social links menu
 
@@ -201,7 +192,8 @@ paginate = 10
 [params.test]
     enable = true
     title = "Sobre el OCS" 
-    subtitle = "El **Observatorio de Cohesión Social (OCS)** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)**, desde donde se busca contribuir al estudio de la cohesión social en Chile, como también en perspectiva comparada internacional. En este sentido, los esfuerzos del observatorio han estado orientados en dos ámbitos de trabajo:  <br> <br> <b>1. Reportes</b> a través de los cuales se han revisado las experiencias internacionales en el estudio de la cohesión social, como también su conceptualización y métodos de medición <br><br> <b>2. Análisis</b> de datos sobre cohesión social, dentro de lo cual destaca una propuesta para la medición empírica en Chile y América Latina, con perspectiva comparada internacional."
+    subtitle = "El **Observatorio de Cohesión Social (OCS)** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)** que propone contribuir a la conceptualización y análisis empírico de la cohesión social en Chile, como también a su estudio en perspectiva comparada internacional. Los esfuerzos del observatorio han estado orientados en dos ámbitos de trabajo:  <br> <br> <b>1. Reportes</b> a través de los cuales se han revisado las experiencias internacionales en el estudio de la cohesión social, como también su conceptualización y métodos de medición <br><br> <b>2. Análisis</b> de datos sobre cohesión social, dentro de lo cual destaca una propuesta para la medición empírica en Chile y América Latina"
+
     
     
 [params.features]

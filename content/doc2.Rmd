@@ -179,8 +179,7 @@ tab1<- sjPlot::view_df(Lapop_2004_2008_indAgr2,
                 show.string.values = T, 
                 show.labels = T, 
                 show.na = F, 
-                encoding = "Windows-1252")  
-
+                encoding = "Windows-1252")
 tab1
 ```
 
