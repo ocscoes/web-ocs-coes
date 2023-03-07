@@ -9,8 +9,12 @@ title: Cohesión Social en América Latina
 ---
 
 <div class="heading">
-<h1>Visualizador</h1>
+<h1>OCSVIS-LA</h1>
 </div>
+
+El cuadro que aparecerá a continuación es la aplicación de visualización de Indicadores de Cohesión Social para América Latina (**OCSVIS-LA**) desarrollada por el Observatorio de Cohesión Social. A través de esta herramienta es posible realizar análisis **transversal**, **longitudinal** y **bivariado** de indicadores de cohesión social para distintos países de América Latina en el periodo que abarca los años 2004 a 2018.   
+
+<br>
 
 <iframe scrolling="yes" frameborder="yes" src="https://juitsa.shinyapps.io/ocs-coes/" class="l-screen-inset shaded" style="
     width: 1200px;
@@ -19,13 +23,13 @@ title: Cohesión Social en América Latina
 
 ---
 
-<div class="heading">
-<h1>Documentación</h1>
-</div>
+<!-- <div class="heading"> -->
+<!-- <h1>Documentación</h1> -->
+<!-- </div> -->
 
-📌 Si deseas revisar los **datos y la documentación** de la aplicación puedes hacer <a class = "btn btn-template-main" href="../doc2/index.html" target="_blank"> CLICK AQUI  </a>
+<!-- 📌 Si deseas revisar los **datos y la documentación** de la aplicación puedes hacer <a class = "btn btn-template-main" href="../doc2/index.html" target="_blank"> CLICK AQUI  </a> -->
 
-<br>
+<!-- <br> -->
 
 ### ¿Quieres comentar o tienes alguna duda?
 

@@ -1,91 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/blog/</loc>
+    <loc>https://ocs-coes.netlify.app/blog/</loc>
     <lastmod>2021-09-30T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/categories/</loc>
     <lastmod>2021-09-30T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/cohesion-social/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/tags/cohesion-social/</loc>
     <lastmod>2021-09-30T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/lanzamiento/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/tags/lanzamiento/</loc>
     <lastmod>2021-09-30T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/</loc>
     <lastmod>2021-09-30T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/2021/09/30/02notice/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/blog/2021/09/30/02notice/</loc>
     <lastmod>2021-09-30T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/prensa/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/categories/prensa/</loc>
     <lastmod>2021-09-30T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/tags/</loc>
     <lastmod>2021-09-30T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/visualizador/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/tags/visualizador/</loc>
     <lastmod>2021-09-30T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/2020/11/10/01notice/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/blog/2020/11/10/01notice/</loc>
     <lastmod>2020-11-10T13:50:46+02:00</lastmod>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/test/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/about/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/app/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/app-elsoc/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/contact/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/doc/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/doc2/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/links/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/pubs/</loc>
   </url>
-  
-  <url>
-    <loc>/test/</loc>
-  </url>
-  
-  <url>
-    <loc>/app/</loc>
-  </url>
-  
-  <url>
-    <loc>/app-elsoc/</loc>
-  </url>
-  
-  <url>
-    <loc>/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>/doc/</loc>
-  </url>
-  
-  <url>
-    <loc>/doc2/</loc>
-  </url>
-  
-  <url>
-    <loc>/links/</loc>
-  </url>
-  
-  <url>
-    <loc>/pubs/</loc>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-  </url>
-  
 </urlset>
