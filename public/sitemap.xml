@@ -45,5 +45,9 @@
     <loc>https://ocs-coes.netlify.app/contact/</loc>
   </url><url>
     <loc>https://ocs-coes.netlify.app/doc/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/links/</loc>
+  </url><url>
+    <loc>https://ocs-coes.netlify.app/pubs/</loc>
   </url>
 </urlset>
