@@ -1,0 +1,89 @@
+/* css styles */
+.about-link i {
+    font-size: 3em; /* Tamaño del ícono */
+}
+
+
+html {
+  scroll-behavior: smooth;
+} /*Esto para que al hacer click en los links del navbar la página no "salte", sino que se deslice */
+
+/*Backgrounds*/
+
+body {
+  background-color: #EDEDED;
+}
+
+.light-bg{
+  background-color: #ffffff;
+}
+
+.logos-bg{
+  background-color: #E8E8E8;
+}
+
+.dark-bg {
+  background-color: #212121;
+  color: #ffffff;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/*-- links hover --*/
+
+.contact-link:hover,
+.github-link:hover,
+.web-link:hover {
+  color: #212121;
+}
+
+a:hover {
+  color: #ffffff;
+}
+  
+.nav-link:hover {
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #497BBD;
+}
+
+.bi-github:hover,
+.bi-facebook:hover,
+.bi-twitter:hover,
+.bi-instagram:hover,
+.bi-youtube:hover{
+  color: #497BBD;
+}
+
+/*-- section style --*/
+
+.section-container {
+  padding-left: 0em;
+  padding-right:  0em;
+  padding-top: 1em;
+  margin-top: 0em;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.section-block {
+  margin: 1em auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.8em;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.post-contents {
+	padding-left: 1.5em
+	padding-right: 1.5em;
+	margin: 1rem;
+}
+
+.navbar-logo {
+  max-height: 75px;
+}
+
+
+

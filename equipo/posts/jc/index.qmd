@@ -1,0 +1,21 @@
+---
+title: Juan Carlos Castillo
+subtitle: Investigador Principal
+contacto: juancastillov@uchile
+github: https://github.com/juancarloscastillo
+web: https://jc-castillo.com
+image: "featured.jpg"
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: envelope
+      href: mailto:juancastillov@uchile.cl
+      text: Contacto
+    - icon: github
+      href: https://github.com/juancarloscastillo
+      text: Github
+    - icon: globe
+      href: https://jc-castillo.com
+      text: Web Personal
+---

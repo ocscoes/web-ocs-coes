@@ -1,0 +1,14 @@
+[
+  {
+    "listing": "/equipo/equipo.html",
+    "items": [
+      "/equipo/posts/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/equipo/posts/jc/index.html"
+    ]
+  }
+]

@@ -1,0 +1,129 @@
+---
+title: "Observatorio de Cohesión Social"
+pagetitle: "OCS Website"
+page-layout: full
+format:
+  html:
+    grid:
+      body-width: 1440px
+page-navigation: false
+toc: false
+image: "resources/imagenes/sharing-default.png"
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rectangle
+  links:
+    - icon: journals
+      text: "Reportes"
+      href: https://ocs-coes.netlify.app/pubs/
+    - icon: graph-up-arrow
+      text: "Análisis"
+      href: https://ocs-coes.netlify.app/app/
+
+listing:
+- id: equipo
+  template: people-box.ejs
+  contents: 
+    - equipo/posts/*/*.qmd
+  sort: date desc
+  type: grid
+---
+
+:::{#hero-heading}
+
+
+En un primer momento, el Observatorio de Cohesión Social (OCS) estuvo centrado en el desarrollo de un portal de visualización para el análisis comparativo de distintos indicadores asociados a la cohesión social en América Latina. Para ello se han empleado datos cross-seccionales de la encuesta LAPOP (Latin American Public Opinion Project) para el periodo de 2004 a 2018.
+
+Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre cohesión social del centro a través de la revisión sistemática de la literatura en el tema. En primera instancia esto tiene como objetivo fundamentar conceptual y teóricamente la concepción de COES en torno a la cohesión social. Adicionalmente, otro objetivo ha sido contribuir al análisis empírico de la cohesión social y el cambio longitudinal de esta en Chile. Al respecto, se ha seguido la propuesta conceptual de Chan et al. (2006) desde donde la cohesión social se entiende como el carácter de las interacciones verticales y horizontales entre los miembros de una sociedad, caracterizadas por actitudes y normas, como también por sus manifestaciones conductuales.
+
+:::
+
+::: {.section-text .light-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
+<p align="center" style="font-size:36px; font-weight:bold;">Equipo</p>
+
+:::{#equipo}
+:::
+
+:::
+:::
+:::
+:::
+
+::: {.section-text .logos-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
+
+::: {layout-ncol=5}
+
+[![](resources/imagenes/anid.png)](https://anid.cl)
+
+[![](resources/imagenes/uch.png)](https://uchile.cl)
+
+[![](resources/imagenes/puc.png)](https://www.uc.cl)
+
+[![](resources/imagenes/udp.png)](https://www.udp.cl)
+
+[![](resources/imagenes/uai.png)](https://www.uai.cl)
+
+:::
+
+
+
+
+:::
+:::
+:::
+:::
+
+::: {.section-text .dark-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+
+<p align="center" style="font-size:36px; font-weight:bold;">Acerca de Nosotros</p>
+
+::: {.grid}
+
+::: {.g-col-4 style="text-align: center;"}
+[![](resources/imagenes/COES_Logo_sello1.png){width=50%}](https://coes.cl)
+:::
+
+:::{.g-col-4}
+
+### Centro de Estudios de Conflicto y de Cohesión Social <br><br>
+
+Diagonal Paraguay 257, <br>
+Torre 26, Oficina 1504 <br>
+Santiago – RM
+
+Los Navegantes 1963 <br>
+Providencia - RM
+
+Contáctenos: [comunicaciones@coes.cl](mailto:comunicaciones@coes.cl)
+:::
+
+:::{.g-col-4}
+### Observatorio de Cohesión Social <br><br>
+
+<br>
+Capitán Ignacio Carrera Pinto 1045, <br>
+Facultad de Ciencias Sociales, Departamento de Sociología <br>
+Ñuñoa – RM
+
+<br> 
+:::
+
+
+:::
+
+:::
+:::
+:::
+:::

@@ -1,0 +1,50 @@
+project:
+  type: website
+  # resources:
+  render:
+        - "*.qmd"
+  output-dir: "docs"
+website:
+  title: ""
+  page-footer:
+    background: "#121212"
+    left: |
+      [2025]()
+    center:
+      - href: https://github.com/ocscoes/web-ocs-coes
+        icon: github
+        aria-label: GitHub
+    right: |
+       Last Update: {{< modified isodate>}}
+  navbar:
+    logo: resources/imagenes/sharing-default.png
+    background: "#FFFFFF"
+    tools: 
+       - icon: github
+         href: https://github.com/ocscoes/
+       - icon: facebook
+         href: https://www.facebook.com/CentroCOES
+       - icon: twitter
+         href: https://x.com/CentroCOES
+       - icon: instagram
+         href: https://www.instagram.com/centro_coes/
+       - icon: youtube
+         href: https://www.youtube.com/channel/UCs9uSSVl7ucVqeSq4wVUIgA
+    # pinned: true
+    left:
+      - href: reportes.qmd
+        text: Reportes
+      - href: links.qmd
+        text: Enlaces
+format:
+  html:
+    theme: 
+      light: flatly
+    css: 
+      - styles.css
+    toc: true
+    linkcolor: "#497BBD"
+
+
+
+
