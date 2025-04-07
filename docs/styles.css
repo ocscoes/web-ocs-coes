@@ -31,29 +31,10 @@ body {
 
 /*-- links hover --*/
 
-.contact-link:hover,
-.github-link:hover,
-.web-link:hover {
-  color: #212121;
-}
-
 a:hover {
-  color: #ffffff;
+  color: #2E9CCA;
 }
   
-.nav-link:hover {
-  color: #ffffff;
-  font-weight: 400;
-  background-color: #497BBD;
-}
-
-.bi-github:hover,
-.bi-facebook:hover,
-.bi-twitter:hover,
-.bi-instagram:hover,
-.bi-youtube:hover{
-  color: #497BBD;
-}
 
 /*-- section style --*/
 
@@ -67,7 +48,7 @@ a:hover {
 }
 
 .section-block {
-  margin: 1em auto;
+  margin: 0.5 auto;
   padding-top: 1.5em;
   padding-bottom: 1.8em;
   box-sizing: border-box;
@@ -81,9 +62,49 @@ a:hover {
 	margin: 1rem;
 }
 
+
+
+/*margenes y padding*/
+
+#quarto-document-content .column-page{
+  padding-top: 0.1em;
+  margin-top: 0;
+}
+
+#quarto-content {
+  padding-top: 0.1em;
+  margin-top: 0;
+}
+
+/*banner*/
+
+.column-page .title,
+.column-body .title{
+  color: #ffffff;
+}
+
+/*nav bar*/
+
+.active{
+  color: #ffffff !important;
+  font-weight: 400;
+  background-color: #497BBD;
+}
+
 .navbar-logo {
   max-height: 75px;
 }
 
+.nav-link:hover {
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #497BBD;
+}
 
-
+.bi-github:hover,
+.bi-facebook:hover,
+.bi-twitter:hover,
+.bi-instagram:hover,
+.bi-youtube:hover{
+  color: #497BBD;
+}

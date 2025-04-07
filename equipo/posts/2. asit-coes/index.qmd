@@ -1,0 +1,21 @@
+---
+title: Kevin Carrasco 
+subtitle: Asistente de Investigación COES
+contacto: kevin.carrasco@ug.uchile.cl
+github: https://github.com/Kevin-carrasco
+web: https://www.linkedin.com/in/kevin-carrasco-quintanilla/
+image: "featured.jpg"
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: envelope
+      href: mailto:kevin.carrasco@ug.uchile.cl
+      text: Contacto
+    - icon: github
+      href: https://github.com/Kevin-carrasco
+      text: Github
+    - icon: globe
+      href: https://www.linkedin.com/in/kevin-carrasco-quintanilla/
+      text: Web Personal
+---

@@ -2,7 +2,7 @@
 
 <div class="quarto-listing quarto-listing-container-grid">
   
-  <div class="list grid quarto-listing-cols-3"> 
+  <div class="list grid quarto-listing-cols-4"> 
 
     <% for (const item of items) { ;%> 
     
@@ -15,7 +15,8 @@
           
           
           <p class="card-img-top">
-            <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image card-img listing-box-image" style="height" 150px;">
+            <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+
           </p>
           
           <div class="card-body post-contents">
@@ -37,7 +38,7 @@
            <div class="listing-box-contacto">
   <% if (item.contacto) { %>
     <a href="mailto:<%= item.contacto %>" class="contact-link">
-      <i class="bi bi-envelope"></i> <%= item.contacto %>
+      <i class="bi bi-envelope"></i> <%= "Contacto" %>
     </a>
   <% } else { %>
     <p></p>
@@ -47,7 +48,7 @@
            <div class="listing-box-github">
   <% if (item.contacto) { %>
     <a href="<%= item.github %>" class="github-link">
-      <i class="bi bi-github"></i> <%= item.github %>
+      <i class="bi bi-github"></i> <%= "Github" %>
     </a>
   <% } else { %>
     <p></p>
@@ -57,7 +58,7 @@
            <div class="listing-box-web">
   <% if (item.contacto) { %>
     <a href="<%= item.web %>" class="web-link">
-      <i class="bi bi-globe"></i> <%= item.web %>
+      <i class="bi bi-globe"></i> <%= "Web Personal" %>
     </a>
   <% } else { %>
     <p></p>

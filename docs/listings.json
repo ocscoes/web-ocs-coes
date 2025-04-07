@@ -1,14 +1,15 @@
 [
   {
     "listing": "/equipo/equipo.html",
-    "items": [
-      "/equipo/posts/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/index.html",
     "items": [
-      "/equipo/posts/jc/index.html"
+      "/equipo/posts/1. pi/index.html",
+      "/equipo/posts/2. asit-coes/index.html",
+      "/equipo/posts/3. asis-ocs/index.html",
+      "/equipo/posts/4. ayudante-ocs/index.html"
     ]
   }
 ]

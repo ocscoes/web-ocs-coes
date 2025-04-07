@@ -1,0 +1,21 @@
+---
+title: TBA
+subtitle: Ayudante de Investigación
+contacto: tba
+github: tba
+web: tba
+image: ""
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: envelope
+      href: tba
+      text: Contacto
+    - icon: github
+      href: tba
+      text: Github
+    - icon: globe
+      href: tba
+      text: Web Personal
+---

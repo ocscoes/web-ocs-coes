@@ -7,6 +7,25 @@ format:
     grid:
       body-width: 1440px
 page-navigation: false
+title-block-banner: resources/imagenes/texture-bw.png
+include-in-header:
+  - text: |
+      <style>
+      .quarto-title-block .quarto-title-banner {
+          background-attachment: fixed;
+          opacity: 1;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin: 0 auto;
+          padding-top: 1.5em;
+          padding-bottom: 1.8em;
+          box-sizing: border-box;
+          max-width: 100%;
+          width: 100vw;
+          height: 300px
+      }
+      </style>
 toc: false
 image: "resources/imagenes/sharing-default.png"
 about:
@@ -16,7 +35,7 @@ about:
   links:
     - icon: journals
       text: "Reportes"
-      href: https://ocs-coes.netlify.app/pubs/
+      href: reportes.qmd
     - icon: graph-up-arrow
       text: "Análisis"
       href: https://ocs-coes.netlify.app/app/
