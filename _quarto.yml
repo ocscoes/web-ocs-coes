@@ -1,6 +1,8 @@
 project:
   type: website
-  # resources:
+  resources:
+       - analisis/posts/ELSOC/*
+       - analisis/posts/IndicesLAPOP/*
   render:
         - "*.qmd"
   output-dir: "docs"
@@ -32,6 +34,8 @@ website:
          href: https://www.youtube.com/channel/UCs9uSSVl7ucVqeSq4wVUIgA
     # pinned: true
     left:
+      - href: analisis/analisis.qmd
+        text: Análisis
       - href: reportes.qmd
         text: Reportes
       - href: links.qmd
@@ -44,6 +48,7 @@ format:
       - styles.css
     toc: true
     linkcolor: "#497BBD"
+include-after-body: "footer.html"
 
 
 

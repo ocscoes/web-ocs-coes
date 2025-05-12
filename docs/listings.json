@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/equipo/equipo.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/equipo/posts/1. pi/index.html",
@@ -11,5 +7,9 @@
       "/equipo/posts/3. asis-ocs/index.html",
       "/equipo/posts/4. ayudante-ocs/index.html"
     ]
+  },
+  {
+    "listing": "/equipo/equipo.html",
+    "items": []
   }
 ]

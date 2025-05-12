@@ -1,0 +1,87 @@
+---
+title: "Análisis"
+page-layout: full
+title-block-banner: ../resources/imagenes/texture-bw.png
+include-in-header:
+  - text: |
+      <style>
+      .quarto-title-block .quarto-title-banner {
+          background-attachment: fixed;
+          opacity: 1;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin: 0 auto;
+          padding-top: 1.5em;
+          padding-bottom: 1.8em;
+          box-sizing: border-box;
+          max-width: 100%;
+          width: 100vw;
+          height: 150px
+      }
+      </style>
+
+# listing:
+# - id: documentos
+#   contents:
+#     - analisis/posts/*/*.qmd
+#   sort: date desc
+#   type: default
+---
+
+
+```{=HTML}
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+
+<div class="wrap">
+
+  <a href="https://jandimter.shinyapps.io/Cohesion3/">
+    <div class="tile">
+      <img src='imagenes/latam.png' alt="OCSVIS-LA"/>
+      <div class="text">
+        <h1>Índices Cohesión Social Latinoamérica</h1>
+        <p class="animate-text">Indicadores de Cohesión Social basado en datos encuestas LAPOP, Latinobarómetro y del World Value Survey.</p>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://flo.uri.sh/visualisation/16243987/embed">
+    <div class="tile">
+      <img src='imagenes/elsoc.png' alt="Visualización de ElSoc"/>
+      <div class="text">
+        <h1>Indicadores de Cohesión Social ELSOC</h1>
+        <p class="animate-text">Indicadores de Cohesión Social en Chile basado en ELSOC.</p>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+```
+
+<!-- ::: {.section-text .light-bg} -->
+<!-- ::: {.section-container} -->
+<!-- ::: {.section-block} -->
+<!-- ::: {style="text-align: center;"} -->
+
+<!-- <p align="center" style="font-size:36px; font-weight:bold;">Documentos</p> -->
+
+<!-- :::{#documentos} -->
+<!-- ::: -->
+
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: -->

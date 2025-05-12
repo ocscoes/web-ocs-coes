@@ -2,10 +2,7 @@
 title: "Observatorio de Cohesión Social"
 pagetitle: "OCS Website"
 page-layout: full
-format:
-  html:
-    grid:
-      body-width: 1440px
+format: html
 page-navigation: false
 title-block-banner: resources/imagenes/texture-bw.png
 include-in-header:
@@ -26,6 +23,7 @@ include-in-header:
           height: 300px
       }
       </style>
+include-after-body: "footer.html"
 toc: false
 image: "resources/imagenes/sharing-default.png"
 about:
@@ -38,7 +36,7 @@ about:
       href: reportes.qmd
     - icon: graph-up-arrow
       text: "Análisis"
-      href: https://ocs-coes.netlify.app/app/
+      href: analisis/analisis.qmd
 
 listing:
 - id: equipo
@@ -101,48 +99,48 @@ Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre
 :::
 :::
 
-::: {.section-text .dark-bg}
-::: {.section-container}
-::: {.section-block}
-::: {style="text-align: left;"}
+<!-- ::: {.section-text .dark-bg} -->
+<!-- ::: {.section-container} -->
+<!-- ::: {.section-block} -->
+<!-- ::: {style="text-align: left;"} -->
 
-<p align="center" style="font-size:36px; font-weight:bold;">Acerca de Nosotros</p>
+<!-- <p align="center" style="font-size:36px; font-weight:bold;">Acerca de Nosotros</p> -->
 
-::: {.grid}
+<!-- ::: {.grid} -->
 
-::: {.g-col-4 style="text-align: center;"}
-[![](resources/imagenes/COES_Logo_sello1.png){width=50%}](https://coes.cl)
-:::
+<!-- ::: {.g-col-4 style="text-align: center;"} -->
+<!-- [![](resources/imagenes/COES_Logo_sello1.png){width=50%}](https://coes.cl) -->
+<!-- ::: -->
 
-:::{.g-col-4}
+<!-- :::{.g-col-4} -->
 
-### Centro de Estudios de Conflicto y de Cohesión Social <br><br>
+<!-- ### Centro de Estudios de Conflicto y de Cohesión Social <br><br> -->
 
-Diagonal Paraguay 257, <br>
-Torre 26, Oficina 1504 <br>
-Santiago – RM
+<!-- Diagonal Paraguay 257, <br> -->
+<!-- Torre 26, Oficina 1504 <br> -->
+<!-- Santiago – RM -->
 
-Los Navegantes 1963 <br>
-Providencia - RM
+<!-- Los Navegantes 1963 <br> -->
+<!-- Providencia - RM -->
 
-Contáctenos: [comunicaciones@coes.cl](mailto:comunicaciones@coes.cl)
-:::
+<!-- Contáctenos: [comunicaciones@coes.cl](mailto:comunicaciones@coes.cl) -->
+<!-- ::: -->
 
-:::{.g-col-4}
-### Observatorio de Cohesión Social <br><br>
+<!-- :::{.g-col-4} -->
+<!-- ### Observatorio de Cohesión Social <br><br> -->
 
-<br>
-Capitán Ignacio Carrera Pinto 1045, <br>
-Facultad de Ciencias Sociales, Departamento de Sociología <br>
-Ñuñoa – RM
+<!-- <br> -->
+<!-- Capitán Ignacio Carrera Pinto 1045, <br> -->
+<!-- Facultad de Ciencias Sociales, Departamento de Sociología <br> -->
+<!-- Ñuñoa – RM -->
 
-<br> 
-:::
+<!-- <br> -->
+<!-- ::: -->
 
 
-:::
+<!-- ::: -->
 
-:::
-:::
-:::
-:::
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: -->
