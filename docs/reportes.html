@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Reportes</title>
+<title>reportes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,29 +66,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background-image: url(resources/imagenes/texture-bw.png);
-background-size: cover;
-      }
-</style>
-<style>
-.quarto-title-block .quarto-title-banner {
-    background-attachment: fixed;
-    opacity: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    padding-top: 1.5em;
-    padding-bottom: 1.8em;
-    box-sizing: border-box;
-    max-width: 100%;
-    width: 100vw;
-    height: 150px
-}
-</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -97,7 +74,7 @@ background-size: cover;
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -113,15 +90,15 @@ background-size: cover;
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./analisis/analisis.html"> 
-<span class="menu-text">Análisis</span></a>
+<span class="menu-text"><i class="bi bi-graph-up-arrow"></i> Análisis</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./reportes.html" aria-current="page"> 
-<span class="menu-text">Reportes</span></a>
+<span class="menu-text"><i class="bi bi-journals"></i> Reportes</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./links.html"> 
-<span class="menu-text">Enlaces</span></a>
+<span class="menu-text"><i class="bi bi-link-45deg"></i> Enlaces</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -136,33 +113,79 @@ background-size: cover;
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Reportes</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
+<div class="banner">
+<style>
+.banner {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #232731 0%, #1a1d26 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
 
+.banner-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  font-weight: 600;
+}
+
+.curve {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border: 6px solid;
+  border-radius: 50%;
+  animation: move 20s linear infinite;
+  opacity: 0.6;
+  will-change: transform;
+  filter: blur(1px);
+}
+
+.curve1 { border-color: #753F8C; top: -50%; left: -80%; }
+.curve2 { border-color: #4E8AD9; top: -30%; left: -100%; animation-direction: reverse; }
+.curve3 { border-color: #81BF24; top: 10%; left: -120%; animation-duration: 25s; }
+.curve4 { border-color: #F2B705; top: 50%; left: -90%; animation-delay: 5s; }
+
+@keyframes move {
+  0% { transform: translateX(-20%) rotate(0deg); }
+  100% { transform: translateX(100vw) rotate(360deg); }
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .banner { height: 150px; }
+  .curve { width: 250%; height: 150%; }
+}
+</style>
+
+<div class="curve curve1"></div>
+<div class="curve curve2"></div>
+<div class="curve curve3"></div>
+<div class="curve curve4"></div>
+<div class="banner-text">Reportes</div>
+</div>
+<div class="section-text light-bg">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: left;">
 <section id="documentos-de-trabajo" class="level1">
 <h1>Documentos de trabajo</h1>
 <blockquote class="blockquote">
@@ -172,7 +195,10 @@ background-size: cover;
 <p>Castillo, JC., Olivos, F. &amp; Iturra, J. (2021). <a href="https://drive.google.com/file/d/1FvmVhdYaT_Tg4fNyUKSshv45uJdJkTWo/view" target="_blank">Conceptos y medición de cohesión social en proyectos internacionales.</a> Serie Documentos de Trabajo COES, Documento de trabajo N°47, pp.&nbsp;1-37.</p>
 </blockquote>
 <blockquote class="blockquote">
-<p>Castillo, J., Iturra, J. Carrasco, K. (2021). Hacia una propuesta de medición de Cohesión Social con ELSOC. Disponible en <a href="https://ocscoes.github.io/cohesion-elsoc/" target="_blank">https://ocscoes.github.io/cohesion-elsoc/</a> (Versión preliminar)</p>
+<p>Castillo, JC., Iturra, J. Carrasco, K. (2021). Hacia una propuesta de medición de Cohesión Social con ELSOC. Disponible en <a href="https://ocscoes.github.io/cohesion-elsoc/" target="_blank">https://ocscoes.github.io/cohesion-elsoc/</a> (Versión preliminar)</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Castillo, JC., Espinoza, V., Barozet, E. (2022). Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados. Disponible en <a href="https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados">https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados</a>Documentos de Proyectos (LC/TS.2022/3), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)/Centro de Estudios de Conflicto y Cohesión Social (COES)</p>
 </blockquote>
 </section>
 <section id="presentaciones" class="level1">
@@ -189,11 +215,15 @@ background-size: cover;
 <blockquote class="blockquote">
 <p>Castillo, JC. (2019, diciembre). <a href="https://juancarloscastillo.github.io/jc-castillo/documents/CEPAL2019/pres01.html#1"><em>Estudiando la cohesión y el conflicto social en y desde América Latina</em></a>. Taller interno COES-CEPAL, Santiago de Chile.</p>
 </blockquote>
-
-
 </section>
+</div>
+</div>
+</div>
+</div>
 
-</main> <!-- /main -->
+
+
+
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
 <div style="background-color: #1f1f1f; color: white;
             grid-column: 1 / -1;">
@@ -661,7 +691,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p>Last Update: 2025-04-07</p>
+<p>Last Update: 2025-05-13</p>
 </div>
   </div>
 </footer>

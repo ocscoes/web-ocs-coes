@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>links</title>
+<title>Animación Doodle</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,12 +66,24 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://unpkg.com/css-doodle@0.15.3/css-doodle.min.js"></script>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -97,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"><i class="bi bi-journals"></i> Reportes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./links.html" aria-current="page"> 
+    <a class="nav-link" href="./links.html"> 
 <span class="menu-text"><i class="bi bi-link-45deg"></i> Enlaces</span></a>
   </li>  
 </ul>
@@ -113,116 +125,84 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="banner">
-<style>
-.banner {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-  background: linear-gradient(135deg, #232731 0%, #1a1d26 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-.banner-text {
-  position: relative;
-  z-index: 2;
-  color: white;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.4);
-  padding: 0.8rem 1.8rem;
-  border-radius: 12px;
-  backdrop-filter: blur(4px);
-  font-weight: 600;
-}
-
-.curve {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  border: 6px solid;
-  border-radius: 50%;
-  animation: move 20s linear infinite;
-  opacity: 0.6;
-  will-change: transform;
-  filter: blur(1px);
-}
-
-.curve1 { border-color: #753F8C; top: -50%; left: -80%; }
-.curve2 { border-color: #4E8AD9; top: -30%; left: -100%; animation-direction: reverse; }
-.curve3 { border-color: #81BF24; top: 10%; left: -120%; animation-duration: 25s; }
-.curve4 { border-color: #F2B705; top: 50%; left: -90%; animation-delay: 5s; }
-
-@keyframes move {
-  0% { transform: translateX(-20%) rotate(0deg); }
-  100% { transform: translateX(100vw) rotate(360deg); }
-}
-
-/* Mobile optimization */
-@media (max-width: 768px) {
-  .banner { height: 150px; }
-  .curve { width: 250%; height: 150%; }
-}
-</style>
-
-<div class="curve curve1"></div>
-<div class="curve curve2"></div>
-<div class="curve curve3"></div>
-<div class="curve curve4"></div>
-<div class="banner-text">Enlaces de Interés sobre Cohesión Social</div>
-</div>
-<div class="section-text light-bg">
-<div class="section-container">
-<div class="section-block">
-<div style="text-align: left;">
-<section id="nacional" class="level1">
-<h1>Nacional</h1>
-<ul>
-<li><p><a href="http://www.desarrollosocialyfamilia.gob.cl/informacion-social/cohesion-social" target="_blank">Consejo Asesor para la Cohesión Social, Ministerio de Desarrollo Social y Familia.</a></p></li>
-<li><p><a href="https://dataverse.harvard.edu/dataverse/coes_data_repository" target="_blank">Repositorio de Datos Abiertos, Centro de Estudios de Conflicto y Cohesión Social</a>: Se incluyen datos del Estudio Social Longitudinal de Chile (ELSOC), Observatorio de Conflictos (OC), Observatorio de Huelgas Laborales (OHL-UAH) y Centro del Inteligencia Territorial (CIT-UAI)</p></li>
-</ul>
-</section>
-<section id="internacional" class="level1">
-<h1>Internacional</h1>
-<ul>
-<li><p><a href="https://www.cepal.org/es/publicaciones/2978-cohesion-social-america-latina-caribe-revision-conceptos-marcos-referencia" target="_blank">CEPAL, Cohesión social en América Latina y el Caribe : una revisión de conceptos, marcos de referencia e indicadores</a></p></li>
-<li><p><a href="https://www.socialcohesion.info" target="_blank">Social Cohesion Hub</a>: Plataforma de colaboración que reúne conocimientos y experiencias sobre la cohesión social, incluyendo diferentes conceptos, datos, publicaciones y proyectos.</p></li>
-<li><p><a href="https://scanloninstitute.org.au/" target="_blank">Scanlon Foundation Research Institute</a>:</p>
-<ul>
-<li><a href="https://scanloninstitute.org.au/report2020" target="_blank">Mapping Social Cohesion</a>: Seguimiento de 13 años del mayor y más largo estudio nacional de Australia sobre cohesión social, inmigración y cuestiones de población.</li>
-</ul></li>
-<li><p><a href="https://www.researchgate.net/publication/356904379_SOCIAL_COHESION_A_NEW_DEFINITION_AND_A_PROPOSAL_FOR_ITS_MEASUREMENT_IN_AFRICA">SOCIAL COHESION: A NEW DEFINITION AND A PROPOSAL FOR ITS MEASUREMENT IN AFRICA</a></p></li>
-</ul>
-<section id="a-quién-seguir" class="level2">
-<h2 data-anchor-id="a-quién-seguir">A quién seguir:</h2>
-<ul>
-<li><p><a href="https://germjanmaat.wordpress.com/" target="_blank">Jan Germen Janmaat</a>, UCL Institute of Education.</p>
-<ul>
-<li><a href="https://www.researchgate.net/publication/263917454_Regimes_of_Social_Cohesion_Societies_and_the_Crisis_of_Globalisation" target="_blank">Regimes of Social Cohesion: Societies and the Crisis of Globalisation (2011)</a></li>
-</ul></li>
-<li><p>FALTAN AUTORES COES (PEDIR PERIMOS Y SUBIR)</p></li>
-</ul>
-</section>
-</section>
-</div>
-</div>
-</div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Animación Doodle</h1>
 </div>
 
 
 
+<div class="quarto-title-meta">
 
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<css-doodle>
+  <style>
+    :doodle {
+      @grid: 25x1 / 18vmin;
+    }
+    :container {
+      perspective: 30vmin;
+    }
+
+    @place-cell: center;
+    @size: 100%;
+
+    border: @r(2px) solid @pd(
+      #00b8a9, #f8f3d4, #f6416c, #ffde7d
+    );
+    @random(.1) { border-style: dashed; }
+    @random(.1) { border-style: dotted; }
+    @random(.1) {
+      border-width: @p(3px, 4px);
+      border-style: double;
+    }
+
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    will-change: transform, opacity;
+    animation: scale-up 7s linear infinite;
+    animation-delay: calc(-7s / @size() * @i());
+
+    @keyframes scale-up {
+      0%, 100% {
+        transform: translate3d(0, 0, 0) rotate(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      95% {
+        transform:
+          translate3d(0, 0, 45vmin)
+          rotateX(calc(@p(-1, 1) * @r(30deg, 330deg)))
+          rotateY(calc(@p(-1, 1) * @r(30deg, 330deg)))
+          rotateZ(calc(@p(-1, 1) * @r(30deg, 330deg)))
+      }
+    }
+  </style>
+</css-doodle>
+
+
+
+</main> <!-- /main -->
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
 <div style="background-color: #1f1f1f; color: white;
             grid-column: 1 / -1;">
@@ -690,7 +670,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p>Last Update: 2025-05-13</p>
+<p>Last Update: 2025-05-12</p>
 </div>
   </div>
 </footer>

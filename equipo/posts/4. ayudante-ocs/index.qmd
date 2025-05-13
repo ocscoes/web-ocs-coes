@@ -1,8 +1,8 @@
 ---
-title: TBA
-subtitle: Ayudante de Investigación
-contacto: tba
-github: tba
+title: Tomás Urzúa
+subtitle: Estudiante en Práctica
+contacto: tomas.urzua@ug.uchile.cl
+github: https://github.com/tomasurzuam
 web: tba
 image: "featured.png"
 about:

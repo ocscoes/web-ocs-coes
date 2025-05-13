@@ -35,11 +35,11 @@ website:
     # pinned: true
     left:
       - href: analisis/analisis.qmd
-        text: Análisis
+        text: "<i class='bi bi-graph-up-arrow'></i> Análisis"
       - href: reportes.qmd
-        text: Reportes
+        text: "<i class='bi bi-journals'></i> Reportes"
       - href: links.qmd
-        text: Enlaces
+        text: "<i class='bi bi-link-45deg'></i> Enlaces"
 format:
   html:
     theme: 
