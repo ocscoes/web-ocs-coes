@@ -1,0 +1,125 @@
+---
+title: ""
+toc: false
+page-layout: custom
+# title-block-banner: resources/imagenes/texture-bw.png
+# include-in-header:
+#   - text: |
+#       <style>
+#       .quarto-title-block .quarto-title-banner {
+#           background-attachment: fixed;
+#           opacity: 1;
+#           background-position: center;
+#           background-repeat: no-repeat;
+#           background-size: cover;
+#           margin: 0 auto;
+#           padding-top: 1.5em;
+#           padding-bottom: 1.8em;
+#           box-sizing: border-box;
+#           max-width: 100%;
+#           width: 100vw;
+#           height: 150px
+#       }
+#       </style>
+---
+
+::: {.banner}
+
+```{=html}
+<style>
+.banner {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #232731 0%, #1a1d26 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.banner-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  font-weight: 600;
+}
+
+.curve {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border: 6px solid;
+  border-radius: 50%;
+  animation: move 20s linear infinite;
+  opacity: 0.6;
+  will-change: transform;
+  filter: blur(1px);
+}
+
+.curve1 { border-color: #753F8C; top: -50%; left: -80%; }
+.curve2 { border-color: #4E8AD9; top: -30%; left: -100%; animation-direction: reverse; }
+.curve3 { border-color: #81BF24; top: 10%; left: -120%; animation-duration: 25s; }
+.curve4 { border-color: #F2B705; top: 50%; left: -90%; animation-delay: 5s; }
+
+@keyframes move {
+  0% { transform: translateX(-20%) rotate(0deg); }
+  100% { transform: translateX(100vw) rotate(360deg); }
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .banner { height: 150px; }
+  .curve { width: 250%; height: 150%; }
+}
+</style>
+
+<div class="curve curve1"></div>
+<div class="curve curve2"></div>
+<div class="curve curve3"></div>
+<div class="curve curve4"></div>
+<div class="banner-text">Reportes</div>
+```
+:::
+
+
+::: {.section-text .light-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+
+# Documentos de trabajo
+
+
+> Barozet, E., Contreras, D., Espinoza, V. & Méndez, M.L. (2021). [Clases medias en tiempos de crisis. Vulnerabilidad persistente, desafíos para la cohesión y un nuevo pacto social en Chile.](https://repositorio.cepal.org/bitstream/handle/11362/47184/1/S2100412_es.pdf){target="_blank"} Documentos de Proyectos (LC/TS.2021/101), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)
+
+> Castillo, JC., Olivos, F. & Iturra, J. (2021). [Conceptos y medición de cohesión social en proyectos internacionales.](https://drive.google.com/file/d/1FvmVhdYaT_Tg4fNyUKSshv45uJdJkTWo/view){target="_blank"} Serie Documentos de Trabajo COES, Documento de trabajo N°47, pp. 1-37.
+
+> Castillo, JC., Iturra, J. Carrasco, K. (2021). Hacia una propuesta de medición de Cohesión Social con ELSOC. Disponible en [https://ocscoes.github.io/cohesion-elsoc/](https://ocscoes.github.io/cohesion-elsoc/){target="_blank"} (Versión preliminar)
+
+> Castillo, JC., Espinoza, V., Barozet, E. (2022). Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados. Disponible en [https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados](https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados)Documentos de Proyectos (LC/TS.2022/3), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)/Centro de Estudios de Conflicto y Cohesión Social (COES)
+
+# Presentaciones
+
+> Castillo, JC. & Bargsted, M. (2022, enero). [_Measurement and Analysis of Social Cohesion: Perspectives from the Center of Social Conflict and Cohesion Studies._](https://ocscoes.github.io/presentaciones/RISC-bremen-january2022.html#1){target="_blank"}. Third Academy of Sociology Conference: Cohesive Societies? Analytical-empirical Perspectives, Germany.
+
+
+> Castillo, JC., Carrasco, K. & Cáceres, I. (2021, septiembre). [_Concepts and measurement of social cohesion in international perspective._](https://ocscoes.github.io/presentaciones/presentation-cohesive-societies.html#1){target="_blank"}. Third Academy of Sociology Conference: Cohesive Societies? Analytical-empirical Perspectives, Germany.
+
+
+> Castillo, JC. (2020, noviembre). [_Presentación Observatorio de Cohesión social: ¿Cómo se define la cohesión y cómo se puede medir?_](https://juancarloscastillo.github.io/jc-castillo/documents/conferencias/ocs_coes2020/ocs_coes.html#1). Taller CEPAL-COES, Santiago de Chile.
+
+
+> Castillo, JC. (2019, diciembre). [_Estudiando la cohesión y el conflicto social en y desde América Latina_](https://juancarloscastillo.github.io/jc-castillo/documents/CEPAL2019/pres01.html#1). Taller interno COES-CEPAL, Santiago de Chile.
+
+
+:::
+:::
+:::
+:::

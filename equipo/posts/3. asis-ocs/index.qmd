@@ -1,0 +1,23 @@
+---
+title: Gabriel Cortés
+subtitle: Asistente de Investigación OCS
+contacto: gabriel.cortes@uchile.cl
+github: https://github.com/gabcortes97
+web: https://www.linkedin.com/in/gabriel-cortés-paredes-80780a181/
+image: "featured.png"
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: envelope
+      href: mailto:gabriel.cortes@uchile.cl
+      text: Contacto
+    - icon: github
+      href: https://github.com/gabcortes97
+      text: Github
+    - icon: globe
+      href: https://www.linkedin.com/in/gabriel-cortés-paredes-80780a181/
+      text: Web Personal
+---
+
+Sociólogo de la Universidad de Chile y Magíster en Métodos para la Investigación Social por la Universidad Diego Portales. Actualmente se desempeña como Asistente de Investigación en el Observatorio de Cohesión Social y el Laboratorio de Investigación Social Abierta, ambas iniciativas del COES. Sus intereses se centran en la cohesión social, el individualismo, la institucionalidad política y los métodos de investigación mixtos.

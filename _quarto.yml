@@ -1,0 +1,55 @@
+project:
+  type: website
+  resources:
+       - analisis/posts/ELSOC/*
+       - analisis/posts/IndicesLAPOP/*
+  render:
+        - "*.qmd"
+  output-dir: "docs"
+website:
+  title: ""
+  page-footer:
+    background: "#121212"
+    left: |
+      [2025]()
+    center:
+      - href: https://github.com/ocscoes/web-ocs-coes
+        icon: github
+        aria-label: GitHub
+    right: |
+       Last Update: {{< modified isodate>}}
+  navbar:
+    logo: resources/imagenes/sharing-default.png
+    background: "#FFFFFF"
+    tools: 
+       - icon: github
+         href: https://github.com/ocscoes/
+       - icon: facebook
+         href: https://www.facebook.com/CentroCOES
+       - icon: twitter
+         href: https://x.com/CentroCOES
+       - icon: instagram
+         href: https://www.instagram.com/centro_coes/
+       - icon: youtube
+         href: https://www.youtube.com/channel/UCs9uSSVl7ucVqeSq4wVUIgA
+    # pinned: true
+    left:
+      - href: analisis/analisis.qmd
+        text: "<i class='bi bi-graph-up-arrow'></i> Análisis"
+      - href: reportes.qmd
+        text: "<i class='bi bi-journals'></i> Reportes"
+      - href: links.qmd
+        text: "<i class='bi bi-link-45deg'></i> Enlaces"
+format:
+  html:
+    theme: 
+      light: flatly
+    css: 
+      - styles.css
+    toc: true
+    linkcolor: "#497BBD"
+include-after-body: "footer.html"
+
+
+
+

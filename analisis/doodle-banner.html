@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curvas animadas estilo espacio</title>
+  <style>
+    body {
+      margin: 0;
+      background: #232731;
+      overflow: hidden;
+    }
+
+    .curve {
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      border: 6px solid transparent;
+      border-radius: 50%;
+      animation: move 30s linear infinite;
+      opacity: 0.8;
+    }
+
+    .curve1 {
+      border-color: #753F8C;
+      top: -50%;
+      left: -80%;
+      animation-delay: 0s;
+      transform: rotate(0deg);
+    }
+
+    .curve2 {
+      border-color: #4E8AD9;
+      top: -30%;
+      left: -100%;
+      animation-delay: 10s;
+      transform: rotate(30deg);
+    }
+
+    .curve3 {
+      border-color: #81BF24;
+      top: 10%;
+      left: -120%;
+      animation-delay: 5s;
+      transform: rotate(-20deg);
+    }
+
+    .curve4 {
+      border-color: #F2B705;
+      top: 50%;
+      left: -90%;
+      animation-delay: 15s;
+      transform: rotate(15deg);
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateX(0) rotate(0deg);
+      }
+      100% {
+        transform: translateX(100vw) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="curve curve1"></div>
+  <div class="curve curve2"></div>
+  <div class="curve curve3"></div>
+  <div class="curve curve4"></div>
+</body>
+</html>

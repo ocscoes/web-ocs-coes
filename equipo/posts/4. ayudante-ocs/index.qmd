@@ -1,0 +1,21 @@
+---
+title: Tomás Urzúa
+subtitle: Estudiante en Práctica
+contacto: tomas.urzua@ug.uchile.cl
+github: https://github.com/tomasurzuam
+web: tba
+image: "featured.png"
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: envelope
+      href: tba
+      text: Contacto
+    - icon: github
+      href: tba
+      text: Github
+    - icon: globe
+      href: tba
+      text: Web Personal
+---
