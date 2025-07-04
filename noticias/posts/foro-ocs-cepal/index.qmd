@@ -1,0 +1,21 @@
+---
+title: "Foro OCS-CEPAL"
+subtitle: Observatorio de Cohesión Social
+description: El primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.
+categories: [noticias]
+# Date published
+date: "2025-07-03"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.jpg"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss 
+---
+
+Primer hito del ciclo de foros del Observatorio de Cohesión Social. 
+
+Cuándo: 30 de julio 
+
+Dónde: Av. Dag Hammarskjöld 3477, Vitacura, Santiago de Chile

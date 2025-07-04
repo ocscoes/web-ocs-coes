@@ -1,0 +1,18 @@
+/*-- scss:defaults --*/
+
+$body-color: #e5e7e9 !default;
+$primary: #e5e7e9 !default;
+$font-size-root: 18px !default;
+
+/*-- scss:rules --*/
+body {
+  color: #e5e7e9;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, a, span, div {
+  color: #e5e7e9 !important;
+}
+
+.citation {
+  color: #f8f9f9 !important;
+}

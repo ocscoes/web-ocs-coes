@@ -1,0 +1,23 @@
+---
+title: "Ciclo de Foros segundo semestre 2025"
+subtitle: Observatorio de Cohesión Social
+description: Durante el segundo semestre se realizará una serie de foros en conjunto con distintas organizaciones centrados en la cohesión social.
+categories: [noticias]
+# Date published
+date: "2025-07-02"
+draft: false 
+about:
+  template: marquee
+  image: "featured.jpg" 
+format: 
+  html: 
+   theme: ../../../scss-posts.scss 
+---
+
+<span style="color: white;">Como Observatorio de Cohesión Social, nos complace anunciar que durante este segundo semestre del 2025, se llevarán a cabo **tres** foros que tendrán como principal objetivo elevar la discusión en torno a la **cohesión social**.
+
+Primer foro: 30 de julio en CEPAL
+
+Segundo foro: 09 de septiembre en CEP
+
+Tercer foro: Conferencia COES

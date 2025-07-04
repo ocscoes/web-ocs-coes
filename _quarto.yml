@@ -17,7 +17,7 @@ website:
         icon: github
         aria-label: GitHub
     right: |
-       Last Update: {{< modified isodate>}}
+       Last Update: 03-07-2025
   navbar:
     logo: resources/imagenes/sharing-default.png
     background: "#FFFFFF"

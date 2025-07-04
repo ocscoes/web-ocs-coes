@@ -1,0 +1,17 @@
+---
+title: "Actualización página web"
+subtitle: Observatorio de Cohesión Social
+description: La página web del Observatorio migró a Quarto, y junto a ello otras mejoras para el sitio.
+categories: [noticias]
+# Date published
+date: "2025-07-01"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss 
+---
+
+La página web necesitaba actualizar su arquitectura y diseño. Con ello en mente, nos cambiamos a Quarto...

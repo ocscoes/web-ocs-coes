@@ -52,6 +52,21 @@ about:
       href: analisis/analisis.qmd
 
 listing:
+- id: noticias
+  contents: 
+    - noticias/posts/*/*.qmd
+  sort: date desc
+  type: grid
+  grid-columns: 3
+  image-height: 150px
+  fields: [image, title, description]
+  max-items: 6
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: false  
+  
+  
 - id: equipo
   template: people-box.ejs
   contents: 
@@ -125,7 +140,27 @@ Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre
 ::: {style="text-align: center;"}
 
 <p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-newspaper" style="margin-right: 10px;"></i>Noticias</p>
+
+
+
+:::{#noticias}
+:::
+
+:::
+:::
+:::
+:::
+
+::: {.section-text .light-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
+<p align="center" style="font-size:36px; font-weight:bold;">
 <i class="bi bi-people-fill" style="margin-right: 10px;"></i>Equipo</p>
+
+
 
 :::{#equipo}
 :::
