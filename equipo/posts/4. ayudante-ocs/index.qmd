@@ -18,4 +18,9 @@ about:
     - icon: globe
       href: tba
       text: Web Personal
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
 ---
+
+Tomás Urzúa es sociólogo de la Universidad de Chile y actualmente cursa el Magíster en Ciencias Sociales en la misma institución. Está asociado al Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS) y al Centro de Estudios de Conflicto y Cohesión Social (COES). 

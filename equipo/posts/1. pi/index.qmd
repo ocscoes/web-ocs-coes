@@ -18,4 +18,9 @@ about:
     - icon: globe
       href: https://jc-castillo.com
       text: Web Personal
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
 ---
+
+Juan-Carlos Castillo es profesor asociado del Departamento de Sociología de la Universidad de Chile, investigador principal del Centro de Estudios sobre Conflictos y Cohesión Social (COES) y del Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS). Obtuvo su doctorado en Sociología en la Humboldt Universität zu Berlin.
