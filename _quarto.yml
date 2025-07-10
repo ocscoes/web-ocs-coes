@@ -34,16 +34,16 @@ website:
          href: https://www.youtube.com/channel/UCs9uSSVl7ucVqeSq4wVUIgA
     # pinned: true
     left:
-      - href: analisis/analisis.qmd
+      - href: index.qmd#analisish1
         text: "<i class='bi bi-graph-up-arrow'></i> Análisis"
-      - href: index.qmd#reportesh1
-        text: "<i class='bi bi-journals'></i> Reportes"
-      - href: links.qmd
-        text: "<i class='bi bi-link-45deg'></i> Enlaces"
       - href: index.qmd#noticiash1
         text: "<i class='bi bi-newspaper'></i> Noticias"
       - href: index.qmd#equipoh1
         text: "<i class='bi bi-people-fill'></i> Equipo"
+      - href: index.qmd#reportesh1
+        text: "<i class='bi bi-journals'></i> Reportes"
+      - href: links.qmd
+        text: "<i class='bi bi-link-45deg'></i> Enlaces"
 format:
   html:
     theme: 

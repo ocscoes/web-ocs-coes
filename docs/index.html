@@ -205,16 +205,8 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./analisis/analisis.html"> 
+    <a class="nav-link" href="./index.html#analisish1"> 
 <span class="menu-text"><i class="bi bi-graph-up-arrow"></i> Análisis</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html#reportesh1"> 
-<span class="menu-text"><i class="bi bi-journals"></i> Reportes</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./links.html"> 
-<span class="menu-text"><i class="bi bi-link-45deg"></i> Enlaces</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html#noticiash1"> 
@@ -223,6 +215,14 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link" href="./index.html#equipoh1"> 
 <span class="menu-text"><i class="bi bi-people-fill"></i> Equipo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#reportesh1"> 
+<span class="menu-text"><i class="bi bi-journals"></i> Reportes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./links.html"> 
+<span class="menu-text"><i class="bi bi-link-45deg"></i> Enlaces</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -299,16 +299,140 @@ window.Quarto = {
   </div>
 </header><div id="hero-heading">
 <p>En un primer momento, el Observatorio de Cohesión Social (OCS) estuvo centrado en el desarrollo de un portal de visualización para el análisis comparativo de distintos indicadores asociados a la cohesión social en América Latina. Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre cohesión social del centro a través de la revisión sistemática de la literatura y el análisis empírico de la cohesión social y el cambio longitudinal en Chile.</p>
-</div> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="/analisis/analisis.html" class="about-link" rel="" target="">
-    <i class="bi bi-graph-up-arrow"></i>
-     <span class="about-link-text">Análisis</span>
-  </a>
-</div>
+</div>  
 </div>
 
+</div>
+<div class="section-text light-bg">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: center;">
+<div id="analisish1">
+
+</div>
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-graph-up-arrow" style="margin-right: 10px;"></i>Análisis
+</p>
+<div id="analisis">
+
+</div>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
+
+<style>
+  .wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    transition: all 0.3s ease;
+  }
+
+  .iframe-page {
+    display: none;
+  }
+
+  .iframe-container iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+  }
+
+  .tile {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    transition: transform 0.2s;
+  }
+
+  .tile:hover {
+    transform: scale(1.02);
+  }
+
+  .text {
+    padding: 1rem;
+  }
+
+  .back-button {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #0693e3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dots {
+    margin-top: 1rem;
+  }
+
+  .dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #666;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+</style>
+
+<!-- Vista principal -->
+<div id="main-content" class="wrap">
+
+  <!-- Tarjeta 1 -->
+  <div class="tile" onclick="openIframe('https://jandimter.shinyapps.io/Cohesion3/')">
+    <img src="imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;">
+    <div class="text">
+      <h1>Índices Cohesión Social Latinoamérica</h1>
+      <p class="animate-text">Indicadores de Cohesión Social basado en datos encuestas LAPOP, Latinobarómetro y del World Value Survey.</p>
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tarjeta 2 -->
+  <div class="tile" onclick="openIframe('https://flo.uri.sh/visualisation/16243987/embed')">
+    <img src="imagenes/elsoc.png" alt="Visualización de ElSoc" style="width: 100%;">
+    <div class="text">
+      <h1>Indicadores de Cohesión Social ELSOC</h1>
+      <p class="animate-text">Indicadores de Cohesión Social en Chile basado en ELSOC.</p>
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Contenedor de iframe (sección interna) -->
+<div id="iframe-page" class="iframe-page">
+  <button class="back-button" onclick="goBack()">← Volver</button>
+  <div class="iframe-container">
+    <iframe id="dynamic-iframe" src=""></iframe>
+  </div>
+</div>
+
+<script>
+  function openIframe(url) {
+    document.getElementById('main-content').style.display = 'none';
+    document.getElementById('iframe-page').style.display = 'block';
+    document.getElementById('dynamic-iframe').src = url;
+  }
+
+  function goBack() {
+    document.getElementById('dynamic-iframe').src = '';
+    document.getElementById('iframe-page').style.display = 'none';
+    document.getElementById('main-content').style.display = 'grid'; // aseguramos que siga siendo grid
+  }
+</script>
+
+
+</div>
+</div>
+</div>
 </div>
 <div class="section-text light-bg">
 <div class="section-container">
@@ -322,10 +446,10 @@ window.Quarto = {
 </p>
 <div id="listing-noticias" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752006231705" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
+<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752189604605" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
 <a href="./noticias/posts/foro-ocs-cepal/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias\posts\foro-ocs-cepal\featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img src="noticias\posts\foro-ocs-cepal\featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Foro OCS-CEPAL
@@ -590,7 +714,7 @@ Actualización página web
           
           
           <p class="card-img-top">
-            <img alt="Tomás Urzúa" src="./equipo/posts/4. ayudante-ocs/featured.png" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+            <img alt="Tomás Urzúa" src="./equipo/posts/4. ayudante-ocs/featured.jpeg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
 
           </p>
           
@@ -651,7 +775,7 @@ Actualización página web
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <div class="button">
-<p><a href="./alumni/index.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Ex-integrantes</a></p>
+<p><a href="./alumni/index.html" class="btn" role="button" style="background-color: #0693e3; color: white; margin-top: 0em;">Ex-integrantes</a></p>
 </div>
 </div>
 </div>

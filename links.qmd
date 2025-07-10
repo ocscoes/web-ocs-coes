@@ -121,10 +121,7 @@ page-layout: custom
 
 * [Jan Germen Janmaat](https://germjanmaat.wordpress.com/){target="_blank"}, UCL Institute of Education.
 
-  * [Regimes of Social Cohesion: Societies and the Crisis of Globalisation (2011) ](https://www.researchgate.net/publication/263917454_Regimes_of_Social_Cohesion_Societies_and_the_Crisis_of_Globalisation){target="_blank"}
-
-
-* FALTAN AUTORES COES (PEDIR PERIMOS Y SUBIR)
+* [Regimes of Social Cohesion: Societies and the Crisis of Globalisation (2011) ](https://www.researchgate.net/publication/263917454_Regimes_of_Social_Cohesion_Societies_and_the_Crisis_of_Globalisation){target="_blank"}
 
 :::
 :::

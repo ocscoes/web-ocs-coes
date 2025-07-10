@@ -4,7 +4,7 @@ subtitle: Estudiante en Práctica
 contacto: tomas.urzua@ug.uchile.cl
 github: https://github.com/tomasurzuam
 web: tba
-image: "featured.png"
+image: "featured.jpeg"
 about:
   template: trestles
   image-shape: round

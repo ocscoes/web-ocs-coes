@@ -43,10 +43,6 @@ about:
   id: hero-heading
   template: jolla
   image-shape: rectangle
-  links:
-    - icon: graph-up-arrow
-      text: "Análisis"
-      href: analisis/analisis.qmd
 
 listing:
 - id: noticias
@@ -133,6 +129,143 @@ En un primer momento, el Observatorio de Cohesión Social (OCS) estuvo centrado 
 ::: {.section-block}
 ::: {style="text-align: center;"}
 
+:::{#analisish1}
+:::
+
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-graph-up-arrow" style="margin-right: 10px;"></i>Análisis</p>
+
+
+
+:::{#analisis}
+:::
+
+```{=HTML}
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  .wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    transition: all 0.3s ease;
+  }
+
+  .iframe-page {
+    display: none;
+  }
+
+  .iframe-container iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+  }
+
+  .tile {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    transition: transform 0.2s;
+  }
+
+  .tile:hover {
+    transform: scale(1.02);
+  }
+
+  .text {
+    padding: 1rem;
+  }
+
+  .back-button {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #0693e3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dots {
+    margin-top: 1rem;
+  }
+
+  .dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #666;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+</style>
+
+<!-- Vista principal -->
+<div id="main-content" class="wrap">
+
+  <!-- Tarjeta 1 -->
+  <div class="tile" onclick="openIframe('https://jandimter.shinyapps.io/Cohesion3/')">
+    <img src='imagenes/latamdark.png' alt="OCSVIS-LA" style="width: 100%;"/>
+    <div class="text">
+      <h1>Índices Cohesión Social Latinoamérica</h1>
+      <p class="animate-text">Indicadores de Cohesión Social basado en datos encuestas LAPOP, Latinobarómetro y del World Value Survey.</p>
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tarjeta 2 -->
+  <div class="tile" onclick="openIframe('https://flo.uri.sh/visualisation/16243987/embed')">
+    <img src='imagenes/elsoc.png' alt="Visualización de ElSoc" style="width: 100%;"/>
+    <div class="text">
+      <h1>Indicadores de Cohesión Social ELSOC</h1>
+      <p class="animate-text">Indicadores de Cohesión Social en Chile basado en ELSOC.</p>
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Contenedor de iframe (sección interna) -->
+<div id="iframe-page" class="iframe-page">
+  <button class="back-button" onclick="goBack()">← Volver</button>
+  <div class="iframe-container">
+    <iframe id="dynamic-iframe" src=""></iframe>
+  </div>
+</div>
+
+<script>
+  function openIframe(url) {
+    document.getElementById('main-content').style.display = 'none';
+    document.getElementById('iframe-page').style.display = 'block';
+    document.getElementById('dynamic-iframe').src = url;
+  }
+
+  function goBack() {
+    document.getElementById('dynamic-iframe').src = '';
+    document.getElementById('iframe-page').style.display = 'none';
+    document.getElementById('main-content').style.display = 'grid'; // aseguramos que siga siendo grid
+  }
+</script>
+
+
+```
+:::
+:::
+:::
+:::
+
+::: {.section-text .light-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
 :::{#noticiash1}
 :::
 
@@ -166,7 +299,7 @@ En un primer momento, el Observatorio de Cohesión Social (OCS) estuvo centrado 
 :::
 
 ::: {.button}
-[Ex-integrantes](alumni/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+[Ex-integrantes](alumni/index.qmd){.btn role="button" style="background-color: #0693e3; color: white; margin-top: 0em;"}
 :::
 
 :::
