@@ -1,52 +1,10 @@
 [
   {
-    "objectID": "noticias/posts/foro-ocs-cepal/index.html",
-    "href": "noticias/posts/foro-ocs-cepal/index.html",
-    "title": "Foro OCS-CEPAL",
+    "objectID": "noticias/posts/ciclo-foros-ocs/index.html",
+    "href": "noticias/posts/ciclo-foros-ocs/index.html",
+    "title": "Ciclo de Foros segundo semestre 2025",
     "section": "",
-    "text": "Primer hito del ciclo de foros del Observatorio de Cohesión Social.\nCuándo: 30 de julio\nDónde: Av. Dag Hammarskjöld 3477, Vitacura, Santiago de Chile"
-  },
-  {
-    "objectID": "noticias/posts/actualizacion-web/index.html",
-    "href": "noticias/posts/actualizacion-web/index.html",
-    "title": "Actualización página web",
-    "section": "",
-    "text": "La página web necesitaba actualizar su arquitectura y diseño. Con ello en mente, nos cambiamos a Quarto…"
-  },
-  {
-    "objectID": "links.html#a-quién-seguir",
-    "href": "links.html#a-quién-seguir",
-    "title": "",
-    "section": "A quién seguir:",
-    "text": "A quién seguir:\n\nJan Germen Janmaat, UCL Institute of Education.\n\nRegimes of Social Cohesion: Societies and the Crisis of Globalisation (2011)\n\nFALTAN AUTORES COES (PEDIR PERIMOS Y SUBIR)"
-  },
-  {
-    "objectID": "equipo/posts/4. ayudante-ocs/index.html",
-    "href": "equipo/posts/4. ayudante-ocs/index.html",
-    "title": "Tomás Urzúa",
-    "section": "",
-    "text": "Tomás Urzúa es sociólogo de la Universidad de Chile y actualmente cursa el Magíster en Ciencias Sociales en la misma institución. Está asociado al Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS) y al Centro de Estudios de Conflicto y Cohesión Social (COES)."
-  },
-  {
-    "objectID": "equipo/equipo.html",
-    "href": "equipo/equipo.html",
-    "title": "Equipo",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "equipo/posts/1. pi/index.html",
-    "href": "equipo/posts/1. pi/index.html",
-    "title": "Juan Carlos Castillo",
-    "section": "",
-    "text": "Juan-Carlos Castillo es profesor asociado del Departamento de Sociología de la Universidad de Chile, investigador principal del Centro de Estudios sobre Conflictos y Cohesión Social (COES) y del Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS). Obtuvo su doctorado en Sociología en la Humboldt Universität zu Berlin."
-  },
-  {
-    "objectID": "equipo/posts/3. asis-ocs/index.html",
-    "href": "equipo/posts/3. asis-ocs/index.html",
-    "title": "Gabriel Cortés",
-    "section": "",
-    "text": "Sociólogo de la Universidad de Chile y Magíster en Métodos para la Investigación Social por la Universidad Diego Portales. Actualmente se desempeña como Asistente de Investigación en el Observatorio de Cohesión Social y el Laboratorio de Investigación Social Abierta, ambas iniciativas del COES. Sus intereses se centran en la cohesión social, el individualismo, la institucionalidad política y los métodos de investigación mixtos."
+    "text": "Como Observatorio de Cohesión Social, nos complace anunciar que durante este segundo semestre del 2025, se llevarán a cabo tres foros que tendrán como principal objetivo elevar la discusión en torno a la cohesión social.\nPrimer foro: 30 de julio en CEPAL\nSegundo foro: 09 de septiembre en CEP\nTercer foro: Conferencia COES"
   },
   {
     "objectID": "noticias/noticias.html",
@@ -56,10 +14,66 @@
     "text": "Foro OCS-CEPAL\n\n\nEl primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.\n\n\n\nJul 3, 2025\n\n\n\n\n\n\n\n\n\n\n\nCiclo de Foros segundo semestre 2025\n\n\nDurante el segundo semestre se realizará una serie de foros en conjunto con distintas organizaciones centrados en la cohesión social.\n\n\n\nJul 2, 2025\n\n\n\n\n\n\n\n\n\n\n\nActualización página web\n\n\nLa página web del Observatorio migró a Quarto, y junto a ello otras mejoras para el sitio.\n\n\n\nJul 1, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "noticias/posts/ciclo-foros-ocs/index.html",
-    "href": "noticias/posts/ciclo-foros-ocs/index.html",
-    "title": "Ciclo de Foros segundo semestre 2025",
+    "objectID": "equipo/posts/3. asis-ocs/index.html",
+    "href": "equipo/posts/3. asis-ocs/index.html",
+    "title": "Gabriel Cortés",
     "section": "",
-    "text": "Como Observatorio de Cohesión Social, nos complace anunciar que durante este segundo semestre del 2025, se llevarán a cabo tres foros que tendrán como principal objetivo elevar la discusión en torno a la cohesión social.\nPrimer foro: 30 de julio en CEPAL\nSegundo foro: 09 de septiembre en CEP\nTercer foro: Conferencia COES"
+    "text": "Sociólogo de la Universidad de Chile y Magíster en Métodos para la Investigación Social por la Universidad Diego Portales. Actualmente se desempeña como Asistente de Investigación en el Observatorio de Cohesión Social y el Laboratorio de Investigación Social Abierta, ambas iniciativas del COES. Sus intereses se centran en la cohesión social, el individualismo, la institucionalidad política y los métodos de investigación mixtos."
+  },
+  {
+    "objectID": "equipo/posts/1. pi/index.html",
+    "href": "equipo/posts/1. pi/index.html",
+    "title": "Juan Carlos Castillo",
+    "section": "",
+    "text": "Juan-Carlos Castillo es profesor asociado del Departamento de Sociología de la Universidad de Chile, investigador principal del Centro de Estudios sobre Conflictos y Cohesión Social (COES) y del Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS). Obtuvo su doctorado en Sociología en la Humboldt Universität zu Berlin."
+  },
+  {
+    "objectID": "alumni/index.html",
+    "href": "alumni/index.html",
+    "title": "Ex-integrantes",
+    "section": "",
+    "text": "Julio Iturra \n          \n          \n            Asistente de Investigación\n          \n          \n            \n               Contacto\n            \n          \n          \n            \n               Github\n            \n          \n          \n            \n               Web Personal\n            \n          \n          \n             2020-2021"
+  },
+  {
+    "objectID": "equipo/equipo.html",
+    "href": "equipo/equipo.html",
+    "title": "Equipo",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "equipo/posts/2. asit-coes/index.html",
+    "href": "equipo/posts/2. asit-coes/index.html",
+    "title": "Kevin Carrasco",
+    "section": "",
+    "text": "Asistente de investigación de la línea “Interacciones Grupales e Individuales” de COES y del Laboratorio de Investigación Social Abierta (LISA-COES). Sociólogo y Magíster en Ciencias Sociales de la Universidad de Chile. Sus temas de interés refieren a: Preferencias redistributivas, Educación ciudadana, Ciencia Abierta, Cohesión Social y Métodos cuantitativos de investigación social."
+  },
+  {
+    "objectID": "equipo/posts/4. ayudante-ocs/index.html",
+    "href": "equipo/posts/4. ayudante-ocs/index.html",
+    "title": "Tomás Urzúa",
+    "section": "",
+    "text": "Tomás Urzúa es sociólogo de la Universidad de Chile y actualmente cursa el Magíster en Ciencias Sociales en la misma institución. Está asociado al Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS) y al Centro de Estudios de Conflicto y Cohesión Social (COES)."
+  },
+  {
+    "objectID": "links.html#a-quién-seguir",
+    "href": "links.html#a-quién-seguir",
+    "title": "",
+    "section": "A quién seguir:",
+    "text": "A quién seguir:\n\nJan Germen Janmaat, UCL Institute of Education.\n\nRegimes of Social Cohesion: Societies and the Crisis of Globalisation (2011)\n\nFALTAN AUTORES COES (PEDIR PERIMOS Y SUBIR)"
+  },
+  {
+    "objectID": "noticias/posts/actualizacion-web/index.html",
+    "href": "noticias/posts/actualizacion-web/index.html",
+    "title": "Actualización página web",
+    "section": "",
+    "text": "La página web necesitaba actualizar su arquitectura y diseño. Con ello en mente, nos cambiamos a Quarto…"
+  },
+  {
+    "objectID": "noticias/posts/foro-ocs-cepal/index.html",
+    "href": "noticias/posts/foro-ocs-cepal/index.html",
+    "title": "Foro OCS-CEPAL",
+    "section": "",
+    "text": "Primer hito del ciclo de foros del Observatorio de Cohesión Social.\nCuándo: 30 de julio\nDónde: Av. Dag Hammarskjöld 3477, Vitacura, Santiago de Chile"
   }
 ]

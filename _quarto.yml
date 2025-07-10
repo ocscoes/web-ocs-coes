@@ -36,10 +36,14 @@ website:
     left:
       - href: analisis/analisis.qmd
         text: "<i class='bi bi-graph-up-arrow'></i> Análisis"
-      - href: reportes.qmd
+      - href: index.qmd#reportesh1
         text: "<i class='bi bi-journals'></i> Reportes"
       - href: links.qmd
         text: "<i class='bi bi-link-45deg'></i> Enlaces"
+      - href: index.qmd#noticiash1
+        text: "<i class='bi bi-newspaper'></i> Noticias"
+      - href: index.qmd#equipoh1
+        text: "<i class='bi bi-people-fill'></i> Equipo"
 format:
   html:
     theme: 

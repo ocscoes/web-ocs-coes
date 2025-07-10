@@ -44,9 +44,6 @@ about:
   template: jolla
   image-shape: rectangle
   links:
-    - icon: journals
-      text: "Reportes"
-      href: reportes.qmd
     - icon: graph-up-arrow
       text: "Análisis"
       href: analisis/analisis.qmd
@@ -65,7 +62,6 @@ listing:
   sort-ui: false
   filter-ui: false
   feed: false  
-  
   
 - id: equipo
   template: people-box.ejs
@@ -127,9 +123,7 @@ listing:
 :::{#hero-heading}
 
 
-En un primer momento, el Observatorio de Cohesión Social (OCS) estuvo centrado en el desarrollo de un portal de visualización para el análisis comparativo de distintos indicadores asociados a la cohesión social en América Latina. Para ello se han empleado datos cross-seccionales de la encuesta LAPOP (Latin American Public Opinion Project) para el periodo de 2004 a 2018.
-
-Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre cohesión social del centro a través de la revisión sistemática de la literatura en el tema. En primera instancia esto tiene como objetivo fundamentar conceptual y teóricamente la concepción de COES en torno a la cohesión social. Adicionalmente, otro objetivo ha sido contribuir al análisis empírico de la cohesión social y el cambio longitudinal de esta en Chile. Al respecto, se ha seguido la propuesta conceptual de Chan et al. (2006) desde donde la cohesión social se entiende como el carácter de las interacciones verticales y horizontales entre los miembros de una sociedad, caracterizadas por actitudes y normas, como también por sus manifestaciones conductuales.
+En un primer momento, el Observatorio de Cohesión Social (OCS) estuvo centrado en el desarrollo de un portal de visualización para el análisis comparativo de distintos indicadores asociados a la cohesión social en América Latina. Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre cohesión social del centro a través de la revisión sistemática de la literatura y el análisis empírico de la cohesión social y el cambio longitudinal en Chile. 
 :::
 
 </div>
@@ -138,6 +132,9 @@ Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre
 ::: {.section-container}
 ::: {.section-block}
 ::: {style="text-align: center;"}
+
+:::{#noticiash1}
+:::
 
 <p align="center" style="font-size:36px; font-weight:bold;">
 <i class="bi bi-newspaper" style="margin-right: 10px;"></i>Noticias</p>
@@ -157,6 +154,9 @@ Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre
 ::: {.section-block}
 ::: {style="text-align: center;"}
 
+:::{#equipoh1}
+:::
+
 <p align="center" style="font-size:36px; font-weight:bold;">
 <i class="bi bi-people-fill" style="margin-right: 10px;"></i>Equipo</p>
 
@@ -164,6 +164,51 @@ Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre
 
 :::{#equipo}
 :::
+
+::: {.button}
+[Ex-integrantes](alumni/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+:::
+:::
+:::
+:::
+
+::: {.section-text .light-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+
+:::{#reportesh1}
+:::
+
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-journals" style="margin-right: 10px;"></i>Reportes</p>
+
+# Documentos de trabajo
+
+
+> Barozet, E., Contreras, D., Espinoza, V. & Méndez, M.L. (2021). [Clases medias en tiempos de crisis. Vulnerabilidad persistente, desafíos para la cohesión y un nuevo pacto social en Chile.](https://repositorio.cepal.org/bitstream/handle/11362/47184/1/S2100412_es.pdf){target="_blank"} Documentos de Proyectos (LC/TS.2021/101), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)
+
+> Castillo, JC., Olivos, F. & Iturra, J. (2021). [Conceptos y medición de cohesión social en proyectos internacionales.](https://drive.google.com/file/d/1FvmVhdYaT_Tg4fNyUKSshv45uJdJkTWo/view){target="_blank"} Serie Documentos de Trabajo COES, Documento de trabajo N°47, pp. 1-37.
+
+> Castillo, JC., Iturra, J. Carrasco, K. (2021). Hacia una propuesta de medición de Cohesión Social con ELSOC. Disponible en [https://ocscoes.github.io/cohesion-elsoc/](https://ocscoes.github.io/cohesion-elsoc/){target="_blank"} (Versión preliminar)
+
+> Castillo, JC., Espinoza, V., Barozet, E. (2022). Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados. Disponible en [https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados](https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados). Documentos de Proyectos (LC/TS.2022/3), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)/Centro de Estudios de Conflicto y Cohesión Social (COES)
+
+# Presentaciones
+
+> Castillo, JC. & Bargsted, M. (2022, enero). [_Measurement and Analysis of Social Cohesion: Perspectives from the Center of Social Conflict and Cohesion Studies._](https://ocscoes.github.io/presentaciones/RISC-bremen-january2022.html#1){target="_blank"}. Third Academy of Sociology Conference: Cohesive Societies? Analytical-empirical Perspectives, Germany.
+
+
+> Castillo, JC., Carrasco, K. & Cáceres, I. (2021, septiembre). [_Concepts and measurement of social cohesion in international perspective._](https://ocscoes.github.io/presentaciones/presentation-cohesive-societies.html#1){target="_blank"}. Third Academy of Sociology Conference: Cohesive Societies? Analytical-empirical Perspectives, Germany.
+
+
+> Castillo, JC. (2020, noviembre). [_Presentación Observatorio de Cohesión social: ¿Cómo se define la cohesión y cómo se puede medir?_](https://juancarloscastillo.github.io/jc-castillo/documents/conferencias/ocs_coes2020/ocs_coes.html#1). Taller CEPAL-COES, Santiago de Chile.
+
+
+> Castillo, JC. (2019, diciembre). [_Estudiando la cohesión y el conflicto social en y desde América Latina_](https://juancarloscastillo.github.io/jc-castillo/documents/CEPAL2019/pres01.html#1). Taller interno COES-CEPAL, Santiago de Chile.
+
 
 :::
 :::

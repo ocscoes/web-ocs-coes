@@ -1,0 +1,49 @@
+---
+title: "Ex-integrantes"
+page-layout: full
+title-block-banner: true
+format: 
+  html: 
+   theme: ../scss-posts.scss
+---
+
+```{=html}
+<div class="quarto-listing quarto-listing-container-custom">
+  <div class="quarto-listing quarto-listing-container-grid">
+    <div class="list grid quarto-listing-cols-4">
+      <div class="g-col-1 listing-box">
+        <p class="card-img-top">
+          <img alt="Julio Iturra" src="imagenes/j_iturra.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+        </p>
+        <div class="card-body post-contents">
+          <div class="listing-box-title">
+            Julio Iturra<br> 
+          </div>
+          <div class="listing-box-subtitle">
+            Asistente de Investigación<br>
+          </div>
+          <div class="listing-box-contacto">
+            <a href="mailto:julioiturrasanhueza@gmail.com" class="contact-link">
+              <i class="bi bi-envelope"></i> Contacto
+            </a>
+          </div>
+          <div class="listing-box-github">
+            <a href="https://github.com/jciturras" class="github-link">
+              <i class="bi bi-github"></i> Github
+            </a>
+          </div>
+          <div class="listing-box-web">
+            <a href="https://www.bigsss-bremen.de/people/phd-fellows/julio-iturra" class="web-link">
+              <i class="bi bi-globe"></i> Web Personal
+            </a>
+          </div>
+          <div class="listing-box-calendar">
+            <i class="bi bi-calendar"></i> 2020-2021
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+```

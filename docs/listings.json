@@ -1,7 +1,11 @@
 [
   {
-    "listing": "/equipo/equipo.html",
-    "items": []
+    "listing": "/noticias/noticias.html",
+    "items": [
+      "/noticias/posts/foro-ocs-cepal/index.html",
+      "/noticias/posts/ciclo-foros-ocs/index.html",
+      "/noticias/posts/actualizacion-web/index.html"
+    ]
   },
   {
     "listing": "/index.html",
@@ -16,11 +20,7 @@
     ]
   },
   {
-    "listing": "/noticias/noticias.html",
-    "items": [
-      "/noticias/posts/foro-ocs-cepal/index.html",
-      "/noticias/posts/ciclo-foros-ocs/index.html",
-      "/noticias/posts/actualizacion-web/index.html"
-    ]
+    "listing": "/equipo/equipo.html",
+    "items": []
   }
 ]

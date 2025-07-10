@@ -11,7 +11,7 @@ about:
   image: "featured.jpg"
 format: 
   html: 
-   theme: ../../../scss-posts.scss 
+   theme: ../../../scss-posts.scss
 ---
 
 Primer hito del ciclo de foros del Observatorio de Cohesión Social. 
