@@ -1,17 +1,54 @@
 ---
-title: "Actualización página web"
+title: "¡Bienvenidos a nuestro nuevo sitio web!"
 subtitle: Observatorio de Cohesión Social
-description: La página web del Observatorio migró a Quarto, y junto a ello otras mejoras para el sitio.
+description: En este nuevo sitio web buscamos visibilizar el trabajo investigativo del Observatorio, asi como las actividades organizadas por nuestro equipo. 
 categories: [noticias]
 # Date published
 date: "2025-07-01"  #year-
 draft: true
 about:
   template: marquee
-  image: "featured.png"
+  image: "featured.jpeg"
 format: 
   html: 
    theme: ../../../scss-posts.scss 
 ---
 
-La página web necesitaba actualizar su arquitectura y diseño. Con ello en mente, nos cambiamos a Quarto...
+En el Observatorio de Cohesión Social (OCS) estamos muy contentos de anunciar el lanzamiento de nuestro nuevo sitio. Este espacio busca difundir nuestro trabajo y promover el conocimiento basado en evidencia empírica sobre las dinámicas de la cohesión social en Chile, América Latina y el mundo.
+
+El objetivo es ofrecer informes, datos abiertos y visualizaciones interactivas que permitan comprender este fenómeno de manera **multidimensional, longitudinal y transnacional**. 
+
+## ¿Qué podrás encontrar?
+
+Entre las características que ponemos a disposición para el público académico se encuentran:
+
+- Un [visualizador interactivo sobre Cohesión Social en América Latina](incluir-link) con datos de la [Encuesta LAPOP](https://www.vanderbilt.edu/lapop/) con información de 9 olas entre 2004 y 2023.
+
+- [Reportes](https://ocscoes.github.io/web-ocs-coes/#reportesh1) sobre Cohesión Social en Chile y América Latina. Difundiremos y visibilizaremos tanto trabajo propio como de otros investigadores COES.
+
+- [Difusión](https://ocscoes.github.io/web-ocs-coes/#noticiash1) de nuestras actividades como Observatorio
+
+- [Recursos de interés](https://ocscoes.github.io/web-ocs-coes/links.html) para la investigación en cohesión social, incluyendo acceso a datos abiertos.
+
+Además, seguiremos ampliando el sitio con nuevos contenidos, tales como:
+
+- Un visualizador interactivo con datos de la Encuesta Social Longitudinal de Chile (ELSOC).
+
+- Difusión de investigaciones recientes sobre cohesión social en Chile.
+
+- Noticias sobre eventos organizados por el Observatorio.
+    
+## ¿Cómo lo hicimos?
+
+En el Observatorio de Cohesión Social estamos comprometidos con los principios de la ciencia abierta. Esto se refleja no solo en la apertura de nuestros datos y la transparencia de nuestros diseños de investigación, sino también en la forma en que compartimos nuestro trabajo.
+
+Por eso, desarrollamos este sitio utilizando [Quarto](https://quarto.org/), una plataforma de publicación científica y técnica de código abierto. Quarto ofrece ventajas importantes frente a otras soluciones: está diseñada específicamente para el trabajo en investigación y visualización de datos, integrándose de forma fluida con R, Markdown y otros lenguajes de programación.
+
+Gracias a este ecosistema unificado, pudimos construir un sitio web de manera simple, elegante y completamente alineado con nuestros principios.
+
+La creación de sitios web es solo una de las muchas posibilidades que ofrece Quarto. También permite generar visualizadores, reportes dinámicos y mucho más. Si te interesa conocer más sobre esta herramienta, nuestro investigador principal, Juan Carlos Castillo, escribió recientemente un [post sobre el tema](https://juancarloscastillo.github.io/jc-quarto/blog/posts/quarto-migration/).
+
+
+
+
+
