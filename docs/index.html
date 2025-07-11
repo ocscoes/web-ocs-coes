@@ -298,7 +298,7 @@ window.Quarto = {
 <div class="quarto-title-meta">
   </div>
 </header><div id="hero-heading">
-<p>En un primer momento, el Observatorio de Cohesión Social (OCS) estuvo centrado en el desarrollo de un portal de visualización para el análisis comparativo de distintos indicadores asociados a la cohesión social en América Latina. Actualmente, las tareas del OCS han estado abocadas a robustecer la agenda sobre cohesión social del centro a través de la revisión sistemática de la literatura y el análisis empírico de la cohesión social y el cambio longitudinal en Chile.</p>
+<p>El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. A través de investigaciones, datos abiertos y visualizaciones interactivas, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales (panel ELSOC-COES). Nuestro objetivo es promover una comprensión profunda y accesible de los cambios sociales, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.</p>
 </div>  
 </div>
 
@@ -321,20 +321,9 @@ window.Quarto = {
 
 <style>
   .wrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    transition: all 0.3s ease;
-  }
-
-  .iframe-page {
-    display: none;
-  }
-
-  .iframe-container iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
   }
 
   .tile {
@@ -344,6 +333,10 @@ window.Quarto = {
     overflow: hidden;
     background-color: #f8f9fa;
     transition: transform 0.2s;
+    max-width: 600px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
   }
 
   .tile:hover {
@@ -352,83 +345,46 @@ window.Quarto = {
 
   .text {
     padding: 1rem;
+    position: relative;
   }
 
-  .back-button {
-    margin: 1rem 0;
-    padding: 0.5rem 1rem;
-    background-color: #0693e3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .text h1 {
+    color: #e5e7e9;
   }
 
-  .dots {
+  .highlight-box {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.75rem;
+    border-radius: 6px;
     margin-top: 1rem;
+    pointer-events: none; /* evita interacción cuando está oculto */
   }
 
-  .dots span {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    background: #666;
-    border-radius: 50%;
-    margin-right: 5px;
+  .tile:hover .highlight-box {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .highlight-box .animate-text {
+    color: #e5e7e9 !important;
+    margin: 0;
   }
 </style>
 
-<!-- Vista principal -->
-<div id="main-content" class="wrap">
-
-  <!-- Tarjeta 1 -->
-  <div class="tile" onclick="openIframe('https://jandimter.shinyapps.io/Cohesion3/')">
+<!-- Vista principal con una sola tarjeta centrada -->
+<div class="wrap">
+  <a class="tile" href="https://gabrielcortesp.shinyapps.io/visualizador-la/#" target="_blank">
     <img src="imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;">
     <div class="text">
-      <h1>Índices Cohesión Social Latinoamérica</h1>
-      <p class="animate-text">Indicadores de Cohesión Social basado en datos encuestas LAPOP, Latinobarómetro y del World Value Survey.</p>
-      <div class="dots">
-        <span></span><span></span><span></span>
+      <h1>Visualizador de Cohesión Social en Latinoamérica</h1>
+      <div class="highlight-box">
+        <p class="animate-text">Indicadores de Cohesión Social basado principalmente en la encuesta LAPOP.</p>
       </div>
     </div>
-  </div>
-
-  <!-- Tarjeta 2 -->
-  <div class="tile" onclick="openIframe('https://flo.uri.sh/visualisation/16243987/embed')">
-    <img src="imagenes/elsoc.png" alt="Visualización de ElSoc" style="width: 100%;">
-    <div class="text">
-      <h1>Indicadores de Cohesión Social ELSOC</h1>
-      <p class="animate-text">Indicadores de Cohesión Social en Chile basado en ELSOC.</p>
-      <div class="dots">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </div>
-
+  </a>
 </div>
-
-<!-- Contenedor de iframe (sección interna) -->
-<div id="iframe-page" class="iframe-page">
-  <button class="back-button" onclick="goBack()">← Volver</button>
-  <div class="iframe-container">
-    <iframe id="dynamic-iframe" src=""></iframe>
-  </div>
-</div>
-
-<script>
-  function openIframe(url) {
-    document.getElementById('main-content').style.display = 'none';
-    document.getElementById('iframe-page').style.display = 'block';
-    document.getElementById('dynamic-iframe').src = url;
-  }
-
-  function goBack() {
-    document.getElementById('dynamic-iframe').src = '';
-    document.getElementById('iframe-page').style.display = 'none';
-    document.getElementById('main-content').style.display = 'grid'; // aseguramos que siga siendo grid
-  }
-</script>
-
 
 </div>
 </div>
@@ -446,7 +402,7 @@ window.Quarto = {
 </p>
 <div id="listing-noticias" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752189604605" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
+<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752259882365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
 <a href="./noticias/posts/foro-ocs-cepal/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="noticias\posts\foro-ocs-cepal\featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -456,34 +412,6 @@ Foro OCS-CEPAL
 </h5>
 <div class="card-text listing-description delink">
 <p>El primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751428800000" data-listing-file-modified-sort="1751557498921" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52">
-<a href="./noticias/posts/ciclo-foros-ocs/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias\posts\ciclo-foros-ocs\featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ciclo de Foros segundo semestre 2025
-</h5>
-<div class="card-text listing-description delink">
-<p>Durante el segundo semestre se realizará una serie de foros en conjunto con distintas organizaciones centrados en la cohesión social.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751342400000" data-listing-file-modified-sort="1751557513696" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
-<a href="./noticias/posts/actualizacion-web/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias\posts\actualizacion-web\featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Actualización página web
-</h5>
-<div class="card-text listing-description delink">
-<p>La página web del Observatorio migró a Quarto, y junto a ello otras mejoras para el sitio.</p>
 </div>
 </div>
 </div></a>
@@ -522,7 +450,7 @@ Actualización página web
           
           
           <p class="card-img-top">
-            <img alt="Juan Carlos Castillo" src="./equipo/posts/1. pi/featured.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+            <img alt="Juan Carlos Castillo" src="./equipo/posts/1. pi/featured.png" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
 
           </p>
           
@@ -645,23 +573,23 @@ Actualización página web
       
       
       
-      <a href="./equipo/posts/3. asis-ocs/index.html" role="button" class="quarto-grid-link">
-        </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/3. asis-ocs/index.html" role="button" class="quarto-grid-link">
+      <a href="./equipo/posts/3. consultor-ocs/index.html" role="button" class="quarto-grid-link">
+        </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/3. consultor-ocs/index.html" role="button" class="quarto-grid-link">
           
           
           <p class="card-img-top">
-            <img alt="Gabriel Cortés" src="./equipo/posts/3. asis-ocs/featured.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+            <img alt="Gabriel Cortés" src="./equipo/posts/3. consultor-ocs/featured.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
 
           </p>
           
-          </a><div class="card-body post-contents"><a href="./equipo/posts/3. asis-ocs/index.html" role="button" class="quarto-grid-link">
+          </a><div class="card-body post-contents"><a href="./equipo/posts/3. consultor-ocs/index.html" role="button" class="quarto-grid-link">
             
             <div class="listing-box-title">
               Gabriel Cortés<br> 
             </div>
                
             <div class="listing-box-subtitle">
-              Asistente de Investigación OCS<br>
+              Consultor<br>
             </div>
             
              <div class="listing-box-links">
@@ -670,7 +598,7 @@ Actualización página web
                 
             
               
-           </a><div class="listing-box-contacto"><a href="./equipo/posts/3. asis-ocs/index.html" role="button" class="quarto-grid-link">
+           </a><div class="listing-box-contacto"><a href="./equipo/posts/3. consultor-ocs/index.html" role="button" class="quarto-grid-link">
   
     </a><a href="mailto:gabriel.cortes@uchile.cl" class="contact-link">
       <i class="bi bi-envelope"></i> Contacto

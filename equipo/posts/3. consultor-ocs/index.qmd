@@ -1,6 +1,6 @@
 ---
 title: Gabriel Cortés
-subtitle: Asistente de Investigación OCS
+subtitle: Consultor
 contacto: gabriel.cortes@uchile.cl
 github: https://github.com/gabcortes97
 web: https://www.linkedin.com/in/gabriel-cortés-paredes-80780a181/

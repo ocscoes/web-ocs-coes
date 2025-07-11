@@ -5,7 +5,7 @@ description: Durante el segundo semestre se realizará una serie de foros en con
 categories: [noticias]
 # Date published
 date: "2025-07-02"
-draft: false 
+draft: true
 about:
   template: marquee
   image: "featured.jpg" 
