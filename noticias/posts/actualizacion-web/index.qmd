@@ -24,11 +24,11 @@ Entre las características que ponemos a disposición para el público académic
 
 - Un [visualizador interactivo sobre Cohesión Social en América Latina](incluir-link) con datos de la [Encuesta LAPOP](https://www.vanderbilt.edu/lapop/) con información de 9 olas entre 2004 y 2023.
 
-- [Reportes](https://ocscoes.github.io/web-ocs-coes/#reportesh1) sobre Cohesión Social en Chile y América Latina. Difundiremos y visibilizaremos tanto trabajo propio como de otros investigadores COES.
+- [Reportes](../../../index.qmd#reportesh1) sobre Cohesión Social en Chile y América Latina. Difundiremos y visibilizaremos tanto trabajo propio como de otros investigadores COES.
 
-- [Difusión](https://ocscoes.github.io/web-ocs-coes/#noticiash1) de nuestras actividades como Observatorio
+- [Difusión](../../../index.qmd#noticiash1) de nuestras actividades como Observatorio
 
-- [Recursos de interés](https://ocscoes.github.io/web-ocs-coes/links.html) para la investigación en cohesión social, incluyendo acceso a datos abiertos.
+- [Recursos de interés](../../../links.qmd) para la investigación en cohesión social, incluyendo acceso a datos abiertos.
 
 Además, seguiremos ampliando el sitio con nuevos contenidos, tales como:
 
