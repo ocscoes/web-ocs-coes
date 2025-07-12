@@ -45,6 +45,21 @@ about:
   image-shape: rectangle
 
 listing:
+  
+- id: analisis
+  contents: 
+    - analisis/posts/*/*.qmd
+  sort: date desc
+  type: grid
+  grid-columns: 3
+  image-height: 150px
+  fields: [image, title, description]
+  max-items: 1
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: false  
+  
 - id: noticias
   contents: 
     - noticias/posts/*/*.qmd
@@ -140,78 +155,20 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
 :::{#analisis}
 :::
 
-```{=HTML}
-
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-
 <style>
-  .wrap {
-    display: flex;
+  /* Centra el único post del listing 'analisis' */
+  #listing-analisis .list.grid {
+    display: flex !important;
     justify-content: center;
-    padding: 2rem;
+    flex-wrap: wrap;
   }
 
-  .tile {
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #f8f9fa;
-    transition: transform 0.2s;
-    max-width: 600px;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-  }
-
-  .tile:hover {
-    transform: scale(1.02);
-  }
-
-  .text {
-    padding: 1rem;
-    position: relative;
-  }
-
-  .text h1 {
-    color: #e5e7e9;
-  }
-
-  .highlight-box {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 0.75rem;
-    border-radius: 6px;
-    margin-top: 1rem;
-    pointer-events: none; /* evita interacción cuando está oculto */
-  }
-
-  .tile:hover .highlight-box {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .highlight-box .animate-text {
-    color: #e5e7e9 !important;
-    margin: 0;
+  /* Opcional: limita el ancho del post para que no sea tan grande */
+  #listing-analisis .list.grid > div {
+    max-width: 400px;
   }
 </style>
 
-<!-- Vista principal con una sola tarjeta centrada -->
-<div class="wrap">
-  <a class="tile" href="https://gabrielcortesp.shinyapps.io/visualizador-la/#" target="_blank">
-    <img src='imagenes/latamdark.png' alt="OCSVIS-LA" style="width: 100%;"/>
-    <div class="text">
-      <h1>Visualizador de Cohesión Social en Latinoamérica</h1>
-      <div class="highlight-box">
-        <p class="animate-text">Indicadores de Cohesión Social basado principalmente en la encuesta LAPOP.</p>
-      </div>
-    </div>
-  </a>
-</div>
-
-```
 :::
 :::
 :::

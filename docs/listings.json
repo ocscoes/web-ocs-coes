@@ -2,17 +2,28 @@
   {
     "listing": "/noticias/noticias.html",
     "items": [
-      "/noticias/posts/foro-ocs-cepal/index.html"
+      "/noticias/posts/foro-ocs-cepal/index.html",
+      "/noticias/posts/ciclo-foros-ocs/index.html",
+      "/noticias/posts/actualizacion-web/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/analisis/posts/visualizador/index.html",
       "/noticias/posts/foro-ocs-cepal/index.html",
+      "/noticias/posts/ciclo-foros-ocs/index.html",
+      "/noticias/posts/actualizacion-web/index.html",
       "/equipo/posts/1. pi/index.html",
       "/equipo/posts/2. asit-coes/index.html",
       "/equipo/posts/3. consultor-ocs/index.html",
       "/equipo/posts/4. ayudante-ocs/index.html"
+    ]
+  },
+  {
+    "listing": "/analisis/analisis.html",
+    "items": [
+      "/analisis/posts/visualizador/index.html"
     ]
   },
   {

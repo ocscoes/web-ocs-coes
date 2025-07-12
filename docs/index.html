@@ -71,6 +71,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-analisis .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-analisis'] = new List('listing-analisis', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-noticias .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -313,79 +341,38 @@ window.Quarto = {
 <p align="center" style="font-size:36px; font-weight:bold;">
 <i class="bi bi-graph-up-arrow" style="margin-right: 10px;"></i>Análisis
 </p>
-<div id="analisis">
-
+<div id="listing-analisis" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="QW4lQzMlQTFsaXNpcw==" data-listing-date-sort="1752206400000" data-listing-file-modified-sort="1752291832011" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="399">
+<a href="./analisis/posts/visualizador/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="analisis\posts\visualizador\featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Visualizador Latinoamérica
+</h5>
+<div class="card-text listing-description delink">
+<p>El visualizador de cohesión social de América Latina ya está disponible! Entra al post para utilizarlo.</p>
 </div>
-
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
-
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 <style>
-  .wrap {
-    display: flex;
+  /* Centra el único post del listing 'analisis' */
+  #listing-analisis .list.grid {
+    display: flex !important;
     justify-content: center;
-    padding: 2rem;
+    flex-wrap: wrap;
   }
 
-  .tile {
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #f8f9fa;
-    transition: transform 0.2s;
-    max-width: 600px;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-  }
-
-  .tile:hover {
-    transform: scale(1.02);
-  }
-
-  .text {
-    padding: 1rem;
-    position: relative;
-  }
-
-  .text h1 {
-    color: #e5e7e9;
-  }
-
-  .highlight-box {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 0.75rem;
-    border-radius: 6px;
-    margin-top: 1rem;
-    pointer-events: none; /* evita interacción cuando está oculto */
-  }
-
-  .tile:hover .highlight-box {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .highlight-box .animate-text {
-    color: #e5e7e9 !important;
-    margin: 0;
+  /* Opcional: limita el ancho del post para que no sea tan grande */
+  #listing-analisis .list.grid > div {
+    max-width: 400px;
   }
 </style>
-
-<!-- Vista principal con una sola tarjeta centrada -->
-<div class="wrap">
-  <a class="tile" href="https://gabrielcortesp.shinyapps.io/visualizador-la/#" target="_blank">
-    <img src="imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;">
-    <div class="text">
-      <h1>Visualizador de Cohesión Social en Latinoamérica</h1>
-      <div class="highlight-box">
-        <p class="animate-text">Indicadores de Cohesión Social basado principalmente en la encuesta LAPOP.</p>
-      </div>
-    </div>
-  </a>
-</div>
-
 </div>
 </div>
 </div>
@@ -402,7 +389,7 @@ window.Quarto = {
 </p>
 <div id="listing-noticias" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752259882365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
+<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752290374784" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
 <a href="./noticias/posts/foro-ocs-cepal/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="noticias\posts\foro-ocs-cepal\featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -412,6 +399,34 @@ Foro OCS-CEPAL
 </h5>
 <div class="card-text listing-description delink">
 <p>El primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751428800000" data-listing-file-modified-sort="1752290359959" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="588">
+<a href="./noticias/posts/ciclo-foros-ocs/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="noticias\posts\ciclo-foros-ocs\featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ciclo de Foros de Cohesión Social
+</h5>
+<div class="card-text listing-description delink">
+<p>Buscamos promover la discusión sobre los desafíos políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751342400000" data-listing-file-modified-sort="1752290334451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="342">
+<a href="./noticias/posts/actualizacion-web/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="noticias\posts\actualizacion-web\featured.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+¡Bienvenidos a nuestro nuevo sitio web!
+</h5>
+<div class="card-text listing-description delink">
+<p>En este nuevo sitio web buscamos visibilizar el trabajo investigativo del Observatorio, asi como las actividades organizadas por nuestro equipo.</p>
 </div>
 </div>
 </div></a>
@@ -653,7 +668,7 @@ Foro OCS-CEPAL
             </div>
                
             <div class="listing-box-subtitle">
-              Estudiante en Práctica<br>
+              Practicante<br>
             </div>
             
              <div class="listing-box-links">

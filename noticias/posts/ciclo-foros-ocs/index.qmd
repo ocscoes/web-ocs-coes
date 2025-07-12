@@ -5,7 +5,7 @@ description: Buscamos promover la discusión sobre los desafíos políticos, te�
 categories: [noticias]
 # Date published
 date: "2025-07-02"
-draft: true
+draft: false
 about:
   template: marquee
   image: "featured.jpg" 
