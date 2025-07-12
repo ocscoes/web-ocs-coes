@@ -16,7 +16,7 @@ body {
 }
 
 .light-bg{
-  background-color: #ffffff;
+  background: #ffffff;
 }
 
 .logos-bg{
@@ -26,10 +26,21 @@ body {
 .dark-bg {
   background-color: #212121;
   color: #ffffff;
-  max-width: 100% !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+}
+
+.section-footer1 {
+   background: linear-gradient(to bottom, #ffffff 0%, #1f1f1f 100%);
+   height: 100px;
+}
+
+.section-footer2 {
+   background: linear-gradient(to bottom, #1f1f1f 0%, #ffffff 100%);
+   height: 100px;
+}
+
+.section-footer3 {
+   background: linear-gradient(to bottom, #1f1f1f 0%, #e8e8e8 100%);
+   height: 100px;
 }
 
 /*-- links hover --*/

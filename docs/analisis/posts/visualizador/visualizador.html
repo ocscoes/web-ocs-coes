@@ -156,79 +156,8 @@ ul.task-list li input[type="checkbox"] {
 </header> <main class="content" id="quarto-document-content">
 <p>Haz click en el botón y descubre los índices de cohesión social, realiza análisis entre países y a lo largo del tiempo!</p>
 <p>El reporte técnico se puede encontrar <a href="https://ocscoes.github.io/medicion-cohesion-LA/">aquí</a>.</p>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
-<style>
-  .wrap {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-  }
-  .tile {
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #f8f9fa;
-    transition: transform 0.2s;
-    max-width: 600px;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-  }
-  .tile:hover {
-    transform: scale(1.02);
-  }
-  .text {
-    padding: 1rem;
-    position: relative;
-  }
-  .text h1 {
-    color: #e5e7e9;
-  }
-  .highlight-box {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 0.75rem;
-    border-radius: 6px;
-    margin-top: 1rem;
-    pointer-events: none;
-  }
-  .tile:hover .highlight-box {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .highlight-box .animate-text {
-    color: #e5e7e9 !important;
-    margin: 0;
-  }
-  /* Estilo para el contenedor del iframe */
-  .iframe-container {
-    display: none; /* Oculto por defecto */
-    width: 100%;
-    height: 80vh;
-    margin-top: 2rem;
-  }
-  .iframe-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-</style>
-<!-- Vista principal -->
-<div class="wrap">
-  <a href="../../../analisis/posts/visualizador/visualizador.html">
-    <div class="tile">
-      <img src="../../imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;">
-      <div class="text">
-        <h1>Visualizador de Cohesión Social en Latinoamérica</h1>
-        <div class="highlight-box">
-          <p class="animate-text">Indicadores de Cohesión Social basado principalmente en la encuesta LAPOP.</p>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
+<iframe src="https://gabrielcortesp.shinyapps.io/visualizador-la/" width="100%" height="600px" frameborder="0">
+</iframe>
 
 
 </main> 

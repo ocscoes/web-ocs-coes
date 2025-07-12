@@ -1,0 +1,25 @@
+---
+title: "Visualizador Latinoamérica"
+subtitle: Observatorio de Cohesión Social
+description: Indicadores de Cohesión Social en América Latina para los años 2004-2022, basado principalmente en la encuesta LAPOP.
+categories: [Análisis]
+# Date published
+date: "2025-07-11"
+draft: false
+format: 
+  html: 
+   page-layout: full
+   grid:
+     body-width: 800px
+   theme: ../scss-posts.scss
+---
+
+```{=HTML}
+
+<iframe src="https://gabrielcortesp.shinyapps.io/visualizador-la/"
+        width="100%" height="800px" frameborder="0">
+</iframe>
+
+```
+
+Puedes acceder al visualizador en pantalla completa [aquí](https://gabrielcortesp.shinyapps.io/visualizador-la/)
