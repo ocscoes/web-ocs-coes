@@ -11,7 +11,7 @@ include-in-header:
       <style>
         #hero-section {
           position: relative;
-          height: 110vh;
+          height: 100vh;
           width: 100%;
           overflow: hidden;
           display: flex;
@@ -76,7 +76,7 @@ listing:
   
 - id: reportes
   contents:
-    - reportes/posts/*.qmd
+    - reportes/posts/*/*.qmd
   sort: date desc
   type: default
   fields: [title, date, author]
@@ -160,6 +160,30 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
 ::: {.section-block}
 ::: {style="text-align: center;"}
 
+:::{#noticiash1}
+:::
+
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-newspaper" style="margin-right: 10px;"></i>Noticias</p>
+
+
+:::{#noticias}
+:::
+
+:::
+:::
+:::
+:::
+
+<div class="section-footer1">
+
+</div>
+
+::: {.section-text .dark-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
 :::{#analisish1}
 :::
 
@@ -174,7 +198,9 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
   .wrap {
     display: flex;
     justify-content: center;
+    gap: 2rem; /* espacio entre tiles */
     padding: 2rem;
+    flex-wrap: wrap; /* permite responsividad */
   }
 
   .tile {
@@ -184,7 +210,7 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
     overflow: hidden;
     background-color: #f8f9fa;
     transition: transform 0.2s;
-    max-width: 600px;
+    width: 350px;
     text-decoration: none;
     color: inherit;
     position: relative;
@@ -200,6 +226,7 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
   }
 
   .text h1 {
+    font-size: 20px;
     color: #e5e7e9;
   }
 
@@ -224,11 +251,11 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
   }
 </style>
 
-<!-- Vista principal -->
 <div class="wrap">
+  <!-- Tile 1 -->
   <a href="analisis/visualizador-latam.qmd">
     <div class="tile">
-      <img src='/imagenes/latamdark.png' alt="OCSVIS-LA" style="width: 100%;" />
+      <img src="/imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;" />
       <div class="text">
         <h1>Visualizador de Cohesión Social en Latinoamérica</h1>
         <div class="highlight-box">
@@ -237,52 +264,29 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
       </div>
     </div>
   </a>
+
+  <!-- Tile 2 (nuevo) -->
+  <a href="analisis/visualizador-elsoc.qmd">
+    <div class="tile">
+      <img src="/imagenes/elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;" />
+      <div class="text">
+        <h1>Visualizador ELSOC</h1>
+        <div class="highlight-box">
+          <p class="animate-text">Indicadores de Cohesión Social basado en ELSOC.</p>
+        </div>
+      </div>
+    </div>
+  </a>
 </div>
+
 
 ```
 
-<style>
-  /* Centra el único post del listing 'analisis' */
-  #listing-analisis .list.grid {
-    display: flex !important;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  /* Opcional: limita el ancho del post para que no sea tan grande */
-  #listing-analisis .list.grid > div {
-    max-width: 400px;
-  }
-</style>
-
 :::
 :::
 :::
 :::
 
-<div class="section-footer1">
-
-</div>
-
-::: {.section-text .dark-bg}
-::: {.section-container}
-::: {.section-block}
-::: {style="text-align: center;"}
-
-:::{#noticiash1}
-:::
-
-<p align="center" style="font-size:36px; font-weight:bold;">
-<i class="bi bi-newspaper" style="margin-right: 10px;"></i>Noticias</p>
-
-
-:::{#noticias}
-:::
-
-:::
-:::
-:::
-:::
 
 <div class="section-footer2">
 
@@ -299,7 +303,11 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
 <p align="center" style="font-size:36px; font-weight:bold;">
 <i class="bi bi-journals" style="margin-right: 10px;"></i>Reportes</p>
 
-:::{reportes}
+:::{#reportes}
+:::
+
+::: {.button}
+[Todos los documentos](reportes/reportes.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3; margin-top: 0em;"}
 :::
 
 :::

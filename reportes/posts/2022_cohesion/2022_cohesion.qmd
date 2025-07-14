@@ -7,6 +7,9 @@ abstract: "En momentos de crisis e incertidumbre, la cohesión social —ese “
 categories: ["Publicación"]
 about:
   template: marquee
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
 ---
 
 ::: {.button}

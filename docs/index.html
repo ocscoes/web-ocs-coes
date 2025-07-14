@@ -108,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 <style>
   #hero-section {
     position: relative;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -338,109 +338,6 @@ window.Quarto = {
 <div class="section-container">
 <div class="section-block">
 <div style="text-align: center;">
-<div id="analisish1">
-
-</div>
-<p align="center" style="font-size:36px; font-weight:bold;">
-<i class="bi bi-graph-up-arrow" style="margin-right: 10px;"></i>Análisis
-</p>
-
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
-
-<style>
-  .wrap {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  .tile {
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #f8f9fa;
-    transition: transform 0.2s;
-    max-width: 600px;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-  }
-
-  .tile:hover {
-    transform: scale(1.02);
-  }
-
-  .text {
-    padding: 1rem;
-    position: relative;
-  }
-
-  .text h1 {
-    color: #e5e7e9;
-  }
-
-  .highlight-box {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 0.75rem;
-    border-radius: 6px;
-    margin-top: 1rem;
-    pointer-events: none;
-  }
-
-  .tile:hover .highlight-box {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .highlight-box .animate-text {
-    color: #e5e7e9 !important;
-    margin: 0;
-  }
-</style>
-
-<!-- Vista principal -->
-<div class="wrap">
-  <a href="./analisis/visualizador-latam.html">
-    <div class="tile">
-      <img src="./imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;">
-      <div class="text">
-        <h1>Visualizador de Cohesión Social en Latinoamérica</h1>
-        <div class="highlight-box">
-          <p class="animate-text">Indicadores de Cohesión Social basado principalmente en la encuesta LAPOP.</p>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-
-<style>
-  /* Centra el único post del listing 'analisis' */
-  #listing-analisis .list.grid {
-    display: flex !important;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  /* Opcional: limita el ancho del post para que no sea tan grande */
-  #listing-analisis .list.grid > div {
-    max-width: 400px;
-  }
-</style>
-</div>
-</div>
-</div>
-</div>
-<div class="section-footer1">
-
-</div>
-<!-- 1.  Sección NOTICIAS -->
-<div class="section-text dark-bg">
-<div class="section-container">
-<div class="section-block">
-<div style="text-align: center;">
 <div id="noticiash1">
 
 </div>
@@ -449,7 +346,7 @@ window.Quarto = {
 </p>
 <div id="listing-noticias" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752504482791" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
+<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752526735654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
 <a href="./noticias/posts/foro-ocs-cepal/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="noticias\posts\foro-ocs-cepal\featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -498,15 +395,119 @@ Ciclo de Foros de Cohesión Social
 </div>
 </div>
 </div>
-<!-- divisor visual entre noticias y reportes -->
-<div class="section-divider">
+<div class="section-footer1">
 
 </div>
-<!-- 2.  Sección REPORTES  (ahora queda justo aquí) -->
-<div class="section-text light-bg">
+<div class="section-text dark-bg">
 <div class="section-container">
 <div class="section-block">
 <div style="text-align: center;">
+<div id="analisish1">
+
+</div>
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-graph-up-arrow" style="margin-right: 10px;"></i>Análisis
+</p>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
+
+<style>
+  .wrap {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* espacio entre tiles */
+    padding: 2rem;
+    flex-wrap: wrap; /* permite responsividad */
+  }
+
+  .tile {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    transition: transform 0.2s;
+    width: 350px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+  }
+
+  .tile:hover {
+    transform: scale(1.02);
+  }
+
+  .text {
+    padding: 1rem;
+    position: relative;
+  }
+
+  .text h1 {
+    font-size: 20px;
+    color: #e5e7e9;
+  }
+
+  .highlight-box {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    pointer-events: none;
+  }
+
+  .tile:hover .highlight-box {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .highlight-box .animate-text {
+    color: #e5e7e9 !important;
+    margin: 0;
+  }
+</style>
+
+<div class="wrap">
+  <!-- Tile 1 -->
+  <a href="./analisis/visualizador-latam.html">
+    <div class="tile">
+      <img src="./imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;">
+      <div class="text">
+        <h1>Visualizador de Cohesión Social en Latinoamérica</h1>
+        <div class="highlight-box">
+          <p class="animate-text">Indicadores de Cohesión Social basado principalmente en la encuesta LAPOP.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <!-- Tile 2 (nuevo) -->
+  <a href="./analisis/visualizador-elsoc.html">
+    <div class="tile">
+      <img src="./imagenes/elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;">
+      <div class="text">
+        <h1>Visualizador ELSOC</h1>
+        <div class="highlight-box">
+          <p class="animate-text">Indicadores de Cohesión Social basado en ELSOC.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-footer2">
+
+</div>
+<div class="section-text light-bg">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: left;">
 <div id="reportesh1">
 
 </div>
@@ -515,19 +516,87 @@ Ciclo de Foros de Cohesión Social
 </p>
 <div id="listing-reportes" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-
+<div class="quarto-post image-right" data-index="0" data-categories="UHVibGljYWNpJUMzJUIzbg==" data-listing-date-sort="1644375600000" data-listing-file-modified-sort="1752525737686" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./reportes/posts/2022_cohesion/2022_cohesion.html" class="no-external">Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./reportes/posts/2022_cohesion/2022_cohesion.html" class="no-external">
+<div class="listing-date">
+Feb 9, 2022
+</div>
+<div class="listing-author">
+Castillo, Juan Carlos, Espinoza, Vicente, Barozet, Emmanuelle
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="UHJlc2VudGFjaSVDMyVCM24=" data-listing-date-sort="1642734000000" data-listing-file-modified-sort="1752528147273" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./reportes/posts/2022_asc/2022_asc.html" class="no-external">Measurement and Analysis of Social Cohesion: Perspectives from the Center of Social Conflict and Cohesion Studies</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./reportes/posts/2022_asc/2022_asc.html" class="no-external">
+<div class="listing-date">
+Jan 21, 2022
+</div>
+<div class="listing-author">
+Castillo, Juan Carlos, Bargsted, Matías
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="UHJlc2VudGFjaSVDMyVCM24=" data-listing-date-sort="1632970800000" data-listing-file-modified-sort="1752528287681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./reportes/posts/2021_asc/2021_asc.html" class="no-external">Concepts and measurement of social cohesion in international perspective</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./reportes/posts/2021_asc/2021_asc.html" class="no-external">
+<div class="listing-date">
+Sep 30, 2021
+</div>
+<div class="listing-author">
+Castillo, Juan Carlos, Carrasco, Kevin, Cáceres, Ignacio
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="RG9jdW1lbnRvJTIwZGUlMjB0cmFiYWpv" data-listing-date-sort="1629950400000" data-listing-file-modified-sort="1752525766591" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./reportes/posts/2021_clases/2021_clases.html" class="no-external">Clases medias en tiempos de crisis. Vulnerabilidad persistente, desafíos para la cohesión y un nuevo pacto social en Chile</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./reportes/posts/2021_clases/2021_clases.html" class="no-external">
+<div class="listing-date">
+Aug 26, 2021
+</div>
+<div class="listing-author">
+Contreras, Dante, Espinoza, Vicente, Gayo, Modesto, Méndez, María Luisa, Barozet, Emmanuelle
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+<div class="button">
+<p><a href="./reportes/reportes.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #0693e3; margin-top: 0em;">Todos los documentos</a></p>
 </div>
 </div>
 </div>
 </div>
-<!-- divisor visual entre reportes y equipo -->
-<div class="section-divider">
+</div>
+<div class="section-footer1">
 
 </div>
-<!-- 3.  Sección EQUIPO -->
 <div class="section-text dark-bg">
 <div class="section-container">
 <div class="section-block">
@@ -808,21 +877,32 @@ Ciclo de Foros de Cohesión Social
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <div class="button">
-<p><a href="./alumni/index.html" class="btn" role="button" style="background-color:#0693e3;color:white;margin-top:0em;">Ex-integrantes</a></p>
+<p><a href="./alumni/index.html" class="btn" role="button" style="background-color: #0693e3; color: white; margin-top: 0em;">Ex-integrantes</a></p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<!-- 4.  Footer / logos (solo uno, al final) -->
 <div class="section-text logos-bg">
 <div class="section-container">
 <div class="section-block">
 <div style="text-align: center;">
 <div class="quarto-layout-panel" data-layout-ncol="5">
 <div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
-<p><a href="https://anid.cl"><img src="resources/imagenes/anid.png" class="img-fluid"></a> <a href="https://uchile.cl"><img src="resources/imagenes/uch.png" class="img-fluid"></a> <a href="https://www.uc.cl"><img src="resources/imagenes/puc.png" class="img-fluid"></a> <a href="https://www.udp.cl"><img src="resources/imagenes/udp.png" class="img-fluid"></a> <a href="https://www.uai.cl"><img src="resources/imagenes/uai.png" class="img-fluid"></a></p>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><a href="https://anid.cl"><img src="resources/imagenes/anid.png" class="img-fluid"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><a href="https://uchile.cl"><img src="resources/imagenes/uch.png" class="img-fluid"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><a href="https://www.uc.cl"><img src="resources/imagenes/puc.png" class="img-fluid"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><a href="https://www.udp.cl"><img src="resources/imagenes/udp.png" class="img-fluid"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><a href="https://www.uai.cl"><img src="resources/imagenes/uai.png" class="img-fluid"></a></p>
 </div>
 </div>
 </div>

@@ -1,0 +1,16 @@
+---
+title: "Visualizador ELSOC"
+subtitle: Observatorio de Cohesión Social
+categories: [Análisis]
+# Date published
+date: "2025-07-11"
+draft: false
+format: 
+  html: 
+   page-layout: full
+   grid:
+     body-width: 800px
+   theme: ../scss-posts.scss
+---
+
+El visualizador con datos del Estudio Longitudinal Social de Chile está en construcción.

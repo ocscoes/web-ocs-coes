@@ -7,6 +7,9 @@ abstract: ""
 categories: ["Documento de trabajo"]
 about:
   template: marquee
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
 ---
 
 # Introducción 

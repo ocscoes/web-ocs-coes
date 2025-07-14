@@ -1,0 +1,13 @@
+---
+title: "Presentación Observatorio de Cohesión social: ¿Cómo se define la cohesión y cómo se puede medir?"
+date: "2020"
+author: ["Castillo, Juan Carlos"]
+publication: "Taller CEPAL-COES, Santiago de Chile."
+abstract: ""
+categories: ["Presentación"]
+about:
+  template: marquee
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---

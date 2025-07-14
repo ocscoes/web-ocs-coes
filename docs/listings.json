@@ -1,12 +1,7 @@
 [
   {
     "listing": "/reportes/reportes.html",
-    "items": [
-      "/reportes/posts/2022_cohesion/2022_cohesion.html",
-      "/reportes/posts/2021_clases/2021_clases.html",
-      "/reportes/posts/2021_propuesta/2021_propuesta.html",
-      "/reportes/posts/2021_medicion/2021_medicion.html"
-    ]
+    "items": []
   },
   {
     "listing": "/noticias/noticias.html",
@@ -22,6 +17,14 @@
       "/noticias/posts/foro-ocs-cepal/index.html",
       "/noticias/posts/ciclo-foros-ocs/index.html",
       "/noticias/posts/actualizacion-web/index.html",
+      "/reportes/posts/2022_cohesion/2022_cohesion.html",
+      "/reportes/posts/2022_asc/2022_asc.html",
+      "/reportes/posts/2021_asc/2021_asc.html",
+      "/reportes/posts/2021_clases/2021_clases.html",
+      "/reportes/posts/2021_propuesta/2021_propuesta.html",
+      "/reportes/posts/2021_medicion/2021_medicion.html",
+      "/reportes/posts/2020_taller_coes/2020_taller_coes.html",
+      "/reportes/posts/2019_taller_coes/2019_taller_coes.html",
       "/equipo/posts/1. pi/index.html",
       "/equipo/posts/2. asit-coes/index.html",
       "/equipo/posts/3. consultor-ocs/index.html",
