@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -67,7 +69,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-categories","listing-date"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -75,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -122,38 +182,138 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Reportes</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="RG9jdW1lbnRvJTIwZGUlMjB0cmFiYWpv">Documento de trabajo <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UHVibGljYWNpJUMzJUIzbg==">Publicación <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Reportes</h1>
+
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UHVibGljYWNpJUMzJUIzbg==" data-listing-date-sort="1644375600000" data-listing-file-modified-sort="1752520841429" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="60" data-listing-categories-sort="Publicación" data-listing-title-sort="Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../reportes/posts/2022_cohesion/2022_cohesion.html" class="no-external">Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados</a>
+</h3>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('UHVibGljYWNpJUMzJUIzbg=='); return false;">Publicación</div>
 
+</div>
+</div>
+<div class="metadata">
+<a href="../reportes/posts/2022_cohesion/2022_cohesion.html" class="no-external">
+<div class="listing-date">
+Feb 9, 2022
+</div>
+<div class="listing-author">
+Castillo, Juan Carlos, Espinoza, Vicente, Barozet, Emmanuelle
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="RG9jdW1lbnRvJTIwZGUlMjB0cmFiYWpv" data-listing-date-sort="1629950400000" data-listing-file-modified-sort="1752521223214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10" data-listing-categories-sort="Documento de trabajo" data-listing-title-sort="Clases medias en tiempos de crisis. Vulnerabilidad persistente, desafíos para la cohesión y un nuevo pacto social en Chile">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../reportes/posts/2021_clases/2021_clases.html" class="no-external">Clases medias en tiempos de crisis. Vulnerabilidad persistente, desafíos para la cohesión y un nuevo pacto social en Chile</a>
+</h3>
+<div class="listing-categories">
 
-<div class="quarto-title-meta">
+<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnRvJTIwZGUlMjB0cmFiYWpv'); return false;">Documento de trabajo</div>
 
-    
-  
-    
-  </div>
-  
+</div>
+</div>
+<div class="metadata">
+<a href="../reportes/posts/2021_clases/2021_clases.html" class="no-external">
+<div class="listing-date">
+Aug 26, 2021
+</div>
+<div class="listing-author">
+Contreras, Dante, Espinoza, Vicente, Gayo, Modesto, Méndez, María Luisa, Barozet, Emmanuelle
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="RG9jdW1lbnRvJTIwZGUlMjB0cmFiYWpv" data-listing-date-sort="1622520000000" data-listing-file-modified-sort="1752522421412" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="695" data-listing-categories-sort="Documento de trabajo" data-listing-title-sort="Conceptos y Medición de Cohesión Social En Proyectos Internacionales">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../reportes/posts/2021_propuesta/2021_propuesta.html" class="no-external">Conceptos y Medición de Cohesión Social En Proyectos Internacionales</a>
+</h3>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnRvJTIwZGUlMjB0cmFiYWpv'); return false;">Documento de trabajo</div>
 
-</header>
+</div>
+</div>
+<div class="metadata">
+<a href="../reportes/posts/2021_propuesta/2021_propuesta.html" class="no-external">
+<div class="listing-date">
+Jun 1, 2021
+</div>
+<div class="listing-author">
+Castillo, Juan Carlos, Olivos, Francisco, Iturra, Julio
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="RG9jdW1lbnRvJTIwZGUlMjB0cmFiYWpv" data-listing-date-sort="1621656000000" data-listing-file-modified-sort="1752522455453" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203" data-listing-categories-sort="Documento de trabajo" data-listing-title-sort="Hacia una propuesta de medición de Cohesión Social con ELSOC">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../reportes/posts/2021_medicion/2021_medicion.html" class="no-external">Hacia una propuesta de medición de Cohesión Social con ELSOC</a>
+</h3>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnRvJTIwZGUlMjB0cmFiYWpv'); return false;">Documento de trabajo</div>
 
-
-
-
-</main> <!-- /main -->
+</div>
+</div>
+<div class="metadata">
+<a href="../reportes/posts/2021_medicion/2021_medicion.html" class="no-external">
+<div class="listing-date">
+May 22, 2021
+</div>
+<div class="listing-author">
+Castillo, Juan Carlos, Iturra, Julio, Carrasco, Kevin
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
 
 <div style="background-color: #1f1f1f; color: white;

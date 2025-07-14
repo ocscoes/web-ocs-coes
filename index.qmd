@@ -74,6 +74,18 @@ listing:
   filter-ui: false
   feed: false  
   
+- id: reportes
+  contents:
+    - reportes/posts/*.qmd
+  sort: date desc
+  type: default
+  fields: [title, date, author]
+  max-items: 4
+  categories: false
+  sort-ui: false
+  feed: false
+  page-size: 500
+  
 - id: equipo
   template: people-box.ejs
   contents: 
@@ -287,30 +299,8 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
 <p align="center" style="font-size:36px; font-weight:bold;">
 <i class="bi bi-journals" style="margin-right: 10px;"></i>Reportes</p>
 
-# Documentos de trabajo
-
-
-> Barozet, E., Contreras, D., Espinoza, V. & Méndez, M.L. (2021). [Clases medias en tiempos de crisis. Vulnerabilidad persistente, desafíos para la cohesión y un nuevo pacto social en Chile.](https://repositorio.cepal.org/bitstream/handle/11362/47184/1/S2100412_es.pdf){target="_blank"} Documentos de Proyectos (LC/TS.2021/101), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)
-
-> Castillo, JC., Olivos, F. & Iturra, J. (2021). [Conceptos y medición de cohesión social en proyectos internacionales.](https://drive.google.com/file/d/1FvmVhdYaT_Tg4fNyUKSshv45uJdJkTWo/view){target="_blank"} Serie Documentos de Trabajo COES, Documento de trabajo N°47, pp. 1-37.
-
-> Castillo, JC., Iturra, J. Carrasco, K. (2021). Hacia una propuesta de medición de Cohesión Social con ELSOC. Disponible en [https://ocscoes.github.io/cohesion-elsoc/](https://ocscoes.github.io/cohesion-elsoc/){target="_blank"} (Versión preliminar)
-
-> Castillo, JC., Espinoza, V., Barozet, E. (2022). Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados. Disponible en [https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados](https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados). Documentos de Proyectos (LC/TS.2022/3), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)/Centro de Estudios de Conflicto y Cohesión Social (COES)
-
-# Presentaciones
-
-> Castillo, JC. & Bargsted, M. (2022, enero). [_Measurement and Analysis of Social Cohesion: Perspectives from the Center of Social Conflict and Cohesion Studies._](https://ocscoes.github.io/presentaciones/RISC-bremen-january2022.html#1){target="_blank"}. Third Academy of Sociology Conference: Cohesive Societies? Analytical-empirical Perspectives, Germany.
-
-
-> Castillo, JC., Carrasco, K. & Cáceres, I. (2021, septiembre). [_Concepts and measurement of social cohesion in international perspective._](https://ocscoes.github.io/presentaciones/presentation-cohesive-societies.html#1){target="_blank"}. Third Academy of Sociology Conference: Cohesive Societies? Analytical-empirical Perspectives, Germany.
-
-
-> Castillo, JC. (2020, noviembre). [_Presentación Observatorio de Cohesión social: ¿Cómo se define la cohesión y cómo se puede medir?_](https://juancarloscastillo.github.io/jc-castillo/documents/conferencias/ocs_coes2020/ocs_coes.html#1). Taller CEPAL-COES, Santiago de Chile.
-
-
-> Castillo, JC. (2019, diciembre). [_Estudiando la cohesión y el conflicto social en y desde América Latina_](https://juancarloscastillo.github.io/jc-castillo/documents/CEPAL2019/pres01.html#1). Taller interno COES-CEPAL, Santiago de Chile.
-
+:::{reportes}
+:::
 
 :::
 :::

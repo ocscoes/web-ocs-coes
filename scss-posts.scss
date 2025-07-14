@@ -1,18 +1,41 @@
 /*-- scss:defaults --*/
 
-$body-color: white !default;
 $primary: #e5e7e9 !default;
 $font-size-root: 18px !default;
 
 /*-- scss:rules --*/
+
+// Fondo general de la página
 body {
-  color: #e5e7e9;
+background-color: #e5e7e9 !important;
 }
 
-p, h1, h2, h3, h4, h5, h6, li {
-  color: #e5e7e9 !important;
+// Color de texto general
+h1 {
+color: #212529 !important;
 }
 
-.citation {
-  color: #f8f9f9 !important;
+// Estilo del navbar
+.navbar {
+background-color: #212529 !important;
+color: #e5e7e9 !important;
+
+// Color de enlaces en el navbar
+.navbar-brand, .nav-link {
+color: #e5e7e9 !important;
+}
+}
+
+.sidebar, .toc {
+color: #212529 !important;            // Texto del TOC
+}
+
+.toc-title {
+color: #212529 !important;
+font-weight: bold;
+}
+
+.toc-entry a {
+color: #e5e7e9 !important;
+text-decoration: none;
 }

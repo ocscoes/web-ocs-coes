@@ -1,4 +1,16 @@
 ---
 title: "Reportes"
-editor: visual
+page-layout: full
+listing:
+  contents: posts/*/*qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  fields: [title, date, author, categories]
+  filter-ui: [categories, date]
+  field-links: 
+    - categories
+    - title
+  page-size: 500
+title-block-banner: true
 ---

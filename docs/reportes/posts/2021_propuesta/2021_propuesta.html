@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Castillo, Juan Carlos">
+<meta name="author" content="Olivos, Francisco">
+<meta name="author" content="Iturra, Julio">
+<meta name="dcterms.date" content="2021-06-01">
 
-<title>Analisis</title>
+<title>Conceptos y Medición de Cohesión Social En Proyectos Internacionales</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +27,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e5498e3843a72f19647b45c1f8fe9f66.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-e5498e3843a72f19647b45c1f8fe9f66.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,78 +70,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-date"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../resources/imagenes/sharing-default.png" alt="" class="navbar-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../resources/imagenes/sharing-default.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -150,23 +93,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#analisish1"> 
+    <a class="nav-link" href="../../../index.html#analisish1"> 
 <span class="menu-text"><i class="bi bi-graph-up-arrow"></i> Análisis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#noticiash1"> 
+    <a class="nav-link" href="../../../index.html#noticiash1"> 
 <span class="menu-text"><i class="bi bi-newspaper"></i> Noticias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#equipoh1"> 
+    <a class="nav-link" href="../../../index.html#equipoh1"> 
 <span class="menu-text"><i class="bi bi-people-fill"></i> Equipo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#reportesh1"> 
+    <a class="nav-link" href="../../../index.html#reportesh1"> 
 <span class="menu-text"><i class="bi bi-journals"></i> Reportes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../links.html"> 
+    <a class="nav-link" href="../../../links.html"> 
 <span class="menu-text"><i class="bi bi-link-45deg"></i> Enlaces</span></a>
   </li>  
 </ul>
@@ -182,69 +125,78 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Analisis</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
-
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+<div class="quarto-about-marquee">
+  <div class="about-image-container">
+  </div>
+  <div class="about-contents">
+    <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Conceptos y Medición de Cohesión Social En Proyectos Internacionales</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Documento de trabajo</div>
+  </div>
+  </div>
+<div class="quarto-title-meta">
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Castillo, Juan Carlos </p>
+             <p>Olivos, Francisco </p>
+             <p>Iturra, Julio </p>
+          </div>
+  </div>
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 1, 2021</p>
     </div>
+  </div>
+  </div>
+</header> <main class="content" id="quarto-document-content">
+
+<div class="button">
+<p><a href="https://drive.google.com/file/d/1FvmVhdYaT_Tg4fNyUKSshv45uJdJkTWo/view" class="btn" role="button" style="background-color: #0693e3; color: white; margin-top: 0em;">Documento completo</a></p>
 </div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="QW4lQzMlQTFsaXNpcw==" data-listing-date-sort="1752206400000" data-listing-file-modified-sort="1752291832011" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="399">
-<a href="../analisis/posts/visualizador/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts\visualizador\featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Visualizador Latinoamérica
-</h5>
-<div class="card-text listing-description delink">
-<p>El visualizador de cohesión social de América Latina ya está disponible! Entra al post para utilizarlo.</p>
+<section id="introducción" class="level1">
+<h1>Introducción</h1>
+<p>Este documento tiene por objetivo describir y resumir diferentes aproximaciones conceptuales y metodológicas hacia el concepto de cohesión social. Originalmente fue desarrollado para servir como insumo en la generación del Observatorio de Cohesión Social (OCS) del Centro de Estudios de Conflicto y Cohesión Social (COES), cuyo objetivo es proponer indicadores de cohesión social con foco en América Latina basados en datos secundarios y permitir la realización de análisis en una plataforma interactiva.</p>
+<p>Como punto de partida de este esfuerzo por definir y operacionalizar la cohesión social para el OCS es necesario considerar algunos trabajos de carácter teórico que existen en América Latina. Uno de estos casos es el trabajo realizado tempranamente por CEPAL (Ottone et al., 2007) en respuesta a una serie de problemas que afectan al continente, como son los altos índices de pobreza, desigualdad y diversas formas de discriminación y exclusión. La cohesión social en este caso está estrechamente vinculada a los valores democráticos y el respeto al estado de derecho. Desde esta perspectiva, la cohesión social tendría dos vertientes principales: por un lado, referiría a la capacidad de los mecanismos instituidos de inclusión social (sistema educacional, protección social, titularidad de derecho, etc.), y por otro lado a los comportamientos y valores de los sujetos que conforman la sociedad (sentido de pertenencia, capital social, confianza en las instituciones, solidaridad, etc.).</p>
+<p>Una aproximación conceptual complementaria a la de CEPAL a finales de la década del 2010 proviene del trabajo de CIEPLAN desarrollado en torno al proyecto y encuesta ECOsociAL (2007) (Tironi Barrios y Foxley Ríoseco, 2008). Desde esta perspectiva se señala que el concepto de cohesión social es tanto descriptivo como normativo, ya que no solo permite describir los elementos que unen a la sociedad, sino también propone ciertos ideales a alcanzar como sociedad en contextos democráticos. Así, una sociedad cohesionada no sería una sociedad cerrada en torno a determinados valores, sino que permitiría que los sujetos se relacionen en torno a principios de justicia que dan fundamento al actuar cooperativo. Por eso, desde esta perspectiva el concepto supone un sentido de pertenencia moral y sujeción a reglas al estilo durkhemiano, que a su vez son compatibilizados con la autonomía individual para las sociedades modernas. Sin embargo, la conciencia moral podría incluir elementos como la misma autonomía individual, la diferencia y la diversidad como principios orientadores.</p>
+<p>El auge observado por el concepto de cohesión social a finales de la década del 2010 en Chile y América Latina, impulsado principalmente por CEPAL, PNUD y CIEPLAN, entra luego a una fase de menor actividad en la región, lo que contrasta con el desarrollo de proyectos a larga escala a nivel internacional enfocados principalmente en la medición de cohesión social. El presente documento pone su foco en esta segunda fase, presentando una revisión de los proyectos más emblemáticos a nivel internacional que han puesto el foco en medición de cohesión social.</p>
+<p>La revisión de experiencias internacionales en el monitoreo de cohesión social tiene cuatro focos centrales. En primer lugar, conocer en mayor detalle la estructura organizacional y objetivos de los proyectos existentes actualmente. En segundo lugar, revisar las definiciones conceptuales de cohesión social para entregar un marco general que permita especificar dimensiones y subdimensiones del concepto. El tercer foco es la operacionalización que estas experiencias realizan del concepto para identificar o generar indicadores. Finalmente, cada revisión de las experiencias internacionales se concluye con un listado de referencias comentadas en donde se puede encontrar documentos de trabajo o aplicaciones de los datos levantados por cada uno de los proyectos.</p>
+<p>La selección de iniciativas internacionales buscó ser representativa geográficamente, dado que las perspectivas sobre la cohesión social poseen un arraigo en los atributos socioculturales en los que estos se desarrollan: vínculos sociales o capital social en Estados Unidos por ejemplo o ampliación del Estado de Bienestar a grupos excluidos en Europa. Así, nuestra selección incluye el Scanlon- Monash Index of Social Cohesion (SMI) de Australia, el Social Cohesion Radar (SCR) alemán con alcance internacional, el trabajo teórico Civic Engagement and Social Cohesion Report de los Estados Unidos y el clásico trabajo de Jenson (1998, 2010) Mapping Social Cohesion en Canadá. Finalmente, y si bien no calza totalmente con el carácter y momento de los otros estudios, se incluyó también al proyecto ECOsociAL que comprendió a siete ciudades de Latinoamérica.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="How to cite this work">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 11, 2025
-</div>
-</div>
-</div>
-</div></a>
+<div class="callout-title-container flex-fill">
+How to cite this work
 </div>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<div class="callout-body-container callout-body">
+<p>Castillo, J., Olivos, F., y Iturra, J. (2021). Conceptos y Medición de Cohesión Social En Proyectos Internacionales. Serie Documentos de Trabajo COES, Documento de Trabajo N47, Pp. 1-32.</p>
+</div>
+</div>
+
+
+</section>
+</main> 
+  </div>
+</div>
+ <!-- /main -->
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
 
 <div style="background-color: #1f1f1f; color: white;
@@ -312,13 +264,6 @@ Jul 11, 2025
 </div>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
