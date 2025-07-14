@@ -266,17 +266,17 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
   </a>
 
   <!-- Tile 2 (nuevo) -->
-  <a href="analisis/visualizador-elsoc.qmd">
-    <div class="tile">
-      <img src="/imagenes/elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;" />
-      <div class="text">
-        <h1>Visualizador ELSOC</h1>
-        <div class="highlight-box">
-          <p class="animate-text">Indicadores de Cohesión Social basado en ELSOC.</p>
-        </div>
+<a href="#" onclick="event.preventDefault();"> <!-- modificar esto cuando esté listo -->
+  <div class="tile">
+    <img src="/imagenes/elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;" />
+    <div class="text">
+      <h1>Visualizador ELSOC</h1>
+      <div class="highlight-box">
+        <p class="animate-text">Próximamente.</p>
       </div>
     </div>
-  </a>
+  </div>
+</a>
 </div>
 
 

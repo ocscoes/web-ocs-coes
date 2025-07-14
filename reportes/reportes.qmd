@@ -2,7 +2,7 @@
 title: "Reportes"
 page-layout: full
 listing:
-  contents: posts/*qmd
+  contents: posts
   sort: "date desc"
   type: default
   categories: true
@@ -13,4 +13,7 @@ listing:
     - title
   page-size: 500
 title-block-banner: true
+format: 
+  html: 
+   theme: ../scss-posts.scss
 ---
