@@ -24,8 +24,12 @@ body {
 }
 
 .dark-bg {
-  background-color: #212121;
-  color: #ffffff;
+  background-color: #212121!important;
+  color: #ffffff !important;
+}
+
+.no-external {
+  color: #ffffff !important;
 }
 
 .section-footer1 {
@@ -79,8 +83,6 @@ a:hover {
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-
 
 /*margenes y padding*/
 
@@ -245,3 +247,4 @@ a:hover {
   width: 100%;
   overflow: hidden;
   background: transparent;}
+

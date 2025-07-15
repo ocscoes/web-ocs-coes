@@ -326,6 +326,9 @@ window.Quarto = {
   </div>
 </header><div id="hero-heading">
 <p>El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. A través de investigaciones, datos abiertos y visualizaciones interactivas, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales (panel ELSOC-COES). Nuestro objetivo es promover una comprensión profunda y accesible de los cambios sociales, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.</p>
+<div class="button" style="text-align: center; padding-top: 7em;">
+<p><a href="./index.html#destacadosh1" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #0693e3">Conoce Más</a></p>
+</div>
 </div>  
 </div>
 
@@ -334,70 +337,127 @@ window.Quarto = {
 
 </div>
 <div class="section-text light-bg">
-<div class="section-container">
-<div class="section-block">
-<div style="text-align: center;">
-<div id="noticiash1">
+<div id="destacadosh1">
 
 </div>
 <p align="center" style="font-size:36px; font-weight:bold;">
-<i class="bi bi-newspaper" style="margin-right: 10px;"></i>Noticias
+<i class="bi bi-pin-angle" style="margin-right: 10px;"></i>Destacados
 </p>
-<div id="listing-noticias" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752530272471" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="420">
-<a href="./noticias/posts/foro-ocs-cepal/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias\posts\foro-ocs-cepal\featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Foro OCS-CEPAL
-</h5>
-<div class="card-text listing-description">
-El primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.
+<style>
+.layout {
+  display: grid;
+  place-items: center;
+}
+
+article {
+  display: flex;
+  width: 100%;
+  height: 430px;
+}
+
+.img-container {
+  position: relative;
+  width: 0;
+  flex-grow: 1;
+  overflow: hidden;
+  transition: flex-grow 0.5s ease;
+}
+
+.img-container:hover {
+  flex-grow: 3;
+}
+
+.img-container img.lukas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.img-container:hover img.lukas {
+  opacity: 1;
+  filter: contrast(120%);
+  cursor: pointer;
+}
+
+.img-container .overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  padding: 0.5em;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  article {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .img-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .img-container img.lukas {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-container:hover {
+    flex-grow: 1;
+  }
+
+  .img-container .overlay-text {
+    font-size: 1rem;
+    opacity: 1; /* opcional: visible siempre en móvil */
+    position: static;
+    background: #222;
+    padding: 1em;
+  }
+}
+</style>
+
+<div class="layout">
+  <article>
+    <div class="img-container">
+      <img class="lukas" src="imagenes/foro1.png" data-url="noticias/posts/foro-ocs-cepal/">
+      <div class="overlay-text">El primer Foro de Cohesión Social se realizará en CEPAL el 30 de Julio. Haz click para más información</div>
+    </div>
+    <div class="img-container">
+      <img class="lukas" src="imagenes/featured.png" data-url="analisis/visualizador-latam/">
+      <div class="overlay-text">Lanzamos una versión renovada del visualizador de cohesión social en América Latina. Haz click para conocer más</div>
+    </div>
+  </article>
 </div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751428800000" data-listing-file-modified-sort="1752530602785" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="588">
-<a href="./noticias/posts/ciclo-foros-ocs/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias\posts\ciclo-foros-ocs\featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ciclo de Foros de Cohesión Social
-</h5>
-<div class="card-text listing-description">
-Buscamos promover la discusión sobre los desafíos políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina.
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751342400000" data-listing-file-modified-sort="1752524081036" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="342">
-<a href="./noticias/posts/actualizacion-web/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias\posts\actualizacion-web\featured.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-¡Bienvenidos a nuestro nuevo sitio web!
-</h5>
-<div class="card-text listing-description">
-En este nuevo sitio web buscamos visibilizar el trabajo investigativo del Observatorio, asi como las actividades organizadas por nuestro equipo.
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</div>
-</div>
-</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const images = document.getElementsByClassName('lukas');
+
+  for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', function (event) {
+      const url = event.target.getAttribute('data-url');
+      if (url) window.open(url, '_blank');
+    });
+  }
+});
+</script>
+
 </div>
 <div class="section-footer1">
 
@@ -474,7 +534,7 @@ No matching items
 
 <div class="wrap">
   <!-- Tile 1 -->
-  <a href="./analisis/visualizador-latam.html">
+  <a href="analisis/visualizador-latam/">
     <div class="tile">
       <img src="./imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;">
       <div class="text">
@@ -509,6 +569,75 @@ No matching items
 
 </div>
 <div class="section-text light-bg">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: center;">
+<div id="noticiash1">
+
+</div>
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-newspaper" style="margin-right: 10px;"></i>Noticias
+</p>
+<div id="listing-noticias" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752610891452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="420">
+<a href="./noticias/posts/foro-ocs-cepal/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="noticias\posts\foro-ocs-cepal\featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Foro OCS-CEPAL
+</h5>
+<div class="card-text listing-description">
+El primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751428800000" data-listing-file-modified-sort="1752610122658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="588">
+<a href="./noticias/posts/ciclo-foros-ocs/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="noticias\posts\ciclo-foros-ocs\featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ciclo de Foros de Cohesión Social
+</h5>
+<div class="card-text listing-description">
+Buscamos promover la discusión sobre los desafíos políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751342400000" data-listing-file-modified-sort="1752524081036" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="342">
+<a href="./noticias/posts/actualizacion-web/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="noticias\posts\actualizacion-web\featured.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+¡Bienvenidos a nuestro nuevo sitio web!
+</h5>
+<div class="card-text listing-description">
+En este nuevo sitio web buscamos visibilizar el trabajo investigativo del Observatorio, asi como las actividades organizadas por nuestro equipo.
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-footer1">
+
+</div>
+<div class="section-text dark-bg">
 <div class="section-container">
 <div class="section-block">
 <div style="text-align: left;">
@@ -612,10 +741,10 @@ No matching items
 </div>
 </div>
 </div>
-<div class="section-footer1">
+<div class="section-footer2">
 
 </div>
-<div class="section-text dark-bg">
+<div class="section-text light-bg">
 <div class="section-container">
 <div class="section-block">
 <div style="text-align: center;">
@@ -765,16 +894,16 @@ No matching items
       
       
       
-      <a href="./equipo/posts/3. consultor-ocs/index.html" role="button" class="quarto-grid-link">
-        </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/3. consultor-ocs/index.html" role="button" class="quarto-grid-link">
+      <a href="./equipo/posts/4. consultor-ocs/index.html" role="button" class="quarto-grid-link">
+        </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/4. consultor-ocs/index.html" role="button" class="quarto-grid-link">
           
           
           <p class="card-img-top">
-            <img alt="Gabriel Cortés" src="./equipo/posts/3. consultor-ocs/featured.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+            <img alt="Gabriel Cortés" src="./equipo/posts/4. consultor-ocs/featured.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
 
           </p>
           
-          </a><div class="card-body post-contents"><a href="./equipo/posts/3. consultor-ocs/index.html" role="button" class="quarto-grid-link">
+          </a><div class="card-body post-contents"><a href="./equipo/posts/4. consultor-ocs/index.html" role="button" class="quarto-grid-link">
             
             <div class="listing-box-title">
               Gabriel Cortés<br> 
@@ -790,7 +919,7 @@ No matching items
                 
             
               
-           </a><div class="listing-box-contacto"><a href="./equipo/posts/3. consultor-ocs/index.html" role="button" class="quarto-grid-link">
+           </a><div class="listing-box-contacto"><a href="./equipo/posts/4. consultor-ocs/index.html" role="button" class="quarto-grid-link">
   
     </a><a href="mailto:gabriel.cortes@uchile.cl" class="contact-link">
       <i class="bi bi-envelope"></i> Contacto
@@ -829,16 +958,16 @@ No matching items
       
       
       
-      <a href="./equipo/posts/4. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
-        </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/4. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
+      <a href="./equipo/posts/5. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
+        </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/5. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
           
           
           <p class="card-img-top">
-            <img alt="Tomás Urzúa" src="./equipo/posts/4. ayudante-ocs/featured.jpeg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+            <img alt="Tomás Urzúa" src="./equipo/posts/5. ayudante-ocs/featured.jpeg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
 
           </p>
           
-          </a><div class="card-body post-contents"><a href="./equipo/posts/4. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
+          </a><div class="card-body post-contents"><a href="./equipo/posts/5. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
             
             <div class="listing-box-title">
               Tomás Urzúa<br> 
@@ -854,7 +983,7 @@ No matching items
                 
             
               
-           </a><div class="listing-box-contacto"><a href="./equipo/posts/4. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
+           </a><div class="listing-box-contacto"><a href="./equipo/posts/5. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
   
     </a><a href="mailto:tomas.urzua@ug.uchile.cl" class="contact-link">
       <i class="bi bi-envelope"></i> Contacto

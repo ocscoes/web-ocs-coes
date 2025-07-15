@@ -1,5 +1,5 @@
 ---
-title: "Visualizador Latinoamérica"
+title: "Visualizador de Cohesión Social en América Latina"
 subtitle: Observatorio de Cohesión Social
 description: Indicadores de Cohesión Social en América Latina para los años 2004-2022, basado principalmente en la encuesta LAPOP.
 categories: [Análisis]

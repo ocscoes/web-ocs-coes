@@ -92,6 +92,11 @@ listing:
     - equipo/posts/*/*.qmd
   sort: date desc
   type: grid
+
+# - id: destacados
+#   template: carrusel.ejs
+#   contents: 
+#      - pinned/posts/*/*.qmd
 ---
 
 <div id="hero-section">
@@ -146,7 +151,10 @@ listing:
 :::{#hero-heading}
 
 El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. A través de investigaciones, datos abiertos y visualizaciones interactivas, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales (panel ELSOC-COES). Nuestro objetivo es promover una comprensión profunda y accesible de los cambios sociales, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.
- 
+
+::: {.button style="text-align: center; padding-top: 7em;"}
+[Conoce Más](index.qmd#destacadosh1){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3"}
+:::
 :::
 
 </div>
@@ -156,23 +164,130 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
 </div>
 
 ::: {.section-text .light-bg}
-::: {.section-container}
-::: {.section-block}
-::: {style="text-align: center;"}
 
-:::{#noticiash1}
+:::{#destacadosh1}
 :::
 
 <p align="center" style="font-size:36px; font-weight:bold;">
-<i class="bi bi-newspaper" style="margin-right: 10px;"></i>Noticias</p>
+<i class="bi bi-pin-angle" style="margin-right: 10px;"></i>Destacados</p>
 
+```{=HTML}
+<style>
+.layout {
+  display: grid;
+  place-items: center;
+}
 
-:::{#noticias}
-:::
+article {
+  display: flex;
+  width: 100%;
+  height: 430px;
+}
 
-:::
-:::
-:::
+.img-container {
+  position: relative;
+  width: 0;
+  flex-grow: 1;
+  overflow: hidden;
+  transition: flex-grow 0.5s ease;
+}
+
+.img-container:hover {
+  flex-grow: 3;
+}
+
+.img-container img.lukas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.img-container:hover img.lukas {
+  opacity: 1;
+  filter: contrast(120%);
+  cursor: pointer;
+}
+
+.img-container .overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  padding: 0.5em;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  article {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .img-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .img-container img.lukas {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-container:hover {
+    flex-grow: 1;
+  }
+
+  .img-container .overlay-text {
+    font-size: 1rem;
+    opacity: 1; /* opcional: visible siempre en móvil */
+    position: static;
+    background: #222;
+    padding: 1em;
+  }
+}
+</style>
+
+<div class="layout">
+  <article>
+    <div class="img-container">
+      <img class="lukas" src="imagenes/foro1.png" data-url="noticias/posts/foro-ocs-cepal/">
+      <div class="overlay-text">El primer Foro de Cohesión Social se realizará en CEPAL el 30 de Julio. Haz click para más información</div>
+    </div>
+    <div class="img-container">
+      <img class="lukas" src="imagenes/featured.png" data-url="analisis/visualizador-latam/">
+      <div class="overlay-text">Lanzamos una versión renovada del visualizador de cohesión social en América Latina. Haz click para conocer más</div>
+    </div>
+  </article>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const images = document.getElementsByClassName('lukas');
+
+  for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', function (event) {
+      const url = event.target.getAttribute('data-url');
+      if (url) window.open(url, '_blank');
+    });
+  }
+});
+</script>
+
+```
 :::
 
 <div class="section-footer1">
@@ -253,7 +368,7 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
 
 <div class="wrap">
   <!-- Tile 1 -->
-  <a href="analisis/visualizador-latam.qmd">
+  <a href="analisis/visualizador-latam/">
     <div class="tile">
       <img src="/imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;" />
       <div class="text">
@@ -287,12 +402,36 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
 :::
 :::
 
-
 <div class="section-footer2">
 
 </div>
 
 ::: {.section-text .light-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
+:::{#noticiash1}
+:::
+
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-newspaper" style="margin-right: 10px;"></i>Noticias</p>
+
+
+:::{#noticias}
+:::
+
+:::
+:::
+:::
+:::
+
+<div class="section-footer1">
+
+</div>
+
+
+::: {.section-text .dark-bg}
 ::: {.section-container}
 ::: {.section-block}
 ::: {style="text-align: left;"}
@@ -315,11 +454,11 @@ El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a l
 :::
 :::
 
-<div class="section-footer1">
+<div class="section-footer2">
 
 </div>
 
-::: {.section-text .dark-bg}
+::: {.section-text .light-bg}
 ::: {.section-container}
 ::: {.section-block}
 ::: {style="text-align: center;"}

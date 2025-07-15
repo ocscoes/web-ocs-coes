@@ -13,7 +13,7 @@ listing:
     - title
   page-size: 500
 title-block-banner: true
-format: 
-  html: 
-   theme: ../scss-posts.scss
+# format: 
+#   html: 
+#    # theme: ../scss-posts.scss
 ---
