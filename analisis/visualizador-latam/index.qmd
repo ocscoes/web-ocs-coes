@@ -11,7 +11,7 @@ format:
    page-layout: full
    grid:
      body-width: 800px
-   theme: ../scss-posts.scss
+   theme: ../../scss-posts.scss
 ---
 
 ```{=HTML}
