@@ -1,82 +1,75 @@
 ```{=html}
-
 <div class="quarto-listing quarto-listing-container-grid">
-  
-  <div class="list grid quarto-listing-cols-4"> 
+  <div class="list grid quarto-listing-cols-3"> 
 
-    <% for (const item of items) { ;%> 
+    <% items.forEach((item, index) => { %> 
     
-    <div class="g-col-1 listing-box">
-      
-      
-      
-      <a href="<%- item.path %>" role="button" class="quarto-grid-link">
-        <div class="quarto-grid-item card h-100 card-left">
-          
-          
-          <p class="card-img-top">
-            <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
-
-          </p>
-          
-          <div class="card-body post-contents">
+      <div class="g-col-1 listing-box">
+        <a href="<%- item.path %>" role="button" class="quarto-grid-link">
+          <div class="quarto-grid-item card h-100 card-left">
             
-            <div class="listing-box-title">
-              <%= item.title %><br> 
-            </div>
-               
-            <div class="listing-box-subtitle">
-              <%= item.subtitle %><br>
-            </div>
+            <p class="card-img-top">
+              <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+            </p>
             
-             <div class="listing-box-links">
-              <%= item.links %><br>
-            </div>
-                
-            
+            <div class="card-body post-contents">
               
-           <div class="listing-box-contacto">
-  <% if (item.contacto) { %>
-    <a href="mailto:<%= item.contacto %>" class="contact-link">
-      <i class="bi bi-envelope"></i> <%= "Contacto" %>
-    </a>
-  <% } else { %>
-    <p></p>
-  <% } %>
-</div>
+              <div class="listing-box-title">
+                <%= item.title %><br> 
+              </div>
+              
+              <div class="listing-box-subtitle">
+                <%= item.subtitle %><br>
+              </div>
+              
+              <div class="listing-box-links">
+                <%= item.links %><br>
+              </div>
+              
+              <div class="listing-box-contacto">
+                <% if (item.contacto) { %>
+                  <a href="mailto:<%= item.contacto %>" class="contact-link">
+                    <i class="bi bi-envelope"></i> Contacto
+                  </a>
+                <% } else { %>
+                  <p></p>
+                <% } %>
+              </div>
 
-           <div class="listing-box-github">
-  <% if (item.contacto) { %>
-    <a href="<%= item.github %>" class="github-link">
-      <i class="bi bi-github"></i> <%= "Github" %>
-    </a>
-  <% } else { %>
-    <p></p>
-  <% } %>
-</div>
+              <div class="listing-box-github">
+                <% if (item.contacto) { %>
+                  <a href="<%= item.github %>" class="github-link">
+                    <i class="bi bi-github"></i> Github
+                  </a>
+                <% } else { %>
+                  <p></p>
+                <% } %>
+              </div>
 
-           <div class="listing-box-web">
-  <% if (item.contacto) { %>
-    <a href="<%= item.web %>" class="web-link">
-      <i class="bi bi-globe"></i> <%= "Web Personal" %>
-    </a>
-  <% } else { %>
-    <p></p>
-  <% } %>
-</div>
-                  
+              <div class="listing-box-web">
+                <% if (item.contacto) { %>
+                  <a href="<%= item.web %>" class="web-link">
+                    <i class="bi bi-globe"></i> Web Personal
+                  </a>
+                <% } else { %>
+                  <p></p>
+                <% } %>
+              </div>
 
-            
-            
+            </div>  
           </div>  
-        </div>  
-      </a>
-      
-    </div>
-  
-    <% } %>
-  
+        </a>
+      </div>
+
+      <% if (index === 3) { %>
+        <!-- Espacio vacío después de la tarjeta 3. Sacarlo si se va alguien o se suma otra persona -->
+        <div class="g-col-1 listing-box" style="opacity: 0; pointer-events: none;"></div>
+      <% } %>
+
+    <% }); %>
+
+  </div>
 </div>
-</div>
+
 
 ```

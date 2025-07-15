@@ -249,3 +249,8 @@ a:hover {
   overflow: hidden;
   background: transparent;}
 
+.quarto-listing .listing-box:nth-last-child(-n+2) {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+

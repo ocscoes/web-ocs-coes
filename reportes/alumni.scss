@@ -1,0 +1,24 @@
+/*-- scss:defaults --*/
+
+$primary: #ffffff !default;
+$font-size-root: 18px !default;
+
+/*-- scss:rules --*/
+
+// Fondo general de la página
+body {
+background-color: #ffffff !important;
+}
+
+// Color de texto general
+h1 {
+color: #212529 !important;
+}
+
+.citation {
+  color: #f8f9f9 !important;
+}
+
+.no-external {
+  color: #212529 !important;
+}

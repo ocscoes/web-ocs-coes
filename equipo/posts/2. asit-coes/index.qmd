@@ -20,7 +20,7 @@ about:
       text: Web Personal
 format: 
   html: 
-   theme: ../../../scss-posts.scss
+   theme: ../../equipo.scss
 ---
 
 Asistente de investigación de la línea "Interacciones Grupales e Individuales" de COES y del Laboratorio de Investigación Social Abierta (LISA-COES). Sociólogo y Magíster en Ciencias Sociales de la Universidad de Chile. Sus temas de interés refieren a: Preferencias redistributivas, Educación ciudadana, Ciencia Abierta, Cohesión Social y Métodos cuantitativos de investigación social.

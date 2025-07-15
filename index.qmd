@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function () {
 :::
 
 ::: {.button}
-[Todos los documentos](reportes/reportes.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3; margin-top: 0em;"}
+[Todos los documentos](reportes/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3; margin-top: 0em;"}
 :::
 
 :::

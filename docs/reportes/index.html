@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Reportes</title>
+<title>index</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-05cabad086fad6c8e96fa2f2e18800fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e4fe73f66149d919f4c2aff2b29618e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-reportes .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-reportes'] = new List('listing-reportes', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -129,12 +129,13 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles-reportes.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -149,6 +150,10 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../index.html#destacadosh1"> 
+<span class="menu-text"><i class="bi bi-pin-angle"></i> Destacados</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../index.html#analisish1"> 
 <span class="menu-text"><i class="bi bi-graph-up-arrow"></i> Análisis</span></a>
   </li>  
@@ -157,12 +162,12 @@ window.Quarto = {
 <span class="menu-text"><i class="bi bi-newspaper"></i> Noticias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#equipoh1"> 
-<span class="menu-text"><i class="bi bi-people-fill"></i> Equipo</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../index.html#reportesh1"> 
 <span class="menu-text"><i class="bi bi-journals"></i> Reportes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html#equipoh1"> 
+<span class="menu-text"><i class="bi bi-people-fill"></i> Equipo</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../links.html"> 
@@ -181,40 +186,80 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Reportes</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="RG9jdW1lbnRvJTIwZGUlMjBUcmFiYWpv">Documento de Trabajo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RG9jdW1lbnRvJTIwZGUlMjB0cmFiYWpv">Documento de trabajo <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UHJlc2VudGFjaSVDMyVCM24=">Presentación <span class="quarto-category-count">(4)</span></div><div class="category" data-category="UHVibGljYWNpJUMzJUIzbg==">Publicación <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
+<div class="banner">
+<style>
+.banner {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #232731 0%, #1a1d26 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
 
+.banner-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  font-weight: 600;
+}
 
+.curve {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border: 6px solid;
+  border-radius: 50%;
+  animation: move 20s linear infinite;
+  opacity: 0.6;
+  will-change: transform;
+  filter: blur(1px);
+}
 
+.curve1 { border-color: #753F8C; top: -50%; left: -80%; }
+.curve2 { border-color: #4E8AD9; top: -30%; left: -100%; animation-direction: reverse; }
+.curve3 { border-color: #81BF24; top: 10%; left: -120%; animation-duration: 25s; }
+.curve4 { border-color: #F2B705; top: 50%; left: -90%; animation-delay: 5s; }
 
+@keyframes move {
+  0% { transform: translateX(-20%) rotate(0deg); }
+  100% { transform: translateX(100vw) rotate(360deg); }
+}
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .banner { height: 150px; }
+  .curve { width: 250%; height: 150%; }
+}
+</style>
+
+<div class="curve curve1"></div>
+<div class="curve curve2"></div>
+<div class="curve curve3"></div>
+<div class="curve curve4"></div>
+<div class="banner-text">Reportes y Publicaciones</div>
+</div>
+<div class="section-text light-bg">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: left;">
+<div id="listing-reportes" class="quarto-listing quarto-listing-container-default">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
@@ -451,7 +496,16 @@ Castillo, Juan Carlos
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
 
 <div style="background-color: #1f1f1f; color: white;

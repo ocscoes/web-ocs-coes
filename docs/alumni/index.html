@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ex-integrantes</title>
+<title>index</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-11ed2da9ad22f4ee330d6e71fe3928a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-81b2ecdaa2101860a6c9c0af18043998.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,10 +71,10 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -89,6 +89,10 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../index.html#destacadosh1"> 
+<span class="menu-text"><i class="bi bi-pin-angle"></i> Destacados</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../index.html#analisish1"> 
 <span class="menu-text"><i class="bi bi-graph-up-arrow"></i> Análisis</span></a>
   </li>  
@@ -97,12 +101,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"><i class="bi bi-newspaper"></i> Noticias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#equipoh1"> 
-<span class="menu-text"><i class="bi bi-people-fill"></i> Equipo</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../index.html#reportesh1"> 
 <span class="menu-text"><i class="bi bi-journals"></i> Reportes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html#equipoh1"> 
+<span class="menu-text"><i class="bi bi-people-fill"></i> Equipo</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../links.html"> 
@@ -121,35 +125,79 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Ex-integrantes</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
+<div class="banner">
+<style>
+.banner {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #232731 0%, #1a1d26 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
 
+.banner-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  font-weight: 600;
+}
+
+.curve {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border: 6px solid;
+  border-radius: 50%;
+  animation: move 20s linear infinite;
+  opacity: 0.6;
+  will-change: transform;
+  filter: blur(1px);
+}
+
+.curve1 { border-color: #753F8C; top: -50%; left: -80%; }
+.curve2 { border-color: #4E8AD9; top: -30%; left: -100%; animation-direction: reverse; }
+.curve3 { border-color: #81BF24; top: 10%; left: -120%; animation-duration: 25s; }
+.curve4 { border-color: #F2B705; top: 50%; left: -90%; animation-delay: 5s; }
+
+@keyframes move {
+  0% { transform: translateX(-20%) rotate(0deg); }
+  100% { transform: translateX(100vw) rotate(360deg); }
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .banner { height: 150px; }
+  .curve { width: 250%; height: 150%; }
+}
+</style>
+
+<div class="curve curve1"></div>
+<div class="curve curve2"></div>
+<div class="curve curve3"></div>
+<div class="curve curve4"></div>
+<div class="banner-text">Alumni</div>
+</div>
+<div class="section-text light-bg">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: center;">
 <div class="quarto-listing quarto-listing-container-custom">
   <div class="quarto-listing quarto-listing-container-grid">
     <div class="list grid quarto-listing-cols-4">
@@ -224,10 +272,14 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </div>
 
+</div>
+</div>
+</div>
+</div>
 
 
 
-</main> <!-- /main -->
+
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
 
 <div style="background-color: #1f1f1f; color: white;

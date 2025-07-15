@@ -20,7 +20,7 @@ about:
       text: Web Personal
 format: 
   html: 
-   theme: ../../../scss-posts.scss
+   theme: ../../equipo.scss
 ---
 
 Sociólogo de la Universidad de Chile y Magíster en Métodos para la Investigación Social por la Universidad Diego Portales. Actualmente se desempeña como Asistente de Investigación en el Observatorio de Cohesión Social y el Laboratorio de Investigación Social Abierta, ambas iniciativas del COES. Sus intereses se centran en la cohesión social, el individualismo, la institucionalidad política y los métodos de investigación mixtos.

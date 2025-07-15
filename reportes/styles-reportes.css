@@ -17,6 +17,7 @@ body {
 
 .light-bg{
   background: #ffffff;
+  color: #212121;
 }
 
 .logos-bg{
@@ -29,7 +30,7 @@ body {
 }
 
 .no-external {
-  color: #ffffff !important;
+  color: #212121 !important;
 }
 
 
@@ -248,9 +249,4 @@ a:hover {
   width: 100%;
   overflow: hidden;
   background: transparent;}
-
-.quarto-listing .listing-box:nth-last-child(-n+2) {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
 

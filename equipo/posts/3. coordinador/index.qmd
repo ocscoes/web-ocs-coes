@@ -1,0 +1,28 @@
+---
+title: Andreas Laffert
+subtitle: Coordinador
+contacto: andreas.laffert@ug.uchile.cl
+github: https://github.com/Andreas-Lafferte
+web: http://www.linkedin.com/in/andreas-laffert-tamayo-19a677291/
+image: "featured.jpg"
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: envelope
+      href: mailto:andreas.laffert@ug.uchile.cl
+      text: Contacto
+    - icon: github
+      href: https://github.com/Andreas-Lafferte
+      text: Github
+    - icon: globe
+      href: http://www.linkedin.com/in/andreas-laffert-tamayo-19a677291/
+      text: Web Personal
+format: 
+  html: 
+   theme: ../../equipo.scss
+---
+
+Sociólogo por la Universidad de Chile y Magíster(c) en Sociología por la Pontificia Universidad Católica de Chile. Becario del Programa de Capital Humano Avanzado de ANID para estudios de Magíster (2024 - actualidad). Ha trabajado como analista cuantitativo en la Subsecretaría del Trabajo del Ministerio del Trabajo y Previsión Social. Actualmente se desempeña como asistente de investigación en el proyecto Fondecyt N° 1250518 “Justicia de mercado y merecimiento del bienestar social” y en el Observatorio de Cohesión Social (OCS) del COES. Además, colabora como asistente de investigación en el proyecto Maxi-COES “Desigualdad Socioeconómica y de Género: Un Estudio Multi-País”.
+
+Sus intereses de investigación se centran en la estratificación social, los procesos subjetivos relacionados con la justicia distributiva, las creencias sobre la desigualdad y la legitimación de la mercantilización de servicios sociales. Le interesan especialmente las metodologías cuantitativas con enfoque en análisis multinivel, longitudinal y causal, así como el análisis comparativo internacional.
