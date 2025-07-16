@@ -1,75 +1,147 @@
 ```{=html}
-<div class="quarto-listing quarto-listing-container-grid">
-  <div class="list grid quarto-listing-cols-3"> 
+<style>
+.listing-equipo .quarto-listing-container-grid-team {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-    <% items.forEach((item, index) => { %> 
-    
-      <div class="g-col-1 listing-box">
-        <a href="<%- item.path %>" role="button" class="quarto-grid-link">
-          <div class="quarto-grid-item card h-100 card-left">
-            
-            <p class="card-img-top">
-              <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
-            </p>
-            
-            <div class="card-body post-contents">
-              
-              <div class="listing-box-title">
-                <%= item.title %><br> 
-              </div>
-              
-              <div class="listing-box-subtitle">
-                <%= item.subtitle %><br>
-              </div>
-              
-              <div class="listing-box-links">
-                <%= item.links %><br>
-              </div>
-              
-              <div class="listing-box-contacto">
+.listing-equipo .list.responsive-grid-team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  align-items: stretch;
+}
+
+.listing-equipo .listing-box-team {
+  width: 100%;
+  display: flex;
+}
+
+.listing-equipo .quarto-grid-link {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.listing-equipo .quarto-grid-link:hover .quarto-grid-item-team.team-card {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.listing-equipo .quarto-grid-item-team.team-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.listing-equipo .listing-box-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.listing-equipo .team-card-body.post-team-contents {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.listing-equipo .listing-box-title {
+  margin: 0.5rem 0 0.25rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.listing-equipo .listing-box-subtitle {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.listing-equipo .listing-box-links {
+  margin: 0.25rem 0 0.5rem;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.listing-equipo .contact-link,
+.listing-equipo .github-link,
+.listing-equipo .web-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3b82f6;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.listing-equipo .contact-link i,
+.listing-equipo .github-link i,
+.listing-equipo .web-link i {
+  color: inherit;
+}
+
+@media (max-width: 480px) {
+  .listing-equipo .list.responsive-grid-team {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-equipo .listing-box-image {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+}
+</style>
+
+<div class="listing-equipo">
+  <div class="quarto-listing-container-grid-team">
+    <div class="list responsive-grid-team">
+      <% items.forEach(item => { %>
+        <div class="listing-box-team">
+          <a href="<%- item.path %>" role="button" class="quarto-grid-link">
+            <div class="quarto-grid-item-team team-card">
+              <img src="<%= item.image %>" alt="<%= item.title %>" class="listing-box-image">
+              <div class="team-card-body post-team-contents">
+                <div class="listing-box-title"><%= item.title %></div>
+                <div class="listing-box-subtitle"><%= item.subtitle %></div>
+                <div class="listing-box-links"><%= item.links %></div>
+
                 <% if (item.contacto) { %>
                   <a href="mailto:<%= item.contacto %>" class="contact-link">
-                    <i class="bi bi-envelope"></i> Contacto
+                    <i class="bi bi-envelope-fill"></i> Contacto
                   </a>
-                <% } else { %>
-                  <p></p>
                 <% } %>
-              </div>
 
-              <div class="listing-box-github">
-                <% if (item.contacto) { %>
+                <% if (item.github) { %>
                   <a href="<%= item.github %>" class="github-link">
-                    <i class="bi bi-github"></i> Github
+                    <i class="bi bi-github"></i> GitHub
                   </a>
-                <% } else { %>
-                  <p></p>
                 <% } %>
-              </div>
 
-              <div class="listing-box-web">
-                <% if (item.contacto) { %>
+                <% if (item.web) { %>
                   <a href="<%= item.web %>" class="web-link">
-                    <i class="bi bi-globe"></i> Web Personal
+                    <i class="bi bi-globe2"></i> Web Personal
                   </a>
-                <% } else { %>
-                  <p></p>
                 <% } %>
               </div>
-
-            </div>  
-          </div>  
-        </a>
-      </div>
-
-      <% if (index === 3) { %>
-        <!-- Espacio vacío después de la tarjeta 3. Sacarlo si se va alguien o se suma otra persona -->
-        <div class="g-col-1 listing-box" style="opacity: 0; pointer-events: none;"></div>
-      <% } %>
-
-    <% }); %>
-
+            </div>
+          </a>
+        </div>
+      <% }) %>
+    </div>
   </div>
 </div>
-
-
 ```

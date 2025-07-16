@@ -11,7 +11,7 @@ include-in-header:
       <style>
         #hero-section {
           position: relative;
-          height: 100vh;
+          height: 95vh;
           width: 100%;
           overflow: hidden;
           display: flex;
@@ -91,12 +91,6 @@ listing:
   contents: 
     - equipo/posts/*/*.qmd
   sort: date desc
-  type: grid
-
-# - id: destacados
-#   template: carrusel.ejs
-#   contents: 
-#      - pinned/posts/*/*.qmd
 ---
 
 <div id="hero-section">
@@ -153,7 +147,7 @@ listing:
 El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. A través de investigaciones, datos abiertos y visualizaciones interactivas, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales (panel ELSOC-COES). Nuestro objetivo es promover una comprensión profunda y accesible de los cambios sociales, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.
 
 ::: {.button style="text-align: center; padding-top: 7em;"}
-[Conoce Más](index.qmd#destacadosh1){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3"}
+[Noticias destacadas](index.qmd#destacadosh1){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3"}
 :::
 :::
 
@@ -265,11 +259,11 @@ article {
   <article>
     <div class="img-container">
       <img class="lukas" src="imagenes/foro1.png" data-url="noticias/posts/foro-ocs-cepal/">
-      <div class="overlay-text">El primer Foro de Cohesión Social se realizará en CEPAL el 30 de Julio. Haz click para más información</div>
+      <div class="overlay-text">El primer Foro de Cohesión Social se realizará en CEPAL el 30 de Julio. Click para más información</div>
     </div>
     <div class="img-container">
       <img class="lukas" src="imagenes/featured.png" data-url="analisis/visualizador-latam/">
-      <div class="overlay-text">Lanzamos una versión renovada del visualizador de cohesión social en América Latina. Haz click para conocer más</div>
+      <div class="overlay-text">Lanzamos una versión renovada del visualizador de cohesión social en América Latina. Click para conocer más</div>
     </div>
   </article>
 </div>
@@ -475,7 +469,7 @@ document.addEventListener('DOMContentLoaded', function () {
 :::
 
 ::: {.button}
-[Ex-integrantes](alumni/index.qmd){.btn role="button" style="background-color: #0693e3; color: white; margin-top: 0em;"}
+[Ex-integrantes](alumni/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3; margin-top: 0em;"}
 :::
 
 :::
@@ -483,33 +477,61 @@ document.addEventListener('DOMContentLoaded', function () {
 :::
 :::
 
-::: {.section-text .logos-bg}
-::: {.section-container}
-::: {.section-block}
-::: {style="text-align: center;"}
+```{=HTML}
+<style>
+  .logo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 
+  .logo-grid img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 30px;
+  }
 
-::: {layout-ncol=5}
+  @media (max-width: 768px) {
+    .logo-grid {
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-[![](resources/imagenes/anid.png)](https://anid.cl)
+    .logo-grid img {
+      max-width: 60%;
+      margin: 15px 0;
+    }
+  }
+</style>
 
-[![](resources/imagenes/uch.png)](https://uchile.cl)
-
-[![](resources/imagenes/puc.png)](https://www.uc.cl)
-
-[![](resources/imagenes/udp.png)](https://www.udp.cl)
-
-[![](resources/imagenes/uai.png)](https://www.uai.cl)
-
-:::
-
-
-
-
-:::
-:::
-:::
-:::
+<div class="section-text logos-bg">
+  <div class="section-container">
+    <div class="section-block">
+      <div style="text-align: center;">
+        <div class="logo-grid">
+          <a href="https://www.anid.cl" target="_blank">
+            <img src="resources/imagenes/anid.png" alt="ANID Logo">
+          </a>
+          <a href="https://www.uchile.cl" target="_blank">
+            <img src="resources/imagenes/uch.png" alt="UChile Logo">
+          </a>
+          <a href="https://www.uc.cl" target="_blank">
+            <img src="resources/imagenes/puc.png" alt="PUC Logo">
+          </a>
+          <a href="https://www.udp.cl" target="_blank">
+            <img src="resources/imagenes/udp.png" alt="UDP Logo">
+          </a>
+          <a href="https://www.uai.cl" target="_blank">
+            <img src="resources/imagenes/uai.png" alt="UAI Logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 <!-- ::: {.section-text .dark-bg} -->
 <!-- ::: {.section-container} -->

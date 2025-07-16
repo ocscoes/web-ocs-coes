@@ -18,7 +18,7 @@ En el Observatorio de Cohesión Social (OCS) estamos muy contentos de anunciar e
 
 El objetivo es ofrecer informes, datos abiertos y visualizaciones interactivas que permitan comprender este fenómeno de manera **multidimensional, longitudinal y transnacional**. 
 
-## ¿Qué podrás encontrar?
+## Herramientas y Características
 
 Entre las características que ponemos a disposición para el público académico se encuentran:
 
@@ -46,7 +46,7 @@ Por eso, desarrollamos este sitio utilizando [Quarto](https://quarto.org/), una 
 
 Gracias a este ecosistema unificado, pudimos construir un sitio web de manera simple, elegante y completamente alineado con nuestros principios.
 
-La creación de sitios web es solo una de las muchas posibilidades que ofrece Quarto. También permite generar visualizadores, reportes dinámicos y mucho más. Si te interesa conocer más sobre esta herramienta, nuestro investigador principal, Juan Carlos Castillo, escribió recientemente un [post sobre el tema](https://juancarloscastillo.github.io/jc-quarto/blog/posts/quarto-migration/).
+La creación de sitios web es solo una de las muchas posibilidades que ofrece Quarto. También permite generar visualizadores, reportes dinámicos y mucho más. En caso de querer conocer más sobre esta herramienta, nuestro investigador principal, Juan Carlos Castillo, escribió recientemente un [post sobre el tema](https://juancarloscastillo.github.io/jc-quarto/blog/posts/quarto-migration/).
 
 
 
