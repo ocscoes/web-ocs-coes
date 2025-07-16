@@ -13,9 +13,13 @@ format:
   html: 
    theme: ../../../scss-posts.scss
 ---
-::: {.button}
-[Inscripciones](https://docs.google.com/forms/d/13XX6VSsIR3chSqbrpIRfghsg-MY-ao3mtdMboyKIxpE/edit){.btn role="button" style="background-color: #0693e3; color: white; margin-top: 0em;"}
-:::
+
+<a href="https://docs.google.com/forms/d/13XX6VSsIR3chSqbrpIRfghsg-MY-ao3mtdMboyKIxpE/edit" 
+   target="_blank" 
+   role="button" 
+   style="background-color: #0693e3; color: white; margin-top: 0em; padding: 0.5em 1em; border-radius: 5px; text-decoration: none; display: inline-block;">
+  Inscripciones
+</a>
 
 Ante un escenario de incertidumbres, de crisis y desafíos por alcanzar un desarrollo social inclusivo en América Latina, la región enfrenta tres “trampas” del desarrollo, a saber: i) la baja capacidad para crecer; ii) alta desigualdad, baja movilidad y débil cohesión social y iii) baja capacidad institucional y gobernanza poco efectiva (Salazar-Xirinachs, 2024). Frente a este panorama, la cohesión social figura como un elemento clave para avanzar hacia un desarrollo sostenible sin dejar a nadie atrás. 
 
@@ -56,6 +60,9 @@ Comentan:
 
 12:30   ―  **Coffee**
 
-::: {.button}
-[Inscripciones](https://docs.google.com/forms/d/13XX6VSsIR3chSqbrpIRfghsg-MY-ao3mtdMboyKIxpE/edit){.btn role="button" style="background-color: #0693e3; color: white; margin-top: 0em;"}
-:::
+<a href="https://docs.google.com/forms/d/13XX6VSsIR3chSqbrpIRfghsg-MY-ao3mtdMboyKIxpE/edit" 
+   target="_blank" 
+   role="button" 
+   style="background-color: #0693e3; color: white; margin-top: 0em; padding: 0.5em 1em; border-radius: 5px; text-decoration: none; display: inline-block;">
+  Inscripciones
+</a>

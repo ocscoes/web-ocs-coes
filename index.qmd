@@ -275,11 +275,12 @@ document.addEventListener('DOMContentLoaded', function () {
   for (let i = 0; i < images.length; i++) {
     images[i].addEventListener('click', function (event) {
       const url = event.target.getAttribute('data-url');
-      if (url) window.open(url, '_blank');
+      if (url) window.location.href = url;
     });
   }
 });
 </script>
+
 
 ```
 :::
@@ -487,7 +488,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   .logo-grid img {
-    max-width: 400px;
+    max-width: 250px;
     height: auto;
     margin: 0 30px;
   }

@@ -78,79 +78,181 @@ format:
 ::: {style="text-align: center;"}
 
 ```{=html}
-<div class="quarto-listing quarto-listing-container-custom">
-  <div class="quarto-listing quarto-listing-container-grid">
-    <div class="list grid quarto-listing-cols-4">
-      
+
+<style>
+/* Contenedor principal */
+.listing-equipo .quarto-listing-container-grid-team {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Grid de personas */
+.listing-equipo .list.responsive-grid-team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  align-items: stretch;
+}
+
+/* Contenedor de cada persona */
+.listing-equipo .listing-box-team {
+  width: 100%;
+  display: flex;
+}
+
+/* Tarjeta de persona */
+.listing-equipo .quarto-grid-item-team.team-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  background-color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Imagen */
+.listing-equipo .listing-box-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Cuerpo de la tarjeta */
+.listing-equipo .team-card-body.post-team-contents {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Título (nombre) */
+.listing-equipo .listing-box-title {
+  margin: 0.5rem 0 0.25rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+/* Subtítulo (rol) */
+.listing-equipo .listing-box-subtitle {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.listing-equipo .listing-box-links {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  gap: 0.3rem;
+}
+
+.listing-equipo .contact-link,
+.listing-equipo .github-link,
+.listing-equipo .web-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3b82f6;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+
+/* Íconos */
+.listing-equipo .contact-link i,
+.listing-equipo .github-link i,
+.listing-equipo .web-link i {
+  color: inherit;
+}
+
+/* Fechas */
+.listing-equipo .listing-box-calendar {
+  margin-top: auto;
+  font-size: 0.85rem;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Estilos móviles */
+@media (max-width: 480px) {
+  .listing-equipo .list.responsive-grid-team {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-equipo .listing-box-image {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+}
+</style>
+
+<div class="listing-equipo">
+  <div class="quarto-listing-container-grid-team">
+    <div class="list responsive-grid-team">
+
       <!-- Persona 1 -->
-      <div class="g-col-1 listing-box">
-        <p class="card-img-top">
-          <img alt="Julio Iturra" src="imagenes/j_iturra.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
-        </p>
-        <div class="card-body post-contents">
-          <div class="listing-box-title">
-            Julio Iturra<br> 
+      <div class="listing-box-team">
+        <div class="quarto-grid-item-team team-card">
+          <img src="imagenes/j_iturra.jpg" alt="Julio Iturra" class="listing-box-image">
+          <div class="team-card-body post-team-contents">
+            <div class="listing-box-title">Julio Iturra</div>
+            <div class="listing-box-subtitle">Asistente de Investigación</div>
+
+            <div class="listing-box-links">
+              <a href="mailto:julioiturrasanhueza@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope-fill"></i> Contacto
+              </a>
+              <a href="https://github.com/jciturras" class="github-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <a href="https://www.bigsss-bremen.de/people/phd-fellows/julio-iturra" class="web-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-globe2"></i> Web Personal
+              </a>
+            </div>
+
+            <div class="listing-box-calendar">
+              <i class="bi bi-calendar"></i> 2020–2021
+            </div>
           </div>
-          <div class="listing-box-subtitle">
-            Asistente de Investigación<br>
-          </div>
-          <div class="listing-box-contacto">
-            <a href="mailto:julioiturrasanhueza@gmail.com" class="contact-link">
-              <i class="bi bi-envelope"></i> Contacto
-            </a>
-          </div>
-          <div class="listing-box-github">
-            <a href="https://github.com/jciturras" class="github-link">
-              <i class="bi bi-github"></i> Github
-            </a>
-          </div>
-          <div class="listing-box-web">
-            <a href="https://www.bigsss-bremen.de/people/phd-fellows/julio-iturra" class="web-link">
-              <i class="bi bi-globe"></i> Web Personal
-            </a>
-          </div>
-          <div class="listing-box-calendar">
-            <i class="bi bi-calendar"></i> 2020-2021
-          </div>
-        </div>  
+        </div>
       </div>
 
       <!-- Persona 2 -->
-      <div class="g-col-1 listing-box">
-        <p class="card-img-top">
-          <img alt="Francisco Olivos" src="imagenes/f_olivos.jpeg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
-        </p>
-        <div class="card-body post-contents">
-          <div class="listing-box-title">
-            Francisco Olivos<br> 
+      <div class="listing-box-team">
+        <div class="quarto-grid-item-team team-card">
+          <img src="imagenes/f_olivos.jpeg" alt="Francisco Olivos" class="listing-box-image">
+          <div class="team-card-body post-team-contents">
+            <div class="listing-box-title">Francisco Olivos</div>
+            <div class="listing-box-subtitle">Asistente de Investigación</div>
+
+            <div class="listing-box-links">
+              <a href="mailto:fjolivos@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope-fill"></i> Contacto
+              </a>
+              <!-- GitHub y Web omitidos porque no hay enlaces -->
+            </div>
+
+            <div class="listing-box-calendar">
+              <i class="bi bi-calendar"></i> 2020–2021
+            </div>
           </div>
-          <div class="listing-box-subtitle">
-            Asistente de Investigación<br>
-          </div>
-          <div class="listing-box-contacto">
-            <a href="mailto:fjolivos@gmail.com" class="contact-link">
-              <i class="bi bi-envelope"></i> Contacto
-            </a>
-          </div>
-          <div class="listing-box-github">
-            <a href="" class="github-link">
-              <i class="bi bi-github"></i> Github
-            </a>
-          </div>
-          <div class="listing-box-web">
-            <a href="" class="web-link">
-              <i class="bi bi-globe"></i> Web Personal
-            </a>
-          </div>
-          <div class="listing-box-calendar">
-            <i class="bi bi-calendar"></i> 2020-2021
-          </div>
-        </div>  
+        </div>
       </div>
 
     </div>
   </div>
 </div>
+
+
 
 ```
 

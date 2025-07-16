@@ -120,19 +120,19 @@
                 <div class="listing-box-links"><%= item.links %></div>
 
                 <% if (item.contacto) { %>
-                  <a href="mailto:<%= item.contacto %>" class="contact-link">
+                  <a href="mailto:<%= item.contacto %>" class="contact-link" target= "_blank">
                     <i class="bi bi-envelope-fill"></i> Contacto
                   </a>
                 <% } %>
 
                 <% if (item.github) { %>
-                  <a href="<%= item.github %>" class="github-link">
+                  <a href="<%= item.github %>" class="github-link" "_blank">
                     <i class="bi bi-github"></i> GitHub
                   </a>
                 <% } %>
 
                 <% if (item.web) { %>
-                  <a href="<%= item.web %>" class="web-link">
+                  <a href="<%= item.web %>" class="web-link" "_blank">
                     <i class="bi bi-globe2"></i> Web Personal
                   </a>
                 <% } %>

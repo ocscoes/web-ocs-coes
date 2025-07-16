@@ -14,6 +14,7 @@ website:
       [2025]()
     center:
       - href: https://github.com/ocscoes/web-ocs-coes
+        target: _blank
         icon: github
         aria-label: GitHub
     right: |
@@ -24,14 +25,19 @@ website:
     tools: 
        - icon: github
          href: https://github.com/ocscoes/
+         target: _blank
        - icon: facebook
          href: https://www.facebook.com/CentroCOES
+         target: _blank
        - icon: twitter
          href: https://x.com/CentroCOES
+         target: _blank
        - icon: instagram
          href: https://www.instagram.com/centro_coes/
+         target: _blank
        - icon: youtube
          href: https://www.youtube.com/channel/UCs9uSSVl7ucVqeSq4wVUIgA
+         target: _blank
     # pinned: true
     left:
       - href: index.qmd#destacadosh1
