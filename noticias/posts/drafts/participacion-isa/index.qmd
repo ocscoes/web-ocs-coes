@@ -1,0 +1,19 @@
+---
+title: "Participación en el 5th ISA Forum of Sociology"
+subtitle: Observatorio de Cohesión Social
+description: Juan Carlos Castillo, Investigador Principal del OCS, estuvo presente en la conferencia que este año tuvo lugar en Rabat, Marruecos.
+categories: [noticias]
+date: "2025-07-04"
+draft: true
+about:
+  template: marquee
+  image: "featured.jpeg"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+Desde el 6 al 11 de julio de este año se llevó a cabo la quinta edición del Forum of Sociology, organizado por la International Sociology Asociation. Este hito congregó a cientos de académicos de las ciencias sociales de diversas partes del mundo en Rabat, Marruecos. La temática principal del foro llevó por nombre "Conociendo la justicia en el antropoceno", en un intento de movilizar la imaginación sociológica para contribuir a los desafíos actuales que circunscriben la noción de justicia. 
+
+En el contexto de este foro, el investigador principal del Observatorio de Cohesión Social, Juan Carlos Castillo, firmó su participación como coordinador del programa de Psicología Social (RC42), en donde fue el organizador de la sesión "Studying Social Cohesion in Comparative Perspective". Además, también participó como expositor, donde su presentación llevó por nombre "Meritocracy and Redistributive Preferences at School Level in Chile". 
+
+Su presencia destaca en una de las conferencias más prestigiosas a nivel internacional en lo que respecta a sociología, lo cual pone en relieve el compromiso de los integrantes de este centro con la investigación, apuntando a contribuir de manera sustantiva en el diagnóstico de los fenómenos sociales actuales, especialmente en lo que concierne a la cohesión social, mediante una profundidad teórica acompañada de métodos empíricos rigurosos que permitan entregar respuestas plausibles a las problemáticas existentes, pero también descubrir los eventuales desafíos que deparan. 

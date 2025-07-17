@@ -1,0 +1,67 @@
+project:
+  type: website
+  resources:
+       - analisis/posts/ELSOC/*
+       - analisis/posts/IndicesLAPOP/*
+  render:
+        - "*.qmd"
+  output-dir: "docs"
+website:
+  title: ""
+  page-footer:
+    background: "#121212"
+    left: |
+      [2025]()
+    center:
+      - href: https://github.com/ocscoes/web-ocs-coes
+        target: _blank
+        icon: github
+        aria-label: GitHub
+    right: |
+       Last Update: 03-07-2025
+  navbar:
+    logo: resources/imagenes/sharing-default.png
+    background: "#FFFFFF"
+    tools: 
+       - icon: github
+         href: https://github.com/ocscoes/
+         target: _blank
+       - icon: facebook
+         href: https://www.facebook.com/CentroCOES
+         target: _blank
+       - icon: twitter
+         href: https://x.com/CentroCOES
+         target: _blank
+       - icon: instagram
+         href: https://www.instagram.com/centro_coes/
+         target: _blank
+       - icon: youtube
+         href: https://www.youtube.com/channel/UCs9uSSVl7ucVqeSq4wVUIgA
+         target: _blank
+    # pinned: true
+    left:
+      - href: index.qmd#destacadosh1
+        text: "<i class='bi bi-pin-angle'></i> Destacados"
+      - href: index.qmd#analisish1
+        text: "<i class='bi bi-graph-up-arrow'></i> Análisis"
+      - href: index.qmd#noticiash1
+        text: "<i class='bi bi-newspaper'></i> Noticias"
+      - href: index.qmd#reportesh1
+        text: "<i class='bi bi-journals'></i> Reportes"
+      - href: index.qmd#equipoh1
+        text: "<i class='bi bi-people-fill'></i> Equipo"
+      - href: links.qmd
+        text: "<i class='bi bi-link-45deg'></i> Enlaces"
+format:
+  html:
+    theme: 
+      light: flatly
+    css: 
+      - styles.css
+    toc: true
+    linkcolor: "#497BBD"
+include-after-body: "footer.html"
+
+
+
+

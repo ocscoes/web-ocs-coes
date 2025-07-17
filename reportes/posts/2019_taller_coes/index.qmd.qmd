@@ -1,0 +1,27 @@
+---
+title: "Estudiando la cohesión y el conflicto social en y desde América Latina"
+date: "2019"
+author: ["Castillo, Juan Carlos"]
+publication: "Taller interno COES-CEPAL, Santiago de Chile."
+abstract: ""
+categories: ["Presentación"]
+about:
+  template: marquee
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+::: {.callout-note title="TIP"}
+
+Presiona F para ver la presentación en pantalla completa
+
+:::
+
+<div style="max-width: 1140px; margin: auto; padding: 0px;">
+  <iframe 
+    src="https://jc-castillo.com/documents/cepal2019/pres01#1" 
+    style="width: 100%; height: 90vh; border: none;" 
+    allowfullscreen>
+  </iframe>
+</div>

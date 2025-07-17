@@ -1,0 +1,23 @@
+---
+title: "Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados"
+date: "2022-02-09"
+author: ["Castillo, Juan Carlos", "Espinoza, Vicente", "Barozet, Emmanuelle"]
+publication: "Documentos de Proyectos (LC/TS.2022/3), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)/Centro de Estudios de Conflicto y Cohesión Social (COES)"
+abstract: "En momentos de crisis e incertidumbre, la cohesión social —ese “cemento” invisible que une a las sociedades y se relaciona con un sentido de pertenencia y con la confianza necesaria para la convivencia pacífica— constituye una preocupación y, a la vez, una aspiración necesaria para construir una sociedad mejor. En este estudio, se analiza el fenómeno de la cohesión social y sus cambios en el caso de Chile. Partiendo de un nuevo marco conceptual y de medición propuesto por la Comisión Económica para América Latina y el Caribe (CEPAL), en que convergen elementos como las relaciones sociales de igualdad, el sentido de pertenencia y la orientación hacia el bien común, se utiliza una propuesta de indicadores de cohesión social basada en el Estudio Longitudinal Social de Chile (ELSOC), elaborado por el Centro de Estudios de Conflicto y Cohesión Social (COES). La naturaleza de este estudio longitudinal de tipo panel permite llevar a cabo un análisis innovador de los cambios ocurridos en nueve indicadores de cohesión social en Chile entre 2016 y 2020, período que abarca el surgimiento de las protestas y manifestaciones en octubre de 2019, el comienzo de la pandemia de enfermedad por coronavirus (COVID-19) y el inicio de un nuevo proceso constituyente."
+categories: ["Publicación"]
+about:
+  template: marquee
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+::: {.button}
+[Documento completo](https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados){.btn role="button" style="background-color: #0693e3; color: white; margin-top: 0em;"}
+:::
+
+::: {.callout-note title="How to cite this work"}
+
+Castillo, JC., Espinoza, V., Barozet, E. (2022). Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados. Disponible en https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados. Documentos de Proyectos (LC/TS.2022/3), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)/Centro de Estudios de Conflicto y Cohesión Social (COES)
+
+:::

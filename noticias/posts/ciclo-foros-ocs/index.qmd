@@ -1,0 +1,49 @@
+---
+title: "Ciclo de Foros de Cohesión Social"
+subtitle: Observatorio de Cohesión Social
+description: Buscamos promover la discusión sobre los desafíos políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina. 
+categories: [noticias]
+# Date published
+date: "2025-07-02"
+draft: false
+about:
+  template: marquee
+  image: "featured.jpg" 
+format: 
+  html: 
+   theme: ../../../scss-posts.scss 
+---
+
+Durante este año, el Observatorio de Cohesión Social se ha propuesto avanzar en su consolidación publica y académica como un referente en la discusión sobre Cohesión Social en Chile. En este contexto, proponemos los Foros de Cohesión Social como un espacio que busca promover la discusión sobre los desafios políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina.
+
+De este modo, los foros se configuran como espacios de presentación y debate de resultados vinculados a la investigación sobre la cohesión social en Chile y América Latina en distintos ámbitos, incluyendo los desafíos para la cohesión social tanto a nivel nacional como latinoamericano, así como sus dimensiones horizontales y verticales (Castillo, Carrasco, y Iturra 2021). Estas instancias recogen y articulan la experiencia acumulada en estudios sobre el tema, tanto por el COES como por otras organizaciones del ámbito académico, social y político.
+
+Nos proponemos organizar 3 foros. En cada uno se debatirán temas relevantes sobre la Cohesión Social en sus distintas dimensiones. Para ello, colaboraremos activamente con instituciones de prestigio que comparten nuestro interés por la cohesión social en Chile y América Latina, y contaremos con invitados expertos que nos darán su punto de vista sobre estas problemáticas en las sociedades actuales. 
+
+## Primer Foro: Desafíos de la Cohesión Social en Chile y América Latina
+
+La perspectiva comparativa ha sido uno de los pilares del trabajo del Observatorio, lo que se demuestra en el desarrollo de un visualizador que permite identificar tendencias en la cohesión social a nivel regional. Del mismo modo, la CEPAL ha puesto enfásis en la necesidad de promover sociedades más cohesionadas e inclusivas para superar las trampas del desarrollo que enfrentan las sociedades de América Latina y el Caribe (CEPAL 2024). Estas sensibilidades comúnes ya ha llevado a colaboraciones previas entre COES y CEPAL abordando las problemáticas de la cohesión social en Chile (Barozet et al. 2021; Castillo, Espinoza, y Barozet 2022). Siguiendo esta linea, el Foro tiene el propósito de presentar los marcos análiticos desarrollados por COES y CEPAL, promoviendo la reflexión en torno a los desafíos de la cohesión en la región, y sobre el rol de la academia, organizaciones sociales y políticas en superar estas problemáticas.
+
+**Lugar**: Comisión Económica para América Latina y el Caribe (CEPAL), Av. Dag Hammarskjöld 3477, Vitacura, Edificio Prinicipal, Cuarto piso, Sala Fajnzylber.
+
+**Fecha y hora**: Miércoles 30 de Juio, 11 horas.
+
+::: {.button}
+[Más información](../foro-ocs-cepal/index.qmd){.btn role="button" style="background-color: #0693e3; color: white; margin-top: 0em;"}
+:::
+
+## Segundo Foro: Cohesión Social y el fenómeno migratorio -- Desafíos y tensiones para la convivencia cotidiana
+
+En un contexto de rápido crecimiento de la población migrante en Chile, nos preguntamos por los efectos de la migración sobre la cohesión social en Chile. ¿Está la migración debilitando los lazos sociales en las comunidades? ¿O más bien se está reforzando el sentido de unidad y pertenencia frente a la percepción de una amenaza compartida? Este II Foro de Cohesión Social, organizado en conjunto con el Centro de Estudios Públicos (CEP), busca abrir un espacio de reflexión y análisis en torno a esta problemática.
+
+**Lugar**: Centro de Estudios Públicos (CEP), Monseñor Sótero Sanz 162, Providencia
+
+**Fecha y hora**: Martes 9 de Septiembre, 18:30 horas. 
+
+## Tercer Foro: Cohesión Social en el contexto de las elecciones presidenciales -- Instituciones, autoridad y política
+
+El tercer foro estará enfocado en la dimensión vertical de la cohesión social, es decir, en la relación de los ciudadanos con el Estado, la participación política, la confianza en las instituciones y sus autoridades (Castillo, Carrasco, y Iturra 2021), todo esto en el contexto de las venideras elecciones presidenciales.
+
+**Lugar**: Biblioteca Nicanor Parra, Universidad Diego Portales, Vergara 324, Santiago.
+
+**Fecha**: XII Conferencia Internacional COES (fecha por confirmar)

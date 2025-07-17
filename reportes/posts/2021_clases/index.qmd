@@ -1,0 +1,17 @@
+---
+title: " Clases medias en tiempos de crisis. Vulnerabilidad persistente, desafíos para la cohesión y un nuevo pacto social en Chile"
+date: "2021-08-26"
+author: ["Contreras, Dante", "Espinoza, Vicente", "Gayo, Modesto", "Méndez, María Luisa", "Barozet, Emmanuelle"]
+publication: "Documentos de Proyectos (LC/TS.2021/101), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)"
+abstract: ""
+categories: ["Documento de trabajo"]
+about:
+  template: marquee
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+::: {.button}
+[Documento completo](https://repositorio.cepal.org/entities/publication/75cb927e-9074-4b7e-8e5b-446f3f07f858){.btn role="button" style="background-color: #0693e3; color: white; margin-top: 0em;"}
+:::

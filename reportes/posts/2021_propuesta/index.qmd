@@ -1,0 +1,94 @@
+---
+title: "Conceptos y Medición de Cohesión Social En Proyectos Internacionales"
+date: "2021-06"
+author: ["Castillo, Juan Carlos", "Olivos, Francisco", "Iturra, Julio"]
+publication: "Serie Documentos de Trabajo COES, Documento de Trabajo N47, Pp. 1-32"
+abstract: ""
+categories: ["Documento de trabajo"]
+about:
+  template: marquee
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+::: {.button}
+[Documento completo](https://drive.google.com/file/d/1FvmVhdYaT_Tg4fNyUKSshv45uJdJkTWo/view){.btn role="button" style="background-color: #0693e3; color: white; margin-top: 0em;"}
+:::
+
+# Introducción
+
+Este documento tiene por objetivo describir y resumir diferentes aproximaciones
+conceptuales y metodológicas hacia el concepto de cohesión social. Originalmente
+fue desarrollado para servir como insumo en la generación del Observatorio de
+Cohesión Social (OCS) del Centro de Estudios de Conflicto y Cohesión Social (COES),
+cuyo objetivo es proponer indicadores de cohesión social con foco en América Latina
+basados en datos secundarios y permitir la realización de análisis en una plataforma
+interactiva.
+
+Como punto de partida de este esfuerzo por definir y operacionalizar la cohesión
+social para el OCS es necesario considerar algunos trabajos de carácter teórico que
+existen en América Latina. Uno de estos casos es el trabajo realizado
+tempranamente por CEPAL (Ottone et al., 2007) en respuesta a una serie de
+problemas que afectan al continente, como son los altos índices de pobreza,
+desigualdad y diversas formas de discriminación y exclusión. La cohesión social en
+este caso está estrechamente vinculada a los valores democráticos y el respeto al
+estado de derecho. Desde esta perspectiva, la cohesión social tendría dos vertientes
+principales: por un lado, referiría a la capacidad de los mecanismos instituidos de
+inclusión social (sistema educacional, protección social, titularidad de derecho,
+etc.), y por otro lado a los comportamientos y valores de los sujetos que conforman
+la sociedad (sentido de pertenencia, capital social, confianza en las instituciones,
+solidaridad, etc.).
+
+Una aproximación conceptual complementaria a la de CEPAL a finales de la década
+del 2010 proviene del trabajo de CIEPLAN desarrollado en torno al proyecto y
+encuesta ECOsociAL (2007) (Tironi Barrios y Foxley Ríoseco, 2008). Desde esta
+perspectiva se señala que el concepto de cohesión social es tanto descriptivo como
+normativo, ya que no solo permite describir los elementos que unen a la sociedad,
+sino también propone ciertos ideales a alcanzar como sociedad en contextos
+democráticos. Así, una sociedad cohesionada no sería una sociedad cerrada en
+torno a determinados valores, sino que permitiría que los sujetos se relacionen en
+torno a principios de justicia que dan fundamento al actuar cooperativo. Por eso,
+desde esta perspectiva el concepto supone un sentido de pertenencia moral y
+sujeción a reglas al estilo durkhemiano, que a su vez son compatibilizados con la
+autonomía individual para las sociedades modernas. Sin embargo, la conciencia
+moral podría incluir elementos como la misma autonomía individual, la diferencia y
+la diversidad como principios orientadores.
+
+El auge observado por el concepto de cohesión social a finales de la década del 2010
+en Chile y América Latina, impulsado principalmente por CEPAL, PNUD y CIEPLAN,
+entra luego a una fase de menor actividad en la región, lo que contrasta con el
+desarrollo de proyectos a larga escala a nivel internacional enfocados
+principalmente en la medición de cohesión social. El presente documento pone su
+foco en esta segunda fase, presentando una revisión de los proyectos más
+emblemáticos a nivel internacional que han puesto el foco en medición de cohesión
+social.
+
+La revisión de experiencias internacionales en el monitoreo de cohesión social tiene
+cuatro focos centrales. En primer lugar, conocer en mayor detalle la estructura
+organizacional y objetivos de los proyectos existentes actualmente. En segundo
+lugar, revisar las definiciones conceptuales de cohesión social para entregar un
+marco general que permita especificar dimensiones y subdimensiones del
+concepto. El tercer foco es la operacionalización que estas experiencias realizan del
+concepto para identificar o generar indicadores. Finalmente, cada revisión de las
+experiencias internacionales se concluye con un listado de referencias comentadas
+en donde se puede encontrar documentos de trabajo o aplicaciones de los datos
+levantados por cada uno de los proyectos.
+
+La selección de iniciativas internacionales buscó ser representativa
+geográficamente, dado que las perspectivas sobre la cohesión social poseen un
+arraigo en los atributos socioculturales en los que estos se desarrollan: vínculos
+sociales o capital social en Estados Unidos por ejemplo o ampliación del Estado de
+Bienestar a grupos excluidos en Europa. Así, nuestra selección incluye el Scanlon-
+Monash Index of Social Cohesion (SMI) de Australia, el Social Cohesion Radar (SCR)
+alemán con alcance internacional, el trabajo teórico Civic Engagement and Social
+Cohesion Report de los Estados Unidos y el clásico trabajo de Jenson (1998, 2010)
+Mapping Social Cohesion en Canadá. Finalmente, y si bien no calza totalmente con
+el carácter y momento de los otros estudios, se incluyó también al proyecto
+ECOsociAL que comprendió a siete ciudades de Latinoamérica.
+
+::: {.callout-note title="How to cite this work"}
+
+Castillo, J., Olivos, F., y Iturra, J. (2021). Conceptos y Medición de Cohesión Social En Proyectos Internacionales. Serie Documentos de Trabajo COES, Documento de Trabajo N47, Pp. 1-32.
+
+:::

@@ -1,0 +1,29 @@
+---
+title: Juan Carlos Castillo
+subtitle: Investigador Principal
+contacto: juancastillov@uchile
+github: https://github.com/juancarloscastillo
+web: https://jc-castillo.com
+image: "featured.png"
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: envelope
+      href: mailto:juancastillov@uchile.cl
+      target: _blank
+      text: Contacto
+    - icon: github
+      href: https://github.com/juancarloscastillo
+      target: _blank
+      text: Github
+    - icon: globe
+      href: https://jc-castillo.com
+      target: _blank
+      text: Web Personal
+format: 
+  html: 
+   theme: ../../equipo.scss
+---
+
+Juan-Carlos Castillo es profesor asociado del Departamento de Sociología de la Universidad de Chile, investigador principal del Centro de Estudios sobre Conflictos y Cohesión Social (COES) y del Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS). Obtuvo su doctorado en Sociología en la Humboldt Universität zu Berlin.
