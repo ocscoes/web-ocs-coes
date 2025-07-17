@@ -3,7 +3,7 @@ title: Tomás Urzúa
 subtitle: Practicante
 contacto: tomas.urzua@ug.uchile.cl
 github: https://github.com/tomasurzuam
-web: tba
+web: https://www.linkedin.com/in/tomás-urzúa-moreno-b65755375/
 image: "featured.jpeg"
 about:
   template: trestles
@@ -18,7 +18,7 @@ about:
       target: _blank
       text: Github
     - icon: globe
-      href: tba
+      href: https://www.linkedin.com/in/tomás-urzúa-moreno-b65755375/
       target: _blank
       text: Web Personal
 format: 

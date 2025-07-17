@@ -214,7 +214,7 @@ format:
               <a href="https://github.com/jciturras" class="github-link" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-github"></i> GitHub
               </a>
-              <a href="https://www.bigsss-bremen.de/people/phd-fellows/julio-iturra" class="web-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.bigsss-bremen.de/people/phd-fellows/julio-iturra-sanhueza" class="web-link" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-globe2"></i> Web Personal
               </a>
             </div>

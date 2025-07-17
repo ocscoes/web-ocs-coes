@@ -28,6 +28,104 @@
     "text": "TIP\n\n\n\nPresiona F para ver la presentación en pantalla completa"
   },
   {
+    "objectID": "noticias/posts/foro-ocs-cepal/index.html",
+    "href": "noticias/posts/foro-ocs-cepal/index.html",
+    "title": "Foro OCS-CEPAL",
+    "section": "",
+    "text": "Inscripciones \nAnte un escenario de incertidumbres, de crisis y desafíos por alcanzar un desarrollo social inclusivo en América Latina, la región enfrenta tres “trampas” del desarrollo, a saber: i) la baja capacidad para crecer; ii) alta desigualdad, baja movilidad y débil cohesión social y iii) baja capacidad institucional y gobernanza poco efectiva (Salazar-Xirinachs, 2024). Frente a este panorama, la cohesión social figura como un elemento clave para avanzar hacia un desarrollo sostenible sin dejar a nadie atrás.\nSiendo un concepto en constante debate, la cohesión social resulta fundamental en el contexto actual, donde tanto la CEPAL como el COES han trabajado en su conceptualización y medición, incluso colaborando de forma conjunta en estudios de cohesión social en Chile. Este foro se posiciona como una oportunidad para volver a relevar la importancia de la cohesión social para la promoción de sociedades más inclusivas, sostenibles y resilientes.\nEl foro tiene como objetivo presentar marcos analíticos sobre cohesión social desarrollados por la CEPAL y el COES, destacando su importancia para el desarrollo social inclusivo. Para ello, un representante de cada institución, por su parte, presentará perspectivas teóricas y elementos analíticos sobre la cohesión social desde una perspectiva regional y nacional. Además, un panel de discusión comentará ambas presentaciones, destacando los desafíos de América Latina y Chile en torno a este tema, promoviendo la reflexión en torno a políticas para superar estas brechas. Por lo tanto, este foro se consolida como un espacio de referencia académica y pública, orientado a debatir aspectos políticos, teóricos y metodológicos. Estas instancias buscan articular el conocimiento generado por la CEPAL y el COES y otras organizaciones, abordando las dimensiones horizontales y verticales de la cohesión social.\n📅 Fecha: Miércoles 30 de Julio\n🕚 Horario: 11 horas\n📍 Lugar: Comisión Económica para América Latina y el Caribe (CEPAL), Av. Dag Hammarskjöld 3477, Vitacura, Edificio Prinicipal, Cuarto piso, Sala Fajnzylber\n💻 Transmisión online vía zoom: https://bit.ly/3GK6Nw4\nCronograma:\n11:00 ― Palabras de Bienvenida\n11:10 ― Presentaciones\nPresentan:\n\nCarlos Maldonado Valera, Oficial de Asuntos Sociales, División de Desarrollo Social, CEPAL\nJuan Carlos Castillo, Profesor asociado FACSO, Universidad de Chile; Investigador principal COES\n\n11:40 ― Discusión\nComentan:\n\nBenito Baranda, Profesor Adjunto, Escuela de Psicología, Pontificia Universidad Católica de Chile. Fundador de América Solidaria\nEmmanuelle Barozet, Profesora titular FACSO, Universidad de Chile; Investigadora principal COES.\n\n12:20 ― Palabras de cierre\n12:30 ― Coffee\n Inscripciones"
+  },
+  {
+    "objectID": "noticias/posts/actualizacion-web/index.html",
+    "href": "noticias/posts/actualizacion-web/index.html",
+    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
+    "section": "",
+    "text": "En el Observatorio de Cohesión Social (OCS) estamos muy contentos de anunciar el lanzamiento de nuestro nuevo sitio. Este espacio busca difundir nuestro trabajo y promover el conocimiento basado en evidencia empírica sobre las dinámicas de la cohesión social en Chile, América Latina y el mundo.\nEl objetivo es ofrecer informes, datos abiertos y visualizaciones interactivas que permitan comprender este fenómeno de manera multidimensional, longitudinal y transnacional."
+  },
+  {
+    "objectID": "noticias/posts/actualizacion-web/index.html#herramientas-y-características",
+    "href": "noticias/posts/actualizacion-web/index.html#herramientas-y-características",
+    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
+    "section": "Herramientas y Características",
+    "text": "Herramientas y Características\nEntre las características que ponemos a disposición para el público académico se encuentran:\n\nUn visualizador interactivo sobre Cohesión Social en América Latina con datos de la Encuesta LAPOP con información de 9 olas entre 2004 y 2023.\nReportes sobre Cohesión Social en Chile y América Latina. Difundiremos y visibilizaremos tanto trabajo propio como de otros investigadores COES.\nDifusión de nuestras actividades como Observatorio\nRecursos de interés para la investigación en cohesión social, incluyendo acceso a datos abiertos.\n\nAdemás, seguiremos ampliando el sitio con nuevos contenidos, tales como:\n\nUn visualizador interactivo con datos de la Encuesta Social Longitudinal de Chile (ELSOC).\nDifusión de investigaciones recientes sobre cohesión social en Chile.\nNoticias sobre eventos organizados por el Observatorio."
+  },
+  {
+    "objectID": "noticias/posts/actualizacion-web/index.html#cómo-lo-hicimos",
+    "href": "noticias/posts/actualizacion-web/index.html#cómo-lo-hicimos",
+    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
+    "section": "¿Cómo lo hicimos?",
+    "text": "¿Cómo lo hicimos?\nEn el Observatorio de Cohesión Social estamos comprometidos con los principios de la ciencia abierta. Esto se refleja no solo en la apertura de nuestros datos y la transparencia de nuestros diseños de investigación, sino también en la forma en que compartimos nuestro trabajo.\nPor eso, desarrollamos este sitio utilizando Quarto, una plataforma de publicación científica y técnica de código abierto. Quarto ofrece ventajas importantes frente a otras soluciones: está diseñada específicamente para el trabajo en investigación y visualización de datos, integrándose de forma fluida con R, Markdown y otros lenguajes de programación.\nGracias a este ecosistema unificado, pudimos construir un sitio web de manera simple, elegante y completamente alineado con nuestros principios.\nLa creación de sitios web es solo una de las muchas posibilidades que ofrece Quarto. También permite generar visualizadores, reportes dinámicos y mucho más. En caso de querer conocer más sobre esta herramienta, nuestro investigador principal, Juan Carlos Castillo, escribió recientemente un post sobre el tema"
+  },
+  {
+    "objectID": "links.html#a-quién-seguir",
+    "href": "links.html#a-quién-seguir",
+    "title": "",
+    "section": "A quién seguir:",
+    "text": "A quién seguir:\n\nJan Germen Janmaat, UCL Institute of Education.\nRegimes of Social Cohesion: Societies and the Crisis of Globalisation (2011)"
+  },
+  {
+    "objectID": "equipo/posts/5. ayudante-ocs/index.html",
+    "href": "equipo/posts/5. ayudante-ocs/index.html",
+    "title": "Tomás Urzúa",
+    "section": "",
+    "text": "Tomás Urzúa es sociólogo de la Universidad de Chile y actualmente cursa el Magíster en Ciencias Sociales en la misma institución. Está asociado al Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS) y al Centro de Estudios de Conflicto y Cohesión Social (COES)."
+  },
+  {
+    "objectID": "equipo/posts/3. asit-coes/index.html",
+    "href": "equipo/posts/3. asit-coes/index.html",
+    "title": "Kevin Carrasco",
+    "section": "",
+    "text": "Asistente de investigación de la línea “Interacciones Grupales e Individuales” de COES y del Laboratorio de Investigación Social Abierta (LISA-COES). Sociólogo y Magíster en Ciencias Sociales de la Universidad de Chile. Sus temas de interés refieren a: Preferencias redistributivas, Educación ciudadana, Ciencia Abierta, Cohesión Social y Métodos cuantitativos de investigación social."
+  },
+  {
+    "objectID": "equipo/posts/1. pi/index.html",
+    "href": "equipo/posts/1. pi/index.html",
+    "title": "Juan Carlos Castillo",
+    "section": "",
+    "text": "Juan-Carlos Castillo es profesor asociado del Departamento de Sociología de la Universidad de Chile, investigador principal del Centro de Estudios sobre Conflictos y Cohesión Social (COES) y del Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS). Obtuvo su doctorado en Sociología en la Humboldt Universität zu Berlin."
+  },
+  {
+    "objectID": "analisis/visualizador-latam/index.html",
+    "href": "analisis/visualizador-latam/index.html",
+    "title": "Visualizador de Cohesión Social en América Latina",
+    "section": "",
+    "text": "Puedes acceder al visualizador en pantalla completa aquí"
+  },
+  {
+    "objectID": "analisis/visualizador-elsoc.html",
+    "href": "analisis/visualizador-elsoc.html",
+    "title": "Visualizador ELSOC",
+    "section": "",
+    "text": "El visualizador con datos del Estudio Longitudinal Social de Chile está en construcción."
+  },
+  {
+    "objectID": "equipo/equipo.html",
+    "href": "equipo/equipo.html",
+    "title": "Equipo",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "equipo/posts/2. coordinador/index.html",
+    "href": "equipo/posts/2. coordinador/index.html",
+    "title": "Andreas Laffert",
+    "section": "",
+    "text": "Sociólogo por la Universidad de Chile y Magíster(c) en Sociología por la Pontificia Universidad Católica de Chile. Becario del Programa de Capital Humano Avanzado de ANID para estudios de Magíster (2024 - actualidad). Ha trabajado como analista cuantitativo en la Subsecretaría del Trabajo del Ministerio del Trabajo y Previsión Social. Actualmente se desempeña como asistente de investigación en el proyecto Fondecyt N° 1250518 “Justicia de mercado y merecimiento del bienestar social” y en el Observatorio de Cohesión Social (OCS) del COES. Además, colabora como asistente de investigación en el proyecto Maxi-COES “Desigualdad Socioeconómica y de Género: Un Estudio Multi-País”.\nSus intereses de investigación se centran en la estratificación social, los procesos subjetivos relacionados con la justicia distributiva, las creencias sobre la desigualdad y la legitimación de la mercantilización de servicios sociales. Le interesan especialmente las metodologías cuantitativas con enfoque en análisis multinivel, longitudinal y causal, así como el análisis comparativo internacional."
+  },
+  {
+    "objectID": "equipo/posts/4. consultor-ocs/index.html",
+    "href": "equipo/posts/4. consultor-ocs/index.html",
+    "title": "Gabriel Cortés",
+    "section": "",
+    "text": "Sociólogo de la Universidad de Chile y Magíster en Métodos para la Investigación Social por la Universidad Diego Portales. Actualmente se desempeña como Asistente de Investigación en el Observatorio de Cohesión Social y el Laboratorio de Investigación Social Abierta, ambas iniciativas del COES. Sus intereses se centran en la cohesión social, el individualismo, la institucionalidad política y los métodos de investigación mixtos."
+  },
+  {
+    "objectID": "noticias/noticias.html",
+    "href": "noticias/noticias.html",
+    "title": "Noticias",
+    "section": "",
+    "text": "Foro OCS-CEPAL\n\n\nEl primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.\n\n\n\nJul 3, 2025\n\n\n\n\n\n\n\n\n\n\n\nCiclo de Foros de Cohesión Social\n\n\nBuscamos promover la discusión sobre los desafíos políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina.\n\n\n\nJul 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n¡Bienvenidos a nuestro nuevo sitio web!\n\n\nEn este nuevo sitio web buscamos visibilizar el trabajo investigativo del Observatorio, asi como las actividades organizadas por nuestro equipo.\n\n\n\nJul 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "noticias/posts/ciclo-foros-ocs/index.html",
     "href": "noticias/posts/ciclo-foros-ocs/index.html",
     "title": "Ciclo de Foros de Cohesión Social",
@@ -56,102 +154,11 @@
     "text": "Tercer Foro: Cohesión Social en el contexto de las elecciones presidenciales – Instituciones, autoridad y política\nEl tercer foro estará enfocado en la dimensión vertical de la cohesión social, es decir, en la relación de los ciudadanos con el Estado, la participación política, la confianza en las instituciones y sus autoridades (Castillo, Carrasco, y Iturra 2021), todo esto en el contexto de las venideras elecciones presidenciales.\nLugar: Biblioteca Nicanor Parra, Universidad Diego Portales, Vergara 324, Santiago.\nFecha: XII Conferencia Internacional COES (fecha por confirmar)"
   },
   {
-    "objectID": "noticias/noticias.html",
-    "href": "noticias/noticias.html",
-    "title": "Noticias",
+    "objectID": "reportes/posts/2019_taller_coes/index.qmd.html",
+    "href": "reportes/posts/2019_taller_coes/index.qmd.html",
+    "title": "Estudiando la cohesión y el conflicto social en y desde América Latina",
     "section": "",
-    "text": "Foro OCS-CEPAL\n\n\nEl primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.\n\n\n\nJul 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCiclo de Foros de Cohesión Social\n\n\nBuscamos promover la discusión sobre los desafíos políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina.\n\n\n\nJul 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n¡Bienvenidos a nuestro nuevo sitio web!\n\n\nEn este nuevo sitio web buscamos visibilizar el trabajo investigativo del Observatorio, asi como las actividades organizadas por nuestro equipo.\n\n\n\nJul 1, 2025\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "equipo/posts/4. consultor-ocs/index.html",
-    "href": "equipo/posts/4. consultor-ocs/index.html",
-    "title": "Gabriel Cortés",
-    "section": "",
-    "text": "Sociólogo de la Universidad de Chile y Magíster en Métodos para la Investigación Social por la Universidad Diego Portales. Actualmente se desempeña como Asistente de Investigación en el Observatorio de Cohesión Social y el Laboratorio de Investigación Social Abierta, ambas iniciativas del COES. Sus intereses se centran en la cohesión social, el individualismo, la institucionalidad política y los métodos de investigación mixtos."
-  },
-  {
-    "objectID": "equipo/posts/2. coordinador/index.html",
-    "href": "equipo/posts/2. coordinador/index.html",
-    "title": "Andreas Laffert",
-    "section": "",
-    "text": "Sociólogo por la Universidad de Chile y Magíster(c) en Sociología por la Pontificia Universidad Católica de Chile. Becario del Programa de Capital Humano Avanzado de ANID para estudios de Magíster (2024 - actualidad). Ha trabajado como analista cuantitativo en la Subsecretaría del Trabajo del Ministerio del Trabajo y Previsión Social. Actualmente se desempeña como asistente de investigación en el proyecto Fondecyt N° 1250518 “Justicia de mercado y merecimiento del bienestar social” y en el Observatorio de Cohesión Social (OCS) del COES. Además, colabora como asistente de investigación en el proyecto Maxi-COES “Desigualdad Socioeconómica y de Género: Un Estudio Multi-País”.\nSus intereses de investigación se centran en la estratificación social, los procesos subjetivos relacionados con la justicia distributiva, las creencias sobre la desigualdad y la legitimación de la mercantilización de servicios sociales. Le interesan especialmente las metodologías cuantitativas con enfoque en análisis multinivel, longitudinal y causal, así como el análisis comparativo internacional."
-  },
-  {
-    "objectID": "equipo/equipo.html",
-    "href": "equipo/equipo.html",
-    "title": "Equipo",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "analisis/visualizador-elsoc.html",
-    "href": "analisis/visualizador-elsoc.html",
-    "title": "Visualizador ELSOC",
-    "section": "",
-    "text": "El visualizador con datos del Estudio Longitudinal Social de Chile está en construcción."
-  },
-  {
-    "objectID": "analisis/visualizador-latam/index.html",
-    "href": "analisis/visualizador-latam/index.html",
-    "title": "Visualizador de Cohesión Social en América Latina",
-    "section": "",
-    "text": "Puedes acceder al visualizador en pantalla completa aquí"
-  },
-  {
-    "objectID": "equipo/posts/1. pi/index.html",
-    "href": "equipo/posts/1. pi/index.html",
-    "title": "Juan Carlos Castillo",
-    "section": "",
-    "text": "Juan-Carlos Castillo es profesor asociado del Departamento de Sociología de la Universidad de Chile, investigador principal del Centro de Estudios sobre Conflictos y Cohesión Social (COES) y del Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS). Obtuvo su doctorado en Sociología en la Humboldt Universität zu Berlin."
-  },
-  {
-    "objectID": "equipo/posts/3. asit-coes/index.html",
-    "href": "equipo/posts/3. asit-coes/index.html",
-    "title": "Kevin Carrasco",
-    "section": "",
-    "text": "Asistente de investigación de la línea “Interacciones Grupales e Individuales” de COES y del Laboratorio de Investigación Social Abierta (LISA-COES). Sociólogo y Magíster en Ciencias Sociales de la Universidad de Chile. Sus temas de interés refieren a: Preferencias redistributivas, Educación ciudadana, Ciencia Abierta, Cohesión Social y Métodos cuantitativos de investigación social."
-  },
-  {
-    "objectID": "equipo/posts/5. ayudante-ocs/index.html",
-    "href": "equipo/posts/5. ayudante-ocs/index.html",
-    "title": "Tomás Urzúa",
-    "section": "",
-    "text": "Tomás Urzúa es sociólogo de la Universidad de Chile y actualmente cursa el Magíster en Ciencias Sociales en la misma institución. Está asociado al Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS) y al Centro de Estudios de Conflicto y Cohesión Social (COES)."
-  },
-  {
-    "objectID": "links.html#a-quién-seguir",
-    "href": "links.html#a-quién-seguir",
-    "title": "",
-    "section": "A quién seguir:",
-    "text": "A quién seguir:\n\nJan Germen Janmaat, UCL Institute of Education.\nRegimes of Social Cohesion: Societies and the Crisis of Globalisation (2011)"
-  },
-  {
-    "objectID": "noticias/posts/actualizacion-web/index.html",
-    "href": "noticias/posts/actualizacion-web/index.html",
-    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
-    "section": "",
-    "text": "En el Observatorio de Cohesión Social (OCS) estamos muy contentos de anunciar el lanzamiento de nuestro nuevo sitio. Este espacio busca difundir nuestro trabajo y promover el conocimiento basado en evidencia empírica sobre las dinámicas de la cohesión social en Chile, América Latina y el mundo.\nEl objetivo es ofrecer informes, datos abiertos y visualizaciones interactivas que permitan comprender este fenómeno de manera multidimensional, longitudinal y transnacional."
-  },
-  {
-    "objectID": "noticias/posts/actualizacion-web/index.html#herramientas-y-características",
-    "href": "noticias/posts/actualizacion-web/index.html#herramientas-y-características",
-    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
-    "section": "Herramientas y Características",
-    "text": "Herramientas y Características\nEntre las características que ponemos a disposición para el público académico se encuentran:\n\nUn visualizador interactivo sobre Cohesión Social en América Latina con datos de la Encuesta LAPOP con información de 9 olas entre 2004 y 2023.\nReportes sobre Cohesión Social en Chile y América Latina. Difundiremos y visibilizaremos tanto trabajo propio como de otros investigadores COES.\nDifusión de nuestras actividades como Observatorio\nRecursos de interés para la investigación en cohesión social, incluyendo acceso a datos abiertos.\n\nAdemás, seguiremos ampliando el sitio con nuevos contenidos, tales como:\n\nUn visualizador interactivo con datos de la Encuesta Social Longitudinal de Chile (ELSOC).\nDifusión de investigaciones recientes sobre cohesión social en Chile.\nNoticias sobre eventos organizados por el Observatorio."
-  },
-  {
-    "objectID": "noticias/posts/actualizacion-web/index.html#cómo-lo-hicimos",
-    "href": "noticias/posts/actualizacion-web/index.html#cómo-lo-hicimos",
-    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
-    "section": "¿Cómo lo hicimos?",
-    "text": "¿Cómo lo hicimos?\nEn el Observatorio de Cohesión Social estamos comprometidos con los principios de la ciencia abierta. Esto se refleja no solo en la apertura de nuestros datos y la transparencia de nuestros diseños de investigación, sino también en la forma en que compartimos nuestro trabajo.\nPor eso, desarrollamos este sitio utilizando Quarto, una plataforma de publicación científica y técnica de código abierto. Quarto ofrece ventajas importantes frente a otras soluciones: está diseñada específicamente para el trabajo en investigación y visualización de datos, integrándose de forma fluida con R, Markdown y otros lenguajes de programación.\nGracias a este ecosistema unificado, pudimos construir un sitio web de manera simple, elegante y completamente alineado con nuestros principios.\nLa creación de sitios web es solo una de las muchas posibilidades que ofrece Quarto. También permite generar visualizadores, reportes dinámicos y mucho más. En caso de querer conocer más sobre esta herramienta, nuestro investigador principal, Juan Carlos Castillo, escribió recientemente un post sobre el tema"
-  },
-  {
-    "objectID": "noticias/posts/foro-ocs-cepal/index.html",
-    "href": "noticias/posts/foro-ocs-cepal/index.html",
-    "title": "Foro OCS-CEPAL",
-    "section": "",
-    "text": "Inscripciones \nAnte un escenario de incertidumbres, de crisis y desafíos por alcanzar un desarrollo social inclusivo en América Latina, la región enfrenta tres “trampas” del desarrollo, a saber: i) la baja capacidad para crecer; ii) alta desigualdad, baja movilidad y débil cohesión social y iii) baja capacidad institucional y gobernanza poco efectiva (Salazar-Xirinachs, 2024). Frente a este panorama, la cohesión social figura como un elemento clave para avanzar hacia un desarrollo sostenible sin dejar a nadie atrás.\nSiendo un concepto en constante debate, la cohesión social resulta fundamental en el contexto actual, donde tanto la CEPAL como el COES han trabajado en su conceptualización y medición, incluso colaborando de forma conjunta en estudios de cohesión social en Chile. Este foro se posiciona como una oportunidad para volver a relevar la importancia de la cohesión social para la promoción de sociedades más inclusivas, sostenibles y resilientes.\nEl foro tiene como objetivo presentar marcos analíticos sobre cohesión social desarrollados por la CEPAL y el COES, destacando su importancia para el desarrollo social inclusivo. Para ello, un representante de cada institución, por su parte, presentará perspectivas teóricas y elementos analíticos sobre la cohesión social desde una perspectiva regional y nacional. Además, un panel de discusión comentará ambas presentaciones, destacando los desafíos de América Latina y Chile en torno a este tema, promoviendo la reflexión en torno a políticas para superar estas brechas. Por lo tanto, este foro se consolida como un espacio de referencia académica y pública, orientado a debatir aspectos políticos, teóricos y metodológicos. Estas instancias buscan articular el conocimiento generado por la CEPAL y el COES y otras organizaciones, abordando las dimensiones horizontales y verticales de la cohesión social.\n📅 Fecha: Miércoles 30 de Julio\n🕚 Horario: 11 horas\n📍 Lugar: Comisión Económica para América Latina y el Caribe (CEPAL), Av. Dag Hammarskjöld 3477, Vitacura, Edificio Prinicipal, Cuarto piso, Sala Fajnzylber\n💻 Transmisión online vía zoom: https://bit.ly/3GK6Nw4\nCronograma:\n11:00 ― Palabras de Bienvenida\n11:10 ― Presentaciones\nPresentan:\n\nCarlos Maldonado Valera, Oficial de Asuntos Sociales, División de Desarrollo Social, CEPAL\nJuan Carlos Castillo, Profesor asociado FACSO, Universidad de Chile; Investigador principal COES\n\n11:40 ― Discusión\nComentan:\n\nBenito Baranda, Profesor Adjunto, Escuela de Psicología, Pontificia Universidad Católica de Chile. Fundador de América Solidaria\nEmmanuelle Barozet, Profesora titular FACSO, Universidad de Chile; Investigadora principal COES.\n\n12:20 ― Palabras de cierre\n12:30 ― Coffee\n Inscripciones"
+    "text": "TIP\n\n\n\nPresiona F para ver la presentación en pantalla completa"
   },
   {
     "objectID": "reportes/posts/2021_clases/index.html",
