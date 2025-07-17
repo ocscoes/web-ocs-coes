@@ -63,6 +63,7 @@ listing:
 - id: noticias
   contents: 
     - noticias/posts/*/*.qmd
+    - "!noticias/posts/drafts/*qmd"
   sort: date desc
   type: grid
   grid-columns: 3
