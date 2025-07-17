@@ -17,6 +17,7 @@
 .listing-equipo .listing-box-team {
   width: 100%;
   display: flex;
+  justify-content: center; /* Centrar tarjetas si tienen ancho limitado */
 }
 
 .listing-equipo .quarto-grid-link {
@@ -26,6 +27,7 @@
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 320px; /* Ancho fijo para tarjetas */
 }
 
 .listing-equipo .quarto-grid-link:hover .quarto-grid-item-team.team-card {
@@ -40,12 +42,15 @@
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex-grow: 1;
+  width: 100%;
 }
 
 .listing-equipo .listing-box-image {
   width: 100%;
+  max-width: 300px;
   height: 300px;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 .listing-equipo .team-card-body.post-team-contents {
@@ -98,13 +103,20 @@
     grid-template-columns: 1fr;
   }
 
+  .listing-equipo .quarto-grid-link {
+    max-width: 280px; /* Ajuste para móviles */
+  }
+
   .listing-equipo .listing-box-image {
     height: auto;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
+    max-width: 250px;
+    margin: 0 auto;
   }
 }
 </style>
+
+
 
 <div class="listing-equipo">
   <div class="quarto-listing-container-grid-team">
@@ -120,19 +132,19 @@
                 <div class="listing-box-links"><%= item.links %></div>
 
                 <% if (item.contacto) { %>
-                  <a href="mailto:<%= item.contacto %>" class="contact-link" target= "_blank">
+                  <a href="mailto:<%= item.contacto %>" class="contact-link" target="_blank">
                     <i class="bi bi-envelope-fill"></i> Contacto
                   </a>
                 <% } %>
 
                 <% if (item.github) { %>
-                  <a href="<%= item.github %>" class="github-link" "_blank">
+                  <a href="<%= item.github %>" class="github-link" target="_blank">
                     <i class="bi bi-github"></i> GitHub
                   </a>
                 <% } %>
 
                 <% if (item.web) { %>
-                  <a href="<%= item.web %>" class="web-link" "_blank">
+                  <a href="<%= item.web %>" class="web-link" target="_blank">
                     <i class="bi bi-globe2"></i> Web Personal
                   </a>
                 <% } %>
