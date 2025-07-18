@@ -5,7 +5,7 @@ project:
        - analisis/posts/IndicesLAPOP/*
   render:
         - "*.qmd"
-  output-dir: "docs"
+  output-dir: "_site"
 website:
   title: ""
   page-footer:
