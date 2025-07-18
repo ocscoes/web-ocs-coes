@@ -14,7 +14,7 @@ format:
    theme: ../../../scss-posts.scss
 ---
 
-<a href="https://docs.google.com/forms/d/13XX6VSsIR3chSqbrpIRfghsg-MY-ao3mtdMboyKIxpE/edit" 
+<a href="https://forms.gle/FV97jBVA4WSe6vdt9" 
    target="_blank" 
    role="button" 
    style="background-color: #0693e3; color: white; margin-top: 0em; padding: 0.5em 1em; border-radius: 5px; text-decoration: none; display: inline-block;">
@@ -60,7 +60,7 @@ Comentan:
 
 12:30   ―  **Coffee**
 
-<a href="https://docs.google.com/forms/d/13XX6VSsIR3chSqbrpIRfghsg-MY-ao3mtdMboyKIxpE/edit" 
+<a href="https://forms.gle/FV97jBVA4WSe6vdt9" 
    target="_blank" 
    role="button" 
    style="background-color: #0693e3; color: white; margin-top: 0em; padding: 0.5em 1em; border-radius: 5px; text-decoration: none; display: inline-block;">
