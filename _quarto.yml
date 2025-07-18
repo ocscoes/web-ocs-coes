@@ -1,8 +1,7 @@
 project:
   type: website
   resources:
-       - analisis/posts/ELSOC/*
-       - analisis/posts/IndicesLAPOP/*
+       - /scss-posts.scss
   render:
         - "*.qmd"
   output-dir: "_site"
