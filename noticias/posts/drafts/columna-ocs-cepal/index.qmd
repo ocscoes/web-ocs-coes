@@ -8,7 +8,7 @@ date: "2025-07-05"  #year-
 draft: false
 about:
   template: marquee
-  image: "equipo_cepal.jpeg"
+  image: "featured.jpeg"
 format: 
   html: 
    theme: ../../../scss-posts.scss

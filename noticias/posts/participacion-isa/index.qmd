@@ -1,0 +1,29 @@
+---
+title: "Participación en el 5th ISA Forum of Sociology"
+subtitle: Observatorio de Cohesión Social
+description: Juan Carlos Castillo, Investigador Principal del OCS, estuvo presente en la conferencia que este año tuvo lugar en Rabat, Marruecos.
+categories: [noticias]
+date: "2025-07-04"
+draft: false
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+Desde el 6 al 11 de julio de este año se llevó a cabo la quinta edición del Forum of Sociology, organizado por la [International Sociology Asociation](https://www.isa-sociology.org/en). Este hito congregó a cientos de académicos de las ciencias sociales de diversas partes del mundo en Rabat, Marruecos. La temática principal del foro llevó por nombre "Conociendo la justicia en el antropoceno", en un intento de movilizar la imaginación sociológica para contribuir a los desafíos actuales que circunscriben la noción de justicia. 
+
+En el contexto de este foro, el investigador principal del Observatorio de Cohesión Social, Juan Carlos Castillo, firmó su participación como expositor, donde su presentación llevó por nombre "Meritocracy and Redistributive Preferences at School Level in Chile". Además, también participó  como coordinador del programa de Psicología Social (RC42), en donde fue el organizador de la sesión "Studying Social Cohesion in Comparative Perspective", en la que se presentaron las siguientes ponencias:
+
+- Iturra, J. ["Reference Groups and Social Solidarity: A Comparative Factorial Survey of Social Cohesion between Chile and Germany".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/162136)
+- Leonard David, W. ["The Girl Next Door? Childhood Cross-Group Exposure and Inter-Ethnic Marriage".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/159850)
+- Brand, M. ["Arts and Community-Based Approaches to Conflict Transformation, Social Cohesion and International Collaboration within the Scope of Foreign Cultural Policies. a Case Study on the ‘Donko Ni Maaya’ Project in Mali".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/162716)
+- Mutiso, M. ["Trust-Building Mechanisms and Strategies for Social Cohesion and Sustainable Peace Amongst a South African Sample".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/166348)
+- Son, J. ["The Relationship between Generalized Self-Efficacy and Volunteer Status, Frequency, and Hours in Singapore".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/159433)
+
+Al respecto, Juan Carlos Castillo refiere que "la conferencia fue un espacio muy fructífero de intercambio académico y de recepción de retroalimentación. En el marco del Observatorio de Cohesión Social destaco principalmente la mesa co-organizada con el Research Institute of Social Cohesion (RISC) de Bremen, donde tuvimos la oportunidad de conocer investigaciones sobre cohesión social en distintas partes del mundo."
+
+Su presencia destaca en una de las conferencias más prestigiosas a nivel internacional en lo que respecta a sociología, lo cual pone en relieve el compromiso de los integrantes de este centro con la investigación, apuntando a contribuir de manera sustantiva en el diagnóstico de los fenómenos sociales actuales, especialmente en lo que concierne a la cohesión social, mediante una profundidad teórica acompañada de métodos empíricos rigurosos que permitan entregar respuestas plausibles a las problemáticas existentes, pero también descubrir los eventuales desafíos que deparan. 
+
+![](panel-isa.jpeg)
