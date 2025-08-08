@@ -1,0 +1,31 @@
+---
+title: "Participación en el 5th ISA Forum of Sociology"
+subtitle: Observatorio de Cohesión Social
+description: Juan Carlos Castillo, Investigador Principal del OCS, estuvo presente en la conferencia que este año tuvo lugar en Rabat, Marruecos.
+categories: [noticias]
+date: "2025-07-04"
+draft: false
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+Desde el 6 al 11 de julio de este año se llevó a cabo la quinta edición del Forum of Sociology, organizado por la [International Sociology Asociation](https://www.isa-sociology.org/en). Este hito congregó a cientos de académicos de las ciencias sociales de diversas partes del mundo en Rabat, Marruecos. La temática principal del foro llevó por nombre "Conociendo la justicia en el antropoceno", en un intento de movilizar la imaginación sociológica para contribuir a los desafíos actuales que circunscriben la noción de justicia. 
+
+En el contexto de este foro, el investigador principal del Observatorio de Cohesión Social, Juan Carlos Castillo, firmó su participación como expositor, donde su presentación llevó por nombre "Meritocracy and Redistributive Preferences at School Level in Chile". En este trabajo se analiza en qué medida las percepciones y preferencias de los escolares se relacionan con preferencias distributivas orientadas por la justicia de mercado, revelando que la preferencia por factores no meritocráticos influye positivamente en las preferencias por una distribución de acuerdo a la capacidad de pago individual. 
+
+Además, también participó  como coordinador del programa de Psicología Social (RC42), en donde fue el organizador de la sesión "Studying Social Cohesion in Comparative Perspective", en la que se presentaron las siguientes ponencias:
+
+- Iturra, J. ["Reference Groups and Social Solidarity: A Comparative Factorial Survey of Social Cohesion between Chile and Germany".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/162136)
+- Leonard David, W. ["The Girl Next Door? Childhood Cross-Group Exposure and Inter-Ethnic Marriage".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/159850)
+- Brand, M. ["Arts and Community-Based Approaches to Conflict Transformation, Social Cohesion and International Collaboration within the Scope of Foreign Cultural Policies. a Case Study on the ‘Donko Ni Maaya’ Project in Mali".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/162716)
+- Mutiso, M. ["Trust-Building Mechanisms and Strategies for Social Cohesion and Sustainable Peace Amongst a South African Sample".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/166348)
+- Son, J. ["The Relationship between Generalized Self-Efficacy and Volunteer Status, Frequency, and Hours in Singapore".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/159433)
+
+Al respecto, Juan Carlos Castillo señaló que "la conferencia constituyó un valioso espacio para el intercambio académico y la obtención de retroalimentación especializada". En el marco del Observatorio de Cohesión Social, destacó especialmente la mesa coorganizada con el Research Institute of Social Cohesion (RISC) de Bremen, instancia en la que se presentaron y discutieron investigaciones sobre cohesión social desarrolladas en diversas regiones del mundo.
+
+La participación de Juan Carlos Castillo en una de las conferencias más prestigiosas de la sociología subraya el compromiso del Observatorio de Cohesión Social con la producción de conocimiento de excelencia. Este tipo de instancias no solo fortalecen el diálogo internacional en torno a los fenómenos sociales contemporáneos, sino que también permiten proyectar investigaciones de alto rigor teórico y metodológico. Desde esta perspectiva, el trabajo del Observatorio busca contribuir de manera sustantiva al diagnóstico de las dinámicas sociales actuales —con especial énfasis en la cohesión social—, aportando evidencias que orientan respuestas plausibles a los desafíos presentes y anticipan aquellos que podrían emerger en el futuro.
+
+![](panel-isa.jpeg){width=500px height=650px}

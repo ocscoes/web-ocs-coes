@@ -68,7 +68,7 @@ format:
 <div class="curve curve2"></div>
 <div class="curve curve3"></div>
 <div class="curve curve4"></div>
-<div class="banner-text">Alumni</div>
+<div class="banner-text">Ex-integrantes</div>
 ```
 :::
 

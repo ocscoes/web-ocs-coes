@@ -11,7 +11,7 @@ about:
   image: "featured.png"
 format: 
   html: 
-   theme: ../../../scss-posts.scss
+   theme: scss-posts.scss
 ---
 
 <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
