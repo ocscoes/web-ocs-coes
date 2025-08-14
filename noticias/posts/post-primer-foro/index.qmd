@@ -1,0 +1,41 @@
+---
+title: "Cohesión social en América Latina: Diagnósticos y desafíos por OCS y CEPAL"
+subtitle: Observatorio de Cohesión Social
+description: El Primer Foro de Cohesión Social 2025 OCS-CEPAL fue celebrado el pasado 30 de julio.
+categories: [noticias]
+# Date published
+date: "2025-08-07"  #year-
+draft: false
+about:
+  template: marquee
+  image: "featured.jpeg"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <a href="https://x.com/CentroCOES/status/1947356705081131071" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-twitter-x" style="font-size: 1.5rem;"></i>
+  </a>
+
+  <a href="https://coes.cl/2025/07/31/coes-y-cepal-abordan-los-desafios-de-la-cohesion-social-en-america-latina/" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-globe" style="font-size: 1.5rem;"></i>
+  </a>
+
+  <a href="https://www.instagram.com/p/DMYQ_p_uPW8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+  </a>
+
+</div>
+
+El [Centro de Estudios de Conflicto y Cohesión Social](https://coes.cl/) (COES) y la [Comisión Económica para América Latina y el Caribe](https://www.cepal.org/es) (CEPAL) realizaron en conjunto el primer Foro de Cohesión Social 2025, bajo el título “Desafíos de la cohesión social en Chile y América Latina”. El encuentro reunió a representantes del mundo académico, social e institucional para reflexionar sobre las barreras que enfrenta la región para construir sociedades más inclusivas y sostenibles.
+
+La discusión abordó las condiciones estructurales, políticas y culturales que influyen en la cohesión social, donde Carlos Maldonado, en representación de la CEPAL, realizó un repaso de los marcos institucionales que se han implementado para comprender y mejorar la cohesión social, relevando la necesidad de un enfoque normativo de las políticas para fortalecer los vínculos sociales. Posteriormente, Juan Carlos Castillo, investigador principal de OCS y COES presentó sobre la cohesión social desde una perspectiva comparada, sirviéndose de la propuesta de medición de cohesión social del OCS y su [visualizador](https://ocs-coes.com/analisis/visualizador-latam/) para así dar cuenta de los fenómenos que afectan a los distintos países de la región.
+
+Como comentadores de las presentaciones estuvieron Emmanuelle Barozet y Benito Baranda, académicos de la Universidad de Chile y Pontificia Universidad Católica respectivamente. La profesora de la Casa de Bello abordó el contexto estructural y el modelo de desarrollo de América Latina, resaltando el carácter depredador del modelo económico, y cómo ello se relaciona con fenómenos como la alta desigualdad y la baja movilidad social. Por su parte, el académico de la PUC enfatizó que existe una cultura política particular en Latinoamérica que fomenta dinámicas de exclusión, por lo que es necesario aplicar cambios sustantivos en los sistemas educativos y/o laborales si se quiere lograr una cohesión social. 
+
+La jornada significó un espacio fructífero de intercambio de ideas y diálogo entre el ecosistema académico e institucional, lo que posibilita hallar nuevas maneras de cómo conceptualizar, medir y promover la cohesión social en América Latina. 
+
+Este foro fue el primero de un ciclo de tres encuentros programados para este 2025, que continuará con un hito sobre cohesión horizontal y migración el 09 de septiembre en el [Centro de Estudios Públicos](https://www.cepchile.cl/) (CEP), y cerrará con el tercer foro en el contexto de la [XII Conferencia COES](https://coes.cl/2025/07/25/llamado-a-ponencias-academicas-para-la-xii-conferencia-internacional-coes-es-la-democracia-realmente-el-problema-evolucion-impacto-y-futuro-de-la-crisis-de-las-democracias/) en octubre (fecha por definir). 

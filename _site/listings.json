@@ -15,7 +15,7 @@
   {
     "listing": "/noticias/noticias.html",
     "items": [
-      "/noticias/posts/drafts/columna-ocs-cepal/index.html",
+      "/noticias/posts/post-primer-foro/index.html",
       "/noticias/posts/participacion-isa/index.html",
       "/noticias/posts/foro-ocs-cepal/index.html",
       "/noticias/posts/ciclo-foros-ocs/index.html",
@@ -25,6 +25,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/noticias/posts/post-primer-foro/index.html",
       "/noticias/posts/participacion-isa/index.html",
       "/noticias/posts/foro-ocs-cepal/index.html",
       "/noticias/posts/ciclo-foros-ocs/index.html",
