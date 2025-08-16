@@ -47,6 +47,12 @@
   },
   {
     "listing": "/equipo/equipo.html",
-    "items": []
+    "items": [
+      "/equipo/posts/2. coordinador/index.html",
+      "/equipo/posts/4. consultor-ocs/index.html",
+      "/equipo/posts/1. pi/index.html",
+      "/equipo/posts/3. asit-coes/index.html",
+      "/equipo/posts/5. ayudante-ocs/index.html"
+    ]
   }
 ]

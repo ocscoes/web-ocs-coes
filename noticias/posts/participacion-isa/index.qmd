@@ -13,7 +13,7 @@ format:
    theme: ../../../scss-posts.scss
 ---
 
-El 5th ISA Forum of Sociology es uno de los eventos más importantes de la disciplina a nivel global, organizado cada cuatro años por la [International Sociological Association](https://www.isa-sociology.org/en) (ISA). Su quinta edición se celebró entre el 6 y el 11 de julio de este año en Rabat, Marruecos, reuniendo a cientos de investigadoras e investigadores de las ciencias sociales para reflexionar en torno a la temática central “Conociendo la justicia en el Antropoceno”.
+El 5th ISA Forum of Sociology es uno de los eventos más importantes de la disciplina a nivel global, organizado cada cuatro años por la [International Sociological Association](https://www.isa-sociology.org/en) (ISA). Su quinta edición se realizó entre el 6 y el 11 de julio de este año en Rabat, Marruecos, reuniendo a cientos de investigadoras e investigadores de las ciencias sociales para reflexionar en torno a la temática central “Conociendo la justicia en el Antropoceno”.
 
 En Forum se desarrolló la sesión “Studying Social Cohesion in Comparative Perspective”, fruto de la colaboración entre el OCS y el RISC (Research Institute for Social Cohesion - Alemania). Se presentaron las siguientes ponencias:
 
