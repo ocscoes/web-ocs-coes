@@ -1,0 +1,40 @@
+---
+title: "Participación en el 5th ISA Forum of Sociology"
+subtitle: Observatorio de Cohesión Social
+description: Sesión sobre cohesión social con partición del OCS.
+categories: [noticias]
+date: "2025-07-04"
+draft: false
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+El 5th ISA Forum of Sociology es uno de los eventos más importantes de la disciplina a nivel global, organizado cada cuatro años por la [International Sociological Association](https://www.isa-sociology.org/en) (ISA). Su quinta edición se realizó entre el 6 y el 11 de julio de este año en Rabat, Marruecos, reuniendo a cientos de investigadoras e investigadores de las ciencias sociales para reflexionar en torno a la temática central “Conociendo la justicia en el Antropoceno”.
+
+En Forum se desarrolló la sesión “Studying Social Cohesion in Comparative Perspective”, fruto de la colaboración entre el OCS y el RISC (Research Institute for Social Cohesion - Alemania). Se presentaron las siguientes ponencias:
+
+- Iturra, J. – ["Reference Groups and Social Solidarity: A Comparative Factorial Survey of Social Cohesion between Chile and Germany".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/162136)
+
+- Leonard David, W. – ["The Girl Next Door? Childhood Cross-Group Exposure and Inter-Ethnic Marriage".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/159850)
+
+- Brand, M. – ["Arts and Community-Based Approaches to Conflict Transformation, Social Cohesion and International Collaboration within the Scope of Foreign Cultural Policies. a Case Study on the ‘Donko Ni Maaya’ Project in Mali".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/162716)
+
+- Mutiso, M. – ["Trust-Building Mechanisms and Strategies for Social Cohesion and Sustainable Peace Amongst a South African Sample".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/166348)
+
+- Son, J. – ["The Relationship between Generalized Self-Efficacy and Volunteer Status, Frequency, and Hours in Singapore".](https://isaconf.confex.com/isaconf/forum2025/meetingapp.cgi/Paper/159433)
+
+Sobre esta experiencia, el IP del OCS Juan Carlos Castillo señaló que “la conferencia constituyó un valioso espacio para el intercambio académico y la obtención de retroalimentación especializada”. La sesión sobre cohesión social permitió reafirmar la colaboración Chile-Alemania en este tema, así como también actualizar el estado del arte sobre cohesión social desde la sociología.
+
+La participación del OCS en una de las conferencias más prestigiosas de la sociología reafirma su compromiso con la producción de conocimiento de excelencia y con la transferencia de evidencia empírica desde Chile al debate internacional. Este tipo de instancias fortalecen el diálogo global sobre fenómenos sociales contemporáneos, al tiempo que proyectan investigaciones con alto rigor teórico y metodológico. Desde esta perspectiva, el Observatorio busca contribuir al diagnóstico y la comprensión de las dinámicas sociales actuales —con especial énfasis en la cohesión social—, aportando evidencias que orienten respuestas plausibles a los desafíos presentes y a los que puedan emerger en el futuro.
+
+📄 Más información sobre el evento y el programa completo en: [Sitio oficial del ISA Forum](https://www.isa-sociology.org/en/conferences/forum/rabat-2025)
+
+
+![](panel-isa.jpeg){.center width=500px height=650px}
+
+
+En la foto (de izquierda a derecha) Prof. Olaf Groh-Samberg (RISC- Universidad de Bremen), Julio Iturra, candidato a doctor por la Bremen International Graduate School of Social Sciences (BIGSSS), y Juan Carlos Castillo, investigador COES/OCS, Universidad de Chile.

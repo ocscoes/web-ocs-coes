@@ -28,95 +28,11 @@
     "text": "TIP\n\n\n\nPresiona F para ver la presentación en pantalla completa"
   },
   {
-    "objectID": "noticias/posts/actualizacion-web/index.html",
-    "href": "noticias/posts/actualizacion-web/index.html",
-    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
+    "objectID": "noticias/posts/foro-ocs-cepal/index.html",
+    "href": "noticias/posts/foro-ocs-cepal/index.html",
+    "title": "Foro OCS-CEPAL",
     "section": "",
-    "text": "En el Observatorio de Cohesión Social (OCS) estamos muy contentos de anunciar el lanzamiento de nuestro nuevo sitio. Este espacio busca difundir nuestro trabajo y promover el conocimiento basado en evidencia empírica sobre las dinámicas de la cohesión social en Chile, América Latina y el mundo.\nEl objetivo es ofrecer informes, datos abiertos y visualizaciones interactivas que permitan comprender este fenómeno de manera multidimensional, longitudinal y transnacional."
-  },
-  {
-    "objectID": "noticias/posts/actualizacion-web/index.html#herramientas-y-características",
-    "href": "noticias/posts/actualizacion-web/index.html#herramientas-y-características",
-    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
-    "section": "Herramientas y Características",
-    "text": "Herramientas y Características\nEntre las características que ponemos a disposición para el público académico se encuentran:\n\nUn visualizador interactivo sobre Cohesión Social en América Latina con datos de la Encuesta LAPOP con información de 9 olas entre 2004 y 2023.\nReportes sobre Cohesión Social en Chile y América Latina. Difundiremos y visibilizaremos tanto trabajo propio como de otros investigadores COES.\nDifusión de nuestras actividades como Observatorio\nRecursos de interés para la investigación en cohesión social, incluyendo acceso a datos abiertos.\n\nAdemás, seguiremos ampliando el sitio con nuevos contenidos, tales como:\n\nUn visualizador interactivo con datos de la Encuesta Social Longitudinal de Chile (ELSOC).\nDifusión de investigaciones recientes sobre cohesión social en Chile.\nNoticias sobre eventos organizados por el Observatorio."
-  },
-  {
-    "objectID": "noticias/posts/actualizacion-web/index.html#cómo-lo-hicimos",
-    "href": "noticias/posts/actualizacion-web/index.html#cómo-lo-hicimos",
-    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
-    "section": "¿Cómo lo hicimos?",
-    "text": "¿Cómo lo hicimos?\nEn el Observatorio de Cohesión Social estamos comprometidos con los principios de la ciencia abierta. Esto se refleja no solo en la apertura de nuestros datos y la transparencia de nuestros diseños de investigación, sino también en la forma en que compartimos nuestro trabajo.\nPor eso, desarrollamos este sitio utilizando Quarto, una plataforma de publicación científica y técnica de código abierto. Quarto ofrece ventajas importantes frente a otras soluciones: está diseñada específicamente para el trabajo en investigación y visualización de datos, integrándose de forma fluida con R, Markdown y otros lenguajes de programación.\nGracias a este ecosistema unificado, pudimos construir un sitio web de manera simple, elegante y completamente alineado con nuestros principios.\nLa creación de sitios web es solo una de las muchas posibilidades que ofrece Quarto. También permite generar visualizadores, reportes dinámicos y mucho más. En caso de querer conocer más sobre esta herramienta, nuestro investigador principal, Juan Carlos Castillo, escribió recientemente un post sobre el tema"
-  },
-  {
-    "objectID": "links.html#a-quién-seguir",
-    "href": "links.html#a-quién-seguir",
-    "title": "",
-    "section": "A quién seguir:",
-    "text": "A quién seguir:\n\nJan Germen Janmaat, UCL Institute of Education.\nRegimes of Social Cohesion: Societies and the Crisis of Globalisation (2011)"
-  },
-  {
-    "objectID": "equipo/posts/5. ayudante-ocs/index.html",
-    "href": "equipo/posts/5. ayudante-ocs/index.html",
-    "title": "Tomás Urzúa",
-    "section": "",
-    "text": "Tomás Urzúa es sociólogo de la Universidad de Chile y actualmente cursa el Magíster en Ciencias Sociales en la misma institución. Está asociado al Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS) y al Centro de Estudios de Conflicto y Cohesión Social (COES)."
-  },
-  {
-    "objectID": "equipo/posts/3. asit-coes/index.html",
-    "href": "equipo/posts/3. asit-coes/index.html",
-    "title": "Kevin Carrasco",
-    "section": "",
-    "text": "Asistente de investigación de la línea “Interacciones Grupales e Individuales” de COES y del Laboratorio de Investigación Social Abierta (LISA-COES). Sociólogo y Magíster en Ciencias Sociales de la Universidad de Chile. Sus temas de interés refieren a: Preferencias redistributivas, Educación ciudadana, Ciencia Abierta, Cohesión Social y Métodos cuantitativos de investigación social."
-  },
-  {
-    "objectID": "equipo/posts/1. pi/index.html",
-    "href": "equipo/posts/1. pi/index.html",
-    "title": "Juan Carlos Castillo",
-    "section": "",
-    "text": "Juan-Carlos Castillo es profesor asociado del Departamento de Sociología de la Universidad de Chile, investigador principal del Centro de Estudios sobre Conflictos y Cohesión Social (COES) y del Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS). Obtuvo su doctorado en Sociología en la Humboldt Universität zu Berlin."
-  },
-  {
-    "objectID": "analisis/visualizador-latam/index.html",
-    "href": "analisis/visualizador-latam/index.html",
-    "title": "Visualizador de Cohesión Social en América Latina",
-    "section": "",
-    "text": "Puedes acceder al visualizador en pantalla completa aquí"
-  },
-  {
-    "objectID": "analisis/visualizador-elsoc.html",
-    "href": "analisis/visualizador-elsoc.html",
-    "title": "Visualizador ELSOC",
-    "section": "",
-    "text": "El visualizador con datos del Estudio Longitudinal Social de Chile está en construcción."
-  },
-  {
-    "objectID": "equipo/equipo.html",
-    "href": "equipo/equipo.html",
-    "title": "Equipo",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "equipo/posts/2. coordinador/index.html",
-    "href": "equipo/posts/2. coordinador/index.html",
-    "title": "Andreas Laffert",
-    "section": "",
-    "text": "Sociólogo por la Universidad de Chile y Magíster(c) en Sociología por la Pontificia Universidad Católica de Chile. Becario del Programa de Capital Humano Avanzado de ANID para estudios de Magíster (2024 - actualidad). Ha trabajado como analista cuantitativo en la Subsecretaría del Trabajo del Ministerio del Trabajo y Previsión Social. Actualmente se desempeña como asistente de investigación en el proyecto Fondecyt N° 1250518 “Justicia de mercado y merecimiento del bienestar social” y en el Observatorio de Cohesión Social (OCS) del COES. Además, colabora como asistente de investigación en el proyecto Maxi-COES “Desigualdad Socioeconómica y de Género: Un Estudio Multi-País”.\nSus intereses de investigación se centran en la estratificación social, los procesos subjetivos relacionados con la justicia distributiva, las creencias sobre la desigualdad y la legitimación de la mercantilización de servicios sociales. Le interesan especialmente las metodologías cuantitativas con enfoque en análisis multinivel, longitudinal y causal, así como el análisis comparativo internacional."
-  },
-  {
-    "objectID": "equipo/posts/4. consultor-ocs/index.html",
-    "href": "equipo/posts/4. consultor-ocs/index.html",
-    "title": "Gabriel Cortés",
-    "section": "",
-    "text": "Sociólogo de la Universidad de Chile y Magíster en Métodos para la Investigación Social por la Universidad Diego Portales. Actualmente se desempeña como Asistente de Investigación en el proyecto “Dos décadas de cambios en la cohesión social en América Latina (2004-2023), ligado al trabajo de investigación del Observatorio. Sus intereses se centran en la cohesión social, el individualismo, la institucionalidad política y los métodos de investigación mixtos."
-  },
-  {
-    "objectID": "noticias/noticias.html",
-    "href": "noticias/noticias.html",
-    "title": "Noticias",
-    "section": "",
-    "text": "Foro OCS-CEPAL\n\n\nEl primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.\n\n\n\nJul 3, 2025\n\n\n\n\n\n\n\n\n\n\n\nCiclo de Foros de Cohesión Social\n\n\nBuscamos promover la discusión sobre los desafíos políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina.\n\n\n\nJul 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n¡Bienvenidos a nuestro nuevo sitio web!\n\n\nEn este nuevo sitio web buscamos visibilizar el trabajo investigativo del Observatorio, asi como las actividades organizadas por nuestro equipo.\n\n\n\nJul 1, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Inscripciones \n  \n  \n  \n\nAnte un escenario de incertidumbres, de crisis y desafíos por alcanzar un desarrollo social inclusivo en América Latina, la región enfrenta tres “trampas” del desarrollo, a saber: i) la baja capacidad para crecer; ii) alta desigualdad, baja movilidad y débil cohesión social y iii) baja capacidad institucional y gobernanza poco efectiva (Salazar-Xirinachs, 2024). Frente a este panorama, la cohesión social figura como un elemento clave para avanzar hacia un desarrollo sostenible sin dejar a nadie atrás.\nSiendo un concepto en constante debate, la cohesión social resulta fundamental en el contexto actual, donde tanto la CEPAL como el COES han trabajado en su conceptualización y medición, incluso colaborando de forma conjunta en estudios de cohesión social en Chile. Este foro se posiciona como una oportunidad para volver a relevar la importancia de la cohesión social para la promoción de sociedades más inclusivas, sostenibles y resilientes.\nEl foro tiene como objetivo presentar marcos analíticos sobre cohesión social desarrollados por la CEPAL y el COES, destacando su importancia para el desarrollo social inclusivo. Para ello, un representante de cada institución, por su parte, presentará perspectivas teóricas y elementos analíticos sobre la cohesión social desde una perspectiva regional y nacional. Además, un panel de discusión comentará ambas presentaciones, destacando los desafíos de América Latina y Chile en torno a este tema, promoviendo la reflexión en torno a políticas para superar estas brechas. Por lo tanto, este foro se consolida como un espacio de referencia académica y pública, orientado a debatir aspectos políticos, teóricos y metodológicos. Estas instancias buscan articular el conocimiento generado por la CEPAL y el COES y otras organizaciones, abordando las dimensiones horizontales y verticales de la cohesión social.\n📅 Fecha: Miércoles 30 de Julio\n🕚 Horario: 11 horas\n📍 Lugar: Comisión Económica para América Latina y el Caribe (CEPAL), Av. Dag Hammarskjöld 3477, Vitacura, Edificio Prinicipal, Cuarto piso, Sala Fajnzylber\n💻 Transmisión online vía zoom: https://bit.ly/3GK6Nw4\nCronograma:\n11:00 ― Palabras de Bienvenida\n11:10 ― Presentaciones\nPresentan:\n\nCarlos Maldonado Valera, Oficial de Asuntos Sociales, División de Desarrollo Social, CEPAL\nJuan Carlos Castillo, Profesor asociado FACSO, Universidad de Chile; Investigador principal COES\n\n11:40 ― Discusión\nComentan:\n\nBenito Baranda, Profesor Adjunto, Escuela de Psicología, Pontificia Universidad Católica de Chile. Fundador de América Solidaria\nEmmanuelle Barozet, Profesora titular FACSO, Universidad de Chile; Investigadora principal COES.\n\n12:20 ― Palabras de cierre\n12:30 ― Coffee\n Inscripciones"
   },
   {
     "objectID": "noticias/posts/ciclo-foros-ocs/index.html",
@@ -147,11 +63,130 @@
     "text": "Tercer Foro: Cohesión Social en el contexto de las elecciones presidenciales – Instituciones, autoridad y política\nEl tercer foro estará enfocado en la dimensión vertical de la cohesión social, es decir, en la relación de los ciudadanos con el Estado, la participación política, la confianza en las instituciones y sus autoridades (Castillo, Carrasco, y Iturra 2021), todo esto en el contexto de las venideras elecciones presidenciales.\nLugar: Biblioteca Nicanor Parra, Universidad Diego Portales, Vergara 324, Santiago.\nFecha: XII Conferencia Internacional COES (fecha por confirmar)"
   },
   {
-    "objectID": "noticias/posts/foro-ocs-cepal/index.html",
-    "href": "noticias/posts/foro-ocs-cepal/index.html",
-    "title": "Foro OCS-CEPAL",
+    "objectID": "noticias/noticias.html",
+    "href": "noticias/noticias.html",
+    "title": "Noticias",
     "section": "",
-    "text": "Inscripciones \n  \n  \n  \n\nAnte un escenario de incertidumbres, de crisis y desafíos por alcanzar un desarrollo social inclusivo en América Latina, la región enfrenta tres “trampas” del desarrollo, a saber: i) la baja capacidad para crecer; ii) alta desigualdad, baja movilidad y débil cohesión social y iii) baja capacidad institucional y gobernanza poco efectiva (Salazar-Xirinachs, 2024). Frente a este panorama, la cohesión social figura como un elemento clave para avanzar hacia un desarrollo sostenible sin dejar a nadie atrás.\nSiendo un concepto en constante debate, la cohesión social resulta fundamental en el contexto actual, donde tanto la CEPAL como el COES han trabajado en su conceptualización y medición, incluso colaborando de forma conjunta en estudios de cohesión social en Chile. Este foro se posiciona como una oportunidad para volver a relevar la importancia de la cohesión social para la promoción de sociedades más inclusivas, sostenibles y resilientes.\nEl foro tiene como objetivo presentar marcos analíticos sobre cohesión social desarrollados por la CEPAL y el COES, destacando su importancia para el desarrollo social inclusivo. Para ello, un representante de cada institución, por su parte, presentará perspectivas teóricas y elementos analíticos sobre la cohesión social desde una perspectiva regional y nacional. Además, un panel de discusión comentará ambas presentaciones, destacando los desafíos de América Latina y Chile en torno a este tema, promoviendo la reflexión en torno a políticas para superar estas brechas. Por lo tanto, este foro se consolida como un espacio de referencia académica y pública, orientado a debatir aspectos políticos, teóricos y metodológicos. Estas instancias buscan articular el conocimiento generado por la CEPAL y el COES y otras organizaciones, abordando las dimensiones horizontales y verticales de la cohesión social.\n📅 Fecha: Miércoles 30 de Julio\n🕚 Horario: 11 horas\n📍 Lugar: Comisión Económica para América Latina y el Caribe (CEPAL), Av. Dag Hammarskjöld 3477, Vitacura, Edificio Prinicipal, Cuarto piso, Sala Fajnzylber\n💻 Transmisión online vía zoom: https://bit.ly/3GK6Nw4\nCronograma:\n11:00 ― Palabras de Bienvenida\n11:10 ― Presentaciones\nPresentan:\n\nCarlos Maldonado Valera, Oficial de Asuntos Sociales, División de Desarrollo Social, CEPAL\nJuan Carlos Castillo, Profesor asociado FACSO, Universidad de Chile; Investigador principal COES\n\n11:40 ― Discusión\nComentan:\n\nBenito Baranda, Profesor Adjunto, Escuela de Psicología, Pontificia Universidad Católica de Chile. Fundador de América Solidaria\nEmmanuelle Barozet, Profesora titular FACSO, Universidad de Chile; Investigadora principal COES.\n\n12:20 ― Palabras de cierre\n12:30 ― Coffee\n Inscripciones"
+    "text": "Cohesión social en América Latina: Diagnósticos y desafíos por OCS y CEPAL\n\n\nEl Primer Foro de Cohesión Social 2025 OCS-CEPAL fue celebrado el pasado 30 de julio.\n\n\n\nAug 7, 2025\n\n\n\n\n\n\n\n\n\n\n\nParticipación en el 5th ISA Forum of Sociology\n\n\nSesión sobre cohesión social con partición del OCS.\n\n\n\nJul 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nForo OCS-CEPAL\n\n\nEl primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.\n\n\n\nJul 3, 2025\n\n\n\n\n\n\n\n\n\n\n\nCiclo de Foros de Cohesión Social\n\n\nBuscamos promover la discusión sobre los desafíos políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina.\n\n\n\nJul 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n¡Bienvenidos a nuestro nuevo sitio web!\n\n\nEn este nuevo sitio web buscamos visibilizar el trabajo investigativo del Observatorio, asi como las actividades organizadas por nuestro equipo.\n\n\n\nJul 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "equipo/posts/4. consultor-ocs/index.html",
+    "href": "equipo/posts/4. consultor-ocs/index.html",
+    "title": "Gabriel Cortés",
+    "section": "",
+    "text": "Sociólogo de la Universidad de Chile y Magíster en Métodos para la Investigación Social por la Universidad Diego Portales. Actualmente se desempeña como Asistente de Investigación en el proyecto “Dos décadas de cambios en la cohesión social en América Latina (2004-2023), ligado al trabajo de investigación del Observatorio. Sus intereses se centran en la cohesión social, el individualismo, la institucionalidad política y los métodos de investigación mixtos."
+  },
+  {
+    "objectID": "equipo/posts/2. coordinador/index.html",
+    "href": "equipo/posts/2. coordinador/index.html",
+    "title": "Andreas Laffert",
+    "section": "",
+    "text": "Sociólogo por la Universidad de Chile y Magíster(c) en Sociología por la Pontificia Universidad Católica de Chile. Becario del Programa de Capital Humano Avanzado de ANID para estudios de Magíster (2024 - actualidad). Ha trabajado como analista cuantitativo en la Subsecretaría del Trabajo del Ministerio del Trabajo y Previsión Social. Actualmente se desempeña como asistente de investigación en el proyecto Fondecyt N° 1250518 “Justicia de mercado y merecimiento del bienestar social” y en el Observatorio de Cohesión Social (OCS) del COES. Además, colabora como asistente de investigación en el proyecto Maxi-COES “Desigualdad Socioeconómica y de Género: Un Estudio Multi-País”.\nSus intereses de investigación se centran en la estratificación social, los procesos subjetivos relacionados con la justicia distributiva, las creencias sobre la desigualdad y la legitimación de la mercantilización de servicios sociales. Le interesan especialmente las metodologías cuantitativas con enfoque en análisis multinivel, longitudinal y causal, así como el análisis comparativo internacional."
+  },
+  {
+    "objectID": "equipo/equipo.html",
+    "href": "equipo/equipo.html",
+    "title": "Equipo",
+    "section": "",
+    "text": "Andreas Laffert\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGabriel Cortés\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKevin Carrasco\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTomás Urzúa\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "analisis/visualizador-elsoc.html",
+    "href": "analisis/visualizador-elsoc.html",
+    "title": "Visualizador ELSOC",
+    "section": "",
+    "text": "El visualizador con datos del Estudio Longitudinal Social de Chile está en construcción."
+  },
+  {
+    "objectID": "analisis/visualizador-latam/index.html",
+    "href": "analisis/visualizador-latam/index.html",
+    "title": "Visualizador de Cohesión Social en América Latina",
+    "section": "",
+    "text": "Puedes acceder al visualizador en pantalla completa aquí"
+  },
+  {
+    "objectID": "equipo/posts/1. pi/index.html",
+    "href": "equipo/posts/1. pi/index.html",
+    "title": "Juan Carlos Castillo",
+    "section": "",
+    "text": "Juan-Carlos Castillo es profesor asociado del Departamento de Sociología de la Universidad de Chile, investigador principal del Centro de Estudios sobre Conflictos y Cohesión Social (COES) y del Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS). Obtuvo su doctorado en Sociología en la Humboldt Universität zu Berlin."
+  },
+  {
+    "objectID": "equipo/posts/3. asit-coes/index.html",
+    "href": "equipo/posts/3. asit-coes/index.html",
+    "title": "Kevin Carrasco",
+    "section": "",
+    "text": "Asistente de investigación de la línea “Interacciones Grupales e Individuales” de COES y del Laboratorio de Investigación Social Abierta (LISA-COES). Sociólogo y Magíster en Ciencias Sociales de la Universidad de Chile. Sus temas de interés refieren a: Preferencias redistributivas, Educación ciudadana, Ciencia Abierta, Cohesión Social y Métodos cuantitativos de investigación social."
+  },
+  {
+    "objectID": "equipo/posts/5. ayudante-ocs/index.html",
+    "href": "equipo/posts/5. ayudante-ocs/index.html",
+    "title": "Tomás Urzúa",
+    "section": "",
+    "text": "Tomás Urzúa es sociólogo de la Universidad de Chile y actualmente cursa el Magíster en Ciencias Sociales en la misma institución. Está asociado al Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS) y al Centro de Estudios de Conflicto y Cohesión Social (COES)."
+  },
+  {
+    "objectID": "links.html#a-quién-seguir",
+    "href": "links.html#a-quién-seguir",
+    "title": "",
+    "section": "A quién seguir:",
+    "text": "A quién seguir:\n\nJan Germen Janmaat, UCL Institute of Education.\nRegimes of Social Cohesion: Societies and the Crisis of Globalisation (2011)"
+  },
+  {
+    "objectID": "noticias/posts/actualizacion-web/index.html",
+    "href": "noticias/posts/actualizacion-web/index.html",
+    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
+    "section": "",
+    "text": "En el Observatorio de Cohesión Social (OCS) estamos muy contentos de anunciar el lanzamiento de nuestro nuevo sitio. Este espacio busca difundir nuestro trabajo y promover el conocimiento basado en evidencia empírica sobre las dinámicas de la cohesión social en Chile, América Latina y el mundo.\nEl objetivo es ofrecer informes, datos abiertos y visualizaciones interactivas que permitan comprender este fenómeno de manera multidimensional, longitudinal y transnacional."
+  },
+  {
+    "objectID": "noticias/posts/actualizacion-web/index.html#herramientas-y-características",
+    "href": "noticias/posts/actualizacion-web/index.html#herramientas-y-características",
+    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
+    "section": "Herramientas y Características",
+    "text": "Herramientas y Características\nEntre las características que ponemos a disposición para el público académico se encuentran:\n\nUn visualizador interactivo sobre Cohesión Social en América Latina con datos de la Encuesta LAPOP con información de 9 olas entre 2004 y 2023.\nReportes sobre Cohesión Social en Chile y América Latina. Difundiremos y visibilizaremos tanto trabajo propio como de otros investigadores COES.\nDifusión de nuestras actividades como Observatorio\nRecursos de interés para la investigación en cohesión social, incluyendo acceso a datos abiertos.\n\nAdemás, seguiremos ampliando el sitio con nuevos contenidos, tales como:\n\nUn visualizador interactivo con datos de la Encuesta Social Longitudinal de Chile (ELSOC).\nDifusión de investigaciones recientes sobre cohesión social en Chile.\nNoticias sobre eventos organizados por el Observatorio."
+  },
+  {
+    "objectID": "noticias/posts/actualizacion-web/index.html#cómo-lo-hicimos",
+    "href": "noticias/posts/actualizacion-web/index.html#cómo-lo-hicimos",
+    "title": "¡Bienvenidos a nuestro nuevo sitio web!",
+    "section": "¿Cómo lo hicimos?",
+    "text": "¿Cómo lo hicimos?\nEn el Observatorio de Cohesión Social estamos comprometidos con los principios de la ciencia abierta. Esto se refleja no solo en la apertura de nuestros datos y la transparencia de nuestros diseños de investigación, sino también en la forma en que compartimos nuestro trabajo.\nPor eso, desarrollamos este sitio utilizando Quarto, una plataforma de publicación científica y técnica de código abierto. Quarto ofrece ventajas importantes frente a otras soluciones: está diseñada específicamente para el trabajo en investigación y visualización de datos, integrándose de forma fluida con R, Markdown y otros lenguajes de programación.\nGracias a este ecosistema unificado, pudimos construir un sitio web de manera simple, elegante y completamente alineado con nuestros principios.\nLa creación de sitios web es solo una de las muchas posibilidades que ofrece Quarto. También permite generar visualizadores, reportes dinámicos y mucho más. En caso de querer conocer más sobre esta herramienta, nuestro investigador principal, Juan Carlos Castillo, escribió recientemente un post sobre el tema"
+  },
+  {
+    "objectID": "noticias/posts/drafts/columna-ocs-cepal/index.html",
+    "href": "noticias/posts/drafts/columna-ocs-cepal/index.html",
+    "title": "La cohesión social, un termómetro crítico para Chile y América LatinaL",
+    "section": "",
+    "text": "La cohesión social no es un lujo para tiempos prósperos. Es una necesidad estructural, especialmente en momentos de alta incertidumbre y malestar, como los que atraviesan actualmente Chile y varios países de América Latina. Desconfianza generalizada, crisis de representación política, inseguridad ciudadana, tensiones en torno a la migración y una persistente sensación de injusticia distributiva son algunos de los síntomas de una sociedad con vínculos debilitados.\nEsta fue precisamente la discusión central en el reciente encuentro entre la CEPAL y el Centro de Estudios de Conflicto y Cohesión Social (COES), donde se presentaron los resultados del Observatorio de Cohesión Social de COES (OCS-COES) y su nuevo visualizador de indicadores de cohesión social para América Latina (disponible aquí). Esta herramienta pionera permite examinar la evolución de la cohesión social a nivel comparado, en más de 10 países de la región y en distintas dimensiones."
+  },
+  {
+    "objectID": "noticias/posts/drafts/columna-ocs-cepal/index.html#cómo-entender-y-medir-la-cohesión-social",
+    "href": "noticias/posts/drafts/columna-ocs-cepal/index.html#cómo-entender-y-medir-la-cohesión-social",
+    "title": "La cohesión social, un termómetro crítico para Chile y América LatinaL",
+    "section": "¿Cómo entender y medir la cohesión social?",
+    "text": "¿Cómo entender y medir la cohesión social?\nLa cohesión social se refiere a la capacidad de una sociedad para mantenerse unida, generar confianza entre sus miembros y construir legitimidad en sus instituciones. El OCS-COES la analiza desde una perspectiva multidimensional, distinguiendo entre:\n\nCohesión vertical, que capta los vínculos entre la ciudadanía y el Estado (como la confianza institucional, la percepción de justicia y la satisfacción con la democracia),\ny cohesión horizontal, que recoge los vínculos entre ciudadanos (como la confianza interpersonal, la tolerancia y el sentido de pertenencia).\n\nEl uso de datos secundarios comparables —encuestas regionales como Latinobarómetro, LAPOP o World Values Survey— permite trazar trayectorias de largo plazo y establecer puntos críticos de inflexión."
+  },
+  {
+    "objectID": "noticias/posts/drafts/columna-ocs-cepal/index.html#cómo-está-chile",
+    "href": "noticias/posts/drafts/columna-ocs-cepal/index.html#cómo-está-chile",
+    "title": "La cohesión social, un termómetro crítico para Chile y América LatinaL",
+    "section": "¿Cómo está Chile?",
+    "text": "¿Cómo está Chile?\nLos datos del visualizador muestran un panorama complejo. En términos generales, América Latina exhibe niveles moderados de cohesión social, con trayectorias heterogéneas entre países. Pero Chile destaca por su bajo nivel actual, sobre todo en la dimensión horizontal.\nEn cohesión vertical, Chile mostraba en 2005 niveles moderados, y entre 2008 y 2019 alcanzó niveles relativamente altos, incluso por encima del promedio regional. Sin embargo, tras el estallido social de 2019 y la pandemia de COVID-19, se produjo una caída abrupta en esta dimensión, marcando un quiebre importante en los vínculos ciudadanía-Estado.\nEn cohesión horizontal, la tendencia es aún más preocupante. Chile ha transitado de niveles moderados en 2004 a niveles muy bajos en 2020, situándose por debajo de países como Uruguay, Argentina, Brasil, Colombia, México y El Salvador. Este debilitamiento del lazo social entre ciudadanos es una alerta roja en un contexto de creciente polarización y fragmentación."
+  },
+  {
+    "objectID": "noticias/posts/drafts/columna-ocs-cepal/index.html#un-llamado-a-políticas-de-cohesión",
+    "href": "noticias/posts/drafts/columna-ocs-cepal/index.html#un-llamado-a-políticas-de-cohesión",
+    "title": "La cohesión social, un termómetro crítico para Chile y América LatinaL",
+    "section": "Un llamado a políticas de cohesión",
+    "text": "Un llamado a políticas de cohesión\nDesde una perspectiva más normativa, como la que impulsa la CEPAL, la cohesión social no es solo una fotografía del presente: es también una meta de desarrollo. Implica avanzar hacia sociedades más justas, integradas y resilientes. Para ello, contar con datos comparables y accesibles es clave para orientar políticas públicas basadas en evidencia.\nEl trabajo del OCS-COES, y su alianza con CEPAL, aporta una base fundamental para este desafío, porque solo con diagnósticos precisos podemos avanzar en la tarea urgente de recomponer los lazos sociales en nuestras sociedades."
+  },
+  {
+    "objectID": "noticias/posts/participacion-isa/index.html",
+    "href": "noticias/posts/participacion-isa/index.html",
+    "title": "Participación en el 5th ISA Forum of Sociology",
+    "section": "",
+    "text": "El 5th ISA Forum of Sociology es uno de los eventos más importantes de la disciplina a nivel global, organizado cada cuatro años por la International Sociological Association (ISA). Su quinta edición se realizó entre el 6 y el 11 de julio de este año en Rabat, Marruecos, reuniendo a cientos de investigadoras e investigadores de las ciencias sociales para reflexionar en torno a la temática central “Conociendo la justicia en el Antropoceno”.\nEn Forum se desarrolló la sesión “Studying Social Cohesion in Comparative Perspective”, fruto de la colaboración entre el OCS y el RISC (Research Institute for Social Cohesion - Alemania). Se presentaron las siguientes ponencias:\n\nIturra, J. – “Reference Groups and Social Solidarity: A Comparative Factorial Survey of Social Cohesion between Chile and Germany”.\nLeonard David, W. – “The Girl Next Door? Childhood Cross-Group Exposure and Inter-Ethnic Marriage”.\nBrand, M. – “Arts and Community-Based Approaches to Conflict Transformation, Social Cohesion and International Collaboration within the Scope of Foreign Cultural Policies. a Case Study on the ‘Donko Ni Maaya’ Project in Mali”.\nMutiso, M. – “Trust-Building Mechanisms and Strategies for Social Cohesion and Sustainable Peace Amongst a South African Sample”.\nSon, J. – “The Relationship between Generalized Self-Efficacy and Volunteer Status, Frequency, and Hours in Singapore”.\n\nSobre esta experiencia, el IP del OCS Juan Carlos Castillo señaló que “la conferencia constituyó un valioso espacio para el intercambio académico y la obtención de retroalimentación especializada”. La sesión sobre cohesión social permitió reafirmar la colaboración Chile-Alemania en este tema, así como también actualizar el estado del arte sobre cohesión social desde la sociología.\nLa participación del OCS en una de las conferencias más prestigiosas de la sociología reafirma su compromiso con la producción de conocimiento de excelencia y con la transferencia de evidencia empírica desde Chile al debate internacional. Este tipo de instancias fortalecen el diálogo global sobre fenómenos sociales contemporáneos, al tiempo que proyectan investigaciones con alto rigor teórico y metodológico. Desde esta perspectiva, el Observatorio busca contribuir al diagnóstico y la comprensión de las dinámicas sociales actuales —con especial énfasis en la cohesión social—, aportando evidencias que orienten respuestas plausibles a los desafíos presentes y a los que puedan emerger en el futuro.\n📄 Más información sobre el evento y el programa completo en: Sitio oficial del ISA Forum\n\nEn la foto (de izquierda a derecha) Prof. Olaf Groh-Samberg (RISC- Universidad de Bremen), Julio Iturra, candidato a doctor por la Bremen International Graduate School of Social Sciences (BIGSSS), y Juan Carlos Castillo, investigador COES/OCS, Universidad de Chile."
   },
   {
     "objectID": "reportes/posts/2019_taller_coes/index.qmd.html",
@@ -180,5 +215,19 @@
     "title": "Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados",
     "section": "",
     "text": "Documento completo\n\n\n\n\n\n\n\nHow to cite this work\n\n\n\nCastillo, JC., Espinoza, V., Barozet, E. (2022). Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados. Disponible en https://www.cepal.org/es/publicaciones/47735-cohesion-social-chile-tiempos-cambio-indicadores-perfiles-factores-asociados. Documentos de Proyectos (LC/TS.2022/3), Santiago, Comisión Económica para América Latina y el Caribe (CEPAL)/Centro de Estudios de Conflicto y Cohesión Social (COES)"
+  },
+  {
+    "objectID": "noticias/posts/drafts/post-primer-foro/index.html",
+    "href": "noticias/posts/drafts/post-primer-foro/index.html",
+    "title": "Cohesión social en América Latina: Diagnósticos y desafíos",
+    "section": "",
+    "text": "El Centro de Estudios de Conflicto y Cohesión Social (COES) y la Comisión Económica para América Latina y el Caribe (CEPAL) realizaron en conjunto el primer Foro de Cohesión Social 2025, bajo el título “Desafíos de la cohesión social en Chile y América Latina”. El encuentro reunió a representantes del mundo académico, social e institucional para reflexionar sobre las barreras que enfrenta la región para construir sociedades más inclusivas y sostenibles.\nLa discusión abordó las condiciones estructurales, políticas y culturales que influyen en la cohesión social, donde Carlos Maldonado, en representación de la CEPAL, realizó un repaso de los marcos institucionales que se han implementado para comprender y mejorar la cohesión social, relevando la necesidad de un enfoque normativo de las políticas para fortalecer los vínculos sociales. Posteriormente, Juan Carlos Castillo, investigador principal de OCS y COES presentó sobre la cohesión social desde una perspectiva comparada, sirviéndose de la propuesta de medición de cohesión social del OCS y su visualizador para así dar cuenta de los fenómenos que afectan a los distintos países de la región.\nComo comentadores de las presentaciones estuvieron Emmanuelle Barozet y Benito Baranda, académicos de la Universidad de Chile y Pontificia Universidad Católica respectivamente. La profesora de la Casa de Bello abordó el contexto estructural y el modelo de desarrollo de América Latina, resaltando el carácter depredador del modelo económico, y cómo ello se relaciona con fenómenos como la alta desigualdad y la baja movilidad social. Por su parte, el académico de la PUC enfatizó que existe una cultura política particular en Latinoamérica que fomenta dinámicas de exclusión, por lo que es necesario aplicar cambios sustantivos en los sistemas educativos y/o laborales si se quiere lograr una cohesión social.\nLa jornada significó un espacio fructífero de intercambio de ideas y diálogo entre el ecosistema académico e institucional, lo que posibilita hallar nuevas maneras de cómo conceptualizar, medir y promover la cohesión social en América Latina.\nEste foro fue el primero de un ciclo de tres encuentros programados para este 2025, que continuará con un hito sobre cohesión horizontal y migración el 09 de septiembre en el Centro de Estudios Públicos (CEP), y cerrará con el tercer foro en el contexto de la XII Conferencia COES en octubre (fecha por definir)."
+  },
+  {
+    "objectID": "noticias/posts/post-primer-foro/index.html",
+    "href": "noticias/posts/post-primer-foro/index.html",
+    "title": "Cohesión social en América Latina: Diagnósticos y desafíos por OCS y CEPAL",
+    "section": "",
+    "text": "El Observatorio de Cohesión Social (OCS) y la Comisión Económica para América Latina y el Caribe (CEPAL) llevaron a cabo conjuntamente el Primer Foro de Cohesión Social 2025, bajo el título “Desafíos de la cohesión social en Chile y América Latina”. Este encuentro convocó a representantes del mundo académico, social e institucional con el objetivo de reflexionar sobre las barreras que enfrenta la región para construir sociedades más inclusivas, equitativas y sostenibles.\nLa jornada abordó las condiciones estructurales, políticas y culturales que inciden en la cohesión social. En su intervención, Carlos Maldonado (CEPAL) realizó un repaso de los marcos institucionales desarrollados para comprender y fortalecer la cohesión social, subrayando la necesidad de un enfoque normativo de las políticas públicas orientado a robustecer los vínculos sociales.\nPosteriormente, Juan Carlos Castillo, Investigador Principal (IP) del Observatorio de Cohesión Social (OCS) y de COES, presentó un análisis de la cohesión social desde una perspectiva comparada, utilizando la propuesta de medición desarrollada por el OCS y su herramienta de visualización de datos. Este enfoque permitió mostrar, con evidencia empírica, los fenómenos que afectan de manera diferenciada a los países de la región.\nEn calidad de comentaristas, participaron Emmanuelle Barozet (Universidad de Chile) y Benito Baranda (Pontificia Universidad Católica de Chile). La profesora Barozet destacó el impacto del modelo de desarrollo de América Latina, señalando su carácter depredador y su vínculo con la alta desigualdad y la baja movilidad social. Por su parte, Baranda enfatizó la presencia de una cultura política en la región que favorece dinámicas de exclusión, proponiendo cambios sustantivos en los sistemas educativos y laborales como condición para avanzar hacia mayores niveles de cohesión social.\nEl foro constituyó un espacio fructífero de intercambio académico y diálogo interinstitucional, orientado a repensar cómo conceptualizar, medir y promover la cohesión social en el contexto latinoamericano.\nEste fue el primer encuentro de un ciclo de tres foros programados para 2025. La serie continuará con un segundo hito, centrado en cohesión horizontal y migración, el 9 de septiembre en el Centro de Estudios Públicos (CEP), y culminará con un tercer foro en el marco de la XII Conferencia COES el 22 de noviembre de este año.\n📄 Más información sobre COES y sus actividades: www.coes.cl\n📄 Más información sobre CEPAL: www.cepal.org"
   }
 ]
