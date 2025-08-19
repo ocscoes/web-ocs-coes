@@ -60,5 +60,15 @@
     "items": [
       "/blog/posts/nota-breve-ocs/index.html"
     ]
+  },
+  {
+    "listing": "/noticias/index.html",
+    "items": [
+      "/noticias/posts/post-primer-foro/index.html",
+      "/noticias/posts/participacion-isa/index.html",
+      "/noticias/posts/foro-ocs-cepal/index.html",
+      "/noticias/posts/ciclo-foros-ocs/index.html",
+      "/noticias/posts/actualizacion-web/index.html"
+    ]
   }
 ]
