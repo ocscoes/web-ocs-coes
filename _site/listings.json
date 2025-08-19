@@ -38,8 +38,8 @@
       "/reportes/posts/2021_propuesta/index.html",
       "/reportes/posts/2021_medicion/index.html",
       "/reportes/posts/2019_taller_coes/index.qmd.html",
-      "/blog/posts/nota-breve-ocs/index.html",
       "/blog/posts/nota-1-ocs/index.html",
+      "/blog/posts/nota-breve-ocs/index.html",
       "/equipo/posts/1. pi/index.html",
       "/equipo/posts/2. coordinador/index.html",
       "/equipo/posts/3. asit-coes/index.html",
@@ -60,8 +60,8 @@
   {
     "listing": "/blog/blog.html",
     "items": [
-      "/blog/posts/nota-breve-ocs/index.html",
-      "/blog/posts/nota-1-ocs/index.html"
+      "/blog/posts/nota-1-ocs/index.html",
+      "/blog/posts/nota-breve-ocs/index.html"
     ]
   }
 ]
