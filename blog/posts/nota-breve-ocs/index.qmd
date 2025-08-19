@@ -1,2 +1,28 @@
+---
+title: "Título Nota"
+subtitle: Post Breve OCS
+description: Nota Observatorio de Cohesión Social
+categories: [blog]
+date: "2025-08-19"  #year-
+draft: false
+about:
+  template: marquee
+  image: "featured-1.png"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+editor: 
+  markdown: 
+    wrap: 72
+---
 
+::: {style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;"}
+<a href="https://x.com/CentroCOES/status/1947356705081131071" target="_blank" style="text-decoration: none; color: inherit;">
+<i class="bi bi-twitter-x" style="font-size: 1.5rem;"></i> </a>
 
+<a href="https://coes.cl/2025/07/31/coes-y-cepal-abordan-los-desafios-de-la-cohesion-social-en-america-latina/" target="_blank" style="text-decoration: none; color: inherit;">
+<i class="bi bi-globe" style="font-size: 1.5rem;"></i> </a>
+
+<a href="https://www.instagram.com/p/DMYQ_p_uPW8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" style="text-decoration: none; color: inherit;">
+<i class="bi bi-instagram" style="font-size: 1.5rem;"></i> </a>
+:::
