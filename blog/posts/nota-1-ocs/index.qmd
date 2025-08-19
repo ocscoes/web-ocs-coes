@@ -1,13 +1,13 @@
 ---
 title: "Radiografía de la Cohesión Social en Chile 2016-2023"
-subtitle: Comentarios de Daniel Miranda
-description: Nota del Observatorio de Cohesión Social
+subtitle: Nota OCS Nº1
+description: Observatorio de Cohesión Social
 categories: [blog]
 date: "2025-08-19"  #year-
 draft: false
 about:
   template: marquee
-  image: "featured-1.jpeg"
+  image: "featured-1.png"
 format: 
   html: 
    theme: ../../../scss-posts.scss
