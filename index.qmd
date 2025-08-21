@@ -73,7 +73,21 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
-  feed: false  
+  feed: false
+  
+- id: blog
+  contents: 
+    - blog/posts/*/*.qmd
+  sort: date desc
+  type: grid
+  grid-columns: 3
+  image-height: 150px
+  fields: [image, title, description]
+  max-items: 6
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: false    
   
 - id: reportes
   contents:
@@ -417,6 +431,30 @@ document.addEventListener('DOMContentLoaded', function () {
 :::{#noticias}
 :::
 
+:::
+:::
+:::
+:::
+
+<div class="section-footer1">
+  
+</div>
+  
+::: {.section-text .dark-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
+:::{#blogh1}
+:::
+    
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-substack" style="margin-right: 10px;"></i>Blog</p>
+        
+        
+:::{#blog}
+:::
+            
 :::
 :::
 :::
