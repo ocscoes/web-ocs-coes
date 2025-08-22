@@ -82,7 +82,7 @@ listing:
   type: grid
   grid-columns: 3
   image-height: 150px
-  fields: [image, title, description]
+  fields: [title, date]
   max-items: 6
   categories: false
   sort-ui: false

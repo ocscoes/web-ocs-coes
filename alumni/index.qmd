@@ -248,6 +248,61 @@ format:
         </div>
       </div>
 
+      <!-- Persona 3 -->
+      <div class="listing-box-team">
+        <div class="quarto-grid-item-team team-card">
+          <img src="imagenes/k_carrasco.jpg" alt="Kevin Carrasco" class="listing-box-image">
+          <div class="team-card-body post-team-contents">
+            <div class="listing-box-title">Kevin Carrasco</div>
+            <div class="listing-box-subtitle">Asistente de Investigación COES</div>
+
+            <div class="listing-box-links">
+              <a href="mailto:kevin.carrasco@ug.uchile.cl" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope-fill"></i> Contacto
+              </a>
+              <a href="https://github.com/Kevin-carrasco" class="github-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/kevin-carrasco-quintanilla/" class="web-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-globe2"></i> Web Personal
+              </a>
+            </div>
+
+            <div class="listing-box-calendar">
+              <i class="bi bi-calendar"></i> 2021–2025
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Persona 4 -->
+      <div class="listing-box-team">
+        <div class="quarto-grid-item-team team-card">
+          <img src="imagenes/g_cortes.jpg" alt="Gabriel Cortés" class="listing-box-image">
+          <div class="team-card-body post-team-contents">
+            <div class="listing-box-title">Kevin Carrasco</div>
+            <div class="listing-box-subtitle">Asistente de Investigación COES</div>
+
+            <div class="listing-box-links">
+              <a href="mailto:gabriel.cortes@uchile.cl" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope-fill"></i> Contacto
+              </a>
+              <a href="https://github.com/gabcortes97" class="github-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/gabriel-cortés-paredes-80780a181/" class="web-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-globe2"></i> Web Personal
+              </a>
+            </div>
+
+            <div class="listing-box-calendar">
+              <i class="bi bi-calendar"></i> 2025
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
