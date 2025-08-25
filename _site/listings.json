@@ -25,12 +25,13 @@
   {
     "listing": "/index.html",
     "items": [
+      "/noticias/posts/columna-elpais/index.html",
+      "/noticias/posts/nota-dm/index.html",
       "/noticias/posts/post-primer-foro/index.html",
       "/noticias/posts/participacion-isa/index.html",
       "/noticias/posts/foro-ocs-cepal/index.html",
       "/noticias/posts/ciclo-foros-ocs/index.html",
       "/noticias/posts/actualizacion-web/index.html",
-      "/blog/posts/nota-dm/index.html",
       "/reportes/posts/2025_reportes_tecnico/index.html",
       "/reportes/posts/2022_cohesion/index.html",
       "/reportes/posts/2022_asc/index.html",
@@ -65,6 +66,8 @@
   {
     "listing": "/noticias/index.html",
     "items": [
+      "/noticias/posts/columna-elpais/index.html",
+      "/noticias/posts/nota-dm/index.html",
       "/noticias/posts/post-primer-foro/index.html",
       "/noticias/posts/participacion-isa/index.html",
       "/noticias/posts/foro-ocs-cepal/index.html",

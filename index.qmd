@@ -74,20 +74,7 @@ listing:
   sort-ui: false
   filter-ui: false
   feed: false
-  
-- id: blog
-  contents: 
-    - blog/posts/*/*.qmd
-  sort: date desc
-  type: grid
-  grid-columns: 3
-  image-height: 150px
-  fields: [title, date]
-  max-items: 6
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  feed: false    
+    
   
 - id: reportes
   contents:
@@ -273,12 +260,12 @@ article {
 <div class="layout">
   <article>
     <div class="img-container">
-      <img class="lukas" src="imagenes/foro1.png" data-url="noticias/posts/foro-ocs-cepal/">
-      <div class="overlay-text">El primer Foro de Cohesión Social se realizará en CEPAL el 30 de Julio. Click para más información</div>
+      <img class="lukas" src="imagenes/columna_elpais.png" data-url="noticias/posts/columna-elpais/">
+      <div class="overlay-text">Columna de opinión del IP Juan Carlos Castillo sobre medición y políticas de cohesión social. Click para más información</div>
     </div>
     <div class="img-container">
-      <img class="lukas" src="imagenes/featured.png" data-url="analisis/visualizador-latam/">
-      <div class="overlay-text">Lanzamos una versión renovada del visualizador de cohesión social en América Latina. Click para conocer más</div>
+      <img class="lukas" src="imagenes/nuestras_trayectorias.png" data-url="noticias/posts/nota-dm/">
+      <div class="overlay-text">Primera nota OCS sobre investigación de cohesión social. Click para conocer más</div>
     </div>
   </article>
 </div>
@@ -436,29 +423,7 @@ document.addEventListener('DOMContentLoaded', function () {
 :::
 :::
 
-<div class="section-footer1">
-  
-</div>
-  
-::: {.section-text .light-bg}
-::: {.section-container}
-::: {.section-block}
-::: {style="text-align: center;"}
 
-:::{#blogh1}
-:::
-    
-<p align="center" style="font-size:36px; font-weight:bold;">
-<i class="bi bi-substack" style="margin-right: 10px;"></i>Blog</p>
-        
-        
-:::{#blog}
-:::
-            
-:::
-:::
-:::
-:::
 
 <div class="section-footer1">
 

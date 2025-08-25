@@ -1,0 +1,19 @@
+---
+title: "La cohesión social, un termómetro crítico para Chile y América Latina"
+description: Columna de opinión en El País
+categories: [noticias]
+date: "2025-08-24"
+draft: false
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+Instituciones en crisis, inseguridad en alza, desigualdad persistente y desconfianza generalizada. La cohesión social se erosiona y el desafío es urgente: no basta con medirla, hay que traducir el diagnóstico en acción política concreta.
+
+El investigador del OCS, Juan Carlos Castillo, reflexiona sobre este escenario en una columna publicada en El País, a propósito del reciente [foro CEPAL–OCS](https://ocs-coes.com/noticias/posts/post-primer-foro/) sobre cohesión social.
+
+📄 Léela completa aquí: [La cohesión social, un termómetro crítico para Chile y América Latina](https://elpais.com/chile/2025-08-23/la-cohesion-social-un-termometro-critico-para-chile-y-america-latina.html)
