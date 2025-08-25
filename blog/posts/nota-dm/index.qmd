@@ -8,6 +8,7 @@ about:
   template: marquee
 format: 
   html: 
+   toc: false
    theme: ../../../scss-posts.scss
 ---
 

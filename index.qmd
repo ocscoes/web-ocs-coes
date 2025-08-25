@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
 </div>
   
-::: {.section-text .dark-bg}
+::: {.section-text .light-bg}
 ::: {.section-container}
 ::: {.section-block}
 ::: {style="text-align: center;"}
@@ -477,6 +477,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <i class="bi bi-journals" style="margin-right: 10px;"></i>Reportes</p>
 
 :::{#reportes}
+
 :::
 
 ::: {.button}
