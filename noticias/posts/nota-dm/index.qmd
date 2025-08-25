@@ -107,7 +107,7 @@ La cohesión social, en definitiva, puede ser entendida como un termómetro de l
 
 ## Sobre el investigador
 
-![](daniel_miranda.jpg){.center width=300px height=300px}
+![](daniel_miranda.png){.center width=300px height=300px}
 
 [Daniel Miranda](https://coes.cl/integrantes/daniel-miranda/) es psicólogo de la Universidad de Talca, Magíster en Psicología Social-Comunitaria y Doctor en Sociología por la Pontificia Universidad Católica de Chile. Actualmente es investigador asociado en la línea Interacciones Grupales e Individuales del COES y académico del Departamento de Psicología de la Universidad de Chile. Sus intereses investigativos son la socialización política y sus desigualdades, la participación política juvenil, las relaciones intergrupales y la opinión pública, desde un enfoque cuantitativo, utilizando modelos de ecuaciones estructurales y multinivel para analizar patrones y tendencias.
 
