@@ -560,6 +560,11 @@ document.addEventListener('DOMContentLoaded', function () {
 <!-- Torre 26, Oficina 1504 <br> -->
 <!-- Santiago – RM -->
 
+<!-- Los Navegantes 1963 <br> -->
+<!-- Providencia - RM -->
+
+<!-- Contáctenos: [comunicaciones@coes.cl](mailto:comunicaciones@coes.cl) -->
+<!-- ::: -->
 
 <!-- :::{.g-col-4} -->
 <!-- ### Observatorio de Cohesión Social <br><br> -->
