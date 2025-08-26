@@ -74,5 +74,11 @@
       "/noticias/posts/ciclo-foros-ocs/index.html",
       "/noticias/posts/actualizacion-web/index.html"
     ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/posts/nota-dm/index.html"
+    ]
   }
 ]
