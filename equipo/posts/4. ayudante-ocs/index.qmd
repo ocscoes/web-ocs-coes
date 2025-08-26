@@ -1,6 +1,6 @@
 ---
 title: René Canales
-subtitle: Ayudante de investigación
+subtitle: Asistente de investigación
 contacto: renecanales@uc.cl
 github: https://github.com/renejcanales
 web: https://www.linkedin.com/in/ren%C3%A9-canales-sell%C3%A9s-8777951b5/
@@ -26,5 +26,5 @@ format:
    theme: ../../equipo.scss
 ---
 
-René Canales es sociólogo y magister (c) en sociología por la Pontificia Universidad Católica de Chile. Actualmente se desempeña como tesista del proyecto Fondecyt 1230922 “Actitudes y Comportamiento Político Juvenil: Desigualdad, estilos de socialización escolar e influencias intergeneracionales” y como ayudante de investigación en el Observatorio de Cohesión Social (OSC-COES) y el Laboratorio de Investigación Social Abierta (LISA-COES). Sus intereses incluyen la participación política, estratificación social, los métodos cuantitativos de investigación social y la ciencia abierta
+René Canales es sociólogo y magister (c) en sociología por la Pontificia Universidad Católica de Chile. Actualmente se desempeña como tesista del proyecto Fondecyt 1230922 “Actitudes y Comportamiento Político Juvenil: Desigualdad, estilos de socialización escolar e influencias intergeneracionales” y como asistente de investigación en el Observatorio de Cohesión Social (OSC-COES) y el Laboratorio de Investigación Social Abierta (LISA-COES). Sus intereses incluyen la participación política, estratificación social, los métodos cuantitativos de investigación social y la ciencia abierta
 
