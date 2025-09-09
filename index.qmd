@@ -260,12 +260,12 @@ article {
 <div class="layout">
   <article>
     <div class="img-container">
-      <img class="lukas" src="imagenes/columna_elpais.png" data-url="noticias/posts/columna-elpais/">
-      <div class="overlay-text">Columna de opinión del IP Juan Carlos Castillo sobre medición y políticas de cohesión social. Click para más información</div>
+      <img class="lukas" src="imagenes/FORO-2.png" data-url="noticias/posts/foro-ocs-cep/">
+      <div class="overlay-text">Foro Cohesión social y Migración: Una década de cambios y desafíos OCS-CEP. Click para más información</div>
     </div>
     <div class="img-container">
-      <img class="lukas" src="imagenes/nuestras_trayectorias.png" data-url="noticias/posts/nota-dm/">
-      <div class="overlay-text">Primera nota OCS sobre investigación de cohesión social. Click para conocer más</div>
+      <img class="lukas" src="imagenes/columna_elpais.png" data-url="noticias/posts/columna-elpais/">
+      <div class="overlay-text">Columna de opinión del IP Juan Carlos Castillo sobre medición y políticas de cohesión social. Click para más información</div>
     </div>
   </article>
 </div>

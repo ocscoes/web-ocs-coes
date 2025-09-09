@@ -1,0 +1,77 @@
+---
+title: "Foro OCS-CEP Cohesión social y migración: Una década de cambios y desafíos"
+subtitle: Observatorio de Cohesión Social
+description: El segundo foro será realizado en conjunto con el Centro de Estudios Públicos el 9 de septiembre.
+categories: [noticias]
+# Date published
+date: "2025-09-02"  #year-
+draft: false
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   theme: scss-posts.scss
+---
+
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5Y3E1TECONU4K_JbHblcDFsGkWutKNlYsczFKETQQ7HJfsA/viewform" 
+     target="_blank" 
+     role="button" 
+     style="background-color: #0693e3; color: white; padding: 0.5em 1em; border-radius: 5px; text-decoration: none; display: inline-block;">
+    Inscripciones
+  </a>
+
+  <a href="https://x.com/CentroCOES/status/1963007059864981867" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-twitter-x" style="font-size: 1.5rem;"></i>
+  </a>
+
+  <a href="https://coes.cl/eventos/ii-foro-de-cohesion-social-2025-cohesion-social-y-migracion-una-decada-de-cambios-y-desafios/" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-globe" style="font-size: 1.5rem;"></i>
+  </a>
+
+  <a href="https://www.instagram.com/p/DOHeDfEDHWr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+  </a>
+
+</div>
+
+En el marco del ciclo de Foros de Cohesión Social organizados por el Observatorio de Cohesión Social (OCS-COES), este Segundo Foro de Cohesión 2025, realizado en conjunto con el Centro de Estudios Públicos (CEP), tiene como propósito examinar los vínculos entre cohesión social y migración en Chile durante el período 2016-2023.
+
+En representación del COES, Roberto González (PUC-COES) presentará un análisis longitudinal basado en los datos de la Encuesta Social Longitudinal de Chile (ELSOC), con el fin de aportar evidencia empírica acerca de las dinámicas de cohesión social y los efectos de la migración en la sociedad chilena. Posteriormente, un panel de discusión compuesto por Mauricio Salgado (CEP) y Marcela Tapia (UTA) comentará estos hallazgos, destacando las transformaciones, tensiones y desafíos que plantea la relación entre migración y cohesión social, así como las oportunidades para repensar políticas públicas orientadas a su fortalecimiento. 
+
+Este foro busca consolidar un espacio de deliberación académica y pública, abierto a perspectivas diversas y al diálogo interdisciplinario, con el objetivo de fomentar la reflexión crítica sobre los desafíos políticos, teóricos y metodológicos que plantea la migración en el marco de una sociedad marcada por la desigualdad y la diversidad cultural. Al mismo tiempo, pretende articular el conocimiento generado por el Observatorio de Cohesión Social de COES y el CEP, contribuyendo a enriquecer la discusión sobre la dimensión horizontal de la cohesión social y su interacción con los procesos migratorios en Chile.
+
+  📅 Fecha: Martes 9 de Septiembre
+  
+  🕚 Horario: 18:30 horas
+  
+  📍 Lugar: Centro de Estudios Públicos (CEP). Monseñor Sótero Sanz 162, Providencia.
+  
+  💻 Transmisión online vía Youtube COES: https://www.youtube.com/@CentroCOES
+ 
+Cronograma:
+
+**[18:30-18:40] Palabras de Bienvenida**
+
+- Sylvia Eyzaguirre: Investigadora Senior CEP Área Humanidades y Políticas Públicas.
+
+**[18:40-19:00] Presentación**
+
+ Presenta:
+ 
+- Roberto González: Profesor titular de la Escuela de Psicología de la Universidad Católica, investigador principal del Estudio Longitudinal Social de Chile (ELSOC) de COES y del Centro de Estudios Interculturales e Indígenas (CIIR). 
+
+**[19:00-19:20] Discusión**
+
+Comentan:
+
+- Mauricio Salgado: Mauricio Salgado, Investigador CEP Área Ciencias Sociales y Educación. 
+
+- Marcela Tapia: Profesora Titular del Dpto. de Ciencias Sociales de la Universidad de Tarapacá.
+
+**[19:20-19:30] Preguntas y discusión desde el público**
+
+**[19:30] Cierre**
+

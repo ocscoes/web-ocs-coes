@@ -1,0 +1,41 @@
+---
+title: "Nota: Cohesión social horizontal y migración en Chile"
+subtitle: "Reporte de resultados para el Foro Cohesión social y migración: Una década de cambios y desafíos
+ CEP-COES 2025"
+categories: [blog]
+# Date published
+date: "2025-09-09"  #year-
+draft: false
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   toc: false
+   theme: ../../../scss-posts.scss
+resources: ["reporte.pdf"] 
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(knitr)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      error = F, 
+                      message = F) 
+
+options(kableExtra.html.bsTable = T)
+options(knitr.kable.NA = "")
+```
+
+
+En este nuevo post del OCS presentamos la nota “Cohesión social horizontal y migración en Chile”, que ofrece un breve reporte de resultados elaborado para el Segundo Foro “Cohesión social y migración: Una década de cambios y desafíos” (CEP–COES, 2025).
+
+El documento analiza la relación entre la cohesión social horizontal —entendida como la calidad de los vínculos entre personas y grupos— y las actitudes hacia la migración en Chile, a partir de los datos de la Encuesta Longitudinal Social de Chile (ELSOC, 2016–2023). Con base en la propuesta conceptual y de medición del Observatorio de Cohesión Social (OCS), se identifican tres subdimensiones de la cohesión horizontal (seguridad, vínculos territoriales y redes sociales) y se examina su evolución en el tiempo, así como sus vínculos con actitudes hacia
+ la migración.
+
+A continuación, puedes acceder al reporte completo en formato PDF:
+
+<iframe src=reporte.pdf height="550" width=100% allowfullscreen="true">
+</iframe>
