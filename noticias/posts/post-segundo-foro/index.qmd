@@ -1,0 +1,59 @@
+---
+title: "Cohesión social y migración: Dinámicas actuales y desafíos futuros para el país"
+subtitle: Observatorio de Cohesión Social
+description: El Segundo foro de Cohesión Social 2025 OCS-CEP fue realizado el 9 de septiembre.
+categories: [noticias]
+date: "2025-09-20"
+draft: false
+about:
+  template: marquee
+  image: "featured.jpg"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <a href="https://coes.cl/coes-y-cep-realizaron-el-foro-cohesion-social-y-migracion-una-decada-de-cambios-y-desafios" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-globe" style="font-size: 1.5rem;"></i>
+  </a>
+  
+</div>
+
+Durante los últimos años, la migración ha sido un fenómeno en aumento. Los nuevos escenarios que trae esta realidad han demostrado lo relevante que resulta atender las tensiones sociales que genera este cambio, tales como reconocer las responsabilidades institucionales en la mediación del encuentro intercultural y abordar conjuntamente los desafíos que se instalan en la sociedad.
+
+Reconociendo la relevancia que tiene la migración en el fortalecimiento -o debilitamiento- de los vínculos sociales, el día 09 de septiembre de la semana pasada se celebró el Segundo Foro de Cohesión Social 2025, realizado por el [Observatorio de Cohesión Social (OCS)](https://ocs-coes.com), esta vez conjunto al [Centro de Estudios Públicos (CEP)](https://www.cepchile.cl), el cual se tituló “Cohesión social y migración: una década de cambios y desafíos”. Este hito reunió a distintos representantes del mundo académico, convergiendo investigadores tales como Roberto González (COES), Mauricio Salgado (CEP) y Marcela Tapia (Universidad de Tarapacá). A partir de la realización de este foro, desde OCS se dio relevancia a la dimensión horizontal de la cohesión social como una perspectiva que aporta a la comprensión de la migración en Chile.
+
+### Cohesión horizontal
+
+La conceptualización de la cohesión social del OCS se inspira en la acepción de Chan et al. (2006), la cual establece dos dimensiones para la cohesión social: **vertical** y **horizontal**. Mientras la vertical se enfoca en las relaciones entre los ciudadanos (o sociedad civil) y el Estado y sus instituciones, la horizontal aborda las interacciones sociales entre los individuos y la calidad de estos vínculos. Para profundizar en la relación entre cohesión social y migración, el OCS propuso un marco analítico actualizado sobre cómo medir la cohesión social en su dimensión horizontal.
+
+```{r}
+#| label: fig-ocs
+#| fig-cap: Esquema conceptual y de medición para cohesión horizontal con ELSOC
+#| echo: false 
+
+library(knitr)
+knitr::include_graphics('propuesta.png')
+```
+
+El modelo horizontal considera tres dimensiones: **seguridad** (objetiva y subjetiva), **vínculos territoriales** (pertenencia y satisfacción con el barrio) y **redes sociales** (confianza interpersonal, ayuda económica y comportamiento prosocial). Este esquema (@fig-ocs) fue puesto en acción utilizando datos del [Estudio Longitudinal Social de Chile (ELSOC)](https://conferencias.coes.cl/encuesta-panel), una encuesta que es aplicada año a año a las personas para conocer y evaluar su opinión respecto temas sociales, culturales y políticos.
+
+### Cohesión social horizontal y migración
+
+En lo que respecta a redes interpersonales, los resultados muestran que en Chile existen personas que ayudan económicamente en menor o mayor medida a terceros. Para el 2023, quienes prestan poca ayuda son quienes tienden a estar más de acuerdo con que los migrantes son una de las causas del desempleo (58.5% está de acuerdo con eso, mientras sólo un 41.5% no lo está). 
+
+Sobre seguridad y en línea con lo anterior, en 2023 las personas que se sienten inseguras de su entorno mantienen una actitud negativa hacia los migrantes, considerando que su llegada al país es un gatillante del desempleo (59.5% está de acuerdo con esta afirmación). 
+
+Si se aplica una vista panorámica-temporal, entre los años 2018-2023, las personas que poseen altos niveles de seguridad subjetiva son quienes creen en mayor medida (con un 60% aprox en todos los años) que no deberían aplicarse restricciones para el ingreso de migrantes al país, lo que se sostiene de manera estable en el tiempo. Quienes se sienten más inseguros en su entorno, si bien también mantienen un promedio estable en el tiempo respecto a la consideración de que no es necesario sentar medidas más rigurosas para el paso de migrantes (alrededor de un 40%), muestran evidentemente un menor acuerdo con esta afirmación que aquellos con alta seguridad. 
+
+En conclusión, podemos ver una relación entre los elementos de la cohesión social horizontal y las percepciones de las personas sobre los y las migrantes. Las dinámicas de apoyo económico y seguridad subjetiva revelan que, mientras mayor es la sensación de seguridad, mayor es la aceptación de la migración. En efecto, el análisis presentado en el Segundo Foro de Cohesión Social 2025 demuestra que distintos aspectos relacionados a la cohesión social horizontal influyen significativamente en la actitud hacia los migrantes, lo que pone en boga los desafíos políticos, culturales e institucionales que supone la migración y su efecto en el vínculo social.
+
+```{r}
+#| label: fig-equipo
+#| fig-cap: Tomás Urzúa, René Canales (asistentes de investigación OCS), y Juan Carlos Castillo (investigador principal OCS/COES). 
+#| echo: false 
+
+knitr::include_graphics('equipo-ocs.png')
+```
