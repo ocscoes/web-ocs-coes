@@ -45,8 +45,6 @@ website:
         text: "<i class='bi bi-graph-up-arrow'></i> Análisis"
       - href: index.qmd#noticiash1
         text: "<i class='bi bi-newspaper'></i> Noticias"
-      - href: index.qmd#blogh1
-        text: "<i class='bi bi-substack'></i> Blog"
       - href: index.qmd#reportesh1
         text: "<i class='bi bi-journals'></i> Reportes"
       - href: index.qmd#equipoh1

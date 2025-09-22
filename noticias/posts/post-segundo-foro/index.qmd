@@ -5,6 +5,8 @@ description: El Segundo foro de Cohesión Social 2025 OCS-CEP fue realizado el 9
 categories: [noticias]
 date: "2025-09-20"
 draft: false
+bibliography: "../../../bib/OCS-LIT.bib"
+csl: "../../../bib/apa6.csl"
 about:
   template: marquee
   image: "featured.jpg"
@@ -27,7 +29,7 @@ Reconociendo la relevancia que tiene la migración en el fortalecimiento -o debi
 
 ### Cohesión horizontal
 
-La conceptualización de la cohesión social del OCS se inspira en la acepción de Chan et al. (2006), la cual establece dos dimensiones para la cohesión social: **vertical** y **horizontal**. Mientras la vertical se enfoca en las relaciones entre los ciudadanos (o sociedad civil) y el Estado y sus instituciones, la horizontal aborda las interacciones sociales entre los individuos y la calidad de estos vínculos. Para profundizar en la relación entre cohesión social y migración, el OCS propuso un marco analítico actualizado sobre cómo medir la cohesión social en su dimensión horizontal.
+La conceptualización de la cohesión social del OCS se inspira en la acepción de Chan et al. [-@chan_reconsidering_2006], la cual establece dos áreas para la cohesión social: **vertical** y **horizontal**. Mientras la vertical se enfoca en las relaciones entre los ciudadanos (o sociedad civil) y el Estado y sus instituciones, la horizontal aborda las interacciones sociales entre los individuos y la calidad de estos vínculos. Para profundizar en la relación entre cohesión social y migración, el OCS propuso un marco analítico actualizado sobre cómo medir la cohesión social en su dimensión horizontal.
 
 ```{r}
 #| label: fig-ocs
@@ -38,7 +40,7 @@ library(knitr)
 knitr::include_graphics('propuesta.png')
 ```
 
-El modelo horizontal considera tres dimensiones: **seguridad** (objetiva y subjetiva), **vínculos territoriales** (pertenencia y satisfacción con el barrio) y **redes sociales** (confianza interpersonal, ayuda económica y comportamiento prosocial). Este esquema (@fig-ocs) fue puesto en acción utilizando datos del [Estudio Longitudinal Social de Chile (ELSOC)](https://conferencias.coes.cl/encuesta-panel), una encuesta que es aplicada año a año a las personas para conocer y evaluar su opinión respecto temas sociales, culturales y políticos.
+El modelo horizontal considera tres dimensiones: **seguridad** (objetiva y subjetiva), **vínculos territoriales** (pertenencia y satisfacción con el barrio) y **redes sociales** (confianza interpersonal, ayuda económica y comportamiento prosocial). Este esquema (@fig-ocs) fue puesto en acción utilizando datos del [Estudio Longitudinal Social de Chile (ELSOC)](https://conferencias.coes.cl/encuesta-panel), una encuesta que es aplicada año a año a las personas para conocer y evaluar su opinión respecto temas sociales, culturales y políticos. Los resultados de este análisis pueden revisarse en [este post anterior](https://ocs-coes.com/noticias/posts/nota-foro-ii/).
 
 ### Cohesión social horizontal y migración
 
@@ -57,3 +59,9 @@ En conclusión, podemos ver una relación entre los elementos de la cohesión so
 
 knitr::include_graphics('equipo-ocs.png')
 ```
+
+
+# Referencias
+
+::: {#refs}
+:::
