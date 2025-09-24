@@ -13,7 +13,7 @@ format:
   html: 
    toc: false
    theme: ../../../scss-posts.scss
-resources: ["reporte.pdf"] 
+resources: ["REPORTE_2.pdf"] 
 ---
 
 ```{r}
@@ -37,5 +37,5 @@ El documento analiza la relación entre la cohesión social horizontal —entend
 
 A continuación, puedes acceder al reporte completo en formato PDF:
 
-<iframe src=reporte.pdf height="550" width=100% allowfullscreen="true">
+<iframe src=REPORTE_2.pdf height="550" width=100% allowfullscreen="true">
 </iframe>

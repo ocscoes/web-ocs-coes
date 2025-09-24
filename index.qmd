@@ -260,7 +260,7 @@ article {
 <div class="layout">
   <article>
     <div class="img-container">
-      <img class="lukas" src="imagenes/FORO-2.png" data-url="noticias/posts/foro-ocs-cep/">
+      <img class="lukas" src="imagenes/ocs-cep.jpg" data-url="noticias/posts/post-segundo-foro/">
       <div class="overlay-text">Foro Cohesión social y Migración: Una década de cambios y desafíos OCS-CEP. Click para más información</div>
     </div>
     <div class="img-container">
