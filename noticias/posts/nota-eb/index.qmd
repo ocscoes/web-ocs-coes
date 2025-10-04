@@ -1,0 +1,123 @@
+---
+title: "Informe Final de Recomendaciones de la Comisión Asesora Presidencial para la actualización de la Medición de la Pobreza en Chile"
+subtitle: Segunda nota OCS sobre investigación de cohesión social
+categories: [blog]
+# Date published
+date: "2025-10-03"  #year-
+draft: false
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   toc: false
+   theme: ../../../scss-posts.scss
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(knitr)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      error = F, 
+                      message = F) 
+
+options(kableExtra.html.bsTable = T)
+options(knitr.kable.NA = "")
+```
+
+
+En esta segunda entrega de la serie **OCS–Investigaciones sobre cohesión social**, revisamos el [Informe de la Comisión Asesora Presidencial de Expertos y Expertas para la Actualización de la Medición de la Pobreza (2025)](https://www.comisionpobreza.cl/docs/Comision_Pobreza-Informe_Final_Recomendaciones.pdf). El documento, elaborado por un grupo de diez especialistas de distintos sectores de la sociedad —entre ellos la investigadora principal del COES y académica de la Universidad de Chile, Emmanuelle Barozet, y la investigadora asociada del COES y académica de la Universidad Adolfo Ibañez, Alejandra Abufhele— busca responder a un desafío clave: c**ómo actualizar la medición de la pobreza por ingresos y multidimensional en un contexto social y económico en transformación.**
+
+El informe repasa las definiciones de pobreza por ingresos y pobreza multidimensional utilizadas en Chile en las últimas décadas. Siendo medidas complementarias, la pobreza multidimensional busca reconocer las dificultades en acceso a ciertos servicios, recursos y oportunidades que van más allá del ingreso monetario, más son de gran relevancia para la política pública y el bienestar social. El informe propone ajustes concretos, que incluyen la incorporación de nuevos indicadores, la modificación y ampliación de los existentes, y el uso de registros administrativos como complemento de las encuestas.
+
+En esta nota, nos detendremos especialmente en la medición de la pobreza multidimensional y la **trayectoria de la dimensión de redes y cohesión** social dentro de la medición de la pobreza, revisando las principales recomendaciones de la comisión y sus implicancias para el estudio de este fenómeno en el país.
+
+
+## Contextualizando la dimensión de redes y cohesión social
+
+En la actualización realizada en 2013 a la medición de pobreza multidimensional, se integró una quinta dimensión sobre **redes y cohesión social** con un peso diferido de 10% a diferencia del 22,5% de las otras dimensiones (como salud o vivienda), con base en los siguientes indicadores y sus umbrales de carencia:
+
+- **Apoyo social**. Hogar declara no conocer persona que preste apoyo en alguna de diversas situaciones de necesidad; además que ningún integrante del hogar declara haber participado de una organización en los últimos 12 meses, además que si trabajase siendo mayor de 18 años, no pertenece a ninguna organización laboral.
+- **Trato igualitario**. Algún integrante del hogar declara trato injusto o discriminatorio fuera del hogar en los últimos 12 meses.
+- **Seguridad**. Algún integrante del hogar declara haber presenciado tráfico de drogas o disparos en el último mes.
+
+Para el último reporte de resultados de la Encuesta de Caracterización Socioeconómica Nacional (CASEN) en 2022, esta dimensión presentaba los siguientes resultados:
+
+```{r}
+#| label: fig-1
+#| fig-cap-location: top
+#| fig-cap: "Porcentaje de hogares carentes en indicadores de pobreza multidimensional, 2022"
+#| fig-align: center
+#| out-width: '100%'
+library(knitr)
+library(here)
+
+knitr::include_graphics(path = here("noticias/posts/nota-eb/im01-nota-3.jpg"))
+
+```
+
+
+Como se muestra en la @fig-1, la dimensión de redes y cohesión social cuenta con un alto porcentaje de hogares carentes de sus indicadores, siendo la tercera dimensión con mayores porcentajes después de las dimensiones trabajo y seguridad social, por un lado, y educación por el otro.
+
+
+```{r}
+#| label: fig-2
+#| fig-cap-location: top
+#| fig-cap: "Porcentaje de hogares carentes en indicadores de la dimensión de redes y cohesión social, 2015, 2017 y 2022"
+#| fig-align: center
+#| out-width: '100%'
+library(knitr)
+library(here)
+
+knitr::include_graphics(path = here("noticias/posts/nota-eb/im.02-nota-03.jpg"))
+
+```
+
+
+Revisando la trayectoria de esta dimensión en los años anteriores de CASEN, se ve en la @fig-2 que en 2022 existió un leve aumento en los hogares carentes de los indicadores, exceptuando el de seguridad, con un 1,8% menos de hogares que presentan carencias en una percepción positiva de seguridad.
+
+
+## Recomendaciones de la comisión experta sobre la dimensión de redes y cohesión social
+
+Entre las recomendaciones de la comisión experta, se señala lo siguiente:
+
+- El Índice de Pobreza Multidimensional debiese mantener las cinco dimensiones ya existentes, pero debiese **equiparar sus ponderaciones** para que cada dimensión tenga el mismo peso que las demás. Esto implica un aumento en la relevancia de la cohesión social como factor de la pobreza, pasando de un 10% a 20% en el índice. Esta recomendación también es respaldada por informes anteriores como el de PNUD (2024).
+- Se recomienda eliminar el sub-indicador de participación del indicador **apoyo y participación social**, dada  la homogeneidad de respuestas negativas que presenta, siendo así un sub-indicador poco informativo. Además, al considerar que la ausencia de participación en organizaciones se genera por falta de interés, se le resta importancia como indicador para la medición de la pobreza multidimensional. Esto elevaría el sub-indicador de apoyo a categoría de indicador principal.
+- Se plantea que el indicador de **trato igualitario** continúe en sus términos actuales, aunque se recomienda mantener a la vista avances en la incorporación de preguntas que abarquen maltrato institucional, es decir, si las personas declaran haber vivido experiencias de malos tratos en centros de salud, de trabajo, educacionales, de servicio público, entre otros.
+- Se plantea que el indicador de **seguridad** continúe en sus términos actuales. Ahora bien, se recomienda cambiar el umbral de carencia para seguridad, considerando “siempre” pero también “casi siempre” de haber vivido o presenciado una situación de tráfico de drogas y/o balaceras o disparos. También se propone indagar en la incorporación de preguntas que capturen las restricciones que se plantean las personas por el  temor a situaciones de peligro. 
+- Se propone agregar un indicador de **conectividad digital** referente al acceso a internet para reflejar la importancia de contar con dispositivos y conexión a redes digitales en la realidad actual, más aún después del proceso de digitalización que potenció la pandemia. En esa línea, se consideran hogares carentes aquellos que no cuenten con servicios de conexión tipo banda ancha o fija, internet satelital, banda móvil sea modem, Wifi o USB, ni con algún dispositivo electrónico aparte del teléfono celular (ya que son de uso personal y el indicador refleja una medición por hogar, además de no funcionar con toda la operatividad que requiere una conexión laboral o escolar).
+
+## Proyecciones y desafíos
+
+En Chile, al igual que en otros países, la metodología para medir la pobreza ha evolucionado conforme cambian las condiciones sociales y económicas, pasando de un enfoque centrado únicamente en los ingresos a uno de carácter multidimensional. Este giro busca ofrecer una comprensión más integral de las privaciones que enfrentan los hogares, siguiendo metodologías como la de Alkire, Foster, et al. (2015), que definen indicadores, ponderaciones y umbrales específicos. En este marco, la cohesión social aporta una mirada más amplia para capturar desigualdades múltiples, al incorporar dimensiones relacionadas con la existencia de vínculos de apoyo, la participación en la vida colectiva, la percepción de trato justo y las condiciones de seguridad. Su inclusión en el Índice de Pobreza Multidimensional —y la recomendación de reforzar su peso relativo— constituye un avance significativo, pues permite no solo enriquecer la comprensión de la pobreza, sino también orientar políticas públicas destinadas a fortalecer las redes comunitarias y la inclusión social. De este modo, se reconoce la relevancia de contar con oportunidades para construir relaciones significativas y ejercer plenamente la ciudadanía, elementos esenciales para el bienestar y la cohesión de la sociedad.
+
+
+## Sobre las investigadoras
+
+![](emmanuelle.jpg){.center width=200px height=250px}
+
+[Emmanuelle Barozet](https://facso.uchile.cl/sociologia/cuerpo-academico/emmanuelle-barozet) es Socióloga, diplomada del Institut d'Études Politiques de París, Magíster en Historia y Civilización y Doctora en Sociología por l'École des Hautes Études en Sciences Sociales de Paris, Francia. Es investigadora principal de la línea Conflicto Político y Social de COES y profesora titular del Departamento de Sociología de la Universidad de Chile. Sus intereses investigativos son la estratificación social, clases medias y justicia social, instituciones informales en política, política local y vinculaciones sociales.
+
+![](alejandra.png){.center width=250px height=200px}
+
+[Alejandra Abufhele](https://www.uai.cl/profesores/gobierno/alejandra-abufhele) es Economista y Magíster de Políticas Públicas de la Universidad de Chile, y Doctora en Demografía de la Universidad de Pennsylvania. Es investigadora adjunta de la línea “Las Dimensiones Socioeconómicas del Conflicto" de COES y profesora asistente de la Escuela de Gobierno de la Universidad Adolfo Ibáñez. Sus intereses investigativos se enfocan en la desigualdad y pobreza, infancia y migración. 
+
+## Últimas noticias de las investigadoras
+
+- [COES y CEPAL abordan los desafíos de la cohesión social en América Latina](https://coes.cl/2025/07/31/coes-y-cepal-abordan-los-desafios-de-la-cohesion-social-en-america-latina/)
+- [Inauguración de VI Curso de Formación a las Técnicas de la Democracia Deliberativa y Mediación](https://coes.cl/inauguracion-de-vi-curso-de-formacion-a-las-tecnicas-de-la-democracia-deliberativa-y-mediacion/)
+- [María Luisa Méndez y Emmanuelle Barozet expusieron en el Quinto Seminario Regional de Desarrollo Social de CEPAL](https://coes.cl/2025/07/03/maria-luisa-mendez-y-emmanuelle-barozet-expusieron-en-el-quinto-seminario-regional-de-desarrollo-social-de-cepal/)
+- [Investigadoras del COES integran Comisión Asesora Presidencial que entregó propuesta para actualizar la medición de la pobreza en Chile – COES](https://conferencias.coes.cl/2025/07/03/investigadoras-del-coes-integran-comision-asesora-presidencial-que-entrego-propuesta-para-actualizar-la-medicion-de-la-pobreza-en-chile/)
+
+
+## Referencias
+
+Alkire, S., Foster, J. E., Seth, S., Santos, M. E., Roche, J. M., and Ballon, P. (2015). Multidimensional Poverty Measurement and Analysis, Oxford: Oxford University Press, ch. 3. 
+
+Comisión Asesora Presidencial de Expertos y Expertas para la Actualización de la Medición de la Pobreza. (2025). Informe final: Recomendaciones. Santiago, Chile: Ministerio de Desarrollo Social y Familia.
+
+Observatorio Social (2022) Resultados pobreza multidimensional Casen 2022 (versión 20 octubre 2023). Disponible en: https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022 
+
+PNUD (2024). Análisis de la Medida de Pobreza Multidimensional en Chile. Santiago, Chile: Programa de las Naciones Unidas para el Desarrollo.

@@ -25,6 +25,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/noticias/posts/nota-eb/index.html",
       "/noticias/posts/post-segundo-foro/index.html",
       "/noticias/posts/nota-foro-ii/index.html",
       "/noticias/posts/foro-ocs-cep/index.html",
@@ -69,6 +70,7 @@
   {
     "listing": "/noticias/index.html",
     "items": [
+      "/noticias/posts/nota-eb/index.html",
       "/noticias/posts/post-segundo-foro/index.html",
       "/noticias/posts/nota-foro-ii/index.html",
       "/noticias/posts/foro-ocs-cep/index.html",
