@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6a1ab215cc850774958be02c861f1f40.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-521a19cafa2ea973cfc4e7d65edbd21d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -98,6 +98,153 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>
+/* Oculta la barra superior */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0 !important; }
+
+/* Evita saltos por iframes */
+html body .skiptranslate > iframe { visibility: hidden !important; }
+
+/* Contenedor del widget: lo queremos en DOM pero discreto */
+.gtrans-slot { width: 0; height: 0; overflow: hidden; }
+
+/* Botón-bandera */
+.nav-item.gtrans-flag { display: flex; align-items: center; }
+.nav-item.gtrans-flag a {
+  text-decoration: none; font-size: 1.1rem; line-height: 1;
+  padding: 0 .4rem; cursor: pointer;
+}
+</style>
+
+<script>
+// -------- Utilidades --------
+function findRightNav() {
+  const targets = document.querySelectorAll(
+    '#quarto-header .navbar .navbar-nav.ms-auto, #quarto-header .navbar .navbar-nav:last-child'
+  );
+  for (const el of targets) if (el) return el;
+  return null;
+}
+function currentLangFromCookie() {
+  const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
+  if (!m) return 'es';
+  const v = decodeURIComponent(m[1]).split('/');
+  return v[v.length - 1] || 'es';
+}
+function updateFlag() {
+  const a = document.getElementById('gtrans-flag-toggle');
+  if (!a) return;
+  const lang = currentLangFromCookie();
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
+  a.setAttribute('aria-label', a.title);
+}
+
+function setCookieAndReload(lang) {
+  const val = `/auto/${lang}`;
+  const d = new Date(); d.setFullYear(d.getFullYear() + 1);
+  const base = `googtrans=${val}; expires=${d.toUTCString()}; path=/`;
+  const host = location.hostname;
+  const root = '.' + host.replace(/^www\./,'');
+  document.cookie = base;
+  document.cookie = `${base}; domain=${host}`;
+  document.cookie = `${base}; domain=${root}`;
+  location.reload();
+}
+
+// -------- Inserta elementos en navbar --------
+function ensureNavItems() {
+  const right = findRightNav();
+  if (!right) return false;
+
+  // Bandera
+  if (!document.getElementById('gtrans-flag-toggle')) {
+    const li = document.createElement('li');
+    li.className = 'nav-item gtrans-flag';
+    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma">🌐</a>`;
+    right.appendChild(li);
+  }
+
+  // Contenedor oculto del widget
+  if (!document.getElementById('google_translate_element')) {
+    const li2 = document.createElement('li');
+    li2.className = 'nav-item';
+    li2.innerHTML = `<div id="google_translate_element" class="gtrans-slot"></div>`;
+    right.appendChild(li2);
+  }
+  return true;
+}
+
+// -------- Cambiar idioma usando el combo del widget --------
+function changeViaCombo(lang) {
+  const combo = document.querySelector('select.goog-te-combo');
+  if (!combo) return false;
+  // IMPORTANTE: Google espera códigos en minúsculas tipo 'en'/'es'
+  combo.value = lang;
+  combo.dispatchEvent(new Event('change'));
+  setTimeout(updateFlag, 700);
+  return true;
+}
+
+// -------- Callback oficial de Google --------
+function googleTranslateElementInit() {
+  // Montamos el widget (necesario para que Google traduzca)
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'es',
+      includedLanguages: 'es,en',   // permite ir y volver sin recarga
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+
+  // Una vez listo el DOM, conectamos eventos
+  const tryWire = () => {
+    ensureNavItems();
+    updateFlag();
+
+    const btn = document.getElementById('gtrans-flag-toggle');
+    if (btn && !btn._wired) {
+      btn._wired = true;
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const current = currentLangFromCookie();
+        const next = (current === 'en') ? 'es' : 'en';
+        // 1) Intento directo con combo
+        if (!changeViaCombo(next)) {
+          // 2) Fallback robusto
+          setCookieAndReload(next);
+        }
+      });
+    }
+  };
+
+  // Espera a que Google inyecte el combo y conéctalo
+  let tries = 0;
+  const t = setInterval(() => {
+    tries++;
+    tryWire();
+    if (document.querySelector('select.goog-te-combo') || tries > 30) {
+      clearInterval(t);
+    }
+  }, 200);
+}
+
+// Exponer callback global
+window.googleTranslateElementInit = googleTranslateElementInit;
+
+// Primer pintado de navbar (por si el callback tarda)
+document.addEventListener('DOMContentLoaded', () => {
+  ensureNavItems();
+  updateFlag();
+});
+</script>
+
+<!-- Carga la librería con callback -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -268,7 +415,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="YmxvZw==" data-listing-date-sort="1759460400000" data-listing-file-modified-sort="1759591117358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1509" data-listing-categories-sort="blog" data-listing-title-sort="Informe Final de Recomendaciones de la Comisión Asesora Presidencial para la actualización de la Medición de la Pobreza en Chile">
+<div class="quarto-post image-right" data-index="0" data-categories="YmxvZw==" data-listing-date-sort="1759460400000" data-listing-file-modified-sort="1759925793493" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1509" data-listing-categories-sort="blog" data-listing-title-sort="Informe Final de Recomendaciones de la Comisión Asesora Presidencial para la actualización de la Medición de la Pobreza en Chile">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/nota-eb/index.html" class="no-external">Informe Final de Recomendaciones de la Comisión Asesora Presidencial para la actualización de la Medición de la Pobreza en Chile</a>
@@ -287,7 +434,7 @@ Oct 3, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1758337200000" data-listing-file-modified-sort="1758553333831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737" data-listing-categories-sort="noticias" data-listing-title-sort="Cohesión social y migración: Dinámicas actuales y desafíos futuros para el país">
+<div class="quarto-post image-right" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1758337200000" data-listing-file-modified-sort="1759925793513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737" data-listing-categories-sort="noticias" data-listing-title-sort="Cohesión social y migración: Dinámicas actuales y desafíos futuros para el país">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/post-segundo-foro/index.html" class="no-external">Cohesión social y migración: Dinámicas actuales y desafíos futuros para el país</a>
@@ -306,7 +453,7 @@ Sep 20, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="YmxvZw==" data-listing-date-sort="1757386800000" data-listing-file-modified-sort="1758735773172" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="225" data-listing-categories-sort="blog" data-listing-title-sort="Nota: Cohesión social horizontal y migración en Chile">
+<div class="quarto-post image-right" data-index="2" data-categories="YmxvZw==" data-listing-date-sort="1757386800000" data-listing-file-modified-sort="1759925793502" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="225" data-listing-categories-sort="blog" data-listing-title-sort="Nota: Cohesión social horizontal y migración en Chile">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/nota-foro-ii/index.html" class="no-external">Nota: Cohesión social horizontal y migración en Chile</a>
@@ -325,7 +472,7 @@ Sep 9, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="bm90aWNpYXM=" data-listing-date-sort="1756785600000" data-listing-file-modified-sort="1757445292863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="459" data-listing-categories-sort="noticias" data-listing-title-sort="Foro OCS-CEP Cohesión social y migración: Una década de cambios y desafíos">
+<div class="quarto-post image-right" data-index="3" data-categories="bm90aWNpYXM=" data-listing-date-sort="1756785600000" data-listing-file-modified-sort="1759925793485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="459" data-listing-categories-sort="noticias" data-listing-title-sort="Foro OCS-CEP Cohesión social y migración: Una década de cambios y desafíos">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/foro-ocs-cep/index.html" class="no-external">Foro OCS-CEP Cohesión social y migración: Una década de cambios y desafíos</a>
@@ -344,7 +491,7 @@ Sep 2, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="bm90aWNpYXM=" data-listing-date-sort="1756008000000" data-listing-file-modified-sort="1756160257058" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74" data-listing-categories-sort="noticias" data-listing-title-sort="La cohesión social, un termómetro crítico para Chile y América Latina">
+<div class="quarto-post image-right" data-index="4" data-categories="bm90aWNpYXM=" data-listing-date-sort="1756008000000" data-listing-file-modified-sort="1759925793478" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74" data-listing-categories-sort="noticias" data-listing-title-sort="La cohesión social, un termómetro crítico para Chile y América Latina">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/columna-elpais/index.html" class="no-external">La cohesión social, un termómetro crítico para Chile y América Latina</a>
@@ -363,7 +510,7 @@ Aug 24, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="YmxvZw==" data-listing-date-sort="1755835200000" data-listing-file-modified-sort="1756160938977" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="938" data-listing-categories-sort="blog" data-listing-title-sort="Nuestras trayectorias. Dinámicas intra-individuales e inter-individuales en Chile (2016-2023)">
+<div class="quarto-post image-right" data-index="5" data-categories="YmxvZw==" data-listing-date-sort="1755835200000" data-listing-file-modified-sort="1759925793488" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="938" data-listing-categories-sort="blog" data-listing-title-sort="Nuestras trayectorias. Dinámicas intra-individuales e inter-individuales en Chile (2016-2023)">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/nota-dm/index.html" class="no-external">Nuestras trayectorias. Dinámicas intra-individuales e inter-individuales en Chile (2016-2023)</a>
@@ -382,7 +529,7 @@ Aug 22, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="bm90aWNpYXM=" data-listing-date-sort="1754539200000" data-listing-file-modified-sort="1755880564190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="429" data-listing-categories-sort="noticias" data-listing-title-sort="Cohesión social en América Latina: Diagnósticos y desafíos por OCS y CEPAL">
+<div class="quarto-post image-right" data-index="6" data-categories="bm90aWNpYXM=" data-listing-date-sort="1754539200000" data-listing-file-modified-sort="1755613900520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="429" data-listing-categories-sort="noticias" data-listing-title-sort="Cohesión social en América Latina: Diagnósticos y desafíos por OCS y CEPAL">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/post-primer-foro/index.html" class="no-external">Cohesión social en América Latina: Diagnósticos y desafíos por OCS y CEPAL</a>
@@ -401,7 +548,7 @@ Aug 7, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751601600000" data-listing-file-modified-sort="1755880564188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="415" data-listing-categories-sort="noticias" data-listing-title-sort="Participación en el 5th ISA Forum of Sociology">
+<div class="quarto-post image-right" data-index="7" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751601600000" data-listing-file-modified-sort="1755613900519" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="415" data-listing-categories-sort="noticias" data-listing-title-sort="Participación en el 5th ISA Forum of Sociology">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/participacion-isa/index.html" class="no-external">Participación en el 5th ISA Forum of Sociology</a>
@@ -420,7 +567,7 @@ Jul 4, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1755880564187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532" data-listing-categories-sort="noticias" data-listing-title-sort="Foro OCS-CEPAL">
+<div class="quarto-post image-right" data-index="8" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1755613900518" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532" data-listing-categories-sort="noticias" data-listing-title-sort="Foro OCS-CEPAL">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/foro-ocs-cepal/index.html" class="no-external">Foro OCS-CEPAL</a>
@@ -439,7 +586,7 @@ Jul 3, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751428800000" data-listing-file-modified-sort="1755880564186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="588" data-listing-categories-sort="noticias" data-listing-title-sort="Ciclo de Foros de Cohesión Social">
+<div class="quarto-post image-right" data-index="9" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751428800000" data-listing-file-modified-sort="1754425575803" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="588" data-listing-categories-sort="noticias" data-listing-title-sort="Ciclo de Foros de Cohesión Social">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/ciclo-foros-ocs/index.html" class="no-external">Ciclo de Foros de Cohesión Social</a>
@@ -458,7 +605,7 @@ Jul 2, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751342400000" data-listing-file-modified-sort="1755880564185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="355" data-listing-categories-sort="noticias" data-listing-title-sort="¡Bienvenidos a nuestro nuevo sitio web!">
+<div class="quarto-post image-right" data-index="10" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751342400000" data-listing-file-modified-sort="1754425575803" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="355" data-listing-categories-sort="noticias" data-listing-title-sort="¡Bienvenidos a nuestro nuevo sitio web!">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../noticias/posts/actualizacion-web/index.html" class="no-external">¡Bienvenidos a nuestro nuevo sitio web!</a>

@@ -59,6 +59,9 @@ format:
       - styles.css
     toc: true
     linkcolor: "#497BBD"
+    extensions:
+      - banner-override
+    include-in-header: translate.html
 include-after-body: "footer.html"
 
 

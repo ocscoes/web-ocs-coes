@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0b6e69813d02440d85b3bfb37af9bbe2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6f9d8fda6a9789ea24fd2bb90720e620.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,6 +68,153 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+/* Oculta la barra superior */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0 !important; }
+
+/* Evita saltos por iframes */
+html body .skiptranslate > iframe { visibility: hidden !important; }
+
+/* Contenedor del widget: lo queremos en DOM pero discreto */
+.gtrans-slot { width: 0; height: 0; overflow: hidden; }
+
+/* Botón-bandera */
+.nav-item.gtrans-flag { display: flex; align-items: center; }
+.nav-item.gtrans-flag a {
+  text-decoration: none; font-size: 1.1rem; line-height: 1;
+  padding: 0 .4rem; cursor: pointer;
+}
+</style>
+
+<script>
+// -------- Utilidades --------
+function findRightNav() {
+  const targets = document.querySelectorAll(
+    '#quarto-header .navbar .navbar-nav.ms-auto, #quarto-header .navbar .navbar-nav:last-child'
+  );
+  for (const el of targets) if (el) return el;
+  return null;
+}
+function currentLangFromCookie() {
+  const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
+  if (!m) return 'es';
+  const v = decodeURIComponent(m[1]).split('/');
+  return v[v.length - 1] || 'es';
+}
+function updateFlag() {
+  const a = document.getElementById('gtrans-flag-toggle');
+  if (!a) return;
+  const lang = currentLangFromCookie();
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
+  a.setAttribute('aria-label', a.title);
+}
+
+function setCookieAndReload(lang) {
+  const val = `/auto/${lang}`;
+  const d = new Date(); d.setFullYear(d.getFullYear() + 1);
+  const base = `googtrans=${val}; expires=${d.toUTCString()}; path=/`;
+  const host = location.hostname;
+  const root = '.' + host.replace(/^www\./,'');
+  document.cookie = base;
+  document.cookie = `${base}; domain=${host}`;
+  document.cookie = `${base}; domain=${root}`;
+  location.reload();
+}
+
+// -------- Inserta elementos en navbar --------
+function ensureNavItems() {
+  const right = findRightNav();
+  if (!right) return false;
+
+  // Bandera
+  if (!document.getElementById('gtrans-flag-toggle')) {
+    const li = document.createElement('li');
+    li.className = 'nav-item gtrans-flag';
+    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma">🌐</a>`;
+    right.appendChild(li);
+  }
+
+  // Contenedor oculto del widget
+  if (!document.getElementById('google_translate_element')) {
+    const li2 = document.createElement('li');
+    li2.className = 'nav-item';
+    li2.innerHTML = `<div id="google_translate_element" class="gtrans-slot"></div>`;
+    right.appendChild(li2);
+  }
+  return true;
+}
+
+// -------- Cambiar idioma usando el combo del widget --------
+function changeViaCombo(lang) {
+  const combo = document.querySelector('select.goog-te-combo');
+  if (!combo) return false;
+  // IMPORTANTE: Google espera códigos en minúsculas tipo 'en'/'es'
+  combo.value = lang;
+  combo.dispatchEvent(new Event('change'));
+  setTimeout(updateFlag, 700);
+  return true;
+}
+
+// -------- Callback oficial de Google --------
+function googleTranslateElementInit() {
+  // Montamos el widget (necesario para que Google traduzca)
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'es',
+      includedLanguages: 'es,en',   // permite ir y volver sin recarga
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+
+  // Una vez listo el DOM, conectamos eventos
+  const tryWire = () => {
+    ensureNavItems();
+    updateFlag();
+
+    const btn = document.getElementById('gtrans-flag-toggle');
+    if (btn && !btn._wired) {
+      btn._wired = true;
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const current = currentLangFromCookie();
+        const next = (current === 'en') ? 'es' : 'en';
+        // 1) Intento directo con combo
+        if (!changeViaCombo(next)) {
+          // 2) Fallback robusto
+          setCookieAndReload(next);
+        }
+      });
+    }
+  };
+
+  // Espera a que Google inyecte el combo y conéctalo
+  let tries = 0;
+  const t = setInterval(() => {
+    tries++;
+    tryWire();
+    if (document.querySelector('select.goog-te-combo') || tries > 30) {
+      clearInterval(t);
+    }
+  }, 200);
+}
+
+// Exponer callback global
+window.googleTranslateElementInit = googleTranslateElementInit;
+
+// Primer pintado de navbar (por si el callback tarda)
+document.addEventListener('DOMContentLoaded', () => {
+  ensureNavItems();
+  updateFlag();
+});
+</script>
+
+<!-- Carga la librería con callback -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -171,69 +318,37 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
-
 <div style="background-color: #1f1f1f; color: white;
-
             grid-column: 1 / -1;">
 
-
-
   <!-- TÍTULO -->
-
   <h2 style="text-align: center; font-size: 36px; font-weight: bold; margin-bottom: 2rem;">Acerca de Nosotros</h2>
-
   
-
   <!-- CONTENIDO FLEXIBLE -->
-
   <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 0 2rem;">
-
     
-
     <!-- Logo -->
-
     <div style="flex: 1; min-width: 250px; text-align: center; margin-bottom: 2rem;">
-
   <a href="https://coes.cl">
-
     <img id="logo-coes" src="https://raw.githubusercontent.com/ocscoes/web-ocs-coes/web-ocs-quarto/resources/imagenes/COES_Logo_sello1.png" alt="Logo COES" style="width: 50%;" onerror="this.onerror=null; this.src='../resources/imagenes/COES_Logo_sello1.png';">
-
   </a>
-
 </div>
 
-
-
     <!-- Centro de Estudios -->
-
     <div style="flex: 1; min-width: 250px; margin-bottom: 2rem;">
-
       <h3>Centro de Estudios de Conflicto y de Cohesión Social</h3>
-
       <p>Diagonal Paraguay 257, <br> Torre 26, Oficina 1504 <br> Santiago – RM</p>
-
       <p>Los Navegantes 1963 <br> Providencia - RM</p>
-
       <p>Contáctenos: <a href="mailto:comunicaciones@coes.cl" style="color: #61dafb;">comunicaciones@coes.cl</a></p>
-
     </div>
-
-
 
     <!-- Observatorio -->
-
     <div style="flex: 1; min-width: 250px; margin-bottom: 2rem;">
-
       <h3>Observatorio de Cohesión Social</h3>
-
       <p>Capitán Ignacio Carrera Pinto 1045, <br> Facultad de Ciencias Sociales, Departamento de Sociología <br> Ñuñoa – RM</p>
-
     </div>
 
-
-
   </div>
-
 </div>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
