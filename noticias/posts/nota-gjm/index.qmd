@@ -1,0 +1,79 @@
+---
+title: "Youth civic engagement: Challenges for social cohesión in Latin America"
+subtitle: Tercera nota OCS sobre investigación de cohesión social
+categories: [blog]
+# Date published
+date: "2025-10-08"  #year-
+draft: false
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   toc: false
+   theme: ../../../scss-posts.scss
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(knitr)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      error = F, 
+                      message = F) 
+
+options(kableExtra.html.bsTable = T)
+options(knitr.kable.NA = "")
+```
+
+
+En esta tercera entrega de la serie **OCS–Investigaciones sobre cohesión social**, revisamos el capítulo **“Youth civic engagement: Challenges for social cohesion in Latin America” del libro Political Psychology in Latin America (2021)**, escrito por Paula Luengo Kanacri, Gloria Jiménez-Moya y Roberto González. A partir del caso chileno como punto de referencia regional, el texto pone en evidencia cómo la calidad de las interacciones sociales —entre individuos y entre grupos— resulta decisiva para la construcción de sociedades democráticas y cohesionadas, especialmente en contextos marcados por profundas desigualdades sociales y económicas.
+
+El capítulo reúne y analiza distintos indicadores sobre el compromiso cívico juvenil en América Latina, subrayando el papel fundamental de la escuela como espacio de socialización y aprendizaje ciudadano. En esta línea, destaca la importancia de la educación cívica como un motor capaz de promover conductas prosociales, fortalecer la participación de los jóvenes y, en última instancia, contribuir al desarrollo de una cohesión social más robusta e inclusiva.
+
+## Mirando las dimensiones de la cohesión social
+
+El capítulo entiende la cohesión social como un fenómeno multidimensional, vinculado a las condiciones que permiten mantener unida y en equilibrio a una sociedad. Esta noción se relaciona tanto con la calidad de las relaciones sociales y comunitarias como con las percepciones de justicia, en especial respecto de los grupos más desaventajados. Entre los factores que influyen en su fortalecimiento o debilitamiento destacan la diversidad y la desigualdad: mientras la primera puede enriquecer la vida en común, también puede generar tensiones si no existen condiciones de contacto positivo; la segunda, en cambio, tiende a profundizar las percepciones de injusticia y debilitar los lazos sociales. Este capítulo enfatiza que no basta con la mera exposición a la diversidad, sino que es necesario promover interacciones de calidad y reducir las inequidades para equilibrar esas percepciones.
+
+A partir de esta relación entre inequidad, relaciones interpersonales y democracia, el capítulo plantea dos preguntas clave: ¿qué dinámicas interpersonales son necesarias para que la participación cívica fortalezca la cohesión social? y ¿cómo puede el sistema educativo contribuir a este objetivo? La escuela aparece como un espacio privilegiado de socialización política y ciudadana, capaz de fomentar el comportamiento prosocial recíproco —es decir, la disposición a empatizar y actuar en beneficio de otros, generando vínculos de confianza y cooperación—, lo que a su vez se vincula con mayores niveles de compromiso cívico. En lo que sigue, profundizaremos en la evidencia sistematizada que muestra cómo los establecimientos educativos pueden cumplir este rol en la promoción de la cohesión social.
+
+
+## Hallazgos sobre el rol de la educación en el compromiso cívico
+Para observar el fenómeno del compromiso cívico en los jóvenes, se revisan tres investigaciones clave:
+
+1. El estudio de Luengo Kanacri et al. (2018) analiza la interacción entre el clima escolar, la enseñanza de conocimientos cívicos y el rol de la autoeficacia ciudadana en la participación cívica de adolescentes chilenos/as. Sus resultados muestran que un clima escolar abierto —en particular cuando fomenta la discusión democrática y el intercambio de opiniones dentro de la escuela— favorece tanto la participación comunitaria como la participación formal de los/as jóvenes, en estrecha relación con la percepción que los estudiantes tienen sobre su capacidad de involucrarse en actividades cívicas, es decir, con su autoeficacia ciudadana. En contraste, la enseñanza de conocimientos formales acerca del sistema político no mostró una relación significativa con dicha percepción de autoeficacia.
+
+2. En el marco del proyecto FONDECYT 1121009 “La amistad intergrupal: estudio longitudinal acerca de su formación, desarrollo y consecuencias sociales”, dirigido por Roberto González, los/as autores/as analizaron la trayectoria de la cohesión social interpersonal en aulas escolares heterogéneas y multiculturales con presencia de estudiantes migrantes. El estudio consideró variables intergrupales como la confianza hacia compañeros/as extranjeros/as, la calidad del contacto intergrupal y el nivel de identificación con la cultura chilena. Al observar los cambios durante un año académico (Figura 4.3. en el capítulo)  se encontró que el grupo nativo mayoritario (75%) no presentó variaciones significativas en su percepción de cohesión social interpersonal, mientras que un 25% de los estudiantes migrantes sí reportó una mejora. Los resultados sugieren que el mero contacto no basta para transformar las percepciones del grupo mayoritario; se requieren actividades escolares específicas e intervenciones pedagógicas que fortalezcan la cohesión en contextos educativos interculturales.
+
+3. El estudio de Luengo Kanacri et al. (2019) evaluó una intervención escolar en cuatro instituciones participantes del programa ProCiviCo, el cual aplica un modelo conceptual orientado a promover el comportamiento prosocial, la participación cívica y la superación de prejuicios basados en clase social en las escuelas. La iniciativa buscó fortalecer las habilidades prosociales en las relaciones entre pares cercanos como vía para potenciar, en el largo plazo, el compromiso cívico con la comunidad. Los resultados mostraron un aumento significativo en los comportamientos prosociales y una estabilización de las conductas agresivas, evidenciando el impacto positivo de este tipo de intervenciones.
+
+
+## Proyecciones y desafíos
+El estudio de la cohesión social es clave para comprender cómo se configuran los vínculos en sociedades marcadas por la inequidad, la desconfianza institucional y la polarización política. Esta perspectiva permite reconocer que la cohesión es un proceso dinámico, cuyo fortalecimiento requiere intervenciones en espacios estratégicos como la escuela, donde se puede fomentar la participación ciudadana. Para que la educación cívica promueva de manera efectiva el comportamiento prosocial y el compromiso de los/as jóvenes con la comunidad, debe orientarse explícitamente hacia la construcción de cohesión social y sustentarse en evidencia empírica local. Los mecanismos destinados a reforzar comportamientos cívicos y procesos de cohesión en el nivel micro deben centrarse en la calidad de las relaciones interpersonales y en el ejercicio de una ciudadanía inclusiva. Este enfoque es fundamental para que la investigación social aporte insumos concretos al diseño de políticas públicas viables y sostenibles.
+
+
+## Sobre las investigadoras
+
+![](paula.png){.center width=250px height=250px}
+
+[Paula Luengo](https://conferencias.coes.cl/integrantes/paula-luengo/#tab-58adda938a61b-2) es psicóloga por la Pontificia Universidad Católica de Chile, Doctora en psicología por la Sapienza Universitá di Roma en Italia y post doctorada en el Parenting Among Cultures Project, PAC (National Institute of Health, US) y el Centro de Estudios de Conflicto y Cohesión Social. Es Investigadora asociada de la línea Interacciones Grupales e Individuales y profesora asociada de la Escuela de Psicología de la Pontificia Universidad Católica de Chile. Sus intereses de investigación se relacionan al estudio de determinantes individuales y sociales del comportamiento prosocial y su vinculación con el compromiso y la participación cívica desde una perspectiva longitudinal.
+
+![](gloria.jpg){.center width=250px height=250px}
+
+[Gloria Jiménez](https://coes.cl/integrantes/gloria-jimenez-moya/) es psicóloga, Máster en Psicología de la Intervención Social y Doctora en Psicología por la Universidad de Granada. Es investigadora asociada en la línea Interacciones Grupales e Individuales de COES y profesora asociada de la Escuela de Psicología de la Pontificia Universidad Católica de Chile. Sus intereses de investigación se relacionan con el estudio de la desigualdad de género, sus mecanismos y consecuencias; las relaciones intergrupales y los antecedentes de los movimientos sociales. En la actualidad, dirige el Fondecyt regular (N°1240064) “Promoviendo la igualdad de género en el contexto escolar: El rol de las normas sociales y la auto-eficacia”.
+
+
+## Últimas noticias de las investigadoras
+
+- [Gloria Jiménez Moya: “Resolver conflictos vecinales requiere conectar investigación, políticas públicas y comunidad” – COES](https://coes.cl/2025/06/24/gloria-jimenez-moya-resolver-conflictos-vecinales-requiere-conectar-investigacion-politicas-publicas-y-comunidad/)
+- [COES se reunió con Consejo Asesor Nacional para analizar los aportes del Centro – COES](https://coes.cl/2025/03/21/coes-se-reunio-con-consejo-asesor-nacional-para-analizar-temas-estrategicos-del-centro/)
+- [COES adjudica fondos MAXI COES a 21 académicos para desarrollar proyectos clave de investigación](https://coes.cl/2024/10/07/coes-adjudica-fondos-maxi-coes-a-21-academicos-para-desarrollar-proyectos-clave-de-investigacion/)
+
+## Referencias
+
+Luengo Kanacri, B. P., Jiménez-Moya, G., Miranda, D., & Marinovic, A. (2018). When the classroom climate matters but is not enough: The role of citizenship self-efficacy on civic engagement [Manuscript submitted for publication].
+
+Luengo Kanacri, B. P., Zuffiano, A., Pastorelli, C., Jiménez-Moya, G., Uribe Tirado, L., Thartori, E., Gerbino, M., Cumsille, P., Martínez, M. L. (2019). Cross-national evidences of a school-based universal programme for promoting prosocial behaviours in peer interactions: Main theoretical communalities and local unicity. International Journal of Psychology, 55(Suppl. 1), 48–59. https://doi.org/10.1002/ijop.12579
+
+Luengo Kanacri, B. P. L., Jiménez-Moya, G., & González, R. (2021). Youth civic engagement: Challenges for social cohesion in Latin America. In C. Zúñiga & W. López-López (Eds.), Political psychology in Latin America (pp. 79–104). American Psychological Association. https://doi.org/10.1037/0000230-005

@@ -15,6 +15,7 @@
   {
     "listing": "/noticias/index.html",
     "items": [
+      "/noticias/posts/nota-gjm/index.html",
       "/noticias/posts/nota-eb/index.html",
       "/noticias/posts/post-segundo-foro/index.html",
       "/noticias/posts/nota-foro-ii/index.html",
@@ -31,6 +32,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/noticias/posts/nota-gjm/index.html",
       "/noticias/posts/nota-eb/index.html",
       "/noticias/posts/post-segundo-foro/index.html",
       "/noticias/posts/nota-foro-ii/index.html",
