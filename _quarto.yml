@@ -48,7 +48,7 @@ website:
       - href: index.qmd#reportesh1
         text: "<i class='bi bi-journals'></i> Reportes"
       - href: index.qmd#equipoh1
-        text: "<i class='bi bi-people-fill'></i> Equipo"
+        text: "<i class='bi bi-people-fill'></i> Integrantes"
       - href: links.qmd
         text: "<i class='bi bi-link-45deg'></i> Enlaces"
 format:

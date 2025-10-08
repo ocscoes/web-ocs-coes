@@ -1,5 +1,5 @@
 ---
-title: "Observatorio de Cohesión Social"
+title: " "
 pagetitle: "OCS Website"
 page-layout: custom
 format: html
@@ -146,7 +146,17 @@ listing:
 
 :::{#hero-heading}
 
-El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. A través de investigaciones, datos abiertos y visualizaciones interactivas, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales (panel ELSOC-COES). Nuestro objetivo es promover una comprensión profunda y accesible de los cambios sociales, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.
+<p style="font-size: 2em;">
+El **Observatorio de Cohesión Social (OCS)** de COES es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. 
+</p>
+
+<p style="font-size: 2em;">
+A través de **investigaciones, datos abiertos y visualizaciones interactivas**, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales. 
+</p>
+
+<p style="font-size: 2em;">
+Nuestro objetivo es **promover una comprensión profunda y accesible de la cohesión**, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.
+</p>
 
 ::: {.button style="text-align: center; padding-top: 7em;"}
 [Noticias destacadas](index.qmd#destacadosh1){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3"}
@@ -467,7 +477,7 @@ document.addEventListener('DOMContentLoaded', function () {
 :::
 
 <p align="center" style="font-size:36px; font-weight:bold;">
-<i class="bi bi-people-fill" style="margin-right: 10px;"></i>Equipo</p>
+<i class="bi bi-people-fill" style="margin-right: 10px;"></i>Integrantes</p>
 
 
 
