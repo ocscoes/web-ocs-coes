@@ -147,7 +147,7 @@ listing:
 :::{#hero-heading}
 
 <p style="font-size: 2em;">
-El **Observatorio de Cohesión Social (OCS)** de COES es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. 
+El **Observatorio de Cohesión Social (OCS)** es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. 
 </p>
 
 <p style="font-size: 2em;">
