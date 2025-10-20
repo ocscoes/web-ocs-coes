@@ -17,6 +17,7 @@ body {
 
 .light-bg{
   background: #ffffff;
+  color: #000000 !important;
 }
 
 .logos-bg{
@@ -30,6 +31,10 @@ body {
 
 .no-external {
   color: #ffffff !important;
+}
+
+.no-external-black {
+  color: #000000 !important;
 }
 
 /* transiciones*/

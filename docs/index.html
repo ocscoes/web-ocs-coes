@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,16 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-05cabad086fad6c8e96fa2f2e18800fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d3b61ede8276095ee6b1797664397379.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -152,6 +154,153 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>
+/* Oculta la barra superior */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0 !important; }
+
+/* Evita saltos por iframes */
+html body .skiptranslate > iframe { visibility: hidden !important; }
+
+/* Contenedor del widget: lo queremos en DOM pero discreto */
+.gtrans-slot { width: 0; height: 0; overflow: hidden; }
+
+/* Botón-bandera */
+.nav-item.gtrans-flag { display: flex; align-items: center; }
+.nav-item.gtrans-flag a {
+  text-decoration: none; font-size: 1.1rem; line-height: 1;
+  padding: 0 .4rem; cursor: pointer;
+}
+</style>
+
+<script>
+// -------- Utilidades --------
+function findRightNav() {
+  const targets = document.querySelectorAll(
+    '#quarto-header .navbar .navbar-nav.ms-auto, #quarto-header .navbar .navbar-nav:last-child'
+  );
+  for (const el of targets) if (el) return el;
+  return null;
+}
+function currentLangFromCookie() {
+  const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
+  if (!m) return 'es';
+  const v = decodeURIComponent(m[1]).split('/');
+  return v[v.length - 1] || 'es';
+}
+function updateFlag() {
+  const a = document.getElementById('gtrans-flag-toggle');
+  if (!a) return;
+  const lang = currentLangFromCookie();
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
+  a.setAttribute('aria-label', a.title);
+}
+
+function setCookieAndReload(lang) {
+  const val = `/auto/${lang}`;
+  const d = new Date(); d.setFullYear(d.getFullYear() + 1);
+  const base = `googtrans=${val}; expires=${d.toUTCString()}; path=/`;
+  const host = location.hostname;
+  const root = '.' + host.replace(/^www\./,'');
+  document.cookie = base;
+  document.cookie = `${base}; domain=${host}`;
+  document.cookie = `${base}; domain=${root}`;
+  location.reload();
+}
+
+// -------- Inserta elementos en navbar --------
+function ensureNavItems() {
+  const right = findRightNav();
+  if (!right) return false;
+
+  // Bandera
+  if (!document.getElementById('gtrans-flag-toggle')) {
+    const li = document.createElement('li');
+    li.className = 'nav-item gtrans-flag';
+    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma">🌐</a>`;
+    right.appendChild(li);
+  }
+
+  // Contenedor oculto del widget
+  if (!document.getElementById('google_translate_element')) {
+    const li2 = document.createElement('li');
+    li2.className = 'nav-item';
+    li2.innerHTML = `<div id="google_translate_element" class="gtrans-slot"></div>`;
+    right.appendChild(li2);
+  }
+  return true;
+}
+
+// -------- Cambiar idioma usando el combo del widget --------
+function changeViaCombo(lang) {
+  const combo = document.querySelector('select.goog-te-combo');
+  if (!combo) return false;
+  // IMPORTANTE: Google espera códigos en minúsculas tipo 'en'/'es'
+  combo.value = lang;
+  combo.dispatchEvent(new Event('change'));
+  setTimeout(updateFlag, 700);
+  return true;
+}
+
+// -------- Callback oficial de Google --------
+function googleTranslateElementInit() {
+  // Montamos el widget (necesario para que Google traduzca)
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'es',
+      includedLanguages: 'es,en',   // permite ir y volver sin recarga
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+
+  // Una vez listo el DOM, conectamos eventos
+  const tryWire = () => {
+    ensureNavItems();
+    updateFlag();
+
+    const btn = document.getElementById('gtrans-flag-toggle');
+    if (btn && !btn._wired) {
+      btn._wired = true;
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const current = currentLangFromCookie();
+        const next = (current === 'en') ? 'es' : 'en';
+        // 1) Intento directo con combo
+        if (!changeViaCombo(next)) {
+          // 2) Fallback robusto
+          setCookieAndReload(next);
+        }
+      });
+    }
+  };
+
+  // Espera a que Google inyecte el combo y conéctalo
+  let tries = 0;
+  const t = setInterval(() => {
+    tries++;
+    tryWire();
+    if (document.querySelector('select.goog-te-combo') || tries > 30) {
+      clearInterval(t);
+    }
+  }, 200);
+}
+
+// Exponer callback global
+window.googleTranslateElementInit = googleTranslateElementInit;
+
+// Primer pintado de navbar (por si el callback tarda)
+document.addEventListener('DOMContentLoaded', () => {
+  ensureNavItems();
+  updateFlag();
+});
+</script>
+
+<!-- Carga la librería con callback -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="https://unpkg.com/css-doodle@0.15.3/css-doodle.min.js"></script>
 <style>
   #hero-section {
@@ -195,7 +344,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -214,7 +363,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -222,7 +371,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./resources/imagenes/sharing-default.png" alt="" class="navbar-logo">
+    <img src="./resources/imagenes/sharing-default.png" alt="" class="navbar-logo light-content">
+    <img src="./resources/imagenes/sharing-default.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -249,7 +399,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html#equipoh1"> 
-<span class="menu-text"><i class="bi bi-people-fill"></i> Equipo</span></a>
+<span class="menu-text"><i class="bi bi-people-fill"></i> Integrantes</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./links.html"> 
@@ -322,14 +472,16 @@ window.Quarto = {
   </style>
 </css-doodle>
 <div class="quarto-about-jolla">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Observatorio de Cohesión Social</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><div id="hero-heading">
-<p>El Observatorio de Cohesión Social (OCS) de COES es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. A través de investigaciones, datos abiertos y visualizaciones interactivas, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales (panel ELSOC-COES). Nuestro objetivo es promover una comprensión profunda y accesible de los cambios sociales, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.</p>
+ <div id="hero-heading">
+<p style="font-size: 2em;">
+El <strong>Observatorio de Cohesión Social (OCS)</strong> es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social.
+</p>
+<p style="font-size: 2em;">
+A través de <strong>investigaciones, datos abiertos y visualizaciones interactivas</strong>, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales.
+</p>
+<p style="font-size: 2em;">
+Nuestro objetivo es <strong>promover una comprensión profunda y accesible de la cohesión</strong>, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.
+</p>
 <div class="button" style="text-align: center; padding-top: 7em;">
 <p><a href="./index.html#destacadosh1" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #0693e3">Noticias destacadas</a></p>
 </div>
@@ -439,12 +591,12 @@ article {
 <div class="layout">
   <article>
     <div class="img-container">
-      <img class="lukas" src="imagenes/foro1.png" data-url="noticias/posts/foro-ocs-cepal/">
-      <div class="overlay-text">El primer Foro de Cohesión Social se realizará en CEPAL el 30 de Julio. Click para más información</div>
+      <img class="lukas" src="imagenes/foro3.png" data-url="noticias/posts/foro-ocs-coes/">
+      <div class="overlay-text">Foro Cohesión social en tiempos de desafección política en XII Conferencia Internacional COES. Click para más información</div>
     </div>
     <div class="img-container">
-      <img class="lukas" src="imagenes/featured.png" data-url="analisis/visualizador-latam/">
-      <div class="overlay-text">Lanzamos una versión renovada del visualizador de cohesión social en América Latina. Click para conocer más</div>
+      <img class="lukas" src="imagenes/columna-tercera.png" data-url="noticias/posts/columna-tercera-dosis/">
+      <div class="overlay-text">Columna de opinión del IP Juan Carlos Castillo y AI René Canales cohesión social y seguridad pública. Click para más información</div>
     </div>
   </article>
 </div>
@@ -552,17 +704,18 @@ document.addEventListener('DOMContentLoaded', function () {
   </a>
 
   <!-- Tile 2 (nuevo) -->
-<a href="#" onclick="event.preventDefault();"> <!-- modificar esto cuando esté listo -->
-  <div class="tile">
-    <img src="./imagenes/elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;">
-    <div class="text">
-      <h1>Visualizador ELSOC</h1>
-      <div class="highlight-box">
-        <p class="animate-text">Próximamente.</p>
+<a href="analisis/visualizador-elsoc/">
+    <div class="tile">
+      <img src="./imagenes/elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;">
+      <div class="text">
+        <h1>Visualizador de Cohesión Social en Chile</h1>
+        <div class="highlight-box">
+          <p class="animate-text">Indicadores de Cohesión Social basados en la encuesta ELSOC.</p>
+        </div>
       </div>
     </div>
-  </div>
-</a>
+  </a>
+  
 </div>
 
 
@@ -585,55 +738,92 @@ document.addEventListener('DOMContentLoaded', function () {
 </p>
 <div id="listing-noticias" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1752759605772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="460">
-<a href="./noticias/posts/foro-ocs-cepal/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="YmxvZw==" data-listing-date-sort="1760929200000" data-listing-file-modified-sort="1760982430449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="341">
+<a href="./noticias/posts/nota-foro-iii/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias\posts\foro-ocs-cepal\featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img src="noticias/posts/nota-foro-iii/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Foro OCS-CEPAL
+Nota: Cohesión social y desafección política en Chile
 </h5>
-<div class="card-text listing-description">
-El primer foro será realizado en conjunto con la Comisión Económica para América Latina y el Caribe el 30 de julio.
+<div class="card-text listing-description delink">
+En este nuevo post del OCS presentamos la nota <strong>“Dinámicas de la cohesión social en Chile: Cambios en los vínculos sociales e institucionales entre 2016 y 2023”</strong>, un breve…<strong></strong>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751428800000" data-listing-file-modified-sort="1752610122658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="588">
-<a href="./noticias/posts/ciclo-foros-ocs/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1760065200000" data-listing-file-modified-sort="1760982430388" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133">
+<a href="./noticias/posts/columna-tercera-dosis/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias\posts\ciclo-foros-ocs\featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img src="noticias/posts/columna-tercera-dosis/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Ciclo de Foros de Cohesión Social
+La seguridad nace del vínculo social
 </h5>
-<div class="card-text listing-description">
-Buscamos promover la discusión sobre los desafíos políticos, teóricos y metodológicos de la cohesión social en Chile y América Latina.
+<div class="card-text listing-description delink">
+<p>Columna de opinión en Tercera Dosis</p>
 </div>
 </div>
+</div></a>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751342400000" data-listing-file-modified-sort="1752845202182" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="355">
-<a href="./noticias/posts/actualizacion-web/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="bm90aWNpYXM=" data-listing-date-sort="1759892400000" data-listing-file-modified-sort="1760982430409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="548">
+<a href="./noticias/posts/foro-ocs-coes/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias\posts\actualizacion-web\featured.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img src="noticias/posts/foro-ocs-coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-¡Bienvenidos a nuestro nuevo sitio web!
+Foro OCS-COES Cohesión social en tiempos de desafección política
 </h5>
-<div class="card-text listing-description">
-En este nuevo sitio web buscamos visibilizar el trabajo investigativo del Observatorio, asi como las actividades organizadas por nuestro equipo.
+<div class="card-text listing-description delink">
+<p>El tercer foro será realizado en el marco de la XII Conferencia Internacional COES el 22 de octubre.</p>
 </div>
 </div>
+</div></a>
 </div>
-</a>
+<div class="g-col-1" data-index="3" data-categories="YmxvZw==" data-listing-date-sort="1759892400000" data-listing-file-modified-sort="1760982430451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1398">
+<a href="./noticias/posts/nota-gjm/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="noticias/posts/nota-gjm/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Youth civic engagement: Challenges for social cohesión in Latin America
+</h5>
+<div class="card-text listing-description delink">
+En esta tercera entrega de la serie <strong>OCS–Investigaciones sobre cohesión social</strong>, revisamos el capítulo <strong>“Youth civic engagement: Challenges for social cohesion in Latin…</strong>
 </div>
 </div>
-<div class="listing-no-matching d-none">
-No matching items
+</div></a>
 </div>
+<div class="g-col-1" data-index="4" data-categories="YmxvZw==" data-listing-date-sort="1759460400000" data-listing-file-modified-sort="1760982430414" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1509">
+<a href="./noticias/posts/nota-eb/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="noticias/posts/nota-eb/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Informe Final de Recomendaciones de la Comisión Asesora Presidencial para la actualización de la Medición de la Pobreza en Chile
+</h5>
+<div class="card-text listing-description delink">
+En esta segunda entrega de la serie <strong>OCS–Investigaciones sobre cohesión social</strong>, revisamos el Informe de la Comisión Asesora Presidencial de Expertos y Expertas para la…<strong></strong>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="bm90aWNpYXM=" data-listing-date-sort="1758337200000" data-listing-file-modified-sort="1760982430464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737">
+<a href="./noticias/posts/post-segundo-foro/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="noticias/posts/post-segundo-foro/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Cohesión social y migración: Dinámicas actuales y desafíos futuros para el país
+</h5>
+<div class="card-text listing-description delink">
+<p>El Segundo foro de Cohesión Social 2025 OCS-CEP fue realizado el 9 de septiembre.</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </div>
 </div>
@@ -654,14 +844,11 @@ No matching items
 </p>
 <div id="listing-reportes" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="RG9jdW1lbnRvJTIwZGUlMjBUcmFiYWpv" data-listing-date-sort="1752465600000" data-listing-file-modified-sort="1752532914056" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="quarto-post image-right" data-index="0" data-categories="RG9jdW1lbnRvJTIwZGUlMjBUcmFiYWpv" data-listing-date-sort="1752465600000" data-listing-file-modified-sort="1760982430468" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./reportes/posts/2025_reportes_tecnico/index.html" class="no-external">Medición de Cohesión Social en América Latina</a>
 </h3>
-<div class="listing-subtitle">
-<a href="./reportes/posts/2025_reportes_tecnico/index.html" class="no-external"></a>
-</div>
 </div>
 <div class="metadata">
 <a href="./reportes/posts/2025_reportes_tecnico/index.html" class="no-external">
@@ -674,14 +861,11 @@ Observatorio de Cohesión Social
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHVibGljYWNpJUMzJUIzbg==" data-listing-date-sort="1644375600000" data-listing-file-modified-sort="1752529522986" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+<div class="quarto-post image-right" data-index="1" data-categories="UHVibGljYWNpJUMzJUIzbg==" data-listing-date-sort="1644375600000" data-listing-file-modified-sort="1760982430467" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./reportes/posts/2022_cohesion/index.html" class="no-external">Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados</a>
 </h3>
-<div class="listing-subtitle">
-<a href="./reportes/posts/2022_cohesion/index.html" class="no-external"></a>
-</div>
 </div>
 <div class="metadata">
 <a href="./reportes/posts/2022_cohesion/index.html" class="no-external">
@@ -694,14 +878,11 @@ Castillo, Juan Carlos, Espinoza, Vicente, Barozet, Emmanuelle
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="UHJlc2VudGFjaSVDMyVCM24=" data-listing-date-sort="1642734000000" data-listing-file-modified-sort="1752529522975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="quarto-post image-right" data-index="2" data-categories="UHJlc2VudGFjaSVDMyVCM24=" data-listing-date-sort="1642734000000" data-listing-file-modified-sort="1760982430467" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./reportes/posts/2022_asc/index.html" class="no-external">Measurement and Analysis of Social Cohesion: Perspectives from the Center of Social Conflict and Cohesion Studies</a>
 </h3>
-<div class="listing-subtitle">
-<a href="./reportes/posts/2022_asc/index.html" class="no-external"></a>
-</div>
 </div>
 <div class="metadata">
 <a href="./reportes/posts/2022_asc/index.html" class="no-external">
@@ -714,14 +895,11 @@ Castillo, Juan Carlos, Bargsted, Matías
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="UHJlc2VudGFjaSVDMyVCM24=" data-listing-date-sort="1632970800000" data-listing-file-modified-sort="1752529522937" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="quarto-post image-right" data-index="3" data-categories="UHJlc2VudGFjaSVDMyVCM24=" data-listing-date-sort="1632970800000" data-listing-file-modified-sort="1760982430467" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./reportes/posts/2021_asc/index.html" class="no-external">Concepts and measurement of social cohesion in international perspective</a>
 </h3>
-<div class="listing-subtitle">
-<a href="./reportes/posts/2021_asc/index.html" class="no-external"></a>
-</div>
 </div>
 <div class="metadata">
 <a href="./reportes/posts/2021_asc/index.html" class="no-external">
@@ -735,9 +913,7 @@ Castillo, Juan Carlos, Carrasco, Kevin, Cáceres, Ignacio
 </div>
 </div>
 </div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <div class="button">
 <p><a href="./reportes/index.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #0693e3; margin-top: 0em;">Todos los documentos</a></p>
@@ -757,7 +933,7 @@ No matching items
 
 </div>
 <p align="center" style="font-size:36px; font-weight:bold;">
-<i class="bi bi-people-fill" style="margin-right: 10px;"></i>Equipo
+<i class="bi bi-people-fill" style="margin-right: 10px;"></i>Integrantes
 </p>
 <div id="listing-equipo" class="quarto-listing quarto-listing-container-custom">
 <style>
@@ -948,85 +1124,11 @@ No matching items
           <div class="team-card">
 
             <!-- Imagen + Título + Subtítulo enlazados -->
-            <a href="./equipo/posts/3. asit-coes/index.html" class="card-header-link">
-              <img src="./equipo/posts/3. asit-coes/featured.jpg" alt="Kevin Carrasco" class="listing-box-image">
-              <div class="team-card-body">
-                <div class="listing-box-title">Kevin Carrasco</div>
-                <div class="listing-box-subtitle">Asistente de Investigación COES</div>
-              </div>
-            </a>
-
-            <!-- Enlaces externos dentro del mismo card -->
-            <div class="team-card-body">
-              <div class="listing-box-links"></div>
-
-              
-                <a href="mailto:kevin.carrasco@ug.uchile.cl" class="contact-link" target="_blank">
-                  <i class="bi bi-envelope-fill"></i> Contacto
-                </a>
-              
-
-              
-                <a href="https://github.com/Kevin-carrasco" class="github-link" target="_blank">
-                  <i class="bi bi-github"></i> GitHub
-                </a>
-              
-
-              
-                <a href="https://www.linkedin.com/in/kevin-carrasco-quintanilla/" class="web-link" target="_blank">
-                  <i class="bi bi-globe2"></i> Web Personal
-                </a>
-              
-            </div>
-          </div>
-        </div>
-      
-        <div class="listing-box-team">
-          <div class="team-card">
-
-            <!-- Imagen + Título + Subtítulo enlazados -->
-            <a href="./equipo/posts/4. consultor-ocs/index.html" class="card-header-link">
-              <img src="./equipo/posts/4. consultor-ocs/featured.jpg" alt="Gabriel Cortés" class="listing-box-image">
-              <div class="team-card-body">
-                <div class="listing-box-title">Gabriel Cortés</div>
-                <div class="listing-box-subtitle">Consultor</div>
-              </div>
-            </a>
-
-            <!-- Enlaces externos dentro del mismo card -->
-            <div class="team-card-body">
-              <div class="listing-box-links"></div>
-
-              
-                <a href="mailto:gabriel.cortes@uchile.cl" class="contact-link" target="_blank">
-                  <i class="bi bi-envelope-fill"></i> Contacto
-                </a>
-              
-
-              
-                <a href="https://github.com/gabcortes97" class="github-link" target="_blank">
-                  <i class="bi bi-github"></i> GitHub
-                </a>
-              
-
-              
-                <a href="https://www.linkedin.com/in/gabriel-cortés-paredes-80780a181/" class="web-link" target="_blank">
-                  <i class="bi bi-globe2"></i> Web Personal
-                </a>
-              
-            </div>
-          </div>
-        </div>
-      
-        <div class="listing-box-team">
-          <div class="team-card">
-
-            <!-- Imagen + Título + Subtítulo enlazados -->
-            <a href="./equipo/posts/5. ayudante-ocs/index.html" class="card-header-link">
-              <img src="./equipo/posts/5. ayudante-ocs/featured.jpeg" alt="Tomás Urzúa" class="listing-box-image">
+            <a href="./equipo/posts/3. asistente-ocs/index.html" class="card-header-link">
+              <img src="./equipo/posts/3. asistente-ocs/featured.png" alt="Tomás Urzúa" class="listing-box-image">
               <div class="team-card-body">
                 <div class="listing-box-title">Tomás Urzúa</div>
-                <div class="listing-box-subtitle">Practicante</div>
+                <div class="listing-box-subtitle">Asistente de investigación</div>
               </div>
             </a>
 
@@ -1055,12 +1157,84 @@ No matching items
           </div>
         </div>
       
+        <div class="listing-box-team">
+          <div class="team-card">
+
+            <!-- Imagen + Título + Subtítulo enlazados -->
+            <a href="./equipo/posts/4. ayudante-ocs/index.html" class="card-header-link">
+              <img src="./equipo/posts/4. ayudante-ocs/featured.jpeg" alt="René Canales" class="listing-box-image">
+              <div class="team-card-body">
+                <div class="listing-box-title">René Canales</div>
+                <div class="listing-box-subtitle">Asistente de investigación</div>
+              </div>
+            </a>
+
+            <!-- Enlaces externos dentro del mismo card -->
+            <div class="team-card-body">
+              <div class="listing-box-links"></div>
+
+              
+                <a href="mailto:renecanales@uc.cl" class="contact-link" target="_blank">
+                  <i class="bi bi-envelope-fill"></i> Contacto
+                </a>
+              
+
+              
+                <a href="https://github.com/renejcanales" class="github-link" target="_blank">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              
+
+              
+                <a href="https://www.linkedin.com/in/ren%C3%A9-canales-sell%C3%A9s-8777951b5/" class="web-link" target="_blank">
+                  <i class="bi bi-globe2"></i> Web Personal
+                </a>
+              
+            </div>
+          </div>
+        </div>
+      
+        <div class="listing-box-team">
+          <div class="team-card">
+
+            <!-- Imagen + Título + Subtítulo enlazados -->
+            <a href="./equipo/posts/5. comunicaciones-ocs/index.html" class="card-header-link">
+              <img src="./equipo/posts/5. comunicaciones-ocs/featured.jpeg" alt="Javiera Wömpner" class="listing-box-image">
+              <div class="team-card-body">
+                <div class="listing-box-title">Javiera Wömpner</div>
+                <div class="listing-box-subtitle">Comunicaciones</div>
+              </div>
+            </a>
+
+            <!-- Enlaces externos dentro del mismo card -->
+            <div class="team-card-body">
+              <div class="listing-box-links"></div>
+
+              
+                <a href="mailto:javiera.wompner@ug.uchile.cl" class="contact-link" target="_blank">
+                  <i class="bi bi-envelope-fill"></i> Contacto
+                </a>
+              
+
+              
+                <a href="https://github.com/javierawg" class="github-link" target="_blank">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              
+
+              
+                <a href="https://www.linkedin.com/in/javiera-w-garc%C3%ADa-a1176a367/" class="web-link" target="_blank">
+                  <i class="bi bi-globe2"></i> Web Personal
+                </a>
+              
+            </div>
+          </div>
+        </div>
+      
     </div>
   </div>
 </div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <div class="button">
 <p><a href="./alumni/index.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #0693e3; margin-top: 0em;">Ex-integrantes</a></p>
@@ -1136,10 +1310,6 @@ No matching items
 <!-- Diagonal Paraguay 257, <br> -->
 <!-- Torre 26, Oficina 1504 <br> -->
 <!-- Santiago – RM -->
-<!-- Los Navegantes 1963 <br> -->
-<!-- Providencia - RM -->
-<!-- Contáctenos: [comunicaciones@coes.cl](mailto:comunicaciones@coes.cl) -->
-<!-- ::: -->
 <!-- :::{.g-col-4} -->
 <!-- ### Observatorio de Cohesión Social <br><br> -->
 <!-- <br> -->
@@ -1160,294 +1330,269 @@ No matching items
 
 
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
-
 <div style="background-color: #1f1f1f; color: white;
-
             grid-column: 1 / -1;">
 
-
-
   <!-- TÍTULO -->
-
   <h2 style="text-align: center; font-size: 36px; font-weight: bold; margin-bottom: 2rem;">Acerca de Nosotros</h2>
-
   
-
   <!-- CONTENIDO FLEXIBLE -->
-
   <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 0 2rem;">
-
     
-
     <!-- Logo -->
-
     <div style="flex: 1; min-width: 250px; text-align: center; margin-bottom: 2rem;">
-
   <a href="https://coes.cl">
-
     <img id="logo-coes" src="https://raw.githubusercontent.com/ocscoes/web-ocs-coes/web-ocs-quarto/resources/imagenes/COES_Logo_sello1.png" alt="Logo COES" style="width: 50%;" onerror="this.onerror=null; this.src='../resources/imagenes/COES_Logo_sello1.png';">
-
   </a>
-
 </div>
-
-
 
     <!-- Centro de Estudios -->
-
     <div style="flex: 1; min-width: 250px; margin-bottom: 2rem;">
-
       <h3>Centro de Estudios de Conflicto y de Cohesión Social</h3>
-
       <p>Diagonal Paraguay 257, <br> Torre 26, Oficina 1504 <br> Santiago – RM</p>
-
       <p>Los Navegantes 1963 <br> Providencia - RM</p>
-
       <p>Contáctenos: <a href="mailto:comunicaciones@coes.cl" style="color: #61dafb;">comunicaciones@coes.cl</a></p>
-
     </div>
-
-
 
     <!-- Observatorio -->
-
     <div style="flex: 1; min-width: 250px; margin-bottom: 2rem;">
-
       <h3>Observatorio de Cohesión Social</h3>
-
       <p>Capitán Ignacio Carrera Pinto 1045, <br> Facultad de Ciencias Sociales, Departamento de Sociología <br> Ñuñoa – RM</p>
-
     </div>
 
-
-
   </div>
-
 </div>
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1455,185 +1600,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
