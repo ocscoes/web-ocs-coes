@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,13 +33,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../../">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6f9d8fda6a9789ea24fd2bb90720e620.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-37a4e006ea484ea654a7cc38e1f401e6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -227,7 +228,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../resources/imagenes/sharing-default.png" alt="" class="navbar-logo">
+    <img src="../../../resources/imagenes/sharing-default.png" alt="" class="navbar-logo light-content">
+    <img src="../../../resources/imagenes/sharing-default.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -254,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../index.html#equipoh1"> 
-<span class="menu-text"><i class="bi bi-people-fill"></i> Equipo</span></a>
+<span class="menu-text"><i class="bi bi-people-fill"></i> Integrantes</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../links.html"> 
@@ -314,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <p>Para el último reporte de resultados de la Encuesta de Caracterización Socioeconómica Nacional (CASEN) en 2022, esta dimensión presentaba los siguientes resultados:</p>
 <div class="cell fig-cap-location-top" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center" data-cap-location="top" data-fig-align="center">
+<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center" data-cap-location="top">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Porcentaje de hogares carentes en indicadores de pobreza multidimensional, 2022
@@ -329,7 +331,7 @@ Figure&nbsp;1: Porcentaje de hogares carentes en indicadores de pobreza multidim
 <p>Como se muestra en la <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a>, la dimensión de redes y cohesión social cuenta con un alto porcentaje de hogares carentes de sus indicadores, siendo la tercera dimensión con mayores porcentajes después de las dimensiones trabajo y seguridad social, por un lado, y educación por el otro.</p>
 <div class="cell fig-cap-location-top" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-2" class="quarto-float quarto-figure quarto-figure-center" data-cap-location="top" data-fig-align="center">
+<div id="fig-2" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center" data-cap-location="top">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Porcentaje de hogares carentes en indicadores de la dimensión de redes y cohesión social, 2015, 2017 y 2022
@@ -464,13 +466,14 @@ Figure&nbsp;2: Porcentaje de hogares carentes en indicadores de la dimensión de
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
