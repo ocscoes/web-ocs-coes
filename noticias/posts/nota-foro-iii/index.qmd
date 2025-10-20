@@ -1,0 +1,51 @@
+---
+title: "Nota: Cohesión social y desafección política en Chile"
+subtitle: "Reporte de resultados para el III Foro de Cohesión social 2025: 'Cohesión social en tiempos de desafección política'"
+categories: [blog]
+# Date published
+date: "2025-10-20"  #year-
+draft: false
+bibliography: "../../../bib/OCS-LIT.bib"
+csl: "../../../bib/apa6.csl"
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   toc: false
+   theme: ../../../scss-posts.scss
+resources: ["REPORTE_3_VF.pdf"] 
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(knitr)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      error = F, 
+                      message = F) 
+
+options(kableExtra.html.bsTable = T)
+options(knitr.kable.NA = "")
+```
+
+
+En este nuevo post del OCS presentamos la nota **“Dinámicas de la cohesión social en Chile: Cambios en los vínculos sociales e institucionales entre 2016 y 2023”**, un breve reporte preparado para el **Tercer Foro “Cohesión social en tiempos de desafección política”** realizado en la [XII Conferencia Internacional de COES](https://conferencias.coes.cl/xii/#).
+
+La nota aporta en tres frentes. **Primero**, sintetiza la [propuesta conceptual y de medición](https://ocscoes.github.io/propuesta-medicion-elsoc/output/book-cohesion-elsoc/docs/index.html) de cohesión social del OCS para Chile, basada en la [Encuesta Longitudinal Social de Chile (ELSOC, 2016–2023)](https://coes.cl/elsoc/). Siguiendo un enfoque que distingue los planos **horizontales** (vínculos entre personas) y **verticales** (relación ciudadanía–instituciones) de la cohesión social [@chan_reconsidering_2006], entendemos este fenómeno como un **estado** de la cantidad y calidad de los vínculos sociales y sus manifestaciones conductuales (p. ej., confianza, pertenencia, cooperación).
+
+**Segundo**, presenta el [**Visualizador de Cohesión Social en Chile (VIS-ELSOC)**](https://ocs-coes.shinyapps.io/ocs-viselsoc/), una herramienta abierta e interactiva para explorar la evolución de áreas, dimensiones y subdimensiones de la cohesión social entre 2016 y 2023, con gráficos comparables por grupos y tiempo. El objetivo es que cualquier persona —investigadora, tomadora de decisiones o interesada— pueda **formular y responder sus propias preguntas** a partir de los mismos datos.
+
+**Tercero**, ofrece un análisis preliminar de los vínculos entre **cohesión social y desafección política** en Chile. En línea con la literatura, ponemos énfasis en componentes como **confianza interpersonal e institucional, pertenencia, participación cívica y cumplimiento de normas** —todos ellos asociados con mayores niveles de apego a la sociedad— y discutimos su evolución reciente en el país .
+
+A continuación, puedes acceder al reporte completo en formato PDF:
+
+<iframe src=REPORTE_3_VF.pdf height="550" width=100% allowfullscreen="true">
+</iframe>
+
+
+# Referencias
+
+::: {#refs}
+:::

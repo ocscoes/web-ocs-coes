@@ -270,12 +270,12 @@ article {
 <div class="layout">
   <article>
     <div class="img-container">
-      <img class="lukas" src="imagenes/ocs-cep.jpg" data-url="noticias/posts/post-segundo-foro/">
-      <div class="overlay-text">Foro Cohesión social y Migración: Una década de cambios y desafíos OCS-CEP. Click para más información</div>
+      <img class="lukas" src="imagenes/foro3.png" data-url="noticias/posts/foro-ocs-coes/">
+      <div class="overlay-text">Foro Cohesión social en tiempos de desafección política en XII Conferencia Internacional COES. Click para más información</div>
     </div>
     <div class="img-container">
-      <img class="lukas" src="imagenes/columna_elpais.png" data-url="noticias/posts/columna-elpais/">
-      <div class="overlay-text">Columna de opinión del IP Juan Carlos Castillo sobre medición y políticas de cohesión social. Click para más información</div>
+      <img class="lukas" src="imagenes/columna-tercera.png" data-url="noticias/posts/columna-tercera-dosis/">
+      <div class="overlay-text">Columna de opinión del IP Juan Carlos Castillo y AI René Canales cohesión social y seguridad pública. Click para más información</div>
     </div>
   </article>
 </div>
@@ -388,17 +388,17 @@ document.addEventListener('DOMContentLoaded', function () {
   </a>
 
   <!-- Tile 2 (nuevo) -->
-<a href="#" onclick="event.preventDefault();"> <!-- modificar esto cuando esté listo -->
-  <div class="tile">
-    <img src="/imagenes/elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;" />
-    <div class="text">
-      <h1>Visualizador ELSOC</h1>
-      <div class="highlight-box">
-        <p class="animate-text">Próximamente.</p>
+<a href="analisis/visualizador-elsoc/">
+    <div class="tile">
+      <img src="/imagenes/elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;" />
+      <div class="text">
+        <h1>Visualizador de Cohesión Social en Chile</h1>
+        <div class="highlight-box">
+          <p class="animate-text">Indicadores de Cohesión Social basados en la encuesta ELSOC.</p>
+        </div>
       </div>
     </div>
-  </div>
-</a>
+  </a>
 </div>
 
 

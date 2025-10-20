@@ -1,0 +1,19 @@
+---
+title: "La seguridad nace del vínculo social"
+description: Columna de opinión en Tercera Dosis
+categories: [noticias]
+date: "2025-10-10"
+draft: false
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+Chile vive una paradoja: los delitos graves no siempre aumentan, pero el miedo sí. La columna del OCS argumenta que la seguridad no se soluciona solo con más control, sino reconstruyendo el vínculo social: confianza entre personas, cooperación y pertenencia en los barrios, junto con instituciones legítimas y eficaces que traten con justicia y cercanía. Seguridad objetiva y subjetiva van de la mano; sin cohesión, el temor se instala aunque las cifras mejoren.
+
+En Tercera Dosis, Juan Carlos Castillo y René Canales (OCS-COES) desarrollan esta “paradoja chilena” —menos delitos graves que el promedio regional, pero más temor— y proponen una hoja de ruta: fortalecer la confianza interpersonal, la cooperación comunitaria y la legitimidad institucional para alinear las políticas de seguridad con las de cohesión social.
+
+📄 Léela completa aquí: [La seguridad nace del vínculo social](https://terceradosis.cl/2025/10/10/la-seguridad-nace-del-vinculo-social/)

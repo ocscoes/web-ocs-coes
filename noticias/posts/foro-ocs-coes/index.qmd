@@ -1,0 +1,82 @@
+---
+title: "Foro OCS-COES Cohesión social en tiempos de desafección política"
+subtitle: Observatorio de Cohesión Social
+description: El tercer foro será realizado en el marco de la XII Conferencia Internacional COES el 22 de octubre.
+categories: [noticias]
+# Date published
+date: "2025-10-08"  #year-
+draft: false
+bibliography: "../../../bib/OCS-LIT.bib"
+csl: "../../../bib/apa6.csl"
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   theme: scss-posts.scss
+---
+
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfYfYZv5ZyZZnLWJZ_j66mZsOul3sdZVqrLUF8YouuATyY9WA/viewform" 
+     target="_blank" 
+     role="button" 
+     style="background-color: #0693e3; color: white; padding: 0.5em 1em; border-radius: 5px; text-decoration: none; display: inline-block;">
+    Inscripciones
+  </a>
+
+  <a href="https://conferencias.coes.cl/xii/#" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-globe" style="font-size: 1.5rem;"></i>
+    XII Conferencia Internacional COES
+  </a>
+
+  <a href="https://x.com/CentroCOES/status/1978876601606516937" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-twitter-x" style="font-size: 1.5rem;"></i>
+  </a>
+
+  <a href="https://www.instagram.com/p/DO6wWKiknHO/" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+  </a>
+
+</div>
+
+En el marco del **ciclo de Foros de Cohesión Social** organizados por el Observatorio de Cohesión Social (OCS-COES), este **Tercer Foro de Cohesión 2025** examina los vínculos entre cohesión social y desafección política en Chile durante el período 2016–2023. El encuentro se realiza en el contexto de la [XII Conferencia Internacional de COES](https://conferencias.coes.cl/xii/#) y pone especial énfasis en la dimensión vertical de la cohesión social (confianza en instituciones y representación).
+
+**Antecedentes.** En Chile, la desafección política —entendida como sentimientos de impotencia, cinismo y baja confianza hacia el proceso político e instituciones, sin rechazo al régimen democrático— se ha instalado como un rasgo persistente, con efectos sobre participación, representación y legitimidad cotidiana [@bargsted_political_2017; @bargsted_social_2023]. Para situar este fenómeno en un marco más amplio, el OCS-COES impulsa una propuesta [conceptual y de medición](https://ocscoes.github.io/propuesta-medicion-elsoc/output/book-cohesion-elsoc/docs/index.html) de la cohesión social como cantidad y calidad de los vínculos sociales en dos planos: horizontal (entre personas y grupos) y vertical (entre ciudadanía e instituciones) [@chan_reconsidering_2006], con dimensiones, subdimensiones e indicadores comparables en el tiempo y entre grupos. Como parte de este esfuerzo, se desarrollaron visualizadores interactivos abiertos al público ([VIS-ELSOC]((https://ocs-coes.shinyapps.io/ocs-viselsoc/)) para Chile y [VIS-LATAM](https://ocs-coes.com/analisis/visualizador-latam/) para la región) que facilitan el seguimiento de tendencias y la exploración de brechas.
+
+**Objetivo.** Presentar evidencia longitudinal sobre la evolución de la cohesión social y su relación con la desafección política en Chile (2016–2023), y promover una discusión interdisciplinaria sobre sus implicancias para el fortalecimiento democrático —integridad, eficacia, inclusión y participación significativa—.
+
+**Presentación.** En representación del OCS, Juan Carlos Castillo (UCH-COES) expondrá resultados basados en la Encuesta Social Longitudinal de Chile (ELSOC). Luego, un panel de discusión compuesto por Kathya Araujo (IDEA-USACH) y Josefina Araos (UAndes/IES) comentará los hallazgos, destacando transformaciones, tensiones y desafíos para los vínculos entre ciudadanía e instituciones de representación.
+
+Este foro busca consolidar un espacio de deliberación académica y pública, articulando el conocimiento generado por el OCS y otras instituciones, y contribuyendo a la discusión sobre la cohesión social vertical y su interacción con los procesos democráticos en Chile.
+
+📅 Fecha: Miércoles 22 de octubre de 2025
+
+🕞 Horario: 15:30–17:00
+
+📍 Lugar: UDP – Biblioteca Nicanor Parra, Vergara 324, Santiago
+
+Cronograma:
+
+**[15:30–15:40] Palabras de bienvenida**
+
+Macarena Orchard: Profesora Asistente, Escuela de Sociología UDP. Subdirectora OLES; investigadora adjunta COES y del Núcleo NIUMAP.
+
+**[15:40–16:10] Presentación**
+
+Juan Carlos Castillo: Profesor titular, Departamento de Sociología U. de Chile. Investigador principal COES y Observatorio de Cohesión Social (OCS).
+
+**[16:10–16:40] Comentarios y discusión**
+
+Kathya Araujo: Profesora e investigadora, Instituto de Estudios Avanzados (IDEA), USACH. Directora Núcleo Milenio Autoridad y Asimetrías de Poder.
+
+Josefina Araos: Investigadora, Instituto de Estudios de la Sociedad (IES). Estudiante del Doctorado en Filosofía, U. de los Andes. Columnista en La Tercera y panelista en Página 13 (Tele13 Radio).
+
+**[16:40–17:00] Preguntas y discusión desde el público**
+
+**[17:00] Cierre**
+
+# Referencias
+
+::: {#refs}
+:::

@@ -15,6 +15,9 @@
   {
     "listing": "/noticias/index.html",
     "items": [
+      "/noticias/posts/nota-foro-iii/index.html",
+      "/noticias/posts/columna-tercera-dosis/index.html",
+      "/noticias/posts/foro-ocs-coes/index.html",
       "/noticias/posts/nota-gjm/index.html",
       "/noticias/posts/nota-eb/index.html",
       "/noticias/posts/post-segundo-foro/index.html",
@@ -32,6 +35,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/noticias/posts/nota-foro-iii/index.html",
+      "/noticias/posts/columna-tercera-dosis/index.html",
+      "/noticias/posts/foro-ocs-coes/index.html",
       "/noticias/posts/nota-gjm/index.html",
       "/noticias/posts/nota-eb/index.html",
       "/noticias/posts/post-segundo-foro/index.html",
