@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <!-- Tile 1 -->
   <a href="analisis/visualizador-latam/">
     <div class="tile">
-      <img src="/imagenes/latamdark.png" alt="OCSVIS-LA" style="width: 100%;" />
+      <img src="/imagenes/vis-latam.png" alt="OCSVIS-LA" style="width: 100%;" />
       <div class="text">
         <h1>Visualizador de Cohesión Social en Latinoamérica</h1>
         <div class="highlight-box">
@@ -388,9 +388,9 @@ document.addEventListener('DOMContentLoaded', function () {
   </a>
 
   <!-- Tile 2 (nuevo) -->
-<a href="analisis/visualizador-elsoc/">
+<a href="analisis/visualizador-elsoc/index.html">
     <div class="tile">
-      <img src="/imagenes/elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;" />
+      <img src="/imagenes/vis-elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;" />
       <div class="text">
         <h1>Visualizador de Cohesión Social en Chile</h1>
         <div class="highlight-box">
@@ -427,6 +427,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 :::{#noticias}
+:::
+
+::: {.button}
+[Noticias anteriores](noticias/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3; margin-top: 0em;"}
 :::
 
 :::
@@ -486,7 +490,7 @@ document.addEventListener('DOMContentLoaded', function () {
 :::
 
 ::: {.button}
-[Ex-integrantes](alumni/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3; margin-top: 0em;"}
+[Pasaron por OCS](alumni/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3; margin-top: 0em;"}
 :::
 
 :::

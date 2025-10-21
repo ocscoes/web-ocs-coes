@@ -3,7 +3,7 @@ title: "Medición de Cohesión Social en América Latina"
 date: "2025-07-14"
 author: ["Observatorio de Cohesión Social"]
 publication: ""
-abstract: "Este documento corresponde al reporte técnico y metodológico que permite comprender la construcción de indicares utilizados para la medición de la cohesión social en América Latina. En este proceso de operacionalización de la cohesión social se utilizan datos provenientes de distintas fuentes -principalmente LAPOP, Latinobarómetro y la Encuesta Mundial de valores-"
+abstract: "Este documento corresponde al reporte técnico y metodológico que permite comprender la construcción de indicadores utilizados para la medición de la cohesión social en América Latina. En este proceso de operacionalización de la cohesión social se utilizan datos provenientes de distintas fuentes -principalmente LAPOP, Latinobarómetro y la Encuesta Mundial de valores-"
 categories: ["Documento de Trabajo"]
 about:
   template: marquee

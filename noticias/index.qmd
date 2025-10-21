@@ -6,7 +6,7 @@ format:
     css: styles-reportes.css
 listing:
   
-- id: reportes
+- id: noticias
   contents: posts
   sort: "date desc"
   type: default
@@ -79,7 +79,7 @@ page-layout: custom
 <div class="curve curve2"></div>
 <div class="curve curve3"></div>
 <div class="curve curve4"></div>
-<div class="banner-text">Reportes y Publicaciones</div>
+<div class="banner-text">Noticias y blog</div>
 ```
 :::
 
@@ -88,7 +88,7 @@ page-layout: custom
 ::: {.section-block}
 ::: {style="text-align: left;"}
 
-:::{#reportes}
+:::{#noticias}
 :::
 
 
