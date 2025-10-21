@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="wrap">
   <!-- Tile 1 -->
-  <a href="analisis/visualizador-latam/">
+  <a href="https://gabrielcortesp.shinyapps.io/visualizador-la/">
     <div class="tile">
       <img src="/imagenes/vis-latam.png" alt="OCSVIS-LA" style="width: 100%;" />
       <div class="text">
@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', function () {
   </a>
 
   <!-- Tile 2 (nuevo) -->
-<a href="analisis/visualizador-elsoc/index.html">
+<a href="https://ocs-coes.shinyapps.io/ocs-viselsoc/">
     <div class="tile">
       <img src="/imagenes/vis-elsoc.png" alt="OCSVIS-ELSOC" style="width: 100%;" />
       <div class="text">
