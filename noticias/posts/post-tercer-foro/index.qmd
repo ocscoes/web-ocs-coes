@@ -1,0 +1,30 @@
+---
+title: "Cohesión Social en tiempos de desafección política: una propuesta de medición para la cohesión en Chile con ELSOC"
+subtitle: Observatorio de Cohesión Social
+description: El tercer foro de Cohesión Social 2025 OCS-COES fue realizado el 22 de octubre en el marco de la XII Conferencia Internacional COES.
+categories: [noticias]
+date: "2025-11-03"
+draft: false
+bibliography: "../../../bib/OCS-LIT.bib"
+csl: "../../../bib/apa6.csl"
+about:
+  template: marquee
+  image: "featured.jpg"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+El [Observatorio de Cohesión Social (OCS)](https://ocs-coes.com/) realizó el pasado miércoles 22 de octubre el Tercer Foro de Cohesión Social 2025 en el marco de la [XII Conferencia Internacional COES](https://conferencias.coes.cl/xii/programa/). Este encuentro marcó, además, el lanzamiento del [Visualizador ELSOC](https://ocs-coes.shinyapps.io/ocs-viselsoc/) de Cohesión Social en Chile, desarrollado por el OCS, y convocó a representantes del mundo académico con el objetivo de reflexionar sobre la medición y el estado de la cohesión social en el país.
+
+El foro comenzó con la presentación a cargo de Juan Carlos Castillo, investigador principal del Observatorio de Cohesión Social (OCS-COES), quien expuso la propuesta conceptual y metodológica para medir la cohesión social en el contexto chileno, y resultados basados en el visualizador de cohesión social longitudinal VIS-ELSOC (Urzúa et al, 2025). Este instrumento permite explorar y analizar datos sobre cohesión social en Chile en perspectiva longitudinal, ofreciendo evidencia empírica para la investigación académica y la formulación de políticas públicas. El visualizador fue presentado además en una pantalla interactiva en el stand del OCS durante dicha jornada, donde los asistentes pudieron interactuar con los diferentes indicadores de cohesión social.
+
+Tras la presentación se desarrolló un panel de discusión moderado por Macarena Orchard, que contó con la participación de dos destacadas investigadoras en calidad de comentaristas: Kathya Araujo (IDEA/USACH) y Josefina Araos (IES). Las panelistas reflexionaron sobre la propuesta metodológica presentada y el visualizador, aportando además sus perspectivas sobre el estado actual de la cohesión social en Chile y sus desafíos futuros. Araujo, por su parte, destacó el esfuerzo del observatorio en la confección de esta herramienta, llamando también a la profundización de ciertos temas como la medición de autoritarismo; mientras que Araos sugirió que este tipo de instrumentos puede ser la fuente primaria para empezar a hablar sobre cohesión en espacios más amplios y las distintas formas en que las dimensiones de la cohesión social se intersectan entre sí. 
+
+El foro constituyó un espacio fructífero de intercambio académico, orientado a presentar herramientas innovadoras para el estudio de la cohesión social y a promover el diálogo sobre sus implicancias en el contexto nacional.
+
+# Referencias
+
+::: {#refs}
+Urzúa, T., Iturra, J., Canales, R., Laffert, A. & Castillo, J. (2025). Visualizador Longitudinal de Cohesión Social de Chile 2016-2023. Observatorio de Cohesión Social OCS, https://doi.org/10.5281/zenodo.17408345.
+:::
