@@ -270,8 +270,8 @@ article {
 <div class="layout">
   <article>
     <div class="img-container">
-      <img class="lukas" src="imagenes/foro3.png" data-url="noticias/posts/foro-ocs-coes/">
-      <div class="overlay-text">Foro Cohesión social en tiempos de desafección política en XII Conferencia Internacional COES. Click para más información</div>
+      <img class="lukas" src="imagenes/jc-foro3.jpg" data-url="noticias/posts/post-tercer-foro/">
+      <div class="overlay-text">Cohesión social en tiempos de desafección política en la XII Conferencia Internacional COES. Click para más información</div>
     </div>
     <div class="img-container">
       <img class="lukas" src="imagenes/columna-tercera.png" data-url="noticias/posts/columna-tercera-dosis/">

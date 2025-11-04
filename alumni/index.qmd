@@ -281,7 +281,7 @@ format:
         <div class="quarto-grid-item-team team-card">
           <img src="imagenes/g_cortes.jpg" alt="Gabriel Cortés" class="listing-box-image">
           <div class="team-card-body post-team-contents">
-            <div class="listing-box-title">Kevin Carrasco</div>
+            <div class="listing-box-title">Gabriel Cortés</div>
             <div class="listing-box-subtitle">Asistente de Investigación COES</div>
 
             <div class="listing-box-links">

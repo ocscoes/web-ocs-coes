@@ -16,6 +16,7 @@
   {
     "listing": "/noticias/index.html",
     "items": [
+      "/noticias/posts/nota-go/index.html",
       "/noticias/posts/post-tercer-foro/index.html",
       "/noticias/posts/nota-foro-iii/index.html",
       "/noticias/posts/columna-tercera-dosis/index.html",
@@ -37,6 +38,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/noticias/posts/nota-go/index.html",
       "/noticias/posts/post-tercer-foro/index.html",
       "/noticias/posts/nota-foro-iii/index.html",
       "/noticias/posts/columna-tercera-dosis/index.html",
