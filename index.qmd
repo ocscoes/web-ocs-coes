@@ -61,16 +61,8 @@ listing:
 #   feed: false  
 - id: sobre
   contents: "sobre/index.qmd"
-  sort: "date desc"
-  type: grid
-  grid-columns: 3
-  image-height: 150px
-  fields: [image, title, description]
-  max-items: 6
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  feed: false
+  type: default
+  
     
 - id: noticias
   contents: 

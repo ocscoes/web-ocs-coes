@@ -1,16 +1,11 @@
 ---
-title: "Sobre el Observatorio de Cohesión Social"
+title: " "
 listing:
   - id: sobre
-page-layout: full
 title-block-banner: false
 # include-in-header: meta.html
 comments: false
 toc: false
-about:
-  id: hero-heading
-  template: solana
-  image-shape: rounded
 format: 
   html: 
    toc: false
@@ -18,11 +13,17 @@ format:
 ---
 ::: hero-heading
 
-El **Observatorio de Cohesión Social (OCS)** es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social.
+# Sobre el Observatorio de Cohesión Social
 
-A través de **investigaciones, datos abiertos y visualizaciones interactivas**, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales.
+El **Observatorio de Cohesión Social (OCS)** es una plataforma de investigación, análisis y difusión dedicada a generar y comunicar conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social en Chile y América Latina. Nuestro propósito es **contribuir a una comprensión rigurosa, accesible y plural de los vínculos que estructuran la vida en común**, así como de los factores que la fortalecen o debilitan en contextos marcados por la desigualdad, la diversidad cultural y la transformación social.
 
-Nuestro objetivo es **promover una comprensión profunda y accesible de la cohesión**, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.
+El OCS combina investigación académica, datos abiertos y visualizaciones interactivas para acercar al público hallazgos provenientes de encuestas comparativas internacionales (como LAPOP y Latinobarómetro) y de estudios longitudinales nacionales (como ELSOC-COES). A partir de estos insumos, el Observatorio busca **ofrecer herramientas analíticas y empíricas útiles** para la ciudadanía, la academia y el diseño de políticas públicas orientadas a fortalecer el tejido social.
+
+Desde el OCS impulsamos un trabajo que articula la conceptualización, la medición, el análisis y la difusión de información sobre cohesión social. Al poner el acento en la calidad de los datos y en su apertura pública, **buscamos habilitar conversaciones informadas y plurales**, para que investigadores, tomadores de decisiones, organizaciones y ciudadanos cuenten con insumos consistentes para construir sus propias lecturas. Más que entregar conclusiones definitivas, procuramos crear las condiciones para que los relatos y debates sobre la cohesión social se desarrollen y se contrasten en la esfera pública e investigativa.
+
+Esta orientación se expresa en un trabajo continuo de **transferencia de conocimiento**, que incluye columnas de opinión, artículos científicos y foros públicos en torno a distintos ejes temáticos. Algunos de estos incluyen las bases conceptuales de la cohesión social, sus vínculos con la migración, la desafección política o las transformaciones recientes en los lazos de confianza y pertenencia. En cada una de estas instancias, el OCS busca fortalecer el diálogo entre investigación y deliberación pública, promoviendo una mirada empírica, reflexiva y crítica sobre la cohesión social como condición fundamental de la vida democrática.
+
+
 
 :::
 
