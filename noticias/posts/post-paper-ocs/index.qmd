@@ -1,0 +1,73 @@
+---
+title: "Investigación del OCS se presenta en la XII Conferencia Internacional COES"
+subtitle: Observatorio de Cohesión Social
+description: El OCS presentó un estudio sobre los cambios en cohesión social en América Latina durante los últimos 20 años
+categories: [noticias]
+# Date published
+date: "2025-11-06"  #year-
+draft: false
+bibliography: "ocs.bib"
+csl: "../../../bib/apa6.csl"
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   toc: false 
+   theme: ../../../scss-posts.scss
+---
+
+La [Conferencia Internacional COES](https://conferencias.coes.cl/) se ha constituido en una de las instancias de difusión, exposición y discusión académica en las ciencias sociales más relevantes del país. Este año se celebró su XII versión, titulada *“¿Es la democracia realmente el problema? Evolución, impacto y futuro de la crisis de las democracias”*, actividad que congregó a académicos de distintas disciplinas y lugares del mundo para reflexionar sobre las causas y consecuencias del estado de las democracias, así como también sobre  los desafíos que debemos sortear como sociedad para alcanzar una convivencia democrática estable.
+
+En el contexto de la [XII Conferencia COES](https://conferencias.coes.cl/xii/#), parte del equipo del [Observatorio de Cohesión Social (OCS-COES)](https://ocs-coes.com/) expuso una investigación en desarrollo titulada [“Dos décadas de cambios en la cohesión social en América Latina (2002-2023)”](https://ocscoes.github.io/paper-proyecto-cierre/presentations/conferencia-coes/pres-conferencia-coes.html#/section), la que fue presentada en la mesa “Cohesión en tiempos de crisis: Hacia un enfoque multinivel de su gobernanza”.  La ponencia tuvo dos objetivos centrales: (i) presentar el marco conceptual de cohesión social para América Latina desarrollado por el OCS (ver Figura 1) y (ii) aplicarlo empíricamente al estudio de la región en las dos últimas décadas. 
+
+En cuanto al primer punto, se propuso un modelo conceptual que considera dos grandes áreas de cohesión social: la horizontal, que aborda las relaciones entre individuos y grupos sociales, y la vertical, que busca capturar las interacciones entre los sujetos y las instituciones de la sociedad. Mientras la horizontal considera dimensiones como la seguridad pública y la confianza interpersonal, la vertical incluye aspectos tales como la confianza en instituciones políticas, la justicia distributiva y las actitudes hacia la democracia (Iturra et al, 2025).
+
+![](horizontal.png)
+
+```{r}
+#| label: fig-solar
+#| fig-cap-location: bottom
+#| fig-cap: "Marco conceptual de cohesión social para América Latina (VisLatam)"
+#| fig-align: center
+#| out-width: "100%"
+#| echo: false 
+
+knitr::include_graphics("vertical.png")
+
+```
+
+En relación a la aplicación empírica de este modelo conceptual,  se estimaron modelos multinivel híbridos (Schmidt-Catran & Fairbrother, 2016) que descomponen la variación de la cohesión social en diferencias entre países y dentro de los países a lo largo del tiempo. Esta distinción permite estimar tanto el efecto de las diferencias promedio de las características entre países, como el efecto del cambio dentro de cada país. Con este enfoque, se documentó cómo ha evolucionado la cohesión social en América Latina durante los últimos veinte años.
+
+ESe destacan tres hallazgos principales. En primer lugar, se observa un descenso sostenido de la cohesión social en América Latina durante los últimos veinte años, con Chile por debajo del promedio regional, consistente con diagnósticos anteriores relacionados a la crisis social (CEPAL, 2021). En segundo lugar,  el índice Gini se asocia negativamente con la cohesión social, es decir, que a mayor desigualdad económica en un país, menor será el nivel de cohesión social. Si bien es un resultado esperado, se reafirma que, a nivel regional, las disparidades socioeconómicas socavan la calidad del vínculo social (Ottone, 2009). Finalmente,  las personas de derecha tienen mayores niveles de cohesión horizontal y general que aquellas sin identificación política. Una posible interpretación es que la cohesión vía mercado puede jugar un papel clave en la cohesión para sectores que gozan de un gran poder adquisitivo (Somma & Valenzuela, 2015). Ahora bien, para que lo anterior sea plausible, se debe probar la variable estatus (o en su defecto nivel socioeconómico) en el modelo y esperar que identificación política pierda su efecto debido a la parcialización. Esta tarea es uno de los próximos pasos en nuestro trabajo, apuntando a comprender minuciosamente los determinantes de la cohesión social en la región.
+
+Esta investigación del OCS busca ofrecer una contribución sustantiva al estudio de la cohesión social en América Latina, proponiendo  un nuevo marco para su indagación empírica e identificando factores, tanto nacionales como regionales, que han moldeado las dinámicas del lazo social a lo largo del tiempo.
+
+La presentación de este trabajo en la Conferencia COES reafirma el compromiso del OCS con la difusión del conocimiento y el diálogo académico, con el propósito de nutrir la reflexión sobre los desafíos de la región y las rutas de acción para afrontarlos.
+
+
+![](equipo.jpeg)
+
+
+En la foto (de izquierda a derecha), Gabriel Cortés (Sociólogo, UChile; Magíster en Métodos, UDP), Tomás Urzúa (Asistente de investigación OCS; Sociólogo y Magíster (c) en Ciencias Sociales, UChile) y Juan Carlos Castillo (IP COES-OCS; Profesor titular, UChile). 
+
+Cómo citar la presentación: __*Castillo, J., Cortés, G., Urzúa, T. (2025). Dos décadas de cambio en la cohesión social en América Latina (2002-2023). XII Conferencia COES. Santiago, Chile.*__
+
+<div style="max-width: 1140px; margin: auto; padding: 0px;">
+  <iframe 
+    src="https://ocscoes.github.io/paper-proyecto-cierre/presentations/conferencia-coes/pres-conferencia-coes.html#/section" 
+    style="width: 100%; height: 90vh; border: none;" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+## Referencias
+
+CEPAL. (2021). *Cohesión social y desarrollo social inclusivo en América Latina. Una propuesta normativa para una era de incertidumbres*. CEPAL.
+
+Ottone, E. (2009). *Bienestar y estar bien: un enfoque renovado de la cohesión social en América Latina*. CEPAL.
+
+Schmidt-Catran, A. W., & Fairbrother, M. (2016). The Random Effects in Multilevel Models: Getting Them Wrong and Getting Them Right. *European Sociological Review, 32*(1), 23–38. [https://doi.org/10.1093/esr/jcv090](https://doi.org/10.1093/esr/jcv090)
+
+Somma, N. M., & Valenzuela, E. (2015). Las paradojas de la cohesión social en América Latina. *Revista Del CLAD Reforma y Democracia*, (61), 43–74.

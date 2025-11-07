@@ -16,6 +16,7 @@
   {
     "listing": "/noticias/index.html",
     "items": [
+      "/noticias/posts/post-paper-ocs/index.html",
       "/noticias/posts/nota-go/index.html",
       "/noticias/posts/post-tercer-foro/index.html",
       "/noticias/posts/nota-foro-iii/index.html",
@@ -38,6 +39,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/noticias/posts/post-paper-ocs/index.html",
       "/noticias/posts/nota-go/index.html",
       "/noticias/posts/post-tercer-foro/index.html",
       "/noticias/posts/nota-foro-iii/index.html",
