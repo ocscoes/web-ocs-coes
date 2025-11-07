@@ -39,6 +39,9 @@ website:
          target: _blank
     # pinned: true
     left:
+      - href: sobre/index.qmd
+        text: Sobre el OCS
+        icon: info-circle-fill    
       - href: index.qmd#destacadosh1
         text: "<i class='bi bi-pin-angle'></i> Destacados"
       - href: index.qmd#analisish1

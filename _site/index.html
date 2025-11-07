@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,13 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d3b61ede8276095ee6b1797664397379.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b609b1a3fd15d9cf446adb1295bfdd19.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-noticias .list');
+    const listingTargetEl = window.document.querySelector('#listing-sobre .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -81,6 +80,35 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-sobre'] = new List('listing-sobre', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-noticias .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 18,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -344,7 +372,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -371,8 +399,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./resources/imagenes/sharing-default.png" alt="" class="navbar-logo light-content">
-    <img src="./resources/imagenes/sharing-default.png" alt="" class="navbar-logo dark-content">
+    <img src="./resources/imagenes/sharing-default.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -381,6 +408,11 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./sobre/index.html"> <i class="bi bi-info-circle-fill" role="img">
+</i> 
+<span class="menu-text">Sobre el OCS</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html#destacadosh1"> 
 <span class="menu-text"><i class="bi bi-pin-angle"></i> Destacados</span></a>
@@ -426,14 +458,15 @@ window.Quarto = {
 
 
 
-<div id="hero-section">
+<div id="hero-section" style="position:relative; height:800px; overflow:hidden;
+            display:flex; align-items:center; justify-content:center; text-align:center;">
 <css-doodle>
   <style>
     :doodle {
-      @grid: 25x1 / 20vmin;
+      @grid: 25x1 / 10vmin;
     }
     :container {
-      perspective: 30vmin;
+      perspective: 12vmin;
     }
 
     @place-cell: center;
@@ -472,17 +505,10 @@ window.Quarto = {
   </style>
 </css-doodle>
 <div class="quarto-about-jolla">
- <div id="hero-heading">
-<p style="font-size: 2em;">
-El <strong>Observatorio de Cohesión Social (OCS)</strong> es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social.
-</p>
-<p style="font-size: 2em;">
-A través de <strong>investigaciones, datos abiertos y visualizaciones interactivas</strong>, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales.
-</p>
-<p style="font-size: 2em;">
-Nuestro objetivo es <strong>promover una comprensión profunda y accesible de la cohesión</strong>, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.
-</p>
-<div class="button" style="text-align: center; padding-top: 7em;">
+ <div id="hero-heading" style="position:relative; z-index:1; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; text-align:center;">
+<p><img src="imagenes/LOGO-BLANCO-OCS.png" alt="Observatorio de Cohesión Social" style="display:block; margin:0 auto;
+            max-width:500px; width:100%; height:auto;"></p>
+<div class="button" style="text-align: center; padding-top: 2em;">
 <p><a href="./index.html#destacadosh1" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #0693e3">Noticias destacadas</a></p>
 </div>
 </div>  
@@ -738,7 +764,21 @@ document.addEventListener('DOMContentLoaded', function () {
 </p>
 <div id="listing-noticias" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1762398000000" data-listing-file-modified-sort="1762476029903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="844">
+<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1762484400000" data-listing-file-modified-sort="1762485796217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="485">
+<a href="./noticias/posts/post-conf-risc/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="noticias/posts/post-conf-risc/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Conferencia: La Cohesión Social en tiempos Disruptivos del Research Institute of Social Cohesion (RISC)
+</h5>
+<div class="card-text listing-description delink">
+<p>Participación de los investigadores del OCS Jorge Atria y Juan Carlos Castillo en la conferencia anual 2025 del RISC celebrada en Liepzig, Alemania</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1762398000000" data-listing-file-modified-sort="1762484023424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="844">
 <a href="./noticias/posts/post-paper-ocs/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="noticias/posts/post-paper-ocs/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -752,7 +792,7 @@ Investigación del OCS se presenta en la XII Conferencia Internacional COES
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="YmxvZw==" data-listing-date-sort="1762225200000" data-listing-file-modified-sort="1762281956182" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3002">
+<div class="g-col-1" data-index="2" data-categories="YmxvZw==" data-listing-date-sort="1762225200000" data-listing-file-modified-sort="1762280685248" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3002">
 <a href="./noticias/posts/nota-go/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="noticias/posts/nota-go/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -766,7 +806,7 @@ En esta cuarta entrega de la serie <strong>OCS–Investigaciones sobre cohesión
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="bm90aWNpYXM=" data-listing-date-sort="1762138800000" data-listing-file-modified-sort="1762281956187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
+<div class="g-col-1" data-index="3" data-categories="bm90aWNpYXM=" data-listing-date-sort="1762138800000" data-listing-file-modified-sort="1762278581116" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
 <a href="./noticias/posts/post-tercer-foro/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="noticias/posts/post-tercer-foro/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -780,7 +820,7 @@ Cohesión Social en tiempos de desafección política: una propuesta de medició
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="YmxvZw==" data-listing-date-sort="1760929200000" data-listing-file-modified-sort="1760982430449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="341">
+<div class="g-col-1" data-index="4" data-categories="YmxvZw==" data-listing-date-sort="1760929200000" data-listing-file-modified-sort="1760967527109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="341">
 <a href="./noticias/posts/nota-foro-iii/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="noticias/posts/nota-foro-iii/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -794,7 +834,7 @@ En este nuevo post del OCS presentamos la nota <strong>“Dinámicas de la cohes
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bm90aWNpYXM=" data-listing-date-sort="1760065200000" data-listing-file-modified-sort="1760982430388" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133">
+<div class="g-col-1" data-index="5" data-categories="bm90aWNpYXM=" data-listing-date-sort="1760065200000" data-listing-file-modified-sort="1760969476133" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133">
 <a href="./noticias/posts/columna-tercera-dosis/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="noticias/posts/columna-tercera-dosis/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -804,20 +844,6 @@ La seguridad nace del vínculo social
 </h5>
 <div class="card-text listing-description delink">
 <p>Columna de opinión en Tercera Dosis</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="bm90aWNpYXM=" data-listing-date-sort="1759892400000" data-listing-file-modified-sort="1760982430409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="548">
-<a href="./noticias/posts/foro-ocs-coes/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="noticias/posts/foro-ocs-coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Foro OCS-COES Cohesión social en tiempos de desafección política
-</h5>
-<div class="card-text listing-description delink">
-<p>El tercer foro será realizado en el marco de la XII Conferencia Internacional COES el 22 de octubre.</p>
 </div>
 </div>
 </div></a>
@@ -847,7 +873,7 @@ Foro OCS-COES Cohesión social en tiempos de desafección política
 </p>
 <div id="listing-reportes" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="RG9jdW1lbnRvJTIwZGUlMjBUcmFiYWpv" data-listing-date-sort="1760929200000" data-listing-file-modified-sort="1762281956187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<div class="quarto-post image-right" data-index="0" data-categories="RG9jdW1lbnRvJTIwZGUlMjBUcmFiYWpv" data-listing-date-sort="1760929200000" data-listing-file-modified-sort="1761004762282" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./reportes/posts/2025_propuesta_medicion_elsoc/index.html" class="no-external">Medición de Cohesión Social en Chile</a>
@@ -864,7 +890,7 @@ Observatorio de Cohesión Social
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="RG9jdW1lbnRvJTIwZGUlMjBUcmFiYWpv" data-listing-date-sort="1752465600000" data-listing-file-modified-sort="1762281956187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="quarto-post image-right" data-index="1" data-categories="RG9jdW1lbnRvJTIwZGUlMjBUcmFiYWpv" data-listing-date-sort="1752465600000" data-listing-file-modified-sort="1761004543352" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./reportes/posts/2025_reportes_tecnico/index.html" class="no-external">Medición de Cohesión Social en América Latina</a>
@@ -881,7 +907,7 @@ Observatorio de Cohesión Social
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="UHVibGljYWNpJUMzJUIzbg==" data-listing-date-sort="1644375600000" data-listing-file-modified-sort="1760982430467" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+<div class="quarto-post image-right" data-index="2" data-categories="UHVibGljYWNpJUMzJUIzbg==" data-listing-date-sort="1644375600000" data-listing-file-modified-sort="1755880564192" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./reportes/posts/2022_cohesion/index.html" class="no-external">Cohesión Social en Chile en tiempos de cambios. Indicadores, perfiles y factores asociados</a>
@@ -898,7 +924,7 @@ Castillo, Juan Carlos, Espinoza, Vicente, Barozet, Emmanuelle
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="UHJlc2VudGFjaSVDMyVCM24=" data-listing-date-sort="1642734000000" data-listing-file-modified-sort="1760982430467" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="quarto-post image-right" data-index="3" data-categories="UHJlc2VudGFjaSVDMyVCM24=" data-listing-date-sort="1642734000000" data-listing-file-modified-sort="1755880564192" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./reportes/posts/2022_asc/index.html" class="no-external">Measurement and Analysis of Social Cohesion: Perspectives from the Center of Social Conflict and Cohesion Studies</a>
@@ -1409,14 +1435,13 @@ Castillo, Juan Carlos, Bargsted, Matías
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1758,7 +1783,25 @@ Castillo, Juan Carlos, Bargsted, Matías
     }
   });
   </script>
-</div> <!-- /content -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-sobre">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1762489257756" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
+<a href="./sobre/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sobre el Observatorio de Cohesión Social
+</h5>
+<div class="card-text listing-description delink">
+El <strong>Observatorio de Cohesión Social (OCS)</strong> es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social.
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

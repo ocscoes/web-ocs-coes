@@ -16,6 +16,7 @@
   {
     "listing": "/noticias/index.html",
     "items": [
+      "/noticias/posts/post-conf-risc/index.html",
       "/noticias/posts/post-paper-ocs/index.html",
       "/noticias/posts/nota-go/index.html",
       "/noticias/posts/post-tercer-foro/index.html",
@@ -39,6 +40,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/sobre/index.html",
+      "/noticias/posts/post-conf-risc/index.html",
       "/noticias/posts/post-paper-ocs/index.html",
       "/noticias/posts/nota-go/index.html",
       "/noticias/posts/post-tercer-foro/index.html",
@@ -88,5 +91,9 @@
     "items": [
       "/blog/posts/nota-dm/index.html"
     ]
+  },
+  {
+    "listing": "/sobre/index.html",
+    "items": []
   }
 ]

@@ -1,0 +1,29 @@
+---
+title: "Conferencia: La Cohesión Social en tiempos Disruptivos del Research Institute of Social Cohesion (RISC)"
+subtitle: Conferencia internacional
+description: Participación de los investigadores del OCS Jorge Atria y Juan Carlos Castillo en la conferencia anual 2025 del RISC celebrada en Liepzig, Alemania
+categories: [noticias]
+date: "2025-11-07"
+draft: false
+bibliography: "../../../bib/OCS-LIT.bib"
+csl: "../../../bib/apa6.csl"
+about:
+  template: marquee
+  image: "featured.png"
+format: 
+  html: 
+   theme: ../../../scss-posts.scss
+---
+
+El [Research Institute of Social Cohesion](https://fgz-risc.de/en/) (RISC; en alemán, Forschungsinstitut Gesellschaftlicher Zusammenhalt–FGZ) es un instituto interdisciplinario y orientado a la transferencia de conocimiento, con una red descentralizada de once sedes en Alemania. Desde 2020 es financiado por el Ministerio Federal de Educación e Investigación (BMFTR). Su propósito es entender **cómo las sociedades logran o pierden cohesión, identificando condiciones, amenazas y mecanismos que la fortalecen o debilitan, y traducir ese conocimiento en orientaciones para políticas públicas y prácticas sociales**. Para ello combina investigación básica y aplicada con coproducción de conocimiento junto a actores públicos y de la sociedad civil. Su programa de investigación 2024–2029, “Cohesión social en transformación”, se organiza en **cuatro grandes áreas**: políticas de la cohesión democrática; órdenes socioeconómicos de estatus y distribución; infraestructuras y bienes públicos; y dinámicas culturales de la cohesión, y se guía por dos preguntas centrales: ¿cómo se ve amenazada la cohesión en contextos de transformación y cómo opera eficazmente bajo esas condiciones? y ¿cuándo puede considerarse democrática la cohesión y a través de qué mecanismos se sostiene en perspectiva comparada?
+
+En ese marco, la **Conferencia Anual 2025 “La Cohesión Social en tiempos Disruptivos” (Zusammenhalt in Zeiten der „Disruption“)**, realizada en octubre de este año en Liepzig (Alemania), incluyó el panel **“Inicio de cooperación con representantes del Centro de Estudios de Conflicto y Cohesión Social (COES)”**, que inició con la presentación de un mensaje de video de la Investigadora Principal COES, Emmanuelle Barozet, y continuó con presentaciones de investigadores de ambos centros de estudio: Jorge Atria (COES/Pontificia Universidad Católica de Chile), Juan Carlos Castillo (COES/Universidad de Chile), Olaf Groh-Samberg (Director RISC), Julio Iturra-Sanhueza (RISC Bremen), y Anne Speer (RISC Bremen). El foco estuvo en consolidar una agenda comparativa Chile–Alemania y profundizar la colaboración temática y organizativa entre RISC/FGZ y COES, articulando sus encuestas panel —el [Social Cohesion Panel (SCP)](https://fgz-risc-data.de/en/data-portal/general-information/german-social-cohesion-panel-scp-/) de RISC y el [Estudio Longitudinal Social de Chile (ELSOC)](https://coes.cl/elsoc/) de COES (siete olas, 2016–2023)— para aportar evidencia longitudinal sobre los determinantes, tensiones y mecanismos de la cohesión social en ambos contextos.
+
+La participación del OCS en la conferencia anual 2025 del RISC/FGZ representa una instancia clave para fortalecer su proyección internacional y consolidar vínculos de cooperación científica con centros de investigación de alto prestigio. El diálogo mantenido por ambas instituciones permite enriquecer el análisis comparado sobre la cohesión social y promover el intercambio metodológico entre estudios nacionales. Esta participación refuerza el compromiso del OCS con la generación de conocimiento aplicado y con la transferencia de evidencia empírica desde Chile hacia el debate global sobre los desafíos contemporáneos de la cohesión social.
+
+📄 Más información sobre el evento y el programa completo en: [Sitio oficial de FZG](https://fgz-risc.de/en/)
+
+
+![](featured.png){.center width=500px height=310px}
+
+En la foto (de izquierda a derecha): Jorge Atria (Investigador COES, Pontificia Universidad Católica de Chile), Juan Carlos Castillo (Investigador COES/OCS, Universidad de Chile), Anne Speer (FGZ), Olaf Groh-Samberg (FGZ) y Julio Iturra-Sanhueza (candidato a doctor por la Bremen International Graduate School of Social Sciences, BIGSSS).

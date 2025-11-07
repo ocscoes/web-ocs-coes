@@ -59,7 +59,19 @@ listing:
 #   sort-ui: false
 #   filter-ui: false
 #   feed: false  
-  
+- id: sobre
+  contents: "sobre/index.qmd"
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  image-height: 150px
+  fields: [image, title, description]
+  max-items: 6
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: false
+    
 - id: noticias
   contents: 
     - noticias/posts/*/*.qmd
@@ -75,7 +87,6 @@ listing:
   filter-ui: false
   feed: false
     
-  
 - id: reportes
   contents:
     - reportes/posts/*/*.qmd
@@ -95,16 +106,18 @@ listing:
   sort: date desc
 ---
 
-<div id="hero-section">
+<div id="hero-section"
+     style="position:relative; height:800px; overflow:hidden;
+            display:flex; align-items:center; justify-content:center; text-align:center;">
 
 ```{=HTML}
 <css-doodle>
   <style>
     :doodle {
-      @grid: 25x1 / 20vmin;
+      @grid: 25x1 / 10vmin;
     }
     :container {
-      perspective: 30vmin;
+      perspective: 12vmin;
     }
 
     @place-cell: center;
@@ -144,21 +157,14 @@ listing:
 </css-doodle>
 ```
 
-:::{#hero-heading}
+:::{#hero-heading style="position:relative; z-index:1; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; text-align:center;"}
 
-<p style="font-size: 2em;">
-El **Observatorio de Cohesión Social (OCS)** es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social. 
-</p>
+<img src="imagenes/LOGO-BLANCO-OCS.png"
+     alt="Observatorio de Cohesión Social"
+     style="display:block; margin:0 auto;
+            max-width:500px; width:100%; height:auto;">
 
-<p style="font-size: 2em;">
-A través de **investigaciones, datos abiertos y visualizaciones interactivas**, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales. 
-</p>
-
-<p style="font-size: 2em;">
-Nuestro objetivo es **promover una comprensión profunda y accesible de la cohesión**, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.
-</p>
-
-::: {.button style="text-align: center; padding-top: 7em;"}
+::: {.button style="text-align: center; padding-top: 2em;"}
 [Noticias destacadas](index.qmd#destacadosh1){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #0693e3"}
 :::
 :::

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>Sobre el Observatorio de Cohesión Social</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,12 +36,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1f940bbea53f9efbd0b9696afd1eca91.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dffe1e3b91f47c47642bf2ab5dc66d19.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,20 +71,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-noticias .list');
+    const listingTargetEl = window.document.querySelector('#listing-sobre .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories","listing-date"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-noticias'] = new List('listing-noticias', options);
+    window['quarto-listings']['listing-sobre'] = new List('listing-sobre', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -277,7 +276,6 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="styles-reportes.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -297,6 +295,11 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../sobre/index.html" aria-current="page"> <i class="bi bi-info-circle-fill" role="img">
+</i> 
+<span class="menu-text">Sobre el OCS</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../index.html#destacadosh1"> 
 <span class="menu-text"><i class="bi bi-pin-angle"></i> Destacados</span></a>
@@ -334,460 +337,38 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
-
-
-
-
-<div class="banner">
-<style>
-.banner {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-  background: linear-gradient(135deg, #232731 0%, #1a1d26 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-.banner-text {
-  position: relative;
-  z-index: 2;
-  color: white;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.4);
-  padding: 0.8rem 1.8rem;
-  border-radius: 12px;
-  backdrop-filter: blur(4px);
-  font-weight: 600;
-}
-
-.curve {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  border: 6px solid;
-  border-radius: 50%;
-  animation: move 20s linear infinite;
-  opacity: 0.6;
-  will-change: transform;
-  filter: blur(1px);
-}
-
-.curve1 { border-color: #753F8C; top: -50%; left: -80%; }
-.curve2 { border-color: #4E8AD9; top: -30%; left: -100%; animation-direction: reverse; }
-.curve3 { border-color: #81BF24; top: 10%; left: -120%; animation-duration: 25s; }
-.curve4 { border-color: #F2B705; top: 50%; left: -90%; animation-delay: 5s; }
-
-@keyframes move {
-  0% { transform: translateX(-20%) rotate(0deg); }
-  100% { transform: translateX(100vw) rotate(360deg); }
-}
-
-/* Mobile optimization */
-@media (max-width: 768px) {
-  .banner { height: 150px; }
-  .curve { width: 250%; height: 150%; }
-}
-</style>
-
-<div class="curve curve1"></div>
-<div class="curve curve2"></div>
-<div class="curve curve3"></div>
-<div class="curve curve4"></div>
-<div class="banner-text">Noticias y blog</div>
+<div class="quarto-about-solana column-page">
+  <div class="about-entity">
+    <div class="entity-contents">
+      <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sobre el Observatorio de Cohesión Social</h1>
 </div>
-<div class="section-text light-bg">
-<div class="section-container">
-<div class="section-block">
-<div style="text-align: left;">
-<div id="listing-noticias" class="quarto-listing quarto-listing-container-default">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="quarto-title-meta column-page">
+  </div>
+</header> 
+      <div class="about-contents"><main class="content column-page" id="quarto-document-content">
+<div class="hero-heading">
+<p>El <strong>Observatorio de Cohesión Social (OCS)</strong> es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social.</p>
+<p>A través de <strong>investigaciones, datos abiertos y visualizaciones interactivas</strong>, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales.</p>
+<p>Nuestro objetivo es <strong>promover una comprensión profunda y accesible de la cohesión</strong>, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.</p>
 </div>
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-sobre">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1762484400000" data-listing-file-modified-sort="1762485773943" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="485" data-listing-categories-sort="noticias" data-listing-title-sort="Conferencia: La Cohesión Social en tiempos Disruptivos del Research Institute of Social Cohesion (RISC)">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/post-conf-risc/index.html" class="no-external">Conferencia: La Cohesión Social en tiempos Disruptivos del Research Institute of Social Cohesion (RISC)</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/post-conf-risc/index.html" class="no-external">
-<div class="listing-date">
-Nov 7, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1762398000000" data-listing-file-modified-sort="1762484023424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="844" data-listing-categories-sort="noticias" data-listing-title-sort="Investigación del OCS se presenta en la XII Conferencia Internacional COES">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/post-paper-ocs/index.html" class="no-external">Investigación del OCS se presenta en la XII Conferencia Internacional COES</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/post-paper-ocs/index.html" class="no-external">
-<div class="listing-date">
-Nov 6, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="YmxvZw==" data-listing-date-sort="1762225200000" data-listing-file-modified-sort="1762280685248" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3002" data-listing-categories-sort="blog" data-listing-title-sort="The lives of others: Class divisions, network segregation, and attachment to society in Chile">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/nota-go/index.html" class="no-external">The lives of others: Class divisions, network segregation, and attachment to society in Chile</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/nota-go/index.html" class="no-external">
-<div class="listing-date">
-Nov 4, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="bm90aWNpYXM=" data-listing-date-sort="1762138800000" data-listing-file-modified-sort="1762278581116" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367" data-listing-categories-sort="noticias" data-listing-title-sort="Cohesión Social en tiempos de desafección política: una propuesta de medición para la cohesión en Chile con ELSOC">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/post-tercer-foro/index.html" class="no-external">Cohesión Social en tiempos de desafección política: una propuesta de medición para la cohesión en Chile con ELSOC</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/post-tercer-foro/index.html" class="no-external">
-<div class="listing-date">
-Nov 3, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="YmxvZw==" data-listing-date-sort="1760929200000" data-listing-file-modified-sort="1760967527109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="341" data-listing-categories-sort="blog" data-listing-title-sort="Nota: Cohesión social y desafección política en Chile">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/nota-foro-iii/index.html" class="no-external">Nota: Cohesión social y desafección política en Chile</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/nota-foro-iii/index.html" class="no-external">
-<div class="listing-date">
-Oct 20, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="bm90aWNpYXM=" data-listing-date-sort="1760065200000" data-listing-file-modified-sort="1760969476133" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133" data-listing-categories-sort="noticias" data-listing-title-sort="La seguridad nace del vínculo social">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/columna-tercera-dosis/index.html" class="no-external">La seguridad nace del vínculo social</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/columna-tercera-dosis/index.html" class="no-external">
-<div class="listing-date">
-Oct 10, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="bm90aWNpYXM=" data-listing-date-sort="1759892400000" data-listing-file-modified-sort="1760968753802" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="548" data-listing-categories-sort="noticias" data-listing-title-sort="Foro OCS-COES Cohesión social en tiempos de desafección política">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/foro-ocs-coes/index.html" class="no-external">Foro OCS-COES Cohesión social en tiempos de desafección política</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/foro-ocs-coes/index.html" class="no-external">
-<div class="listing-date">
-Oct 8, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="YmxvZw==" data-listing-date-sort="1759892400000" data-listing-file-modified-sort="1759953755944" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1398" data-listing-categories-sort="blog" data-listing-title-sort="Youth civic engagement: Challenges for social cohesión in Latin America">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/nota-gjm/index.html" class="no-external">Youth civic engagement: Challenges for social cohesión in Latin America</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/nota-gjm/index.html" class="no-external">
-<div class="listing-date">
-Oct 8, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="YmxvZw==" data-listing-date-sort="1759460400000" data-listing-file-modified-sort="1759591117358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1509" data-listing-categories-sort="blog" data-listing-title-sort="Informe Final de Recomendaciones de la Comisión Asesora Presidencial para la actualización de la Medición de la Pobreza en Chile">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/nota-eb/index.html" class="no-external">Informe Final de Recomendaciones de la Comisión Asesora Presidencial para la actualización de la Medición de la Pobreza en Chile</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/nota-eb/index.html" class="no-external">
-<div class="listing-date">
-Oct 3, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="bm90aWNpYXM=" data-listing-date-sort="1758337200000" data-listing-file-modified-sort="1758553333831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737" data-listing-categories-sort="noticias" data-listing-title-sort="Cohesión social y migración: Dinámicas actuales y desafíos futuros para el país">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/post-segundo-foro/index.html" class="no-external">Cohesión social y migración: Dinámicas actuales y desafíos futuros para el país</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/post-segundo-foro/index.html" class="no-external">
-<div class="listing-date">
-Sep 20, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="YmxvZw==" data-listing-date-sort="1757386800000" data-listing-file-modified-sort="1758735773172" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="225" data-listing-categories-sort="blog" data-listing-title-sort="Nota: Cohesión social horizontal y migración en Chile">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/nota-foro-ii/index.html" class="no-external">Nota: Cohesión social horizontal y migración en Chile</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/nota-foro-ii/index.html" class="no-external">
-<div class="listing-date">
-Sep 9, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-categories="bm90aWNpYXM=" data-listing-date-sort="1756785600000" data-listing-file-modified-sort="1757445292863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="459" data-listing-categories-sort="noticias" data-listing-title-sort="Foro OCS-CEP Cohesión social y migración: Una década de cambios y desafíos">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/foro-ocs-cep/index.html" class="no-external">Foro OCS-CEP Cohesión social y migración: Una década de cambios y desafíos</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/foro-ocs-cep/index.html" class="no-external">
-<div class="listing-date">
-Sep 2, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-categories="bm90aWNpYXM=" data-listing-date-sort="1756008000000" data-listing-file-modified-sort="1756160257058" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74" data-listing-categories-sort="noticias" data-listing-title-sort="La cohesión social, un termómetro crítico para Chile y América Latina">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/columna-elpais/index.html" class="no-external">La cohesión social, un termómetro crítico para Chile y América Latina</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/columna-elpais/index.html" class="no-external">
-<div class="listing-date">
-Aug 24, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-categories="YmxvZw==" data-listing-date-sort="1755835200000" data-listing-file-modified-sort="1756160938977" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="938" data-listing-categories-sort="blog" data-listing-title-sort="Nuestras trayectorias. Dinámicas intra-individuales e inter-individuales en Chile (2016-2023)">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/nota-dm/index.html" class="no-external">Nuestras trayectorias. Dinámicas intra-individuales e inter-individuales en Chile (2016-2023)</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/nota-dm/index.html" class="no-external">
-<div class="listing-date">
-Aug 22, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-categories="bm90aWNpYXM=" data-listing-date-sort="1754539200000" data-listing-file-modified-sort="1755880564190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="429" data-listing-categories-sort="noticias" data-listing-title-sort="Cohesión social en América Latina: Diagnósticos y desafíos por OCS y CEPAL">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/post-primer-foro/index.html" class="no-external">Cohesión social en América Latina: Diagnósticos y desafíos por OCS y CEPAL</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/post-primer-foro/index.html" class="no-external">
-<div class="listing-date">
-Aug 7, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751601600000" data-listing-file-modified-sort="1755880564188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="415" data-listing-categories-sort="noticias" data-listing-title-sort="Participación en el 5th ISA Forum of Sociology">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/participacion-isa/index.html" class="no-external">Participación en el 5th ISA Forum of Sociology</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/participacion-isa/index.html" class="no-external">
-<div class="listing-date">
-Jul 4, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="16" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751515200000" data-listing-file-modified-sort="1755880564187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532" data-listing-categories-sort="noticias" data-listing-title-sort="Foro OCS-CEPAL">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/foro-ocs-cepal/index.html" class="no-external">Foro OCS-CEPAL</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/foro-ocs-cepal/index.html" class="no-external">
-<div class="listing-date">
-Jul 3, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="17" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751428800000" data-listing-file-modified-sort="1755880564186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="588" data-listing-categories-sort="noticias" data-listing-title-sort="Ciclo de Foros de Cohesión Social">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/ciclo-foros-ocs/index.html" class="no-external">Ciclo de Foros de Cohesión Social</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/ciclo-foros-ocs/index.html" class="no-external">
-<div class="listing-date">
-Jul 2, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="18" data-categories="bm90aWNpYXM=" data-listing-date-sort="1751342400000" data-listing-file-modified-sort="1755880564185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="355" data-listing-categories-sort="noticias" data-listing-title-sort="¡Bienvenidos a nuestro nuevo sitio web!">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../noticias/posts/actualizacion-web/index.html" class="no-external">¡Bienvenidos a nuestro nuevo sitio web!</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bm90aWNpYXM='); return false;">noticias</div>
-
-</div>
-</div>
-<div class="metadata">
-<a href="../noticias/posts/actualizacion-web/index.html" class="no-external">
-<div class="listing-date">
-Jul 1, 2025
-</div>
-</a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+</div></main></div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
+ <!-- /main -->
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
 <div style="background-color: #1f1f1f; color: white;
             grid-column: 1 / -1;">
@@ -823,13 +404,6 @@ Jul 1, 2025
 </div>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

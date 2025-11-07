@@ -1,0 +1,28 @@
+---
+title: "Sobre el Observatorio de Cohesión Social"
+listing:
+  - id: sobre
+page-layout: full
+title-block-banner: false
+# include-in-header: meta.html
+comments: false
+toc: false
+about:
+  id: hero-heading
+  template: solana
+  image-shape: rounded
+format: 
+  html: 
+   toc: false
+   theme: scss-posts.scss
+---
+::: hero-heading
+
+El **Observatorio de Cohesión Social (OCS)** es una plataforma dedicada a la difusión de conocimiento basado en evidencia empírica sobre las dinámicas de cohesión social.
+
+A través de **investigaciones, datos abiertos y visualizaciones interactivas**, ponemos a disposición del público hallazgos clave provenientes de encuestas comparativas internacionales y estudios longitudinales nacionales.
+
+Nuestro objetivo es **promover una comprensión profunda y accesible de la cohesión**, las desigualdades y los vínculos que estructuran la vida en común, aportando herramientas útiles para la ciudadanía, la academia y el diseño de políticas públicas.
+
+:::
+
