@@ -1,0 +1,47 @@
+---
+title: "Lanzamiento del VIS-ELSOC en la XIII Conferencia Internacional COES"
+subtitle: Observatorio de Cohesión Social
+description: El OCS presentó el Visualizador de Cohesión Social en Chile con ELSOC en la XII Conferencia Internacional COES
+categories: [noticias]
+# Date published
+date: "2025-11-14"  #year-
+draft: false
+bibliography: "ocs.bib"
+csl: "../../../bib/apa6.csl"
+about:
+  template: marquee
+  image: "featured.jpg"
+resources:
+  - "20251022_114058.mp4"
+format: 
+  html: 
+   toc: false 
+   theme: ../../../scss-posts.scss
+---
+
+En el marco de la [XII Conferencia Internacional COES](https://conferencias.coes.cl/xii/#) 🎓, el Observatorio de Cohesión Social (OCS) tuvo una participación especialmente activa, combinando espacios académicos con el III Foro de “Cohesión Social en tiempos de desafección política”, presentaciones en mesas, actividades abiertas al público y el lanzamiento oficial de una nueva herramienta interactiva: [VIS-ELSOC](https://ocs-coes.shinyapps.io/ocs-viselsoc/) 📊, el Visualizador de Cohesión Social en Chile construido a partir de indicadores del [Estudio Longitudinal Social de Chile (ELSOC)](https://coes.cl/elsoc/).
+
+Durante los tres días de la conferencia, el equipo OCS estuvo presente en distintos frentes. Por un lado, contribuimos al programa académico con presentaciones y comentarios en mesas temáticas sobre desigualdad, cohesión social y percepciones ciudadanas 🧩. Por otro, organizamos el Foro III de Cohesión Social en tiempos de desafección política, un espacio que reunió a investigadores e investigadoras para discutir, a partir de evidencia reciente levantada por el OCS con el visualizador [VIS-ELSOC](https://ocs-coes.shinyapps.io/ocs-viselsoc/), los desafíos contemporáneos para la cohesión social en Chile y su vínculo con la desafección política, la confianza en las instituciones y la participación política 🗳️.
+
+Pero quizás la actividad más destacada fue el espacio interactivo preparado por el OCS, donde instalamos un stand con materiales impresos —incluyendo los tres reportes publicados este año por el Observatorio— y una pantalla táctil que permitió a las y los asistentes explorar libremente [VIS-ELSOC](https://ocs-coes.shinyapps.io/ocs-viselsoc/) y [VIS-LATAM](https://gabrielcortesp.shinyapps.io/visualizador-la/) 🖥️. A lo largo de la conferencia, estudiantes, investigadores/as y público general se acercaron a interactuar con los visualizadores, hacer preguntas y navegar los datos según sus propios intereses 🔍.
+
+El lanzamiento de [VIS-ELSOC](https://ocs-coes.shinyapps.io/ocs-viselsoc/) marca un hito para el OCS y para COES: por primera vez, los indicadores centrales de ELSOC sobre cohesión social, relaciones interpersonales (cohesión horizontal), relaciones de la ciudadanía con sus instituciones (cohesión vertical) y dinámicas socioeconómicas quedan disponibles en un formato abierto, amigable y diseñado para ser explorado sin necesidad de conocimientos técnicos 📈. El objetivo es simple: ampliar el acceso a la evidencia y crear condiciones para que distintos actores puedan formular sus propias preguntas y llegar a sus propias interpretaciones.
+
+Esta actividad refleja el enfoque de trabajo del OCS: conceptualizar, medir, analizar y difundir información sobre cohesión social mediante herramientas abiertas y basadas en evidencia 📚. No buscamos entregar relatos cerrados, sino habilitar un lenguaje común que permita comprender mejor los cambios en los lazos sociales en Chile y fomentar un debate público informado 🤝.
+
+La recepción del público durante la conferencia confirmó la relevancia de esta apuesta. La interacción con los visualizadores, las conversaciones espontáneas en el stand y el interés por los reportes mostraron la importancia de abrir los datos y acercarlos a quienes buscan entender cómo evoluciona la cohesión social en el país.
+
+📷 Revisa aquí algunos de los registros de ese día:
+
+![](IMG_6643.jpg){.center}
+
+![](IMG_3738.jpg){.center}
+
+🎥 Mira también un registro en video de la actividad:
+
+::: {.center}
+<video src="20251022_114058.mp4" controls width="480">
+
+</video>
+:::
+

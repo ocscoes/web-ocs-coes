@@ -41,6 +41,7 @@
     "listing": "/index.html",
     "items": [
       "/sobre/index.html",
+      "/noticias/posts/post-lanzamiento-viselsoc/index.html",
       "/noticias/posts/post-conf-risc/index.html",
       "/noticias/posts/post-paper-ocs/index.html",
       "/noticias/posts/nota-go/index.html",

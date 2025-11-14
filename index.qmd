@@ -268,12 +268,12 @@ article {
 <div class="layout">
   <article>
     <div class="img-container">
-      <img class="lukas" src="imagenes/jc-foro3.jpg" data-url="noticias/posts/post-tercer-foro/">
-      <div class="overlay-text">Cohesión social en tiempos de desafección política en la XII Conferencia Internacional COES. Click para más información</div>
+      <img class="lukas" src="imagenes/IMG_1498.jpg" data-url="noticias/posts/post-lanzamiento-viselsoc/">
+      <div class="overlay-text">Lanzamiento del Visualizador de Cohesión Social en Chile con ELSOC en la XII Conferencia Internacional COES. Click para más información</div>
     </div>
     <div class="img-container">
-      <img class="lukas" src="imagenes/columna-tercera.png" data-url="noticias/posts/columna-tercera-dosis/">
-      <div class="overlay-text">Columna de opinión del IP Juan Carlos Castillo y AI René Canales cohesión social y seguridad pública. Click para más información</div>
+      <img class="lukas" src="imagenes/jc-foro3.jpg" data-url="noticias/posts/columna-tercera-dosis/">
+      <div class="overlay-text">Cohesión social en tiempos de desafección política en la XII Conferencia Internacional COES. Click para más información</div>
     </div>
   </article>
 </div>
